@@ -150,8 +150,8 @@ $(document).ready(function(){initNavTree('audio_2tada_2_tada_8c-example.html',''
 <div class="line">    <span class="keywordflow">while</span> (1)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="comment">// Refresh pad values and test key a (without repeating sound if still pressed)</span></div>
-<div class="line">        <a name="a15"></a><a class="code" href="pad_8h.html#a42632e79292dc47a567aab4dc3e4407d">scanPads</a>();</div>
-<div class="line">        <span class="keywordflow">if</span> (<a name="a16"></a><a class="code" href="pad_8h.html#a6063e0eec9a36e437fc32951acafa44c">padsCurrent</a>(0) &amp; <a name="a17"></a><a class="code" href="pad_8h.html#aa27cad8fa018a58930b6622783a83072aa7b3a3d0503a46bec51c6e3da95747cc">KEY_A</a>)</div>
+<div class="line">        <a name="a15"></a><a class="code" href="network_8h.html#a42632e79292dc47a567aab4dc3e4407d">scanPads</a>();</div>
+<div class="line">        <span class="keywordflow">if</span> (<a name="a16"></a><a class="code" href="network_8h.html#a6063e0eec9a36e437fc32951acafa44c">padsCurrent</a>(0) &amp; <a name="a17"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072aa7b3a3d0503a46bec51c6e3da95747cc">KEY_A</a>)</div>
 <div class="line">        {</div>
 <div class="line">            <span class="keywordflow">if</span> (keyapressed == 0)</div>
 <div class="line">            {</div>
@@ -183,9 +183,9 @@ $(document).ready(function(){initNavTree('audio_2tada_2_tada_8c-example.html',''
 <div class="ttc" id="aconsole_8h_html_aaddd205f7bb20885a420f26e28214cfb"><div class="ttname"><a href="console_8h.html#aaddd205f7bb20885a420f26e28214cfb">consoleSetTextOffset</a></div><div class="ttdeci">void consoleSetTextOffset(u16 offsetfont)</div><div class="ttdoc">Change text Background map address for display (must be BG address)</div></div>
 <div class="ttc" id="aconsole_8h_html_ab2c949172b9690e58ffb9b3294a36b38"><div class="ttname"><a href="console_8h.html#ab2c949172b9690e58ffb9b3294a36b38">consoleSetTextVramBGAdr</a></div><div class="ttdeci">void consoleSetTextVramBGAdr(u16 offsetfont)</div><div class="ttdoc">Change text Background map address for display (must be BG address)</div></div>
 <div class="ttc" id="ainterrupt_8h_html_abd33830487e4764e5ec22ec98b749f4b"><div class="ttname"><a href="interrupt_8h.html#abd33830487e4764e5ec22ec98b749f4b">WaitForVBlank</a></div><div class="ttdeci">void WaitForVBlank(void)</div><div class="ttdoc">Wait for vblank interrupt</div></div>
-<div class="ttc" id="apad_8h_html_a42632e79292dc47a567aab4dc3e4407d"><div class="ttname"><a href="pad_8h.html#a42632e79292dc47a567aab4dc3e4407d">scanPads</a></div><div class="ttdeci">void scanPads(void)</div><div class="ttdoc">Wait for pad ready and read pad values in .</div></div>
-<div class="ttc" id="apad_8h_html_a6063e0eec9a36e437fc32951acafa44c"><div class="ttname"><a href="pad_8h.html#a6063e0eec9a36e437fc32951acafa44c">padsCurrent</a></div><div class="ttdeci">#define padsCurrent(value)</div><div class="ttdoc">Return current value of selected pad.</div><div class="ttdef"><b>Definition:</b> pad.h:122</div></div>
-<div class="ttc" id="apad_8h_html_aa27cad8fa018a58930b6622783a83072aa7b3a3d0503a46bec51c6e3da95747cc"><div class="ttname"><a href="pad_8h.html#aa27cad8fa018a58930b6622783a83072aa7b3a3d0503a46bec51c6e3da95747cc">KEY_A</a></div><div class="ttdeci">@ KEY_A</div><div class="ttdoc">pad A button.</div><div class="ttdef"><b>Definition:</b> pad.h:48</div></div>
+<div class="ttc" id="anetwork_8h_html_a42632e79292dc47a567aab4dc3e4407d"><div class="ttname"><a href="network_8h.html#a42632e79292dc47a567aab4dc3e4407d">scanPads</a></div><div class="ttdeci">void scanPads(void)</div><div class="ttdoc">Wait for pad ready and read pad values in .</div></div>
+<div class="ttc" id="anetwork_8h_html_a6063e0eec9a36e437fc32951acafa44c"><div class="ttname"><a href="network_8h.html#a6063e0eec9a36e437fc32951acafa44c">padsCurrent</a></div><div class="ttdeci">#define padsCurrent(value)</div><div class="ttdoc">Return current value of selected pad.</div><div class="ttdef"><b>Definition:</b> network.h:122</div></div>
+<div class="ttc" id="anetwork_8h_html_aa27cad8fa018a58930b6622783a83072aa7b3a3d0503a46bec51c6e3da95747cc"><div class="ttname"><a href="network_8h.html#aa27cad8fa018a58930b6622783a83072aa7b3a3d0503a46bec51c6e3da95747cc">KEY_A</a></div><div class="ttdeci">@ KEY_A</div><div class="ttdoc">pad A button.</div><div class="ttdef"><b>Definition:</b> network.h:48</div></div>
 <div class="ttc" id="asnes_8h_html"><div class="ttname"><a href="snes_8h.html">snes.h</a></div><div class="ttdoc">the master include file for snes applications.</div></div>
 <div class="ttc" id="asound_8h_html_a2113060be24b307d1e03f167eb241b90"><div class="ttname"><a href="sound_8h.html#a2113060be24b307d1e03f167eb241b90">spcAllocateSoundRegion</a></div><div class="ttdeci">void spcAllocateSoundRegion(u8 size)</div><div class="ttdoc">set the size of the sound region (this must be big enough to hold your longest/largest sound) this fu...</div></div>
 <div class="ttc" id="asound_8h_html_a4ef9d5d4b7618a2e091194b6c17f75a5"><div class="ttname"><a href="sound_8h.html#a4ef9d5d4b7618a2e091194b6c17f75a5">spcSetSoundEntry</a></div><div class="ttdeci">void spcSetSoundEntry(u8 vol, u8 panning, u8 pitch, u16 length, u8 *sampleaddr, brrsamples *ptr)</div><div class="ttdoc">set the values and address of the SOUND TABLE for a sound entry</div></div>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('audio_2tada_2_tada_8c-example.html',''
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-    <li class="footer">Generated on Sun Mar 19 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 25 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </div>
 </body>
 </html>

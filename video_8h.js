@@ -60,6 +60,7 @@ var video_8h =
     [ "setMode7MoveForwardBack", "video_8h.html#a44845006a2852ac2fa78c07bd1553d52", null ],
     [ "setMode7MoveLeftRight", "video_8h.html#ade2a8e199ad857a17e402333123b1f43", null ],
     [ "setMode7Rot", "video_8h.html#a4d332cdc88b26fc9ec2cdd4f6710ce8c", null ],
+    [ "setMode7Scale", "video_8h.html#a79a6e89e2d541b67229f6033ebc861ce", null ],
     [ "setMosaicEffect", "video_8h.html#aa14785c4eb1ce08cc02eb98d26c98c44", null ],
     [ "setScreenOff", "video_8h.html#aaeaea299a3cfb90fa5232b842f7f7cd0", null ],
     [ "setScreenOn", "video_8h.html#abc7d4ef8ebc22f5b710927909bb3f144", null ],

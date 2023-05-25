@@ -19,5 +19,6 @@ var console_8h =
     [ "scr_txt_dirty", "console_8h.html#a73c5f483e71c951f267ad0375084242f", null ],
     [ "scr_txt_font_map", "console_8h.html#ad3897ef4ed73fa003953d4a979ed50b0", null ],
     [ "snes_50hz", "console_8h.html#aef3bf9522613bca02b4a00ea910d492f", null ],
+    [ "snes_fps", "console_8h.html#a2f267aa4dde2e613c3d2bc961104b531", null ],
     [ "snes_vblank_count", "console_8h.html#a5e14b74b621c822db9af978d0ad31d1a", null ]
 ];
