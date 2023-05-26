@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('graphics_2_sprites_2_object_size_2_obj
 <div class="line"><span class="keyword">extern</span> <span class="keywordtype">char</span> sprite32, sprite32_end, palsprite32, palsprite32_end;</div>
 <div class="line"><span class="keyword">extern</span> <span class="keywordtype">char</span> sprite64, sprite64_end, palsprite64, palsprite64_end;</div>
 <div class="line"> </div>
-<div class="line">u16 selectedItem;</div>
+<div class="line"><a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> selectedItem;</div>
 <div class="line"><span class="keywordtype">bool</span> keyPressed;</div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#define ADRBG1 0x2000</span></div>
@@ -185,11 +185,11 @@ $(document).ready(function(){initNavTree('graphics_2_sprites_2_object_size_2_obj
 <div class="line">    }</div>
 <div class="line">    <span class="comment">// because we load graphics at 0x2100, offset is 0x10 (0x2100-0x2000)/16</span></div>
 <div class="line">    <a name="a11"></a><a class="code" href="sprite_8h.html#abb854a7fa3bbfe4c2e331bfce9e374a7">oamSet</a>(0, 70, 120, 3, 0, 0, 0x0010, 0);</div>
-<div class="line">    <a name="a12"></a><a class="code" href="sprite_8h.html#a4120a8ff32c39973babeca3615a0a2fd">oamSetEx</a>(0, OBJ_SMALL, OBJ_SHOW);</div>
+<div class="line">    <a name="a12"></a><a class="code" href="sprite_8h.html#a4120a8ff32c39973babeca3615a0a2fd">oamSetEx</a>(0, <a name="a13"></a><a class="code" href="sprite_8h.html#a908b094470fa9632302b14321338ae7a">OBJ_SMALL</a>, <a name="a14"></a><a class="code" href="sprite_8h.html#a0b9b0362f3cdfc1625ff5cfea7efcd0c">OBJ_SHOW</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// because we load graphics at 0x2500, offset is 0x50 (0x2500-0x2000)/16</span></div>
 <div class="line">    <a class="code" href="sprite_8h.html#abb854a7fa3bbfe4c2e331bfce9e374a7">oamSet</a>(4, 170, 120, 3, 0, 0, 0x0050, 1);</div>
-<div class="line">    <a class="code" href="sprite_8h.html#a4120a8ff32c39973babeca3615a0a2fd">oamSetEx</a>(4, OBJ_LARGE, OBJ_SHOW);</div>
+<div class="line">    <a class="code" href="sprite_8h.html#a4120a8ff32c39973babeca3615a0a2fd">oamSetEx</a>(4, <a name="a15"></a><a class="code" href="sprite_8h.html#a330d199fcaadc1fab59ca0b7f1ca3b0c">OBJ_LARGE</a>, <a class="code" href="sprite_8h.html#a0b9b0362f3cdfc1625ff5cfea7efcd0c">OBJ_SHOW</a>);</div>
 <div class="line">    </div>
 <div class="line">}</div>
 <div class="line"> </div>
@@ -199,21 +199,21 @@ $(document).ready(function(){initNavTree('graphics_2_sprites_2_object_size_2_obj
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> pad0;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Initialize SNES</span></div>
-<div class="line">    <a name="a13"></a><a class="code" href="console_8h.html#a6047713bb5a73afd3cd1d77e336bcdad">consoleInit</a>();</div>
+<div class="line">    <a name="a16"></a><a class="code" href="console_8h.html#a6047713bb5a73afd3cd1d77e336bcdad">consoleInit</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Initialize text console with our font</span></div>
-<div class="line">    <a name="a14"></a><a class="code" href="console_8h.html#ab2c949172b9690e58ffb9b3294a36b38">consoleSetTextVramBGAdr</a>(0x6800);</div>
-<div class="line">    <a name="a15"></a><a class="code" href="console_8h.html#a344184ac8dda28ea0170c153c854aa16">consoleSetTextVramAdr</a>(0x3000);</div>
-<div class="line">    <a name="a16"></a><a class="code" href="console_8h.html#aaddd205f7bb20885a420f26e28214cfb">consoleSetTextOffset</a>(0x0100);</div>
-<div class="line">    <a name="a17"></a><a class="code" href="console_8h.html#a5413265662e30a0ded3fee6d3c4781f9">consoleInitText</a>(0, 16 * 2, &amp;snesfont, &amp;snespal);</div>
+<div class="line">    <a name="a17"></a><a class="code" href="console_8h.html#ab2c949172b9690e58ffb9b3294a36b38">consoleSetTextVramBGAdr</a>(0x6800);</div>
+<div class="line">    <a name="a18"></a><a class="code" href="console_8h.html#a344184ac8dda28ea0170c153c854aa16">consoleSetTextVramAdr</a>(0x3000);</div>
+<div class="line">    <a name="a19"></a><a class="code" href="console_8h.html#aaddd205f7bb20885a420f26e28214cfb">consoleSetTextOffset</a>(0x0100);</div>
+<div class="line">    <a name="a20"></a><a class="code" href="console_8h.html#a5413265662e30a0ded3fee6d3c4781f9">consoleInitText</a>(0, 16 * 2, &amp;snesfont, &amp;snespal);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Init background</span></div>
-<div class="line">    <a name="a18"></a><a class="code" href="background_8h.html#a0206b5b9911749322bcf9da130527924">bgSetGfxPtr</a>(0, ADRBG1);</div>
-<div class="line">    <a name="a19"></a><a class="code" href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a>(0, 0x6803, SC_32x32);</div>
+<div class="line">    <a name="a21"></a><a class="code" href="background_8h.html#a0206b5b9911749322bcf9da130527924">bgSetGfxPtr</a>(0, ADRBG1);</div>
+<div class="line">    <a name="a22"></a><a class="code" href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a>(0, 0x6803, <a name="a23"></a><a class="code" href="background_8h.html#a11724b6748ce0954e9b43819263537fc">SC_32x32</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Now Put in 16 color mode and disable all backgrounds</span></div>
-<div class="line">    <a name="a20"></a><a class="code" href="video_8h.html#afd9e46ae627d055dd8c98a4b0ebb73b1">setMode</a>(BG_MODE1, 0);</div>
-<div class="line">    <a name="a21"></a><a class="code" href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a>(1);</div>
+<div class="line">    <a name="a24"></a><a class="code" href="video_8h.html#afd9e46ae627d055dd8c98a4b0ebb73b1">setMode</a>(<a name="a25"></a><a class="code" href="background_8h.html#a05c862edb7f8f75036f10c04dcc3c2a6">BG_MODE1</a>, 0);</div>
+<div class="line">    <a name="a26"></a><a class="code" href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a>(1);</div>
 <div class="line">    <a class="code" href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a>(2);</div>
 <div class="line"> </div>
 <div class="line">    selectedItem = 0;</div>
@@ -221,16 +221,16 @@ $(document).ready(function(){initNavTree('graphics_2_sprites_2_object_size_2_obj
 <div class="line">    draw();</div>
 <div class="line">    changeObjSize();</div>
 <div class="line"> </div>
-<div class="line">    <a name="a22"></a><a class="code" href="video_8h.html#abc7d4ef8ebc22f5b710927909bb3f144">setScreenOn</a>();</div>
+<div class="line">    <a name="a27"></a><a class="code" href="video_8h.html#abc7d4ef8ebc22f5b710927909bb3f144">setScreenOn</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">while</span> (1)</div>
 <div class="line">    {</div>
 <div class="line"> </div>
-<div class="line">        pad0 = <a name="a23"></a><a class="code" href="network_8h.html#a6063e0eec9a36e437fc32951acafa44c">padsCurrent</a>(0);</div>
+<div class="line">        pad0 = <a name="a28"></a><a class="code" href="network_8h.html#a6063e0eec9a36e437fc32951acafa44c">padsCurrent</a>(0);</div>
 <div class="line"> </div>
 <div class="line">        <span class="keywordflow">if</span> (pad0)</div>
 <div class="line">        {</div>
-<div class="line">            <span class="keywordflow">if</span> (pad0 &amp; <a name="a24"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072a0848a442d907968b211b97bc2bd88acd">KEY_UP</a>)</div>
+<div class="line">            <span class="keywordflow">if</span> (pad0 &amp; <a name="a29"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072a0848a442d907968b211b97bc2bd88acd">KEY_UP</a>)</div>
 <div class="line">            {</div>
 <div class="line">                <span class="keywordflow">if</span> (selectedItem &gt; 0 &amp;&amp; !keyPressed)</div>
 <div class="line">                {</div>
@@ -240,7 +240,7 @@ $(document).ready(function(){initNavTree('graphics_2_sprites_2_object_size_2_obj
 <div class="line">                    keyPressed = <span class="keyword">true</span>;</div>
 <div class="line">                }</div>
 <div class="line">            }</div>
-<div class="line">            <span class="keywordflow">if</span> (pad0 &amp; <a name="a25"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072aa9cdac7967bf7d88fdb761138a2a3416">KEY_DOWN</a>)</div>
+<div class="line">            <span class="keywordflow">if</span> (pad0 &amp; <a name="a30"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072aa9cdac7967bf7d88fdb761138a2a3416">KEY_DOWN</a>)</div>
 <div class="line">            {</div>
 <div class="line">                <span class="keywordflow">if</span> (selectedItem &lt; 5 &amp;&amp; !keyPressed)</div>
 <div class="line">                {</div>
@@ -259,6 +259,8 @@ $(document).ready(function(){initNavTree('graphics_2_sprites_2_object_size_2_obj
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="abackground_8h_html_a0206b5b9911749322bcf9da130527924"><div class="ttname"><a href="background_8h.html#a0206b5b9911749322bcf9da130527924">bgSetGfxPtr</a></div><div class="ttdeci">void bgSetGfxPtr(u8 bgNumber, u16 address)</div><div class="ttdoc">Definition of each background address.</div></div>
+<div class="ttc" id="abackground_8h_html_a05c862edb7f8f75036f10c04dcc3c2a6"><div class="ttname"><a href="background_8h.html#a05c862edb7f8f75036f10c04dcc3c2a6">BG_MODE1</a></div><div class="ttdeci">#define BG_MODE1</div><div class="ttdef"><b>Definition:</b> background.h:55</div></div>
+<div class="ttc" id="abackground_8h_html_a11724b6748ce0954e9b43819263537fc"><div class="ttname"><a href="background_8h.html#a11724b6748ce0954e9b43819263537fc">SC_32x32</a></div><div class="ttdeci">#define SC_32x32</div><div class="ttdef"><b>Definition:</b> background.h:49</div></div>
 <div class="ttc" id="abackground_8h_html_a4dbfb1b8854ff9ca4a7d11a899281bbb"><div class="ttname"><a href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a></div><div class="ttdeci">void bgSetDisable(u8 bgNumber)</div><div class="ttdoc">Disable a BG in the actual SNES mode.</div></div>
 <div class="ttc" id="abackground_8h_html_a4fcbdb4b2378a64e8db62a184ee1851e"><div class="ttname"><a href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a></div><div class="ttdeci">void bgSetMapPtr(u8 bgNumber, u16 address, u8 mapSize)</div><div class="ttdoc">Change Background Map address.</div></div>
 <div class="ttc" id="aconsole_8h_html_a344184ac8dda28ea0170c153c854aa16"><div class="ttname"><a href="console_8h.html#a344184ac8dda28ea0170c153c854aa16">consoleSetTextVramAdr</a></div><div class="ttdeci">void consoleSetTextVramAdr(u16 vramfont)</div><div class="ttdoc">Change text graphics address (4K aligned)</div></div>
@@ -274,12 +276,16 @@ $(document).ready(function(){initNavTree('graphics_2_sprites_2_object_size_2_obj
 <div class="ttc" id="anetwork_8h_html_aa27cad8fa018a58930b6622783a83072a0848a442d907968b211b97bc2bd88acd"><div class="ttname"><a href="network_8h.html#aa27cad8fa018a58930b6622783a83072a0848a442d907968b211b97bc2bd88acd">KEY_UP</a></div><div class="ttdeci">@ KEY_UP</div><div class="ttdoc">pad UP button.</div><div class="ttdef"><b>Definition:</b> network.h:55</div></div>
 <div class="ttc" id="anetwork_8h_html_aa27cad8fa018a58930b6622783a83072aa9cdac7967bf7d88fdb761138a2a3416"><div class="ttname"><a href="network_8h.html#aa27cad8fa018a58930b6622783a83072aa9cdac7967bf7d88fdb761138a2a3416">KEY_DOWN</a></div><div class="ttdeci">@ KEY_DOWN</div><div class="ttdoc">pad DOWN button.</div><div class="ttdef"><b>Definition:</b> network.h:54</div></div>
 <div class="ttc" id="asnes_8h_html"><div class="ttname"><a href="snes_8h.html">snes.h</a></div><div class="ttdoc">the master include file for snes applications.</div></div>
+<div class="ttc" id="asnestypes_8h_html_a9e6c91d77e24643b888dbd1a1a590054"><div class="ttname"><a href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a></div><div class="ttdeci">unsigned short u16</div><div class="ttdef"><b>Definition:</b> snestypes.h:40</div></div>
+<div class="ttc" id="asprite_8h_html_a0b9b0362f3cdfc1625ff5cfea7efcd0c"><div class="ttname"><a href="sprite_8h.html#a0b9b0362f3cdfc1625ff5cfea7efcd0c">OBJ_SHOW</a></div><div class="ttdeci">#define OBJ_SHOW</div><div class="ttdef"><b>Definition:</b> sprite.h:48</div></div>
 <div class="ttc" id="asprite_8h_html_a1893eab6ffef9928ff2de22d49bd18c0"><div class="ttname"><a href="sprite_8h.html#a1893eab6ffef9928ff2de22d49bd18c0">OBJ_SIZE16_L32</a></div><div class="ttdeci">#define OBJ_SIZE16_L32</div><div class="ttdoc">default OAM size 16x16 (SM) and 32x32 (LG) pix for OBJSEL register</div><div class="ttdef"><b>Definition:</b> sprite.h:42</div></div>
+<div class="ttc" id="asprite_8h_html_a330d199fcaadc1fab59ca0b7f1ca3b0c"><div class="ttname"><a href="sprite_8h.html#a330d199fcaadc1fab59ca0b7f1ca3b0c">OBJ_LARGE</a></div><div class="ttdeci">#define OBJ_LARGE</div><div class="ttdef"><b>Definition:</b> sprite.h:47</div></div>
 <div class="ttc" id="asprite_8h_html_a35468d3300e6ad4bdb2c027c93c7dbe5"><div class="ttname"><a href="sprite_8h.html#a35468d3300e6ad4bdb2c027c93c7dbe5">OBJ_SIZE8_L64</a></div><div class="ttdeci">#define OBJ_SIZE8_L64</div><div class="ttdoc">default OAM size 8x8 (SM) and 64x64 (LG) pix for OBJSEL register</div><div class="ttdef"><b>Definition:</b> sprite.h:41</div></div>
 <div class="ttc" id="asprite_8h_html_a4120a8ff32c39973babeca3615a0a2fd"><div class="ttname"><a href="sprite_8h.html#a4120a8ff32c39973babeca3615a0a2fd">oamSetEx</a></div><div class="ttdeci">void oamSetEx(u16 id, u8 size, u8 hide)</div><div class="ttdoc">Put the correct size and hide or show a sprite.</div></div>
 <div class="ttc" id="asprite_8h_html_a449cd6f7c4fc8ca09a632e0c58cdb365"><div class="ttname"><a href="sprite_8h.html#a449cd6f7c4fc8ca09a632e0c58cdb365">OBJ_SIZE32_L64</a></div><div class="ttdeci">#define OBJ_SIZE32_L64</div><div class="ttdoc">default OAM size 32x32 (SM) and 64x64 (LG) pix for OBJSEL register</div><div class="ttdef"><b>Definition:</b> sprite.h:44</div></div>
 <div class="ttc" id="asprite_8h_html_a46e0be47f8fc865a7f43c1b0b126e59a"><div class="ttname"><a href="sprite_8h.html#a46e0be47f8fc865a7f43c1b0b126e59a">oamInitGfxSet</a></div><div class="ttdeci">void oamInitGfxSet(u8 *tileSource, u16 tileSize, u8 *tilePalette, u16 paletteSize, u8 tilePaletteNumber, u16 address, u8 oamsize)</div><div class="ttdoc">Initializes a sprites Gfx and Loads the GFX into VRAM.</div></div>
 <div class="ttc" id="asprite_8h_html_a4e8556727bbae22ac2e0fa8392a13fc4"><div class="ttname"><a href="sprite_8h.html#a4e8556727bbae22ac2e0fa8392a13fc4">OBJ_SIZE8_L32</a></div><div class="ttdeci">#define OBJ_SIZE8_L32</div><div class="ttdoc">default OAM size 8x8 (SM) and 32x32 (LG) pix for OBJSEL register</div><div class="ttdef"><b>Definition:</b> sprite.h:40</div></div>
+<div class="ttc" id="asprite_8h_html_a908b094470fa9632302b14321338ae7a"><div class="ttname"><a href="sprite_8h.html#a908b094470fa9632302b14321338ae7a">OBJ_SMALL</a></div><div class="ttdeci">#define OBJ_SMALL</div><div class="ttdef"><b>Definition:</b> sprite.h:46</div></div>
 <div class="ttc" id="asprite_8h_html_aa91348e1375ed07236694a7d81fa9ecf"><div class="ttname"><a href="sprite_8h.html#aa91348e1375ed07236694a7d81fa9ecf">OBJ_SIZE8_L16</a></div><div class="ttdeci">#define OBJ_SIZE8_L16</div><div class="ttdoc">default OAM size 8x8 (SM) and 16x16 (LG) pix for OBJSEL register</div><div class="ttdef"><b>Definition:</b> sprite.h:39</div></div>
 <div class="ttc" id="asprite_8h_html_abb854a7fa3bbfe4c2e331bfce9e374a7"><div class="ttname"><a href="sprite_8h.html#abb854a7fa3bbfe4c2e331bfce9e374a7">oamSet</a></div><div class="ttdeci">void oamSet(u16 id, u16 xspr, u16 yspr, u8 priority, u8 hflip, u8 vflip, u16 gfxoffset, u8 paletteoffset)</div><div class="ttdoc">sets an oam entry to the supplied values</div></div>
 <div class="ttc" id="asprite_8h_html_ae03805d727184864087a4cc26e8034e9"><div class="ttname"><a href="sprite_8h.html#ae03805d727184864087a4cc26e8034e9">OBJ_SIZE16_L64</a></div><div class="ttdeci">#define OBJ_SIZE16_L64</div><div class="ttdoc">default OAM size 16x16 (SM) and 64x64 (LG) pix for OBJSEL register</div><div class="ttdef"><b>Definition:</b> sprite.h:43</div></div>
@@ -290,7 +296,7 @@ $(document).ready(function(){initNavTree('graphics_2_sprites_2_object_size_2_obj
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-    <li class="footer">Generated on Thu May 25 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 26 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </div>
 </body>
 </html>

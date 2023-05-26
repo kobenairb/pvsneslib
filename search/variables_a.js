@@ -1,17 +1,11 @@
 var searchData=
 [
-  ['scr_5ftxt_5fdirty_583',['scr_txt_dirty',['../console_8h.html#a73c5f483e71c951f267ad0375084242f',1,'console.h']]],
-  ['scr_5ftxt_5ffont_5fmap_584',['scr_txt_font_map',['../console_8h.html#ad3897ef4ed73fa003953d4a979ed50b0',1,'console.h']]],
-  ['snes_5f50hz_585',['snes_50hz',['../console_8h.html#aef3bf9522613bca02b4a00ea910d492f',1,'console.h']]],
-  ['snes_5ffps_586',['snes_fps',['../console_8h.html#a2f267aa4dde2e613c3d2bc961104b531',1,'console.h']]],
-  ['snes_5fmplay5_587',['snes_mplay5',['../network_8h.html#a0776b45d03084ed05cfad12d759249f0',1,'snes_mplay5():&#160;network.h'],['../pad_8h.html#a0776b45d03084ed05cfad12d759249f0',1,'snes_mplay5():&#160;pad.h']]],
-  ['snes_5fvblank_5fcount_588',['snes_vblank_count',['../console_8h.html#a5e14b74b621c822db9af978d0ad31d1a',1,'console.h']]],
-  ['sprblk3216_589',['sprblk3216',['../structt__objs.html#a49f3b9c5d5e63bcc515cfe7295a9f8e8',1,'t_objs']]],
-  ['sprflip_590',['sprflip',['../structt__objs.html#a150667cad9898f5459f4cfbe922c1c73',1,'t_objs']]],
-  ['sprframe_591',['sprframe',['../structt__objs.html#a14628d27927cc150f6af06235bcd670f',1,'t_objs']]],
-  ['sprid3216_592',['sprid3216',['../structt__objs.html#ab8fbe356a4f434e4cef182afd05b4ea9',1,'t_objs']]],
-  ['sprnum_593',['sprnum',['../structt__objs.html#ae463092ffd317392c6fac318d37d1cdd',1,'t_objs']]],
-  ['sprpal_594',['sprpal',['../structt__objs.html#ab82ec37bf93d4d8f73f50594b2a5e122',1,'t_objs']]],
-  ['sprrefresh_595',['sprrefresh',['../structt__objs.html#a21e8d3d85cb12f5160be92def802a264',1,'t_objs']]],
-  ['status_596',['status',['../structt__objs.html#a7a6bb9d629d128f6b658cee46939c496',1,'t_objs']]]
+  ['p_777',['p',['../structdma_memory.html#a36bc8ef896be62efccd2afba0ce6e066',1,'dmaMemory']]],
+  ['pad_5fkeys_778',['pad_keys',['../network_8h.html#a26859f70eb2bb0e5fc89c01491ef1e2a',1,'pad_keys():&#160;network.h'],['../pad_8h.html#a26859f70eb2bb0e5fc89c01491ef1e2a',1,'pad_keys():&#160;pad.h']]],
+  ['pad_5fkeysold_779',['pad_keysold',['../network_8h.html#af9af4590caec810cba3ecb4f31b7f66a',1,'pad_keysold():&#160;network.h'],['../pad_8h.html#af9af4590caec810cba3ecb4f31b7f66a',1,'pad_keysold():&#160;pad.h']]],
+  ['pad_5fkeysrepeat_780',['pad_keysrepeat',['../network_8h.html#a0c537268fa935f85a3db60bb3bf54350',1,'pad_keysrepeat():&#160;network.h'],['../pad_8h.html#a0c537268fa935f85a3db60bb3bf54350',1,'pad_keysrepeat():&#160;pad.h']]],
+  ['panning_781',['panning',['../structbrrsamples.html#a8e61543808f3aed3dfcca0fd933bfe92',1,'brrsamples']]],
+  ['parentid_782',['parentID',['../structt__objs.html#a126da553800ad52ce87634a199c222a2',1,'t_objs']]],
+  ['pitch_783',['pitch',['../structbrrsamples.html#a112d2def415a46e02e078f29fe89150d',1,'brrsamples']]],
+  ['prev_784',['prev',['../structt__objs.html#a75a67b882b8b551803155c2fa879900b',1,'t_objs']]]
 ];

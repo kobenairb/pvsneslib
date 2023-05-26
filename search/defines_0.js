@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['act_5fburn_643',['ACT_BURN',['../map_8h.html#aab4c8cebd89d6e8b2a68e709784829d5',1,'ACT_BURN():&#160;map.h'],['../object_8h.html#aab4c8cebd89d6e8b2a68e709784829d5',1,'ACT_BURN():&#160;object.h']]],
-  ['act_5fclimb_644',['ACT_CLIMB',['../map_8h.html#ab9c13fbe07aac09e69bc677fe3f0fcaa',1,'ACT_CLIMB():&#160;map.h'],['../object_8h.html#ab9c13fbe07aac09e69bc677fe3f0fcaa',1,'ACT_CLIMB():&#160;object.h']]],
-  ['act_5fdie_645',['ACT_DIE',['../map_8h.html#a7843ff58f7ae21834eee28a3cefbbd3a',1,'ACT_DIE():&#160;map.h'],['../object_8h.html#a7843ff58f7ae21834eee28a3cefbbd3a',1,'ACT_DIE():&#160;object.h']]],
-  ['act_5ffall_646',['ACT_FALL',['../map_8h.html#a8c450076e1da6d4f8aa6e1f7e6737444',1,'ACT_FALL():&#160;map.h'],['../object_8h.html#a8c450076e1da6d4f8aa6e1f7e6737444',1,'ACT_FALL():&#160;object.h']]],
-  ['act_5fjump_647',['ACT_JUMP',['../map_8h.html#a4617d14626ea66580d7996705d0a5bce',1,'ACT_JUMP():&#160;map.h'],['../object_8h.html#a4617d14626ea66580d7996705d0a5bce',1,'ACT_JUMP():&#160;object.h']]],
-  ['act_5fstand_648',['ACT_STAND',['../map_8h.html#a227eedee0994ff2eac6ed2b691d9bcb3',1,'ACT_STAND():&#160;map.h'],['../object_8h.html#a227eedee0994ff2eac6ed2b691d9bcb3',1,'ACT_STAND():&#160;object.h']]],
-  ['act_5fwalk_649',['ACT_WALK',['../map_8h.html#a912cfae6ccf6375f3c2831d65646c76b',1,'ACT_WALK():&#160;map.h'],['../object_8h.html#a912cfae6ccf6375f3c2831d65646c76b',1,'ACT_WALK():&#160;object.h']]]
+  ['_5fpvsneslib_5fmajor_5f_861',['_PVSNESLIB_MAJOR_',['../libversion_8h.html#aab2cbf79a9cca6989ef78a40224c1cff',1,'libversion.h']]],
+  ['_5fpvsneslib_5fminor_5f_862',['_PVSNESLIB_MINOR_',['../libversion_8h.html#ac4856b5e675f33e4e90fe929d01631a8',1,'libversion.h']]],
+  ['_5fpvsneslib_5fpatch_5f_863',['_PVSNESLIB_PATCH_',['../libversion_8h.html#a2554b46cd415314fd7fe16b6166e960b',1,'libversion.h']]],
+  ['_5fpvsneslib_5fstring_5f_864',['_PVSNESLIB_STRING_',['../libversion_8h.html#af91ac5e54e3eee1fe7ff612efb974dfc',1,'libversion.h']]]
 ];

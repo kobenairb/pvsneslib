@@ -88,7 +88,9 @@ $(document).ready(function(){initNavTree('dma_8h.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -102,184 +104,679 @@ $(document).ready(function(){initNavTree('dma_8h.html',''); initResizable(); });
 <code>#include &lt;<a class="el" href="background_8h_source.html">snes/background.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sprite_8h_source.html">snes/sprite.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="video_8h_source.html">snes/video.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for dma.h:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 -->
+</div>
+</div>
 </div>
 <p><a href="dma_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdma_memory.html">dmaMemory</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:af57b905f605a7fe58fc009025fb3d30b"><td class="memItemLeft" align="right" valign="top"><a id="af57b905f605a7fe58fc009025fb3d30b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#af57b905f605a7fe58fc009025fb3d30b">DMA_ENABLE</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:af57b905f605a7fe58fc009025fb3d30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit defines for the DMA control registers. <br /></td></tr>
-<tr class="separator:af57b905f605a7fe58fc009025fb3d30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a449e65ce5faecb46a0e57fb1ed874fec"><td class="memItemLeft" align="right" valign="top"><a id="a449e65ce5faecb46a0e57fb1ed874fec"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a449e65ce5faecb46a0e57fb1ed874fec">HDMA_CHANNEL0</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
-<tr class="memdesc:a449e65ce5faecb46a0e57fb1ed874fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit defines for the HDMA channels. <br /></td></tr>
+<tr class="memitem:a449e65ce5faecb46a0e57fb1ed874fec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a449e65ce5faecb46a0e57fb1ed874fec">HDMA_CHANNEL0</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
+<tr class="memdesc:a449e65ce5faecb46a0e57fb1ed874fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit defines for the HDMA channels.  <a href="dma_8h.html#a449e65ce5faecb46a0e57fb1ed874fec">More...</a><br /></td></tr>
 <tr class="separator:a449e65ce5faecb46a0e57fb1ed874fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a200a74fdc8a0532c0ac7199e3ea1f22d"><td class="memItemLeft" align="right" valign="top"><a id="a200a74fdc8a0532c0ac7199e3ea1f22d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a200a74fdc8a0532c0ac7199e3ea1f22d">MSWIN1_BG1MSKENABLE</a>&#160;&#160;&#160;(2 &lt;&lt; 0)</td></tr>
-<tr class="memdesc:a200a74fdc8a0532c0ac7199e3ea1f22d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 area BG1 enable. <br /></td></tr>
-<tr class="separator:a200a74fdc8a0532c0ac7199e3ea1f22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66d2702fd40da5970df67b9c7f60dfb8"><td class="memItemLeft" align="right" valign="top"><a id="a66d2702fd40da5970df67b9c7f60dfb8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a66d2702fd40da5970df67b9c7f60dfb8">MSWIN1_BG1MSKOUT</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
-<tr class="memdesc:a66d2702fd40da5970df67b9c7f60dfb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 area BG1 inside (0) outside(1) <br /></td></tr>
-<tr class="separator:a66d2702fd40da5970df67b9c7f60dfb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac66980762b38860ee821f19833988971"><td class="memItemLeft" align="right" valign="top"><a id="ac66980762b38860ee821f19833988971"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ac66980762b38860ee821f19833988971">MSWIN1_BG2MSKENABLE</a>&#160;&#160;&#160;(2 &lt;&lt; 4)</td></tr>
-<tr class="memdesc:ac66980762b38860ee821f19833988971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 area BG2 enable. <br /></td></tr>
-<tr class="separator:ac66980762b38860ee821f19833988971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8de63e77a8d05fbf5a4ee88b0ced15d4"><td class="memItemLeft" align="right" valign="top"><a id="a8de63e77a8d05fbf5a4ee88b0ced15d4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a8de63e77a8d05fbf5a4ee88b0ced15d4">MSWIN1_BG2MSKOUT</a>&#160;&#160;&#160;(1 &lt;&lt; 4)</td></tr>
-<tr class="memdesc:a8de63e77a8d05fbf5a4ee88b0ced15d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 area BG2 inside (0) outside(1) <br /></td></tr>
-<tr class="separator:a8de63e77a8d05fbf5a4ee88b0ced15d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef6cceefe85db77e13f8480b8eb9f057"><td class="memItemLeft" align="right" valign="top"><a id="aef6cceefe85db77e13f8480b8eb9f057"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#aef6cceefe85db77e13f8480b8eb9f057">MSWIN1_BG3MSKENABLE</a>&#160;&#160;&#160;(2 &lt;&lt; 0)</td></tr>
-<tr class="memdesc:aef6cceefe85db77e13f8480b8eb9f057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 area BG3 enable. <br /></td></tr>
-<tr class="separator:aef6cceefe85db77e13f8480b8eb9f057"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b1b41e9ff7882dce28ebd54aea88aad"><td class="memItemLeft" align="right" valign="top"><a id="a2b1b41e9ff7882dce28ebd54aea88aad"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a2b1b41e9ff7882dce28ebd54aea88aad">MSWIN1_BG3MSKOUT</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
-<tr class="memdesc:a2b1b41e9ff7882dce28ebd54aea88aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 area BG3 inside (0) outside(1) <br /></td></tr>
-<tr class="separator:a2b1b41e9ff7882dce28ebd54aea88aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82952d05bef37ad03701db76e9c7ba02"><td class="memItemLeft" align="right" valign="top"><a id="a82952d05bef37ad03701db76e9c7ba02"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a82952d05bef37ad03701db76e9c7ba02">MSWIN1_BG4MSKENABLE</a>&#160;&#160;&#160;(2 &lt;&lt; 4)</td></tr>
-<tr class="memdesc:a82952d05bef37ad03701db76e9c7ba02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 area BG4 enable. <br /></td></tr>
-<tr class="separator:a82952d05bef37ad03701db76e9c7ba02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8718ad2e20711671ca55ec86f31cb63e"><td class="memItemLeft" align="right" valign="top"><a id="a8718ad2e20711671ca55ec86f31cb63e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a8718ad2e20711671ca55ec86f31cb63e">MSWIN1_BG4MSKOUT</a>&#160;&#160;&#160;(1 &lt;&lt; 4)</td></tr>
-<tr class="memdesc:a8718ad2e20711671ca55ec86f31cb63e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 area BG4 inside (0) outside(1) <br /></td></tr>
-<tr class="separator:a8718ad2e20711671ca55ec86f31cb63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a822807332e7683766b1969ea46198d75"><td class="memItemLeft" align="right" valign="top"><a id="a822807332e7683766b1969ea46198d75"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a822807332e7683766b1969ea46198d75">MSWIN2_BG1MSKENABLE</a>&#160;&#160;&#160;(2 &lt;&lt; 2)</td></tr>
-<tr class="memdesc:a822807332e7683766b1969ea46198d75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 2 area BG1 enable. <br /></td></tr>
-<tr class="separator:a822807332e7683766b1969ea46198d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a770dff7b0ee0b8ff9b3a571bfdebd10b"><td class="memItemLeft" align="right" valign="top"><a id="a770dff7b0ee0b8ff9b3a571bfdebd10b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a770dff7b0ee0b8ff9b3a571bfdebd10b">MSWIN2_BG1MSKOUT</a>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
-<tr class="memdesc:a770dff7b0ee0b8ff9b3a571bfdebd10b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 2 area BG1 inside (0) outside(1) <br /></td></tr>
-<tr class="separator:a770dff7b0ee0b8ff9b3a571bfdebd10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a7581f01c56420b02ecd37130ff6ef6"><td class="memItemLeft" align="right" valign="top"><a id="a3a7581f01c56420b02ecd37130ff6ef6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a3a7581f01c56420b02ecd37130ff6ef6">MSWIN2_BG2MSKENABLE</a>&#160;&#160;&#160;(2 &lt;&lt; 4)</td></tr>
-<tr class="memdesc:a3a7581f01c56420b02ecd37130ff6ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 2 area BG2 enable. <br /></td></tr>
-<tr class="separator:a3a7581f01c56420b02ecd37130ff6ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abba92d1b0d3bdfe4b094af207271c2df"><td class="memItemLeft" align="right" valign="top"><a id="abba92d1b0d3bdfe4b094af207271c2df"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#abba92d1b0d3bdfe4b094af207271c2df">MSWIN2_BG2MSKOUT</a>&#160;&#160;&#160;(1 &lt;&lt; 4)</td></tr>
-<tr class="memdesc:abba92d1b0d3bdfe4b094af207271c2df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 2 area BG2 inside (0) outside(1) <br /></td></tr>
-<tr class="separator:abba92d1b0d3bdfe4b094af207271c2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9590fb898c89ba140484f4a1a4831ec"><td class="memItemLeft" align="right" valign="top"><a id="ae9590fb898c89ba140484f4a1a4831ec"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ae9590fb898c89ba140484f4a1a4831ec">MSWIN2_BG3MSKENABLE</a>&#160;&#160;&#160;(2 &lt;&lt; 2)</td></tr>
-<tr class="memdesc:ae9590fb898c89ba140484f4a1a4831ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 2 area BG3 enable. <br /></td></tr>
-<tr class="separator:ae9590fb898c89ba140484f4a1a4831ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f2f144f75f1fb7723ddfb8f7431f83b"><td class="memItemLeft" align="right" valign="top"><a id="a8f2f144f75f1fb7723ddfb8f7431f83b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a8f2f144f75f1fb7723ddfb8f7431f83b">MSWIN2_BG3MSKOUT</a>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
-<tr class="memdesc:a8f2f144f75f1fb7723ddfb8f7431f83b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 2 area BG3 inside (0) outside(1) <br /></td></tr>
-<tr class="separator:a8f2f144f75f1fb7723ddfb8f7431f83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56dd136a98db51a1fab6d80d4c1277db"><td class="memItemLeft" align="right" valign="top"><a id="a56dd136a98db51a1fab6d80d4c1277db"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a56dd136a98db51a1fab6d80d4c1277db">MSWIN2_BG4MSKENABLE</a>&#160;&#160;&#160;(2 &lt;&lt; 4)</td></tr>
-<tr class="memdesc:a56dd136a98db51a1fab6d80d4c1277db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 2 area BG4 enable. <br /></td></tr>
-<tr class="separator:a56dd136a98db51a1fab6d80d4c1277db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7c7f7b69dc241474570d1fb9e458951"><td class="memItemLeft" align="right" valign="top"><a id="af7c7f7b69dc241474570d1fb9e458951"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#af7c7f7b69dc241474570d1fb9e458951">MSWIN2_BG4MSKOUT</a>&#160;&#160;&#160;(1 &lt;&lt; 4)</td></tr>
-<tr class="memdesc:af7c7f7b69dc241474570d1fb9e458951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 2 area BG4 inside (0) outside(1) <br /></td></tr>
-<tr class="separator:af7c7f7b69dc241474570d1fb9e458951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5afd6c91f6cd7c4ed9cea7f36e43fb1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a5afd6c91f6cd7c4ed9cea7f36e43fb1c">HDMA_CHANNEL1</a>&#160;&#160;&#160;(1 &lt;&lt; 1)</td></tr>
+<tr class="separator:a5afd6c91f6cd7c4ed9cea7f36e43fb1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a33066ebeb5468c1a0c2ca0f3c8d45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ad7a33066ebeb5468c1a0c2ca0f3c8d45">HDMA_CHANNEL2</a>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
+<tr class="separator:ad7a33066ebeb5468c1a0c2ca0f3c8d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1308236eb8dc468f33e34a520096ae37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a1308236eb8dc468f33e34a520096ae37">HDMA_CHANNEL3</a>&#160;&#160;&#160;(1 &lt;&lt; 3)</td></tr>
+<tr class="separator:a1308236eb8dc468f33e34a520096ae37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f205a73bac4fc2722ae246852d55e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ae8f205a73bac4fc2722ae246852d55e7">HDMA_CHANNEL4</a>&#160;&#160;&#160;(1 &lt;&lt; 4)</td></tr>
+<tr class="separator:ae8f205a73bac4fc2722ae246852d55e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57e0356d3f2582da1b16de23bbbb39d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ae57e0356d3f2582da1b16de23bbbb39d">HDMA_CHANNEL5</a>&#160;&#160;&#160;(1 &lt;&lt; 5)</td></tr>
+<tr class="separator:ae57e0356d3f2582da1b16de23bbbb39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb583f55a6f38de559a95159c70a2b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a1cb583f55a6f38de559a95159c70a2b2">HDMA_CHANNEL6</a>&#160;&#160;&#160;(1 &lt;&lt; 6)</td></tr>
+<tr class="separator:a1cb583f55a6f38de559a95159c70a2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec69dba4d30863a427ae71aac8ef6247"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#aec69dba4d30863a427ae71aac8ef6247">HDMA_CHANNEL7</a>&#160;&#160;&#160;(1 &lt;&lt; 7)</td></tr>
+<tr class="separator:aec69dba4d30863a427ae71aac8ef6247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ed13f8863396e26c2836da44d15af47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a3ed13f8863396e26c2836da44d15af47">HDMA_CHANNELALL</a>&#160;&#160;&#160;(<a class="el" href="dma_8h.html#a449e65ce5faecb46a0e57fb1ed874fec">HDMA_CHANNEL0</a> | <a class="el" href="dma_8h.html#a5afd6c91f6cd7c4ed9cea7f36e43fb1c">HDMA_CHANNEL1</a> | <a class="el" href="dma_8h.html#ad7a33066ebeb5468c1a0c2ca0f3c8d45">HDMA_CHANNEL2</a> | <a class="el" href="dma_8h.html#a1308236eb8dc468f33e34a520096ae37">HDMA_CHANNEL3</a> | <a class="el" href="dma_8h.html#ae8f205a73bac4fc2722ae246852d55e7">HDMA_CHANNEL4</a> | <a class="el" href="dma_8h.html#ae57e0356d3f2582da1b16de23bbbb39d">HDMA_CHANNEL5</a> | <a class="el" href="dma_8h.html#a1cb583f55a6f38de559a95159c70a2b2">HDMA_CHANNEL6</a> | <a class="el" href="dma_8h.html#aec69dba4d30863a427ae71aac8ef6247">HDMA_CHANNEL7</a>)</td></tr>
+<tr class="separator:a3ed13f8863396e26c2836da44d15af47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b875796929dfd18bb81e25bbb610b54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a2b875796929dfd18bb81e25bbb610b54">MSWIN_BG1</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
 <tr class="memdesc:a2b875796929dfd18bb81e25bbb610b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit defines for the window area main screen effect.  <a href="dma_8h.html#a2b875796929dfd18bb81e25bbb610b54">More...</a><br /></td></tr>
 <tr class="separator:a2b875796929dfd18bb81e25bbb610b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc92eb3c10e2d9fdafea29ff92ca0b93"><td class="memItemLeft" align="right" valign="top"><a id="acc92eb3c10e2d9fdafea29ff92ca0b93"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#acc92eb3c10e2d9fdafea29ff92ca0b93">MSWIN_BG2</a>&#160;&#160;&#160;(1 &lt;&lt; 1)</td></tr>
-<tr class="memdesc:acc92eb3c10e2d9fdafea29ff92ca0b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main Screen BG2 disable background. <br /></td></tr>
+<tr class="memitem:acc92eb3c10e2d9fdafea29ff92ca0b93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#acc92eb3c10e2d9fdafea29ff92ca0b93">MSWIN_BG2</a>&#160;&#160;&#160;(1 &lt;&lt; 1)</td></tr>
+<tr class="memdesc:acc92eb3c10e2d9fdafea29ff92ca0b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main Screen BG2 disable background.  <a href="dma_8h.html#acc92eb3c10e2d9fdafea29ff92ca0b93">More...</a><br /></td></tr>
 <tr class="separator:acc92eb3c10e2d9fdafea29ff92ca0b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35273d4a1d131c0a4c32f08dc25abdce"><td class="memItemLeft" align="right" valign="top"><a id="a35273d4a1d131c0a4c32f08dc25abdce"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a35273d4a1d131c0a4c32f08dc25abdce">MSWIN_BG3</a>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
-<tr class="memdesc:a35273d4a1d131c0a4c32f08dc25abdce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main Screen BG3 disable background. <br /></td></tr>
+<tr class="memitem:a35273d4a1d131c0a4c32f08dc25abdce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a35273d4a1d131c0a4c32f08dc25abdce">MSWIN_BG3</a>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
+<tr class="memdesc:a35273d4a1d131c0a4c32f08dc25abdce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main Screen BG3 disable background.  <a href="dma_8h.html#a35273d4a1d131c0a4c32f08dc25abdce">More...</a><br /></td></tr>
 <tr class="separator:a35273d4a1d131c0a4c32f08dc25abdce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e426246c60b0c0d10438f7742295155"><td class="memItemLeft" align="right" valign="top"><a id="a1e426246c60b0c0d10438f7742295155"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a1e426246c60b0c0d10438f7742295155">MSWIN_BG4</a>&#160;&#160;&#160;(1 &lt;&lt; 3)</td></tr>
-<tr class="memdesc:a1e426246c60b0c0d10438f7742295155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main Screen BG4 disable background. <br /></td></tr>
+<tr class="memitem:a1e426246c60b0c0d10438f7742295155"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a1e426246c60b0c0d10438f7742295155">MSWIN_BG4</a>&#160;&#160;&#160;(1 &lt;&lt; 3)</td></tr>
+<tr class="memdesc:a1e426246c60b0c0d10438f7742295155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main Screen BG4 disable background.  <a href="dma_8h.html#a1e426246c60b0c0d10438f7742295155">More...</a><br /></td></tr>
 <tr class="separator:a1e426246c60b0c0d10438f7742295155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a384405596b1aadf2454e966455d74228"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a384405596b1aadf2454e966455d74228">REG_A1B7</a>&#160;&#160;&#160;(*(vuint8 *)0x4374)</td></tr>
-<tr class="memdesc:a384405596b1aadf2454e966455d74228"><td class="mdescLeft">&#160;</td><td class="mdescRight">A1TxL - HDMA Table Start Address (low) / DMA Current Addr (low) (R/W) A1TxH - HDMA Table Start Address (hi) / DMA Current Addr (hi) (R/W) A1Bx - HDMA Table Start Address (bank) / DMA Current Addr (bank) (R/W)  <a href="dma_8h.html#a384405596b1aadf2454e966455d74228">More...</a><br /></td></tr>
-<tr class="separator:a384405596b1aadf2454e966455d74228"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2acebf455ea5a03345af0a3af2340a97"><td class="memItemLeft" align="right" valign="top"><a id="a2acebf455ea5a03345af0a3af2340a97"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a2acebf455ea5a03345af0a3af2340a97">REG_BBAD7</a>&#160;&#160;&#160;(*(vuint8 *)0x4371)</td></tr>
-<tr class="memdesc:a2acebf455ea5a03345af0a3af2340a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA/HDMA I/O-Bus Address (PPU-Bus aka B-Bus) (R/W) For both DMA and HDMA: 7-0 B-Bus Address (selects an I/O Port which is mapped to 2100h-21FFh) <br /></td></tr>
-<tr class="separator:a2acebf455ea5a03345af0a3af2340a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9dca819788af60976b8d4956f76ead6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ac9dca819788af60976b8d4956f76ead6">REG_DAS7LH</a>&#160;&#160;&#160;(*(vuint16 *)0x4375)</td></tr>
-<tr class="memdesc:ac9dca819788af60976b8d4956f76ead6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indirect HDMA Address (low) / DMA Byte-Counter (low) (R/W) DASxL - Indirect HDMA Address (low) / DMA Byte-Counter (low) (R/W) DASxH - Indirect HDMA Address (hi) / DMA Byte-Counter (hi) (R/W) 43x7h - DASBx - Indirect HDMA Address (bank) (R/W)  <a href="dma_8h.html#ac9dca819788af60976b8d4956f76ead6">More...</a><br /></td></tr>
-<tr class="separator:ac9dca819788af60976b8d4956f76ead6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a468ac9497087f0cbab21a3e0453f438b"><td class="memItemLeft" align="right" valign="top"><a id="a468ac9497087f0cbab21a3e0453f438b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a468ac9497087f0cbab21a3e0453f438b">REG_HDMAEN</a>&#160;&#160;&#160;(*(vuint8 *)0x420C)</td></tr>
-<tr class="memdesc:a468ac9497087f0cbab21a3e0453f438b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select H-Blank DMA (H-DMA) Channel(s) (W) 7-0 H-DMA Channel 7-0 Enable (0=Disable, 1=Enable) <br /></td></tr>
-<tr class="separator:a468ac9497087f0cbab21a3e0453f438b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abccd357db38cf6e7528e807b8692ef0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#abccd357db38cf6e7528e807b8692ef0f">REG_MDMAEN</a>&#160;&#160;&#160;(*(vuint8 *)0x420B)</td></tr>
+<tr class="memitem:a66d2702fd40da5970df67b9c7f60dfb8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a66d2702fd40da5970df67b9c7f60dfb8">MSWIN1_BG1MSKOUT</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
+<tr class="memdesc:a66d2702fd40da5970df67b9c7f60dfb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 area BG1 inside (0) outside(1)  <a href="dma_8h.html#a66d2702fd40da5970df67b9c7f60dfb8">More...</a><br /></td></tr>
+<tr class="separator:a66d2702fd40da5970df67b9c7f60dfb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a200a74fdc8a0532c0ac7199e3ea1f22d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a200a74fdc8a0532c0ac7199e3ea1f22d">MSWIN1_BG1MSKENABLE</a>&#160;&#160;&#160;(2 &lt;&lt; 0)</td></tr>
+<tr class="memdesc:a200a74fdc8a0532c0ac7199e3ea1f22d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 area BG1 enable.  <a href="dma_8h.html#a200a74fdc8a0532c0ac7199e3ea1f22d">More...</a><br /></td></tr>
+<tr class="separator:a200a74fdc8a0532c0ac7199e3ea1f22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770dff7b0ee0b8ff9b3a571bfdebd10b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a770dff7b0ee0b8ff9b3a571bfdebd10b">MSWIN2_BG1MSKOUT</a>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
+<tr class="memdesc:a770dff7b0ee0b8ff9b3a571bfdebd10b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 2 area BG1 inside (0) outside(1)  <a href="dma_8h.html#a770dff7b0ee0b8ff9b3a571bfdebd10b">More...</a><br /></td></tr>
+<tr class="separator:a770dff7b0ee0b8ff9b3a571bfdebd10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a822807332e7683766b1969ea46198d75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a822807332e7683766b1969ea46198d75">MSWIN2_BG1MSKENABLE</a>&#160;&#160;&#160;(2 &lt;&lt; 2)</td></tr>
+<tr class="memdesc:a822807332e7683766b1969ea46198d75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 2 area BG1 enable.  <a href="dma_8h.html#a822807332e7683766b1969ea46198d75">More...</a><br /></td></tr>
+<tr class="separator:a822807332e7683766b1969ea46198d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de63e77a8d05fbf5a4ee88b0ced15d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a8de63e77a8d05fbf5a4ee88b0ced15d4">MSWIN1_BG2MSKOUT</a>&#160;&#160;&#160;(1 &lt;&lt; 4)</td></tr>
+<tr class="memdesc:a8de63e77a8d05fbf5a4ee88b0ced15d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 area BG2 inside (0) outside(1)  <a href="dma_8h.html#a8de63e77a8d05fbf5a4ee88b0ced15d4">More...</a><br /></td></tr>
+<tr class="separator:a8de63e77a8d05fbf5a4ee88b0ced15d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac66980762b38860ee821f19833988971"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ac66980762b38860ee821f19833988971">MSWIN1_BG2MSKENABLE</a>&#160;&#160;&#160;(2 &lt;&lt; 4)</td></tr>
+<tr class="memdesc:ac66980762b38860ee821f19833988971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 area BG2 enable.  <a href="dma_8h.html#ac66980762b38860ee821f19833988971">More...</a><br /></td></tr>
+<tr class="separator:ac66980762b38860ee821f19833988971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba92d1b0d3bdfe4b094af207271c2df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#abba92d1b0d3bdfe4b094af207271c2df">MSWIN2_BG2MSKOUT</a>&#160;&#160;&#160;(1 &lt;&lt; 4)</td></tr>
+<tr class="memdesc:abba92d1b0d3bdfe4b094af207271c2df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 2 area BG2 inside (0) outside(1)  <a href="dma_8h.html#abba92d1b0d3bdfe4b094af207271c2df">More...</a><br /></td></tr>
+<tr class="separator:abba92d1b0d3bdfe4b094af207271c2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a7581f01c56420b02ecd37130ff6ef6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a3a7581f01c56420b02ecd37130ff6ef6">MSWIN2_BG2MSKENABLE</a>&#160;&#160;&#160;(2 &lt;&lt; 4)</td></tr>
+<tr class="memdesc:a3a7581f01c56420b02ecd37130ff6ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 2 area BG2 enable.  <a href="dma_8h.html#a3a7581f01c56420b02ecd37130ff6ef6">More...</a><br /></td></tr>
+<tr class="separator:a3a7581f01c56420b02ecd37130ff6ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b1b41e9ff7882dce28ebd54aea88aad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a2b1b41e9ff7882dce28ebd54aea88aad">MSWIN1_BG3MSKOUT</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
+<tr class="memdesc:a2b1b41e9ff7882dce28ebd54aea88aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 area BG3 inside (0) outside(1)  <a href="dma_8h.html#a2b1b41e9ff7882dce28ebd54aea88aad">More...</a><br /></td></tr>
+<tr class="separator:a2b1b41e9ff7882dce28ebd54aea88aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef6cceefe85db77e13f8480b8eb9f057"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#aef6cceefe85db77e13f8480b8eb9f057">MSWIN1_BG3MSKENABLE</a>&#160;&#160;&#160;(2 &lt;&lt; 0)</td></tr>
+<tr class="memdesc:aef6cceefe85db77e13f8480b8eb9f057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 area BG3 enable.  <a href="dma_8h.html#aef6cceefe85db77e13f8480b8eb9f057">More...</a><br /></td></tr>
+<tr class="separator:aef6cceefe85db77e13f8480b8eb9f057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f2f144f75f1fb7723ddfb8f7431f83b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a8f2f144f75f1fb7723ddfb8f7431f83b">MSWIN2_BG3MSKOUT</a>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
+<tr class="memdesc:a8f2f144f75f1fb7723ddfb8f7431f83b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 2 area BG3 inside (0) outside(1)  <a href="dma_8h.html#a8f2f144f75f1fb7723ddfb8f7431f83b">More...</a><br /></td></tr>
+<tr class="separator:a8f2f144f75f1fb7723ddfb8f7431f83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9590fb898c89ba140484f4a1a4831ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ae9590fb898c89ba140484f4a1a4831ec">MSWIN2_BG3MSKENABLE</a>&#160;&#160;&#160;(2 &lt;&lt; 2)</td></tr>
+<tr class="memdesc:ae9590fb898c89ba140484f4a1a4831ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 2 area BG3 enable.  <a href="dma_8h.html#ae9590fb898c89ba140484f4a1a4831ec">More...</a><br /></td></tr>
+<tr class="separator:ae9590fb898c89ba140484f4a1a4831ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8718ad2e20711671ca55ec86f31cb63e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a8718ad2e20711671ca55ec86f31cb63e">MSWIN1_BG4MSKOUT</a>&#160;&#160;&#160;(1 &lt;&lt; 4)</td></tr>
+<tr class="memdesc:a8718ad2e20711671ca55ec86f31cb63e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 area BG4 inside (0) outside(1)  <a href="dma_8h.html#a8718ad2e20711671ca55ec86f31cb63e">More...</a><br /></td></tr>
+<tr class="separator:a8718ad2e20711671ca55ec86f31cb63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82952d05bef37ad03701db76e9c7ba02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a82952d05bef37ad03701db76e9c7ba02">MSWIN1_BG4MSKENABLE</a>&#160;&#160;&#160;(2 &lt;&lt; 4)</td></tr>
+<tr class="memdesc:a82952d05bef37ad03701db76e9c7ba02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 area BG4 enable.  <a href="dma_8h.html#a82952d05bef37ad03701db76e9c7ba02">More...</a><br /></td></tr>
+<tr class="separator:a82952d05bef37ad03701db76e9c7ba02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c7f7b69dc241474570d1fb9e458951"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#af7c7f7b69dc241474570d1fb9e458951">MSWIN2_BG4MSKOUT</a>&#160;&#160;&#160;(1 &lt;&lt; 4)</td></tr>
+<tr class="memdesc:af7c7f7b69dc241474570d1fb9e458951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 2 area BG4 inside (0) outside(1)  <a href="dma_8h.html#af7c7f7b69dc241474570d1fb9e458951">More...</a><br /></td></tr>
+<tr class="separator:af7c7f7b69dc241474570d1fb9e458951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56dd136a98db51a1fab6d80d4c1277db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a56dd136a98db51a1fab6d80d4c1277db">MSWIN2_BG4MSKENABLE</a>&#160;&#160;&#160;(2 &lt;&lt; 4)</td></tr>
+<tr class="memdesc:a56dd136a98db51a1fab6d80d4c1277db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 2 area BG4 enable.  <a href="dma_8h.html#a56dd136a98db51a1fab6d80d4c1277db">More...</a><br /></td></tr>
+<tr class="separator:a56dd136a98db51a1fab6d80d4c1277db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57b905f605a7fe58fc009025fb3d30b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#af57b905f605a7fe58fc009025fb3d30b">DMA_ENABLE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:af57b905f605a7fe58fc009025fb3d30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit defines for the DMA control registers.  <a href="dma_8h.html#af57b905f605a7fe58fc009025fb3d30b">More...</a><br /></td></tr>
+<tr class="separator:af57b905f605a7fe58fc009025fb3d30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abccd357db38cf6e7528e807b8692ef0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#abccd357db38cf6e7528e807b8692ef0f">REG_MDMAEN</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x420B)</td></tr>
 <tr class="memdesc:abccd357db38cf6e7528e807b8692ef0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select General Purpose DMA Channel(s) and Start Transfer (W) 7-0 General Purpose DMA Channel 7-0 Enable (0=Disable, 1=Enable)  <a href="dma_8h.html#abccd357db38cf6e7528e807b8692ef0f">More...</a><br /></td></tr>
 <tr class="separator:abccd357db38cf6e7528e807b8692ef0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a468ac9497087f0cbab21a3e0453f438b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a468ac9497087f0cbab21a3e0453f438b">REG_HDMAEN</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x420C)</td></tr>
+<tr class="memdesc:a468ac9497087f0cbab21a3e0453f438b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select H-Blank DMA (H-DMA) Channel(s) (W) 7-0 H-DMA Channel 7-0 Enable (0=Disable, 1=Enable)  <a href="dma_8h.html#a468ac9497087f0cbab21a3e0453f438b">More...</a><br /></td></tr>
+<tr class="separator:a468ac9497087f0cbab21a3e0453f438b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a545516ca9f344fa74c9bec588d584bd8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a545516ca9f344fa74c9bec588d584bd8">REG_DMAP0</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4300)</td></tr>
+<tr class="separator:a545516ca9f344fa74c9bec588d584bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d40190abb0ef77de4f8bea9afee7f2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a4d40190abb0ef77de4f8bea9afee7f2d">REG_DMAP1</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4310)</td></tr>
+<tr class="separator:a4d40190abb0ef77de4f8bea9afee7f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2156da5d235e2c7eeb1a01b812b52564"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a2156da5d235e2c7eeb1a01b812b52564">REG_DMAP2</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4320)</td></tr>
+<tr class="separator:a2156da5d235e2c7eeb1a01b812b52564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa639060593326a84ddb77295723d6ef7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#aa639060593326a84ddb77295723d6ef7">REG_DMAP3</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4330)</td></tr>
+<tr class="separator:aa639060593326a84ddb77295723d6ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c906d8d1f7dac4cf688c96d902e8aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a75c906d8d1f7dac4cf688c96d902e8aa">REG_DMAP4</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4340)</td></tr>
+<tr class="separator:a75c906d8d1f7dac4cf688c96d902e8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b8249f74475ae875fa4c8bac6efd88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ae1b8249f74475ae875fa4c8bac6efd88">REG_DMAP5</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4350)</td></tr>
+<tr class="separator:ae1b8249f74475ae875fa4c8bac6efd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10b3bc2865de84487be2e7d30dec129"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ab10b3bc2865de84487be2e7d30dec129">REG_DMAP6</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4360)</td></tr>
+<tr class="separator:ab10b3bc2865de84487be2e7d30dec129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa106b844ce7254da7d8ec52ce9c40b83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#aa106b844ce7254da7d8ec52ce9c40b83">REG_DMAP7</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4370)</td></tr>
+<tr class="separator:aa106b844ce7254da7d8ec52ce9c40b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73983a8136d94c6891d11b4a28a955e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a73983a8136d94c6891d11b4a28a955e6">REG_BBAD0</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4301)</td></tr>
+<tr class="separator:a73983a8136d94c6891d11b4a28a955e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a752e455ecb1c671899ac4384441e933e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a752e455ecb1c671899ac4384441e933e">REG_BBAD1</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4311)</td></tr>
+<tr class="separator:a752e455ecb1c671899ac4384441e933e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec1dd6e2d10450136d2d562a9982f21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#afec1dd6e2d10450136d2d562a9982f21">REG_BBAD2</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4321)</td></tr>
+<tr class="separator:afec1dd6e2d10450136d2d562a9982f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5fdbecc7a683437a8d4ac31d446660"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#acc5fdbecc7a683437a8d4ac31d446660">REG_BBAD3</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4331)</td></tr>
+<tr class="separator:acc5fdbecc7a683437a8d4ac31d446660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf3ce5e85e0669e7cf2c4f6b9e1580c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#acf3ce5e85e0669e7cf2c4f6b9e1580c2">REG_BBAD4</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4341)</td></tr>
+<tr class="separator:acf3ce5e85e0669e7cf2c4f6b9e1580c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaeb457cf9157f5bd54e347b9cc24a0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#aeaeb457cf9157f5bd54e347b9cc24a0b">REG_BBAD5</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4351)</td></tr>
+<tr class="separator:aeaeb457cf9157f5bd54e347b9cc24a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d6993ba11828f4b3475d6635413ba9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a4d6993ba11828f4b3475d6635413ba9d">REG_BBAD6</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4361)</td></tr>
+<tr class="separator:a4d6993ba11828f4b3475d6635413ba9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2acebf455ea5a03345af0a3af2340a97"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a2acebf455ea5a03345af0a3af2340a97">REG_BBAD7</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4371)</td></tr>
+<tr class="memdesc:a2acebf455ea5a03345af0a3af2340a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA/HDMA I/O-Bus Address (PPU-Bus aka B-Bus) (R/W) For both DMA and HDMA: 7-0 B-Bus Address (selects an I/O Port which is mapped to 2100h-21FFh)  <a href="dma_8h.html#a2acebf455ea5a03345af0a3af2340a97">More...</a><br /></td></tr>
+<tr class="separator:a2acebf455ea5a03345af0a3af2340a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e851b964e2436164d8f46d72ff1c549"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a7e851b964e2436164d8f46d72ff1c549">REG_A1T0LH</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4302)</td></tr>
+<tr class="separator:a7e851b964e2436164d8f46d72ff1c549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14bcd86cae4d4f64a8e2d3c5aed3c35b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a14bcd86cae4d4f64a8e2d3c5aed3c35b">REG_A1T1LH</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4312)</td></tr>
+<tr class="separator:a14bcd86cae4d4f64a8e2d3c5aed3c35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf3246ceb7f47b718cf7e40e2ed9ec8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#aedf3246ceb7f47b718cf7e40e2ed9ec8">REG_A1T2LH</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4322)</td></tr>
+<tr class="separator:aedf3246ceb7f47b718cf7e40e2ed9ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ef450500636a2e6a8b64cb5f1d1c5f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a1ef450500636a2e6a8b64cb5f1d1c5f3">REG_A1T3LH</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4332)</td></tr>
+<tr class="separator:a1ef450500636a2e6a8b64cb5f1d1c5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e5480a2de2511377ba8f24c225af63d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a3e5480a2de2511377ba8f24c225af63d">REG_A1T4LH</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4342)</td></tr>
+<tr class="separator:a3e5480a2de2511377ba8f24c225af63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236d1512ad7c5a7115d284d6ebe9dfd7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a236d1512ad7c5a7115d284d6ebe9dfd7">REG_A1T5LH</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4352)</td></tr>
+<tr class="separator:a236d1512ad7c5a7115d284d6ebe9dfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba06bc6ebd1ad594684d253292cda297"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#aba06bc6ebd1ad594684d253292cda297">REG_A1T6LH</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4362)</td></tr>
+<tr class="separator:aba06bc6ebd1ad594684d253292cda297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8334bf2620d78778fb8db4b09a3450b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a8334bf2620d78778fb8db4b09a3450b7">REG_A1T7LH</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4372)</td></tr>
+<tr class="separator:a8334bf2620d78778fb8db4b09a3450b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b225f66f543576a0a0efaa9896e6cfc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a0b225f66f543576a0a0efaa9896e6cfc">REG_A1B0</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4304)</td></tr>
+<tr class="separator:a0b225f66f543576a0a0efaa9896e6cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7399bc7cd4000717e297d91bee5ef74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#af7399bc7cd4000717e297d91bee5ef74">REG_A1B1</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4314)</td></tr>
+<tr class="separator:af7399bc7cd4000717e297d91bee5ef74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba4de961377cbc47cba708cfeef480d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a9ba4de961377cbc47cba708cfeef480d">REG_A1B2</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4324)</td></tr>
+<tr class="separator:a9ba4de961377cbc47cba708cfeef480d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a586a26f5fb524d9d82c7e7d59331a5e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a586a26f5fb524d9d82c7e7d59331a5e0">REG_A1B3</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4334)</td></tr>
+<tr class="separator:a586a26f5fb524d9d82c7e7d59331a5e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dac9795098da77fbf0e0ed00a517b6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a7dac9795098da77fbf0e0ed00a517b6a">REG_A1B4</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4344)</td></tr>
+<tr class="separator:a7dac9795098da77fbf0e0ed00a517b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ee737c3179456cb436e96d438a8d26d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a8ee737c3179456cb436e96d438a8d26d">REG_A1B5</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4354)</td></tr>
+<tr class="separator:a8ee737c3179456cb436e96d438a8d26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09d59b91d1e2c95e146df64b39996e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ac09d59b91d1e2c95e146df64b39996e3">REG_A1B6</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4364)</td></tr>
+<tr class="separator:ac09d59b91d1e2c95e146df64b39996e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a384405596b1aadf2454e966455d74228"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a384405596b1aadf2454e966455d74228">REG_A1B7</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4374)</td></tr>
+<tr class="memdesc:a384405596b1aadf2454e966455d74228"><td class="mdescLeft">&#160;</td><td class="mdescRight">A1TxL - HDMA Table Start Address (low) / DMA Current Addr (low) (R/W) A1TxH - HDMA Table Start Address (hi) / DMA Current Addr (hi) (R/W) A1Bx - HDMA Table Start Address (bank) / DMA Current Addr (bank) (R/W)  <a href="dma_8h.html#a384405596b1aadf2454e966455d74228">More...</a><br /></td></tr>
+<tr class="separator:a384405596b1aadf2454e966455d74228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee87429cc071843131d4b3c2470b9a3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#aee87429cc071843131d4b3c2470b9a3c">REG_DAS0LH</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4305)</td></tr>
+<tr class="separator:aee87429cc071843131d4b3c2470b9a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7247bc5fa8986ccc91e1adbce950ac91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a7247bc5fa8986ccc91e1adbce950ac91">REG_DAS1LH</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4315)</td></tr>
+<tr class="separator:a7247bc5fa8986ccc91e1adbce950ac91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae05fd3bd06d3d01b986c7780f3aa3cab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ae05fd3bd06d3d01b986c7780f3aa3cab">REG_DAS2LH</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4325)</td></tr>
+<tr class="separator:ae05fd3bd06d3d01b986c7780f3aa3cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55386a412f88b9aab340d8efed499036"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a55386a412f88b9aab340d8efed499036">REG_DAS3LH</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4335)</td></tr>
+<tr class="separator:a55386a412f88b9aab340d8efed499036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f6a47f02b33670abf7e9182996ad62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ad9f6a47f02b33670abf7e9182996ad62">REG_DAS4LH</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4345)</td></tr>
+<tr class="separator:ad9f6a47f02b33670abf7e9182996ad62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33927859bf11bb227ff49b80a08291a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ac33927859bf11bb227ff49b80a08291a">REG_DAS5LH</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4355)</td></tr>
+<tr class="separator:ac33927859bf11bb227ff49b80a08291a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57fde507d043ea4301e33cb611e0aa14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a57fde507d043ea4301e33cb611e0aa14">REG_DAS6LH</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4365)</td></tr>
+<tr class="separator:a57fde507d043ea4301e33cb611e0aa14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9dca819788af60976b8d4956f76ead6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ac9dca819788af60976b8d4956f76ead6">REG_DAS7LH</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4375)</td></tr>
+<tr class="memdesc:ac9dca819788af60976b8d4956f76ead6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indirect HDMA Address (low) / DMA Byte-Counter (low) (R/W) DASxL - Indirect HDMA Address (low) / DMA Byte-Counter (low) (R/W) DASxH - Indirect HDMA Address (hi) / DMA Byte-Counter (hi) (R/W) 43x7h - DASBx - Indirect HDMA Address (bank) (R/W)  <a href="dma_8h.html#ac9dca819788af60976b8d4956f76ead6">More...</a><br /></td></tr>
+<tr class="separator:ac9dca819788af60976b8d4956f76ead6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a072734f4a0ca76e5bddfa44940763aad"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdma_memory.html">dmaMemory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a072734f4a0ca76e5bddfa44940763aad">dmaMemory</a></td></tr>
+<tr class="separator:a072734f4a0ca76e5bddfa44940763aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a72b64de8d06ad5bae1995fb1baf1a458"><td class="memItemLeft" align="right" valign="top"><a id="a72b64de8d06ad5bae1995fb1baf1a458"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a72b64de8d06ad5bae1995fb1baf1a458">dmaClearVram</a> (void)</td></tr>
-<tr class="memdesc:a72b64de8d06ad5bae1995fb1baf1a458"><td class="mdescLeft">&#160;</td><td class="mdescRight">clear all vram data with #0 <br /></td></tr>
-<tr class="separator:a72b64de8d06ad5bae1995fb1baf1a458"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff1f11e7dc93b535c3c84cb8007bb16a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#aff1f11e7dc93b535c3c84cb8007bb16a">dmaCopyCGram</a> (u8 *source, u16 address, u16 size)</td></tr>
+<tr class="memitem:aff1f11e7dc93b535c3c84cb8007bb16a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#aff1f11e7dc93b535c3c84cb8007bb16a">dmaCopyCGram</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *source, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> address, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> size)</td></tr>
 <tr class="memdesc:aff1f11e7dc93b535c3c84cb8007bb16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy data from source to destination using channel 0 of DMA available channels in half words  <a href="dma_8h.html#aff1f11e7dc93b535c3c84cb8007bb16a">More...</a><br /></td></tr>
 <tr class="separator:aff1f11e7dc93b535c3c84cb8007bb16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72ec813d4b395cafa59852cbd1ffa8b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a72ec813d4b395cafa59852cbd1ffa8b2">dmaCopyOAram</a> (u8 *source, u16 address, u16 size)</td></tr>
-<tr class="memdesc:a72ec813d4b395cafa59852cbd1ffa8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">copies Sprites from source to destination using channel 0 of DMA available channels in half words  <a href="dma_8h.html#a72ec813d4b395cafa59852cbd1ffa8b2">More...</a><br /></td></tr>
-<tr class="separator:a72ec813d4b395cafa59852cbd1ffa8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6104d97fae7422dbba10f062c1044462"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a6104d97fae7422dbba10f062c1044462">dmaCopySpr16Vram</a> (u8 *source, u16 address)</td></tr>
-<tr class="memdesc:a6104d97fae7422dbba10f062c1044462"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy sprite 16pix size data from source to destination using channel 0 of DMA available channels in half words  <a href="dma_8h.html#a6104d97fae7422dbba10f062c1044462">More...</a><br /></td></tr>
-<tr class="separator:a6104d97fae7422dbba10f062c1044462"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbf81dbfd5a87cb2cd2181b12fcd56c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#abbf81dbfd5a87cb2cd2181b12fcd56c5">dmaCopySpr32Vram</a> (u8 *source, u16 address)</td></tr>
-<tr class="memdesc:abbf81dbfd5a87cb2cd2181b12fcd56c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy sprite 32pix size data from source to destination using channel 0 of DMA available channels in half words  <a href="dma_8h.html#abbf81dbfd5a87cb2cd2181b12fcd56c5">More...</a><br /></td></tr>
-<tr class="separator:abbf81dbfd5a87cb2cd2181b12fcd56c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adddf1dea4bd52a083b3ee4b39f1e20f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#adddf1dea4bd52a083b3ee4b39f1e20f2">dmaCopyVram</a> (u8 *source, u16 address, u16 size)</td></tr>
+<tr class="memitem:adddf1dea4bd52a083b3ee4b39f1e20f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#adddf1dea4bd52a083b3ee4b39f1e20f2">dmaCopyVram</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *source, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> address, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> size)</td></tr>
 <tr class="memdesc:adddf1dea4bd52a083b3ee4b39f1e20f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy data from source to destination using channel 0 of DMA available channels in half words  <a href="dma_8h.html#adddf1dea4bd52a083b3ee4b39f1e20f2">More...</a><br /></td></tr>
 <tr class="separator:adddf1dea4bd52a083b3ee4b39f1e20f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0ba95e6b8e91380c0a67ee3b0707582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ac0ba95e6b8e91380c0a67ee3b0707582">dmaCopyVram7</a> (u8 *source, u16 address, u16 size, u8 vrammodeinc, u16 dmacontrol)</td></tr>
-<tr class="memdesc:ac0ba95e6b8e91380c0a67ee3b0707582"><td class="mdescLeft">&#160;</td><td class="mdescRight">copies data from source to destination using channel 0 of DMA available channels in half words with VMAIN value  <a href="dma_8h.html#ac0ba95e6b8e91380c0a67ee3b0707582">More...</a><br /></td></tr>
-<tr class="separator:ac0ba95e6b8e91380c0a67ee3b0707582"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a235e242d89d3c81b9e697e99a96198f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a235e242d89d3c81b9e697e99a96198f7">dmaFillVram</a> (u8 *source, u16 address, u16 size)</td></tr>
+<tr class="memitem:abbf81dbfd5a87cb2cd2181b12fcd56c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#abbf81dbfd5a87cb2cd2181b12fcd56c5">dmaCopySpr32Vram</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *source, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> address)</td></tr>
+<tr class="memdesc:abbf81dbfd5a87cb2cd2181b12fcd56c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy sprite 32pix size data from source to destination using channel 0 of DMA available channels in half words  <a href="dma_8h.html#abbf81dbfd5a87cb2cd2181b12fcd56c5">More...</a><br /></td></tr>
+<tr class="separator:abbf81dbfd5a87cb2cd2181b12fcd56c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6104d97fae7422dbba10f062c1044462"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a6104d97fae7422dbba10f062c1044462">dmaCopySpr16Vram</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *source, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> address)</td></tr>
+<tr class="memdesc:a6104d97fae7422dbba10f062c1044462"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy sprite 16pix size data from source to destination using channel 0 of DMA available channels in half words  <a href="dma_8h.html#a6104d97fae7422dbba10f062c1044462">More...</a><br /></td></tr>
+<tr class="separator:a6104d97fae7422dbba10f062c1044462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a235e242d89d3c81b9e697e99a96198f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a235e242d89d3c81b9e697e99a96198f7">dmaFillVram</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *source, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> address, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> size)</td></tr>
 <tr class="memdesc:a235e242d89d3c81b9e697e99a96198f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">fill the source data to destination using channel 0 of DMA available channels in half words  <a href="dma_8h.html#a235e242d89d3c81b9e697e99a96198f7">More...</a><br /></td></tr>
 <tr class="separator:a235e242d89d3c81b9e697e99a96198f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88ab32a0e407cfa3d7f6fc4e9276d8b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a88ab32a0e407cfa3d7f6fc4e9276d8b0">setModeHdmaColor</a> (u8 *hdmatable)</td></tr>
-<tr class="memdesc:a88ab32a0e407cfa3d7f6fc4e9276d8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a color gradient effect on screen (with color 0). Use HDAM Channels 6.  <a href="dma_8h.html#a88ab32a0e407cfa3d7f6fc4e9276d8b0">More...</a><br /></td></tr>
-<tr class="separator:a88ab32a0e407cfa3d7f6fc4e9276d8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf06b5c6b9733a2fdb5cb466dd6b16bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#acf06b5c6b9733a2fdb5cb466dd6b16bf">setModeHdmaGradient</a> (u8 maxLevels)</td></tr>
+<tr class="memitem:a72b64de8d06ad5bae1995fb1baf1a458"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a72b64de8d06ad5bae1995fb1baf1a458">dmaClearVram</a> (void)</td></tr>
+<tr class="memdesc:a72b64de8d06ad5bae1995fb1baf1a458"><td class="mdescLeft">&#160;</td><td class="mdescRight">clear all vram data with #0  <a href="dma_8h.html#a72b64de8d06ad5bae1995fb1baf1a458">More...</a><br /></td></tr>
+<tr class="separator:a72b64de8d06ad5bae1995fb1baf1a458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ec813d4b395cafa59852cbd1ffa8b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a72ec813d4b395cafa59852cbd1ffa8b2">dmaCopyOAram</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *source, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> address, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> size)</td></tr>
+<tr class="memdesc:a72ec813d4b395cafa59852cbd1ffa8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">copies Sprites from source to destination using channel 0 of DMA available channels in half words  <a href="dma_8h.html#a72ec813d4b395cafa59852cbd1ffa8b2">More...</a><br /></td></tr>
+<tr class="separator:a72ec813d4b395cafa59852cbd1ffa8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ba95e6b8e91380c0a67ee3b0707582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ac0ba95e6b8e91380c0a67ee3b0707582">dmaCopyVram7</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *source, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> address, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> size, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> vrammodeinc, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> dmacontrol)</td></tr>
+<tr class="memdesc:ac0ba95e6b8e91380c0a67ee3b0707582"><td class="mdescLeft">&#160;</td><td class="mdescRight">copies data from source to destination using channel 0 of DMA available channels in half words with VMAIN value  <a href="dma_8h.html#ac0ba95e6b8e91380c0a67ee3b0707582">More...</a><br /></td></tr>
+<tr class="separator:ac0ba95e6b8e91380c0a67ee3b0707582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf06b5c6b9733a2fdb5cb466dd6b16bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#acf06b5c6b9733a2fdb5cb466dd6b16bf">setModeHdmaGradient</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> maxLevels)</td></tr>
 <tr class="memdesc:acf06b5c6b9733a2fdb5cb466dd6b16bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a brightness gradient on screen. Use HDAM Channels 3.  <a href="dma_8h.html#acf06b5c6b9733a2fdb5cb466dd6b16bf">More...</a><br /></td></tr>
 <tr class="separator:acf06b5c6b9733a2fdb5cb466dd6b16bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c8bd3a5701bedb8d9abb10e114f15d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a8c8bd3a5701bedb8d9abb10e114f15d5">setModeHdmaReset</a> (u8 channels)</td></tr>
-<tr class="memdesc:a8c8bd3a5701bedb8d9abb10e114f15d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset or Set HDMA channels.  <a href="dma_8h.html#a8c8bd3a5701bedb8d9abb10e114f15d5">More...</a><br /></td></tr>
-<tr class="separator:a8c8bd3a5701bedb8d9abb10e114f15d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68c89ad2f21c471cf6bf07583576f0a2"><td class="memItemLeft" align="right" valign="top"><a id="a68c89ad2f21c471cf6bf07583576f0a2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a68c89ad2f21c471cf6bf07583576f0a2">setModeHdmaShadeUpDown</a> (void)</td></tr>
-<tr class="memdesc:a68c89ad2f21c471cf6bf07583576f0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a brightness gradient from up/down to center of the screen. Use HDAM Channels 3. <br /></td></tr>
+<tr class="memitem:a68c89ad2f21c471cf6bf07583576f0a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a68c89ad2f21c471cf6bf07583576f0a2">setModeHdmaShadeUpDown</a> (void)</td></tr>
+<tr class="memdesc:a68c89ad2f21c471cf6bf07583576f0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a brightness gradient from up/down to center of the screen. Use HDAM Channels 3.  <a href="dma_8h.html#a68c89ad2f21c471cf6bf07583576f0a2">More...</a><br /></td></tr>
 <tr class="separator:a68c89ad2f21c471cf6bf07583576f0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17730c5eb2e9c19d4ce49c6c5930af73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a17730c5eb2e9c19d4ce49c6c5930af73">setModeHdmaShading</a> (unsigned char mode)</td></tr>
 <tr class="memdesc:a17730c5eb2e9c19d4ce49c6c5930af73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a shading effect on screen. Use HDAM Channels 0 to 2.  <a href="dma_8h.html#a17730c5eb2e9c19d4ce49c6c5930af73">More...</a><br /></td></tr>
 <tr class="separator:a17730c5eb2e9c19d4ce49c6c5930af73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab45352a81959147a9d678a3f327e33e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ab45352a81959147a9d678a3f327e33e0">setModeHdmaWaves</a> (u8 bgrnd)</td></tr>
-<tr class="memdesc:ab45352a81959147a9d678a3f327e33e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a waves effect on screen (init function). Use HDAM Channels 6.  <a href="dma_8h.html#ab45352a81959147a9d678a3f327e33e0">More...</a><br /></td></tr>
-<tr class="separator:ab45352a81959147a9d678a3f327e33e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3bd40985508523aefb457ac0538551d"><td class="memItemLeft" align="right" valign="top"><a id="ad3bd40985508523aefb457ac0538551d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ad3bd40985508523aefb457ac0538551d">setModeHdmaWavesMove</a> (void)</td></tr>
-<tr class="memdesc:ad3bd40985508523aefb457ac0538551d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Animate the waves effect. Must be called during each frame.<br  />
- setModeHdmaWaves must have been done to init it. <br /></td></tr>
-<tr class="separator:ad3bd40985508523aefb457ac0538551d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6369793f06caeebb66ee3718d9dd5982"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a6369793f06caeebb66ee3718d9dd5982">setModeHdmaWindowReset</a> (u8 channels)</td></tr>
-<tr class="memdesc:a6369793f06caeebb66ee3718d9dd5982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset or Set HDMA channels and remove WINDOW effect.  <a href="dma_8h.html#a6369793f06caeebb66ee3718d9dd5982">More...</a><br /></td></tr>
-<tr class="separator:a6369793f06caeebb66ee3718d9dd5982"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa03948bd578cc7311908ca96fec14a93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#aa03948bd578cc7311908ca96fec14a93">setParallaxScrolling</a> (u8 bgrnd)</td></tr>
+<tr class="memitem:aa03948bd578cc7311908ca96fec14a93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#aa03948bd578cc7311908ca96fec14a93">setParallaxScrolling</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> bgrnd)</td></tr>
 <tr class="memdesc:aa03948bd578cc7311908ca96fec14a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a parallax scrolling effect on screen. Use HDAM Channels 3.  <a href="dma_8h.html#aa03948bd578cc7311908ca96fec14a93">More...</a><br /></td></tr>
 <tr class="separator:aa03948bd578cc7311908ca96fec14a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c8bd3a5701bedb8d9abb10e114f15d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a8c8bd3a5701bedb8d9abb10e114f15d5">setModeHdmaReset</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> channels)</td></tr>
+<tr class="memdesc:a8c8bd3a5701bedb8d9abb10e114f15d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset or Set HDMA channels.  <a href="dma_8h.html#a8c8bd3a5701bedb8d9abb10e114f15d5">More...</a><br /></td></tr>
+<tr class="separator:a8c8bd3a5701bedb8d9abb10e114f15d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6369793f06caeebb66ee3718d9dd5982"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a6369793f06caeebb66ee3718d9dd5982">setModeHdmaWindowReset</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> channels)</td></tr>
+<tr class="memdesc:a6369793f06caeebb66ee3718d9dd5982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset or Set HDMA channels and remove WINDOW effect.  <a href="dma_8h.html#a6369793f06caeebb66ee3718d9dd5982">More...</a><br /></td></tr>
+<tr class="separator:a6369793f06caeebb66ee3718d9dd5982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ab32a0e407cfa3d7f6fc4e9276d8b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a88ab32a0e407cfa3d7f6fc4e9276d8b0">setModeHdmaColor</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *hdmatable)</td></tr>
+<tr class="memdesc:a88ab32a0e407cfa3d7f6fc4e9276d8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a color gradient effect on screen (with color 0). Use HDAM Channels 6.  <a href="dma_8h.html#a88ab32a0e407cfa3d7f6fc4e9276d8b0">More...</a><br /></td></tr>
+<tr class="separator:a88ab32a0e407cfa3d7f6fc4e9276d8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab45352a81959147a9d678a3f327e33e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ab45352a81959147a9d678a3f327e33e0">setModeHdmaWaves</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> bgrnd)</td></tr>
+<tr class="memdesc:ab45352a81959147a9d678a3f327e33e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a waves effect on screen (init function). Use HDAM Channels 6.  <a href="dma_8h.html#ab45352a81959147a9d678a3f327e33e0">More...</a><br /></td></tr>
+<tr class="separator:ab45352a81959147a9d678a3f327e33e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3bd40985508523aefb457ac0538551d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ad3bd40985508523aefb457ac0538551d">setModeHdmaWavesMove</a> (void)</td></tr>
+<tr class="memdesc:ad3bd40985508523aefb457ac0538551d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Animate the waves effect. Must be called during each frame.<br  />
+ setModeHdmaWaves must have been done to init it.  <a href="dma_8h.html#ad3bd40985508523aefb457ac0538551d">More...</a><br /></td></tr>
+<tr class="separator:ad3bd40985508523aefb457ac0538551d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f38297943d54fda19681fc681a1d24f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#a7f38297943d54fda19681fc681a1d24f">setModeHdmaWindow</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> bgrnd, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> bgrndmask, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *hdmatableL, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *hdmatableR)</td></tr>
+<tr class="separator:a7f38297943d54fda19681fc681a1d24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad072502d98153debc89f839d45fc1c80"><td class="memItemLeft" align="right" valign="top"><a id="ad072502d98153debc89f839d45fc1c80"></a>
-u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ad072502d98153debc89f839d45fc1c80">HDMATable16</a> [224+1]</td></tr>
-<tr class="memdesc:ad072502d98153debc89f839d45fc1c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">HDMA table accessible to change values. <br /></td></tr>
+<tr class="memitem:ad072502d98153debc89f839d45fc1c80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h.html#ad072502d98153debc89f839d45fc1c80">HDMATable16</a> [224+1]</td></tr>
+<tr class="memdesc:ad072502d98153debc89f839d45fc1c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">HDMA table accessible to change values.  <a href="dma_8h.html#ad072502d98153debc89f839d45fc1c80">More...</a><br /></td></tr>
 <tr class="separator:ad072502d98153debc89f839d45fc1c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrapper functions for direct memory access hardware. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="af57b905f605a7fe58fc009025fb3d30b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af57b905f605a7fe58fc009025fb3d30b">&#9670;&nbsp;</a></span>DMA_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMA_ENABLE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bit defines for the DMA control registers. </p>
+
+</div>
+</div>
+<a id="a449e65ce5faecb46a0e57fb1ed874fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a449e65ce5faecb46a0e57fb1ed874fec">&#9670;&nbsp;</a></span>HDMA_CHANNEL0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HDMA_CHANNEL0&#160;&#160;&#160;(1 &lt;&lt; 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bit defines for the HDMA channels. </p>
+
+</div>
+</div>
+<a id="a5afd6c91f6cd7c4ed9cea7f36e43fb1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5afd6c91f6cd7c4ed9cea7f36e43fb1c">&#9670;&nbsp;</a></span>HDMA_CHANNEL1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HDMA_CHANNEL1&#160;&#160;&#160;(1 &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7a33066ebeb5468c1a0c2ca0f3c8d45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a33066ebeb5468c1a0c2ca0f3c8d45">&#9670;&nbsp;</a></span>HDMA_CHANNEL2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HDMA_CHANNEL2&#160;&#160;&#160;(1 &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1308236eb8dc468f33e34a520096ae37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1308236eb8dc468f33e34a520096ae37">&#9670;&nbsp;</a></span>HDMA_CHANNEL3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HDMA_CHANNEL3&#160;&#160;&#160;(1 &lt;&lt; 3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8f205a73bac4fc2722ae246852d55e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8f205a73bac4fc2722ae246852d55e7">&#9670;&nbsp;</a></span>HDMA_CHANNEL4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HDMA_CHANNEL4&#160;&#160;&#160;(1 &lt;&lt; 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae57e0356d3f2582da1b16de23bbbb39d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57e0356d3f2582da1b16de23bbbb39d">&#9670;&nbsp;</a></span>HDMA_CHANNEL5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HDMA_CHANNEL5&#160;&#160;&#160;(1 &lt;&lt; 5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1cb583f55a6f38de559a95159c70a2b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb583f55a6f38de559a95159c70a2b2">&#9670;&nbsp;</a></span>HDMA_CHANNEL6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HDMA_CHANNEL6&#160;&#160;&#160;(1 &lt;&lt; 6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec69dba4d30863a427ae71aac8ef6247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec69dba4d30863a427ae71aac8ef6247">&#9670;&nbsp;</a></span>HDMA_CHANNEL7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HDMA_CHANNEL7&#160;&#160;&#160;(1 &lt;&lt; 7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ed13f8863396e26c2836da44d15af47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ed13f8863396e26c2836da44d15af47">&#9670;&nbsp;</a></span>HDMA_CHANNELALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HDMA_CHANNELALL&#160;&#160;&#160;(<a class="el" href="dma_8h.html#a449e65ce5faecb46a0e57fb1ed874fec">HDMA_CHANNEL0</a> | <a class="el" href="dma_8h.html#a5afd6c91f6cd7c4ed9cea7f36e43fb1c">HDMA_CHANNEL1</a> | <a class="el" href="dma_8h.html#ad7a33066ebeb5468c1a0c2ca0f3c8d45">HDMA_CHANNEL2</a> | <a class="el" href="dma_8h.html#a1308236eb8dc468f33e34a520096ae37">HDMA_CHANNEL3</a> | <a class="el" href="dma_8h.html#ae8f205a73bac4fc2722ae246852d55e7">HDMA_CHANNEL4</a> | <a class="el" href="dma_8h.html#ae57e0356d3f2582da1b16de23bbbb39d">HDMA_CHANNEL5</a> | <a class="el" href="dma_8h.html#a1cb583f55a6f38de559a95159c70a2b2">HDMA_CHANNEL6</a> | <a class="el" href="dma_8h.html#aec69dba4d30863a427ae71aac8ef6247">HDMA_CHANNEL7</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a200a74fdc8a0532c0ac7199e3ea1f22d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a200a74fdc8a0532c0ac7199e3ea1f22d">&#9670;&nbsp;</a></span>MSWIN1_BG1MSKENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN1_BG1MSKENABLE&#160;&#160;&#160;(2 &lt;&lt; 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 1 area BG1 enable. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a13">graphics/Effects/Window/Window.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a66d2702fd40da5970df67b9c7f60dfb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66d2702fd40da5970df67b9c7f60dfb8">&#9670;&nbsp;</a></span>MSWIN1_BG1MSKOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN1_BG1MSKOUT&#160;&#160;&#160;(1 &lt;&lt; 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 1 area BG1 inside (0) outside(1) </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a15">graphics/Effects/Window/Window.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ac66980762b38860ee821f19833988971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac66980762b38860ee821f19833988971">&#9670;&nbsp;</a></span>MSWIN1_BG2MSKENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN1_BG2MSKENABLE&#160;&#160;&#160;(2 &lt;&lt; 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 1 area BG2 enable. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a14">graphics/Effects/Window/Window.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a8de63e77a8d05fbf5a4ee88b0ced15d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de63e77a8d05fbf5a4ee88b0ced15d4">&#9670;&nbsp;</a></span>MSWIN1_BG2MSKOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN1_BG2MSKOUT&#160;&#160;&#160;(1 &lt;&lt; 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 1 area BG2 inside (0) outside(1) </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a16">graphics/Effects/Window/Window.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="aef6cceefe85db77e13f8480b8eb9f057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef6cceefe85db77e13f8480b8eb9f057">&#9670;&nbsp;</a></span>MSWIN1_BG3MSKENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN1_BG3MSKENABLE&#160;&#160;&#160;(2 &lt;&lt; 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 1 area BG3 enable. </p>
+
+</div>
+</div>
+<a id="a2b1b41e9ff7882dce28ebd54aea88aad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b1b41e9ff7882dce28ebd54aea88aad">&#9670;&nbsp;</a></span>MSWIN1_BG3MSKOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN1_BG3MSKOUT&#160;&#160;&#160;(1 &lt;&lt; 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 1 area BG3 inside (0) outside(1) </p>
+
+</div>
+</div>
+<a id="a82952d05bef37ad03701db76e9c7ba02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82952d05bef37ad03701db76e9c7ba02">&#9670;&nbsp;</a></span>MSWIN1_BG4MSKENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN1_BG4MSKENABLE&#160;&#160;&#160;(2 &lt;&lt; 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 1 area BG4 enable. </p>
+
+</div>
+</div>
+<a id="a8718ad2e20711671ca55ec86f31cb63e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8718ad2e20711671ca55ec86f31cb63e">&#9670;&nbsp;</a></span>MSWIN1_BG4MSKOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN1_BG4MSKOUT&#160;&#160;&#160;(1 &lt;&lt; 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 1 area BG4 inside (0) outside(1) </p>
+
+</div>
+</div>
+<a id="a822807332e7683766b1969ea46198d75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a822807332e7683766b1969ea46198d75">&#9670;&nbsp;</a></span>MSWIN2_BG1MSKENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN2_BG1MSKENABLE&#160;&#160;&#160;(2 &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 2 area BG1 enable. </p>
+
+</div>
+</div>
+<a id="a770dff7b0ee0b8ff9b3a571bfdebd10b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770dff7b0ee0b8ff9b3a571bfdebd10b">&#9670;&nbsp;</a></span>MSWIN2_BG1MSKOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN2_BG1MSKOUT&#160;&#160;&#160;(1 &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 2 area BG1 inside (0) outside(1) </p>
+
+</div>
+</div>
+<a id="a3a7581f01c56420b02ecd37130ff6ef6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a7581f01c56420b02ecd37130ff6ef6">&#9670;&nbsp;</a></span>MSWIN2_BG2MSKENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN2_BG2MSKENABLE&#160;&#160;&#160;(2 &lt;&lt; 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 2 area BG2 enable. </p>
+
+</div>
+</div>
+<a id="abba92d1b0d3bdfe4b094af207271c2df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abba92d1b0d3bdfe4b094af207271c2df">&#9670;&nbsp;</a></span>MSWIN2_BG2MSKOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN2_BG2MSKOUT&#160;&#160;&#160;(1 &lt;&lt; 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 2 area BG2 inside (0) outside(1) </p>
+
+</div>
+</div>
+<a id="ae9590fb898c89ba140484f4a1a4831ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9590fb898c89ba140484f4a1a4831ec">&#9670;&nbsp;</a></span>MSWIN2_BG3MSKENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN2_BG3MSKENABLE&#160;&#160;&#160;(2 &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 2 area BG3 enable. </p>
+
+</div>
+</div>
+<a id="a8f2f144f75f1fb7723ddfb8f7431f83b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f2f144f75f1fb7723ddfb8f7431f83b">&#9670;&nbsp;</a></span>MSWIN2_BG3MSKOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN2_BG3MSKOUT&#160;&#160;&#160;(1 &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 2 area BG3 inside (0) outside(1) </p>
+
+</div>
+</div>
+<a id="a56dd136a98db51a1fab6d80d4c1277db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56dd136a98db51a1fab6d80d4c1277db">&#9670;&nbsp;</a></span>MSWIN2_BG4MSKENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN2_BG4MSKENABLE&#160;&#160;&#160;(2 &lt;&lt; 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 2 area BG4 enable. </p>
+
+</div>
+</div>
+<a id="af7c7f7b69dc241474570d1fb9e458951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7c7f7b69dc241474570d1fb9e458951">&#9670;&nbsp;</a></span>MSWIN2_BG4MSKOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN2_BG4MSKOUT&#160;&#160;&#160;(1 &lt;&lt; 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 2 area BG4 inside (0) outside(1) </p>
+
+</div>
+</div>
 <a id="a2b875796929dfd18bb81e25bbb610b54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b875796929dfd18bb81e25bbb610b54">&#9670;&nbsp;</a></span>MSWIN_BG1</h2>
 
@@ -294,8 +791,164 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
 
 <p>Bit defines for the window area main screen effect. </p>
 <p>Main Screen BG1 disable background </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a7">graphics/Effects/Window/Window.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a11">graphics/Effects/Window/Window.c</a>.</dd>
 </dl>
+
+</div>
+</div>
+<a id="acc92eb3c10e2d9fdafea29ff92ca0b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc92eb3c10e2d9fdafea29ff92ca0b93">&#9670;&nbsp;</a></span>MSWIN_BG2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN_BG2&#160;&#160;&#160;(1 &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Main Screen BG2 disable background. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a12">graphics/Effects/Window/Window.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a35273d4a1d131c0a4c32f08dc25abdce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35273d4a1d131c0a4c32f08dc25abdce">&#9670;&nbsp;</a></span>MSWIN_BG3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN_BG3&#160;&#160;&#160;(1 &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Main Screen BG3 disable background. </p>
+
+</div>
+</div>
+<a id="a1e426246c60b0c0d10438f7742295155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e426246c60b0c0d10438f7742295155">&#9670;&nbsp;</a></span>MSWIN_BG4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSWIN_BG4&#160;&#160;&#160;(1 &lt;&lt; 3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Main Screen BG4 disable background. </p>
+
+</div>
+</div>
+<a id="a0b225f66f543576a0a0efaa9896e6cfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b225f66f543576a0a0efaa9896e6cfc">&#9670;&nbsp;</a></span>REG_A1B0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_A1B0&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4304)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7399bc7cd4000717e297d91bee5ef74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7399bc7cd4000717e297d91bee5ef74">&#9670;&nbsp;</a></span>REG_A1B1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_A1B1&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4314)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a14">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a9ba4de961377cbc47cba708cfeef480d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba4de961377cbc47cba708cfeef480d">&#9670;&nbsp;</a></span>REG_A1B2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_A1B2&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4324)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a18">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a586a26f5fb524d9d82c7e7d59331a5e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a586a26f5fb524d9d82c7e7d59331a5e0">&#9670;&nbsp;</a></span>REG_A1B3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_A1B3&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4334)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a22">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a7dac9795098da77fbf0e0ed00a517b6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dac9795098da77fbf0e0ed00a517b6a">&#9670;&nbsp;</a></span>REG_A1B4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_A1B4&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4344)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a26">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a8ee737c3179456cb436e96d438a8d26d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ee737c3179456cb436e96d438a8d26d">&#9670;&nbsp;</a></span>REG_A1B5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_A1B5&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4354)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac09d59b91d1e2c95e146df64b39996e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac09d59b91d1e2c95e146df64b39996e3">&#9670;&nbsp;</a></span>REG_A1B6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_A1B6&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4364)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -306,7 +959,7 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define REG_A1B7&#160;&#160;&#160;(*(vuint8 *)0x4374)</td>
+          <td class="memname">#define REG_A1B7&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4374)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -317,6 +970,346 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
 
 </div>
 </div>
+<a id="a7e851b964e2436164d8f46d72ff1c549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e851b964e2436164d8f46d72ff1c549">&#9670;&nbsp;</a></span>REG_A1T0LH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_A1T0LH&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4302)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14bcd86cae4d4f64a8e2d3c5aed3c35b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14bcd86cae4d4f64a8e2d3c5aed3c35b">&#9670;&nbsp;</a></span>REG_A1T1LH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_A1T1LH&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4312)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a11">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="aedf3246ceb7f47b718cf7e40e2ed9ec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf3246ceb7f47b718cf7e40e2ed9ec8">&#9670;&nbsp;</a></span>REG_A1T2LH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_A1T2LH&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4322)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a17">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a1ef450500636a2e6a8b64cb5f1d1c5f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ef450500636a2e6a8b64cb5f1d1c5f3">&#9670;&nbsp;</a></span>REG_A1T3LH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_A1T3LH&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4332)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a21">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a3e5480a2de2511377ba8f24c225af63d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e5480a2de2511377ba8f24c225af63d">&#9670;&nbsp;</a></span>REG_A1T4LH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_A1T4LH&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4342)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a25">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a236d1512ad7c5a7115d284d6ebe9dfd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a236d1512ad7c5a7115d284d6ebe9dfd7">&#9670;&nbsp;</a></span>REG_A1T5LH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_A1T5LH&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4352)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba06bc6ebd1ad594684d253292cda297"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba06bc6ebd1ad594684d253292cda297">&#9670;&nbsp;</a></span>REG_A1T6LH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_A1T6LH&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4362)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8334bf2620d78778fb8db4b09a3450b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8334bf2620d78778fb8db4b09a3450b7">&#9670;&nbsp;</a></span>REG_A1T7LH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_A1T7LH&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4372)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73983a8136d94c6891d11b4a28a955e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73983a8136d94c6891d11b4a28a955e6">&#9670;&nbsp;</a></span>REG_BBAD0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BBAD0&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4301)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a752e455ecb1c671899ac4384441e933e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a752e455ecb1c671899ac4384441e933e">&#9670;&nbsp;</a></span>REG_BBAD1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BBAD1&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4311)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a10">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="afec1dd6e2d10450136d2d562a9982f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec1dd6e2d10450136d2d562a9982f21">&#9670;&nbsp;</a></span>REG_BBAD2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BBAD2&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4321)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a16">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="acc5fdbecc7a683437a8d4ac31d446660"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc5fdbecc7a683437a8d4ac31d446660">&#9670;&nbsp;</a></span>REG_BBAD3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BBAD3&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4331)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a20">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="acf3ce5e85e0669e7cf2c4f6b9e1580c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf3ce5e85e0669e7cf2c4f6b9e1580c2">&#9670;&nbsp;</a></span>REG_BBAD4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BBAD4&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4341)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a24">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="aeaeb457cf9157f5bd54e347b9cc24a0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaeb457cf9157f5bd54e347b9cc24a0b">&#9670;&nbsp;</a></span>REG_BBAD5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BBAD5&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4351)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d6993ba11828f4b3475d6635413ba9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d6993ba11828f4b3475d6635413ba9d">&#9670;&nbsp;</a></span>REG_BBAD6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BBAD6&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4361)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2acebf455ea5a03345af0a3af2340a97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2acebf455ea5a03345af0a3af2340a97">&#9670;&nbsp;</a></span>REG_BBAD7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BBAD7&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4371)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DMA/HDMA I/O-Bus Address (PPU-Bus aka B-Bus) (R/W) For both DMA and HDMA: 7-0 B-Bus Address (selects an I/O Port which is mapped to 2100h-21FFh) </p>
+
+</div>
+</div>
+<a id="aee87429cc071843131d4b3c2470b9a3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee87429cc071843131d4b3c2470b9a3c">&#9670;&nbsp;</a></span>REG_DAS0LH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DAS0LH&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4305)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7247bc5fa8986ccc91e1adbce950ac91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7247bc5fa8986ccc91e1adbce950ac91">&#9670;&nbsp;</a></span>REG_DAS1LH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DAS1LH&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4315)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae05fd3bd06d3d01b986c7780f3aa3cab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae05fd3bd06d3d01b986c7780f3aa3cab">&#9670;&nbsp;</a></span>REG_DAS2LH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DAS2LH&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4325)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55386a412f88b9aab340d8efed499036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55386a412f88b9aab340d8efed499036">&#9670;&nbsp;</a></span>REG_DAS3LH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DAS3LH&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4335)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9f6a47f02b33670abf7e9182996ad62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9f6a47f02b33670abf7e9182996ad62">&#9670;&nbsp;</a></span>REG_DAS4LH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DAS4LH&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4345)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac33927859bf11bb227ff49b80a08291a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac33927859bf11bb227ff49b80a08291a">&#9670;&nbsp;</a></span>REG_DAS5LH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DAS5LH&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4355)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57fde507d043ea4301e33cb611e0aa14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57fde507d043ea4301e33cb611e0aa14">&#9670;&nbsp;</a></span>REG_DAS6LH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DAS6LH&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4365)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac9dca819788af60976b8d4956f76ead6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9dca819788af60976b8d4956f76ead6">&#9670;&nbsp;</a></span>REG_DAS7LH</h2>
 
@@ -324,13 +1317,151 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define REG_DAS7LH&#160;&#160;&#160;(*(vuint16 *)0x4375)</td>
+          <td class="memname">#define REG_DAS7LH&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2">vuint16</a> *)0x4375)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Indirect HDMA Address (low) / DMA Byte-Counter (low) (R/W) DASxL - Indirect HDMA Address (low) / DMA Byte-Counter (low) (R/W) DASxH - Indirect HDMA Address (hi) / DMA Byte-Counter (hi) (R/W) 43x7h - DASBx - Indirect HDMA Address (bank) (R/W) </p>
 <p>For normal DMA: 23-16 Not used 15-0 Number of bytes to be transferred (1..FFFFh=1..FFFFh, or 0=10000h) (This is really a byte-counter; with a 4-byte "Transfer Unit", len=5 would transfer one whole Unit, plus the first byte of the second Unit.) (The 16bit value is decremented during transfer, and contains 0000h on end.) </p>
+
+</div>
+</div>
+<a id="a545516ca9f344fa74c9bec588d584bd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a545516ca9f344fa74c9bec588d584bd8">&#9670;&nbsp;</a></span>REG_DMAP0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DMAP0&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4300)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d40190abb0ef77de4f8bea9afee7f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d40190abb0ef77de4f8bea9afee7f2d">&#9670;&nbsp;</a></span>REG_DMAP1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DMAP1&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4310)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a9">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a2156da5d235e2c7eeb1a01b812b52564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2156da5d235e2c7eeb1a01b812b52564">&#9670;&nbsp;</a></span>REG_DMAP2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DMAP2&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4320)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a15">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="aa639060593326a84ddb77295723d6ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa639060593326a84ddb77295723d6ef7">&#9670;&nbsp;</a></span>REG_DMAP3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DMAP3&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4330)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a19">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a75c906d8d1f7dac4cf688c96d902e8aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75c906d8d1f7dac4cf688c96d902e8aa">&#9670;&nbsp;</a></span>REG_DMAP4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DMAP4&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4340)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a23">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ae1b8249f74475ae875fa4c8bac6efd88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1b8249f74475ae875fa4c8bac6efd88">&#9670;&nbsp;</a></span>REG_DMAP5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DMAP5&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4350)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab10b3bc2865de84487be2e7d30dec129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab10b3bc2865de84487be2e7d30dec129">&#9670;&nbsp;</a></span>REG_DMAP6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DMAP6&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4360)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa106b844ce7254da7d8ec52ce9c40b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa106b844ce7254da7d8ec52ce9c40b83">&#9670;&nbsp;</a></span>REG_DMAP7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DMAP7&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x4370)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a468ac9497087f0cbab21a3e0453f438b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a468ac9497087f0cbab21a3e0453f438b">&#9670;&nbsp;</a></span>REG_HDMAEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_HDMAEN&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x420C)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Select H-Blank DMA (H-DMA) Channel(s) (W) 7-0 H-DMA Channel 7-0 Enable (0=Disable, 1=Enable) </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a8">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -341,7 +1472,7 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define REG_MDMAEN&#160;&#160;&#160;(*(vuint8 *)0x420B)</td>
+          <td class="memname">#define REG_MDMAEN&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x420B)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -351,7 +1482,42 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
 
 </div>
 </div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a072734f4a0ca76e5bddfa44940763aad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a072734f4a0ca76e5bddfa44940763aad">&#9670;&nbsp;</a></span>dmaMemory</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdma_memory.html">dmaMemory</a> <a class="el" href="structdma_memory.html">dmaMemory</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a72b64de8d06ad5bae1995fb1baf1a458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72b64de8d06ad5bae1995fb1baf1a458">&#9670;&nbsp;</a></span>dmaClearVram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dmaClearVram </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>clear all vram data with #0 </p>
+
+</div>
+</div>
 <a id="aff1f11e7dc93b535c3c84cb8007bb16a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff1f11e7dc93b535c3c84cb8007bb16a">&#9670;&nbsp;</a></span>dmaCopyCGram()</h2>
 
@@ -361,19 +1527,19 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
         <tr>
           <td class="memname">dmaCopyCGram </td>
           <td>(</td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>address</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -407,19 +1573,19 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
         <tr>
           <td class="memname">dmaCopyOAram </td>
           <td>(</td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>address</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -453,13 +1619,13 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
         <tr>
           <td class="memname">dmaCopySpr16Vram </td>
           <td>(</td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>address</em>&#160;</td>
         </tr>
         <tr>
@@ -490,13 +1656,13 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
         <tr>
           <td class="memname">dmaCopySpr32Vram </td>
           <td>(</td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>address</em>&#160;</td>
         </tr>
         <tr>
@@ -527,19 +1693,19 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
         <tr>
           <td class="memname">dmaCopyVram </td>
           <td>(</td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>address</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -559,7 +1725,7 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="games_2breakout_2breakout_8c-example.html#a3">games/breakout/breakout.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_b_g3_high_priority_2_mode1_b_g3_high_priority_8c-example.html#a4">graphics/Backgrounds/Mode1BG3HighPriority/Mode1BG3HighPriority.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_continuos_scroll_2_mode1_continuos_scroll_8c-example.html#a8">graphics/Backgrounds/Mode1ContinuosScroll/Mode1ContinuosScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode3_2_mode3_8c-example.html#a3">graphics/Backgrounds/Mode3/Mode3.c</a>, <a class="el" href="graphics_2_effects_2_h_d_m_a_gradient_2_h_d_m_a_gradient_8c-example.html#a2">graphics/Effects/HDMAGradient/HDMAGradient.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_sprite_2_dynamic_sprite_8c-example.html#a1">graphics/Sprites/DynamicSprite/DynamicSprite.c</a>, and <a class="el" href="graphics_2_sprites_2_object_size_2_object_size_8c-example.html#a4">graphics/Sprites/ObjectSize/ObjectSize.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="games_2breakout_2breakout_8c-example.html#a3">games/breakout/breakout.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_b_g3_high_priority_2_mode1_b_g3_high_priority_8c-example.html#a6">graphics/Backgrounds/Mode1BG3HighPriority/Mode1BG3HighPriority.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_continuos_scroll_2_mode1_continuos_scroll_8c-example.html#a8">graphics/Backgrounds/Mode1ContinuosScroll/Mode1ContinuosScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode3_2_mode3_8c-example.html#a4">graphics/Backgrounds/Mode3/Mode3.c</a>, <a class="el" href="graphics_2_effects_2_h_d_m_a_gradient_2_h_d_m_a_gradient_8c-example.html#a3">graphics/Effects/HDMAGradient/HDMAGradient.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_sprite_2_dynamic_sprite_8c-example.html#a1">graphics/Sprites/DynamicSprite/DynamicSprite.c</a>, and <a class="el" href="graphics_2_sprites_2_object_size_2_object_size_8c-example.html#a4">graphics/Sprites/ObjectSize/ObjectSize.c</a>.</dd>
 </dl>
 
 </div>
@@ -573,31 +1739,31 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
         <tr>
           <td class="memname">dmaCopyVram7 </td>
           <td>(</td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>address</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>vrammodeinc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>dmacontrol</em>&#160;</td>
         </tr>
         <tr>
@@ -631,19 +1797,19 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
         <tr>
           <td class="memname">dmaFillVram </td>
           <td>(</td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>source</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>address</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -675,7 +1841,7 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
         <tr>
           <td class="memname">setModeHdmaColor </td>
           <td>(</td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>hdmatable</em></td><td>)</td>
           <td></td>
         </tr>
@@ -689,7 +1855,7 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_gradient_colors_2_gradient_colors_8c-example.html#a6">graphics/Effects/GradientColors/GradientColors.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_gradient_colors_2_gradient_colors_8c-example.html#a9">graphics/Effects/GradientColors/GradientColors.c</a>.</dd>
 </dl>
 
 </div>
@@ -703,7 +1869,7 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
         <tr>
           <td class="memname">setModeHdmaGradient </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>maxLevels</em></td><td>)</td>
           <td></td>
         </tr>
@@ -717,7 +1883,7 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_h_d_m_a_gradient_2_h_d_m_a_gradient_8c-example.html#a9">graphics/Effects/HDMAGradient/HDMAGradient.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_h_d_m_a_gradient_2_h_d_m_a_gradient_8c-example.html#a12">graphics/Effects/HDMAGradient/HDMAGradient.c</a>.</dd>
 </dl>
 
 </div>
@@ -731,7 +1897,7 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
         <tr>
           <td class="memname">setModeHdmaReset </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>channels</em></td><td>)</td>
           <td></td>
         </tr>
@@ -745,8 +1911,28 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_gradient_colors_2_gradient_colors_8c-example.html#a9">graphics/Effects/GradientColors/GradientColors.c</a>, and <a class="el" href="graphics_2_effects_2_waves_2_waves_8c-example.html#a9">graphics/Effects/Waves/Waves.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_gradient_colors_2_gradient_colors_8c-example.html#a12">graphics/Effects/GradientColors/GradientColors.c</a>, and <a class="el" href="graphics_2_effects_2_waves_2_waves_8c-example.html#a12">graphics/Effects/Waves/Waves.c</a>.</dd>
 </dl>
+
+</div>
+</div>
+<a id="a68c89ad2f21c471cf6bf07583576f0a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c89ad2f21c471cf6bf07583576f0a2">&#9670;&nbsp;</a></span>setModeHdmaShadeUpDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">setModeHdmaShadeUpDown </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do a brightness gradient from up/down to center of the screen. Use HDAM Channels 3. </p>
 
 </div>
 </div>
@@ -785,7 +1971,7 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
         <tr>
           <td class="memname">setModeHdmaWaves </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>bgrnd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -799,7 +1985,72 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_waves_2_waves_8c-example.html#a6">graphics/Effects/Waves/Waves.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_waves_2_waves_8c-example.html#a9">graphics/Effects/Waves/Waves.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ad3bd40985508523aefb457ac0538551d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3bd40985508523aefb457ac0538551d">&#9670;&nbsp;</a></span>setModeHdmaWavesMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">setModeHdmaWavesMove </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Animate the waves effect. Must be called during each frame.<br  />
+ setModeHdmaWaves must have been done to init it. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_waves_2_waves_8c-example.html#a14">graphics/Effects/Waves/Waves.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a7f38297943d54fda19681fc681a1d24f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f38297943d54fda19681fc681a1d24f">&#9670;&nbsp;</a></span>setModeHdmaWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setModeHdmaWindow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
+          <td class="paramname"><em>bgrnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
+          <td class="paramname"><em>bgrndmask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
+          <td class="paramname"><em>hdmatableL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
+          <td class="paramname"><em>hdmatableR</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a10">graphics/Effects/Window/Window.c</a>.</dd>
 </dl>
 
 </div>
@@ -813,7 +2064,7 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
         <tr>
           <td class="memname">void setModeHdmaWindowReset </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>channels</em></td><td>)</td>
           <td></td>
         </tr>
@@ -839,7 +2090,7 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
         <tr>
           <td class="memname">setParallaxScrolling </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>bgrnd</em></td><td>)</td>
           <td></td>
         </tr>
@@ -855,7 +2106,34 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_parallax_scrolling_2_parallax_scrolling_8c-example.html#a7">graphics/Effects/ParallaxScrolling/ParallaxScrolling.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_parallax_scrolling_2_parallax_scrolling_8c-example.html#a10">graphics/Effects/ParallaxScrolling/ParallaxScrolling.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ad072502d98153debc89f839d45fc1c80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad072502d98153debc89f839d45fc1c80">&#9670;&nbsp;</a></span>HDMATable16</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> HDMATable16[224+1]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>HDMA table accessible to change values. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_parallax_scrolling_2_parallax_scrolling_8c-example.html#a9">graphics/Effects/ParallaxScrolling/ParallaxScrolling.c</a>.</dd>
 </dl>
 
 </div>
@@ -866,7 +2144,7 @@ u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dma_8h
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_1fce5620edc95505dc9b3bb80528afca.html">snes</a></li><li class="navelem"><a class="el" href="dma_8h.html">dma.h</a></li>
-    <li class="footer">Generated on Thu May 25 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 26 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </div>
 </body>
 </html>

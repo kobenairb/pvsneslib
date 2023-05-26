@@ -1,16 +1,16 @@
 var searchData=
 [
-  ['key_5fa_78',['KEY_A',['../pad_8h.html#aa27cad8fa018a58930b6622783a83072aa7b3a3d0503a46bec51c6e3da95747cc',1,'KEY_A():&#160;pad.h'],['../network_8h.html#aa27cad8fa018a58930b6622783a83072aa7b3a3d0503a46bec51c6e3da95747cc',1,'KEY_A():&#160;network.h']]],
-  ['key_5fb_79',['KEY_B',['../network_8h.html#aa27cad8fa018a58930b6622783a83072a10072b5ee7aa1faf316434ecc9e2bb3a',1,'KEY_B():&#160;network.h'],['../pad_8h.html#aa27cad8fa018a58930b6622783a83072a10072b5ee7aa1faf316434ecc9e2bb3a',1,'KEY_B():&#160;pad.h']]],
-  ['key_5fdown_80',['KEY_DOWN',['../network_8h.html#aa27cad8fa018a58930b6622783a83072aa9cdac7967bf7d88fdb761138a2a3416',1,'KEY_DOWN():&#160;network.h'],['../pad_8h.html#aa27cad8fa018a58930b6622783a83072aa9cdac7967bf7d88fdb761138a2a3416',1,'KEY_DOWN():&#160;pad.h']]],
-  ['key_5fl_81',['KEY_L',['../network_8h.html#aa27cad8fa018a58930b6622783a83072aece16de35a5ea11f9b228c9376bebc62',1,'KEY_L():&#160;network.h'],['../pad_8h.html#aa27cad8fa018a58930b6622783a83072aece16de35a5ea11f9b228c9376bebc62',1,'KEY_L():&#160;pad.h']]],
-  ['key_5fleft_82',['KEY_LEFT',['../network_8h.html#aa27cad8fa018a58930b6622783a83072a612120b69c7dfd46086db7aaebdbcf65',1,'KEY_LEFT():&#160;network.h'],['../pad_8h.html#aa27cad8fa018a58930b6622783a83072a612120b69c7dfd46086db7aaebdbcf65',1,'KEY_LEFT():&#160;pad.h']]],
-  ['key_5fr_83',['KEY_R',['../network_8h.html#aa27cad8fa018a58930b6622783a83072aa3ec8a2ffd5b0e200db5ebe7b65515ff',1,'KEY_R():&#160;network.h'],['../pad_8h.html#aa27cad8fa018a58930b6622783a83072aa3ec8a2ffd5b0e200db5ebe7b65515ff',1,'KEY_R():&#160;pad.h']]],
-  ['key_5fright_84',['KEY_RIGHT',['../network_8h.html#aa27cad8fa018a58930b6622783a83072a6504370d9c6391e1a9da6a1a529b089d',1,'KEY_RIGHT():&#160;network.h'],['../pad_8h.html#aa27cad8fa018a58930b6622783a83072a6504370d9c6391e1a9da6a1a529b089d',1,'KEY_RIGHT():&#160;pad.h']]],
-  ['key_5fselect_85',['KEY_SELECT',['../network_8h.html#aa27cad8fa018a58930b6622783a83072a3b37a163628bc7015aac5efab4a66ef5',1,'KEY_SELECT():&#160;network.h'],['../pad_8h.html#aa27cad8fa018a58930b6622783a83072a3b37a163628bc7015aac5efab4a66ef5',1,'KEY_SELECT():&#160;pad.h']]],
-  ['key_5fstart_86',['KEY_START',['../network_8h.html#aa27cad8fa018a58930b6622783a83072a616a1f5c4ed36080ca954453084aea3b',1,'KEY_START():&#160;network.h'],['../pad_8h.html#aa27cad8fa018a58930b6622783a83072a616a1f5c4ed36080ca954453084aea3b',1,'KEY_START():&#160;pad.h']]],
-  ['key_5fup_87',['KEY_UP',['../network_8h.html#aa27cad8fa018a58930b6622783a83072a0848a442d907968b211b97bc2bd88acd',1,'KEY_UP():&#160;network.h'],['../pad_8h.html#aa27cad8fa018a58930b6622783a83072a0848a442d907968b211b97bc2bd88acd',1,'KEY_UP():&#160;pad.h']]],
-  ['key_5fx_88',['KEY_X',['../network_8h.html#aa27cad8fa018a58930b6622783a83072a480a807305121d41673b8c208898f497',1,'KEY_X():&#160;network.h'],['../pad_8h.html#aa27cad8fa018a58930b6622783a83072a480a807305121d41673b8c208898f497',1,'KEY_X():&#160;pad.h']]],
-  ['key_5fy_89',['KEY_Y',['../network_8h.html#aa27cad8fa018a58930b6622783a83072a5d44524b2a6090fa97aa9353d69f67a3',1,'KEY_Y():&#160;network.h'],['../pad_8h.html#aa27cad8fa018a58930b6622783a83072a5d44524b2a6090fa97aa9353d69f67a3',1,'KEY_Y():&#160;pad.h']]],
-  ['keypad_5fbits_90',['KEYPAD_BITS',['../network_8h.html#aa27cad8fa018a58930b6622783a83072',1,'KEYPAD_BITS():&#160;network.h'],['../pad_8h.html#aa27cad8fa018a58930b6622783a83072',1,'KEYPAD_BITS():&#160;pad.h'],['../network_8h.html#a8c22a2afdbaf11439d90ba163fc8180f',1,'KEYPAD_BITS():&#160;network.h'],['../pad_8h.html#a8c22a2afdbaf11439d90ba163fc8180f',1,'KEYPAD_BITS():&#160;pad.h']]]
+  ['hbl_5fready_136',['HBL_READY',['../interrupt_8h.html#a88d83a889f8e1d016cedfbd0476db989',1,'interrupt.h']]],
+  ['hdma_5fchannel0_137',['HDMA_CHANNEL0',['../dma_8h.html#a449e65ce5faecb46a0e57fb1ed874fec',1,'dma.h']]],
+  ['hdma_5fchannel1_138',['HDMA_CHANNEL1',['../dma_8h.html#a5afd6c91f6cd7c4ed9cea7f36e43fb1c',1,'dma.h']]],
+  ['hdma_5fchannel2_139',['HDMA_CHANNEL2',['../dma_8h.html#ad7a33066ebeb5468c1a0c2ca0f3c8d45',1,'dma.h']]],
+  ['hdma_5fchannel3_140',['HDMA_CHANNEL3',['../dma_8h.html#a1308236eb8dc468f33e34a520096ae37',1,'dma.h']]],
+  ['hdma_5fchannel4_141',['HDMA_CHANNEL4',['../dma_8h.html#ae8f205a73bac4fc2722ae246852d55e7',1,'dma.h']]],
+  ['hdma_5fchannel5_142',['HDMA_CHANNEL5',['../dma_8h.html#ae57e0356d3f2582da1b16de23bbbb39d',1,'dma.h']]],
+  ['hdma_5fchannel6_143',['HDMA_CHANNEL6',['../dma_8h.html#a1cb583f55a6f38de559a95159c70a2b2',1,'dma.h']]],
+  ['hdma_5fchannel7_144',['HDMA_CHANNEL7',['../dma_8h.html#aec69dba4d30863a427ae71aac8ef6247',1,'dma.h']]],
+  ['hdma_5fchannelall_145',['HDMA_CHANNELALL',['../dma_8h.html#a3ed13f8863396e26c2836da44d15af47',1,'dma.h']]],
+  ['hdmatable16_146',['HDMATable16',['../dma_8h.html#ad072502d98153debc89f839d45fc1c80',1,'dma.h']]],
+  ['height_147',['height',['../structt__objs.html#a3bf3757f174f93270ff558d1351a7872',1,'t_objs']]],
+  ['hitpoints_148',['hitpoints',['../structt__objs.html#a66724708a48c464c7c9e1a00a6b81b6d',1,'t_objs']]]
 ];

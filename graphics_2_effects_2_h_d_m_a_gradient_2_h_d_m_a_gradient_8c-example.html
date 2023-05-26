@@ -115,33 +115,36 @@ $(document).ready(function(){initNavTree('graphics_2_effects_2_h_d_m_a_gradient_
 <div class="line">    <a name="a0"></a><a class="code" href="console_8h.html#a6047713bb5a73afd3cd1d77e336bcdad">consoleInit</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Read tiles to VRAM in 2 phases because we are more than 32k</span></div>
-<div class="line">    <a name="a1"></a><a class="code" href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a>(0, &amp;patterns, &amp;palette, 0, 0x8000, 256 * 2, BG_256COLORS, 0x1000);</div>
-<div class="line">    <a name="a2"></a><a class="code" href="dma_8h.html#adddf1dea4bd52a083b3ee4b39f1e20f2">dmaCopyVram</a>(&amp;patterns1, 0x5000, 0x6000);</div>
+<div class="line">    <a name="a1"></a><a class="code" href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a>(0, &amp;patterns, &amp;palette, 0, 0x8000, 256 * 2, <a name="a2"></a><a class="code" href="background_8h.html#aab497f5051249668123af8a5363b8bf8">BG_256COLORS</a>, 0x1000);</div>
+<div class="line">    <a name="a3"></a><a class="code" href="dma_8h.html#adddf1dea4bd52a083b3ee4b39f1e20f2">dmaCopyVram</a>(&amp;patterns1, 0x5000, 0x6000);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Copy Map to VRAM</span></div>
-<div class="line">    <a name="a3"></a><a class="code" href="background_8h.html#acc385296e159449a81d18f5e219c8032">bgInitMapSet</a>(0, &amp;map, (&amp;map_end - &amp;map), SC_32x32, 0x0000);</div>
+<div class="line">    <a name="a4"></a><a class="code" href="background_8h.html#acc385296e159449a81d18f5e219c8032">bgInitMapSet</a>(0, &amp;map, (&amp;map_end - &amp;map), <a name="a5"></a><a class="code" href="background_8h.html#a11724b6748ce0954e9b43819263537fc">SC_32x32</a>, 0x0000);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Now Put in 256 color mode and disable other BGs except 1st one</span></div>
-<div class="line">    <a name="a4"></a><a class="code" href="video_8h.html#afd9e46ae627d055dd8c98a4b0ebb73b1">setMode</a>(BG_MODE3, 0);</div>
-<div class="line">    <a name="a5"></a><a class="code" href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a>(1);</div>
-<div class="line">    <a name="a6"></a><a class="code" href="video_8h.html#abc7d4ef8ebc22f5b710927909bb3f144">setScreenOn</a>();</div>
+<div class="line">    <a name="a6"></a><a class="code" href="video_8h.html#afd9e46ae627d055dd8c98a4b0ebb73b1">setMode</a>(<a name="a7"></a><a class="code" href="background_8h.html#ab74253172bcb87b7947118b746ab2849">BG_MODE3</a>, 0);</div>
+<div class="line">    <a name="a8"></a><a class="code" href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a>(1);</div>
+<div class="line">    <a name="a9"></a><a class="code" href="video_8h.html#abc7d4ef8ebc22f5b710927909bb3f144">setScreenOn</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Wait for key to change gradient</span></div>
 <div class="line">    <span class="keywordflow">while</span> (1)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="comment">// Update gradient if A pressed</span></div>
-<div class="line">        <span class="keywordflow">if</span> (<a name="a7"></a><a class="code" href="network_8h.html#a66237b0d7609c6f62d2234ef50abbd78">padsDown</a>(0) &amp; <a name="a8"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072aa7b3a3d0503a46bec51c6e3da95747cc">KEY_A</a>)</div>
+<div class="line">        <span class="keywordflow">if</span> (<a name="a10"></a><a class="code" href="network_8h.html#a66237b0d7609c6f62d2234ef50abbd78">padsDown</a>(0) &amp; <a name="a11"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072aa7b3a3d0503a46bec51c6e3da95747cc">KEY_A</a>)</div>
 <div class="line">        {</div>
-<div class="line">            <a name="a9"></a><a class="code" href="dma_8h.html#acf06b5c6b9733a2fdb5cb466dd6b16bf">setModeHdmaGradient</a>(gradient);</div>
+<div class="line">            <a name="a12"></a><a class="code" href="dma_8h.html#acf06b5c6b9733a2fdb5cb466dd6b16bf">setModeHdmaGradient</a>(gradient);</div>
 <div class="line">            gradient = (gradient - 1) &amp; 15;</div>
 <div class="line">            <span class="keywordflow">if</span> (gradient == 1)</div>
 <div class="line">                gradient = 15;</div>
 <div class="line">        }</div>
-<div class="line">        <a name="a10"></a><a class="code" href="interrupt_8h.html#abd33830487e4764e5ec22ec98b749f4b">WaitForVBlank</a>();</div>
+<div class="line">        <a name="a13"></a><a class="code" href="interrupt_8h.html#abd33830487e4764e5ec22ec98b749f4b">WaitForVBlank</a>();</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
+<div class="ttc" id="abackground_8h_html_a11724b6748ce0954e9b43819263537fc"><div class="ttname"><a href="background_8h.html#a11724b6748ce0954e9b43819263537fc">SC_32x32</a></div><div class="ttdeci">#define SC_32x32</div><div class="ttdef"><b>Definition:</b> background.h:49</div></div>
 <div class="ttc" id="abackground_8h_html_a4dbfb1b8854ff9ca4a7d11a899281bbb"><div class="ttname"><a href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a></div><div class="ttdeci">void bgSetDisable(u8 bgNumber)</div><div class="ttdoc">Disable a BG in the actual SNES mode.</div></div>
+<div class="ttc" id="abackground_8h_html_aab497f5051249668123af8a5363b8bf8"><div class="ttname"><a href="background_8h.html#aab497f5051249668123af8a5363b8bf8">BG_256COLORS</a></div><div class="ttdeci">#define BG_256COLORS</div><div class="ttdef"><b>Definition:</b> background.h:82</div></div>
+<div class="ttc" id="abackground_8h_html_ab74253172bcb87b7947118b746ab2849"><div class="ttname"><a href="background_8h.html#ab74253172bcb87b7947118b746ab2849">BG_MODE3</a></div><div class="ttdeci">#define BG_MODE3</div><div class="ttdef"><b>Definition:</b> background.h:57</div></div>
 <div class="ttc" id="abackground_8h_html_acc385296e159449a81d18f5e219c8032"><div class="ttname"><a href="background_8h.html#acc385296e159449a81d18f5e219c8032">bgInitMapSet</a></div><div class="ttdeci">void bgInitMapSet(u8 bgNumber, u8 *mapSource, u16 mapSize, u8 sizeMode, u16 address)</div><div class="ttdoc">Initializes a Map Set and loads it into SNES VRAM.</div></div>
 <div class="ttc" id="abackground_8h_html_ae09a7ac09be78eef0f28a6c7aabc82ad"><div class="ttname"><a href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a></div><div class="ttdeci">void bgInitTileSet(u8 bgNumber, u8 *tileSource, u8 *tilePalette, u8 paletteEntry, u16 tileSize, u16 paletteSize, u16 colorMode, u16 address)</div><div class="ttdoc">Initializes a Tile Set and Loads the Tile GFX into VRAM.</div></div>
 <div class="ttc" id="aconsole_8h_html_a6047713bb5a73afd3cd1d77e336bcdad"><div class="ttname"><a href="console_8h.html#a6047713bb5a73afd3cd1d77e336bcdad">consoleInit</a></div><div class="ttdeci">void consoleInit(void)</div><div class="ttdoc">Initialize console.</div></div>
@@ -158,7 +161,7 @@ $(document).ready(function(){initNavTree('graphics_2_effects_2_h_d_m_a_gradient_
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-    <li class="footer">Generated on Thu May 25 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 26 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </div>
 </body>
 </html>

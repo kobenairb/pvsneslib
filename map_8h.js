@@ -20,5 +20,6 @@ var map_8h =
     [ "mapVblank", "map_8h.html#a15e3d01a91c5650e4de9a6e6be131d34", null ],
     [ "bg_L1", "map_8h.html#a467103f88f118d5ff5a7aeed5cb8a1d5", null ],
     [ "mapupdbuf", "map_8h.html#ab13b1b784e3f0f177501c469853c894e", null ],
+    [ "x_pos", "map_8h.html#a52d9f95007fdae0115aa0d5b21317257", null ],
     [ "y_pos", "map_8h.html#a79f8bb14ed9f0ee9d7031db7f02733be", null ]
 ];

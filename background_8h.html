@@ -102,146 +102,755 @@ $(document).ready(function(){initNavTree('background_8h.html',''); initResizable
 <code>#include &lt;<a class="el" href="dma_8h_source.html">snes/dma.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="interrupt_8h_source.html">snes/interrupt.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="video_8h_source.html">snes/video.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for background.h:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 -->
+</div>
+</div>
 </div>
 <p><a href="background_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a44e47bf13266350ebb5120b7618d46d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a44e47bf13266350ebb5120b7618d46d5">REG_BG12NBA</a>&#160;&#160;&#160;(*(vuint8 *)0x210B)</td></tr>
-<tr class="memdesc:a44e47bf13266350ebb5120b7618d46d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG Character Data Area Designation (W) 15-12 BG4 Tile Base Address (in 4K-word steps) 11-8 BG3 Tile Base Address (in 4K-word steps) 7-4 BG2 Tile Base Address (in 4K-word steps) 3-0 BG1 Tile Base Address (in 4K-word steps)  <a href="background_8h.html#a44e47bf13266350ebb5120b7618d46d5">More...</a><br /></td></tr>
-<tr class="separator:a44e47bf13266350ebb5120b7618d46d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab769d805a40fdce758d964d274bb8195"><td class="memItemLeft" align="right" valign="top"><a id="ab769d805a40fdce758d964d274bb8195"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ab769d805a40fdce758d964d274bb8195">REG_BG1HOFS</a>&#160;&#160;&#160;(*(vuint8 *)0x210D)</td></tr>
-<tr class="memdesc:ab769d805a40fdce758d964d274bb8195"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG1 Horizontal Scroll (X) (W) and M7HOFS. <br /></td></tr>
-<tr class="separator:ab769d805a40fdce758d964d274bb8195"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a466a20c79b0739bae02668b1b764d8f1"><td class="memItemLeft" align="right" valign="top"><a id="a466a20c79b0739bae02668b1b764d8f1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a466a20c79b0739bae02668b1b764d8f1">REG_BG1VOFS</a>&#160;&#160;&#160;(*(vuint8 *)0x210E)</td></tr>
-<tr class="memdesc:a466a20c79b0739bae02668b1b764d8f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG1 Vertical Scroll (Y) (W) and M7VOFS. <br /></td></tr>
-<tr class="separator:a466a20c79b0739bae02668b1b764d8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79723f49e7557337b091835634430844"><td class="memItemLeft" align="right" valign="top"><a id="a79723f49e7557337b091835634430844"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a79723f49e7557337b091835634430844">REG_BG2HOFS</a>&#160;&#160;&#160;(*(vuint8 *)0x210F)</td></tr>
-<tr class="memdesc:a79723f49e7557337b091835634430844"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG2 Horizontal Scroll (X) (W) <br /></td></tr>
-<tr class="separator:a79723f49e7557337b091835634430844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae64c4fa64e07ea9a1c33873bc2dc269e"><td class="memItemLeft" align="right" valign="top"><a id="ae64c4fa64e07ea9a1c33873bc2dc269e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ae64c4fa64e07ea9a1c33873bc2dc269e">REG_BG2VOFS</a>&#160;&#160;&#160;(*(vuint8 *)0x2110)</td></tr>
-<tr class="memdesc:ae64c4fa64e07ea9a1c33873bc2dc269e"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG2 Vertical Scroll (Y) (W) <br /></td></tr>
-<tr class="separator:ae64c4fa64e07ea9a1c33873bc2dc269e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac107692b4c51d08af380a28407632d5"><td class="memItemLeft" align="right" valign="top"><a id="aac107692b4c51d08af380a28407632d5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#aac107692b4c51d08af380a28407632d5">REG_BG3HOFS</a>&#160;&#160;&#160;(*(vuint8 *)0x2111)</td></tr>
-<tr class="memdesc:aac107692b4c51d08af380a28407632d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG3 Horizontal Scroll (X) (W) <br /></td></tr>
-<tr class="separator:aac107692b4c51d08af380a28407632d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a182c4c0a976be88919146755c53ab44a"><td class="memItemLeft" align="right" valign="top"><a id="a182c4c0a976be88919146755c53ab44a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a182c4c0a976be88919146755c53ab44a">REG_BG3VOFS</a>&#160;&#160;&#160;(*(vuint8 *)0x2112)</td></tr>
-<tr class="memdesc:a182c4c0a976be88919146755c53ab44a"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG3 Vertical Scroll (Y) (W) <br /></td></tr>
-<tr class="separator:a182c4c0a976be88919146755c53ab44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0876479f76d0a58b10b4893dc6d2bbb3"><td class="memItemLeft" align="right" valign="top"><a id="a0876479f76d0a58b10b4893dc6d2bbb3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a0876479f76d0a58b10b4893dc6d2bbb3">REG_BG4HOFS</a>&#160;&#160;&#160;(*(vuint8 *)0x2113)</td></tr>
-<tr class="memdesc:a0876479f76d0a58b10b4893dc6d2bbb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG4 Horizontal Scroll (X) (W) <br /></td></tr>
-<tr class="separator:a0876479f76d0a58b10b4893dc6d2bbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a264e13fdbfcfeafc7c7cbc859f241220"><td class="memItemLeft" align="right" valign="top"><a id="a264e13fdbfcfeafc7c7cbc859f241220"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a264e13fdbfcfeafc7c7cbc859f241220">REG_BG4VOFS</a>&#160;&#160;&#160;(*(vuint8 *)0x2114)</td></tr>
-<tr class="memdesc:a264e13fdbfcfeafc7c7cbc859f241220"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG4 Vertical Scroll (Y) (W) <br /></td></tr>
-<tr class="separator:a264e13fdbfcfeafc7c7cbc859f241220"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52a05d4fdd66feb5ae0d8bb0a8b291e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a52a05d4fdd66feb5ae0d8bb0a8b291e0">REG_BGMODE</a>&#160;&#160;&#160;(*(vuint8 *)0x2105)</td></tr>
+<tr class="memitem:ac18d207be95eb5d103907d106575e9ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ac18d207be95eb5d103907d106575e9ad">SC_BASE_SHIFT</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:ac18d207be95eb5d103907d106575e9ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shift to apply to map base when storing it in a tile map location register.  <a href="background_8h.html#ac18d207be95eb5d103907d106575e9ad">More...</a><br /></td></tr>
+<tr class="separator:ac18d207be95eb5d103907d106575e9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6cde02aaf57795f0dff8cd45db5ce1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#af6cde02aaf57795f0dff8cd45db5ce1d">SC_TILE_BASE</a>(base)&#160;&#160;&#160;((base) &lt;&lt; <a class="el" href="background_8h.html#ac18d207be95eb5d103907d106575e9ad">SC_BASE_SHIFT</a>)</td></tr>
+<tr class="memdesc:af6cde02aaf57795f0dff8cd45db5ce1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to set the tile map address in tile map location.  <a href="background_8h.html#af6cde02aaf57795f0dff8cd45db5ce1d">More...</a><br /></td></tr>
+<tr class="separator:af6cde02aaf57795f0dff8cd45db5ce1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11724b6748ce0954e9b43819263537fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a11724b6748ce0954e9b43819263537fc">SC_32x32</a>&#160;&#160;&#160;(0 &lt;&lt; 0) /** \brief 32 x 32 tile size */</td></tr>
+<tr class="separator:a11724b6748ce0954e9b43819263537fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6129b86a7c2913a31f1bca293fa7c1e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a6129b86a7c2913a31f1bca293fa7c1e7">SC_64x32</a>&#160;&#160;&#160;(1 &lt;&lt; 0) /** \brief 64 x 32 tile size */</td></tr>
+<tr class="separator:a6129b86a7c2913a31f1bca293fa7c1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaa1585b5a34aea00df0224fdcc4a5ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#aeaa1585b5a34aea00df0224fdcc4a5ab">SC_32x64</a>&#160;&#160;&#160;(2 &lt;&lt; 0) /** \brief 32 x 64 tile size */</td></tr>
+<tr class="separator:aeaa1585b5a34aea00df0224fdcc4a5ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace76b0c992e2cba05f6da76f9825720a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ace76b0c992e2cba05f6da76f9825720a">SC_64x64</a>&#160;&#160;&#160;(3 &lt;&lt; 0) /** \brief 64 x 64 tile size */</td></tr>
+<tr class="separator:ace76b0c992e2cba05f6da76f9825720a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82bccfa80c8aa4ff5aa4e1416e0ade25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a82bccfa80c8aa4ff5aa4e1416e0ade25">BG_MODE0</a>&#160;&#160;&#160;(0 &lt;&lt; 0) /** \brief 4-color     4-color     4-color     4-color   ;Normal */</td></tr>
+<tr class="separator:a82bccfa80c8aa4ff5aa4e1416e0ade25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05c862edb7f8f75036f10c04dcc3c2a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a05c862edb7f8f75036f10c04dcc3c2a6">BG_MODE1</a>&#160;&#160;&#160;(1 &lt;&lt; 0) /** \brief 16-color    16-color    4-color     -         ;Normal */</td></tr>
+<tr class="separator:a05c862edb7f8f75036f10c04dcc3c2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71df4d7e9e3bf54909cce56a5b0cf1d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a71df4d7e9e3bf54909cce56a5b0cf1d1">BG_MODE2</a>&#160;&#160;&#160;(2 &lt;&lt; 0) /** \brief 16-color    16-color    (o.p.t)     -         ;Offset-per-tile */</td></tr>
+<tr class="separator:a71df4d7e9e3bf54909cce56a5b0cf1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74253172bcb87b7947118b746ab2849"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ab74253172bcb87b7947118b746ab2849">BG_MODE3</a>&#160;&#160;&#160;(3 &lt;&lt; 0) /** \brief 256-color   16-color    -           -         ;Normal */</td></tr>
+<tr class="separator:ab74253172bcb87b7947118b746ab2849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57023a6897e1ec8660b190a9488c08c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a57023a6897e1ec8660b190a9488c08c6">BG_MODE4</a>&#160;&#160;&#160;(4 &lt;&lt; 0) /** \brief 256-color   4-color     (o.p.t)     -         ;Offset-per-tile */</td></tr>
+<tr class="separator:a57023a6897e1ec8660b190a9488c08c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d65e002c63b60a2b8df95970572908"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#aa1d65e002c63b60a2b8df95970572908">BG_MODE5</a>&#160;&#160;&#160;(5 &lt;&lt; 0) /** \brief 16-color    4-color     -           -         ;512-pix-hires */</td></tr>
+<tr class="separator:aa1d65e002c63b60a2b8df95970572908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a260fbcabdf73b2e049ae9fcd633b3ee2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a260fbcabdf73b2e049ae9fcd633b3ee2">BG_MODE6</a>&#160;&#160;&#160;(6 &lt;&lt; 0) /** \brief 16-color    -           (o.p.t)     -         ;512-pix plus Offs-p-t */</td></tr>
+<tr class="separator:a260fbcabdf73b2e049ae9fcd633b3ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2995da5a6139bd6ca1091ae3358d4f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ac2995da5a6139bd6ca1091ae3358d4f3">BG_MODE7</a>&#160;&#160;&#160;(7 &lt;&lt; 0) /** \brief 256-color   EXTBG       -           -         ;Rotation/Scaling */</td></tr>
+<tr class="separator:ac2995da5a6139bd6ca1091ae3358d4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d48e6efbfe12060a4ab7a15cffb51cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a1d48e6efbfe12060a4ab7a15cffb51cc">BG1_TSIZE8x8</a>&#160;&#160;&#160;(0 &lt;&lt; 4)</td></tr>
+<tr class="separator:a1d48e6efbfe12060a4ab7a15cffb51cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36fd91141d5ce654cc595936fa9d698d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a36fd91141d5ce654cc595936fa9d698d">BG2_TSIZE8x8</a>&#160;&#160;&#160;(0 &lt;&lt; 5)</td></tr>
+<tr class="separator:a36fd91141d5ce654cc595936fa9d698d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39df9a2ee5cdddad7909f6ef23cc5ff8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a39df9a2ee5cdddad7909f6ef23cc5ff8">BG3_TSIZE8x8</a>&#160;&#160;&#160;(0 &lt;&lt; 6)</td></tr>
+<tr class="separator:a39df9a2ee5cdddad7909f6ef23cc5ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f1da31c68752ffdf492be8616922ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#af5f1da31c68752ffdf492be8616922ad">BG4_TSIZE8x8</a>&#160;&#160;&#160;(0 &lt;&lt; 7)</td></tr>
+<tr class="separator:af5f1da31c68752ffdf492be8616922ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cba56c1c24771c57b3cf1363d995c3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a3cba56c1c24771c57b3cf1363d995c3d">BG1_TSIZE16x16</a>&#160;&#160;&#160;(1 &lt;&lt; 4)</td></tr>
+<tr class="separator:a3cba56c1c24771c57b3cf1363d995c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a309991e3719be6b10ec613bece94cc89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a309991e3719be6b10ec613bece94cc89">BG2_TSIZE16x16</a>&#160;&#160;&#160;(1 &lt;&lt; 5)</td></tr>
+<tr class="separator:a309991e3719be6b10ec613bece94cc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad309d4c5f318d457a75e6af2c4b14632"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ad309d4c5f318d457a75e6af2c4b14632">BG3_TSIZE16x16</a>&#160;&#160;&#160;(1 &lt;&lt; 6)</td></tr>
+<tr class="separator:ad309d4c5f318d457a75e6af2c4b14632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36d2eb055c4b37ebc901afec4e4dd2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ae36d2eb055c4b37ebc901afec4e4dd2d">BG4_TSIZE16x16</a>&#160;&#160;&#160;(1 &lt;&lt; 7)</td></tr>
+<tr class="separator:ae36d2eb055c4b37ebc901afec4e4dd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aa95cf512ab48a83b3855a33a29d543"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a8aa95cf512ab48a83b3855a33a29d543">BG1_ENABLE</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
+<tr class="separator:a8aa95cf512ab48a83b3855a33a29d543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4cf5bed80ba87d9a97ce00e6484d5de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ad4cf5bed80ba87d9a97ce00e6484d5de">BG2_ENABLE</a>&#160;&#160;&#160;(1 &lt;&lt; 1)</td></tr>
+<tr class="separator:ad4cf5bed80ba87d9a97ce00e6484d5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7348419a0e2162226a923271044a8204"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a7348419a0e2162226a923271044a8204">BG3_ENABLE</a>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
+<tr class="separator:a7348419a0e2162226a923271044a8204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5df96a2914a130bc3fbd5ea9d0c6a90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#af5df96a2914a130bc3fbd5ea9d0c6a90">BG4_ENABLE</a>&#160;&#160;&#160;(1 &lt;&lt; 3)</td></tr>
+<tr class="separator:af5df96a2914a130bc3fbd5ea9d0c6a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43fb79d1c3dbb2328e159350e20e35b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ae43fb79d1c3dbb2328e159350e20e35b">OBJ_ENABLE</a>&#160;&#160;&#160;(1 &lt;&lt; 4)</td></tr>
+<tr class="separator:ae43fb79d1c3dbb2328e159350e20e35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af195eec5c93ea5507399f3c85109f3d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#af195eec5c93ea5507399f3c85109f3d0">BG_4COLORS0</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:af195eec5c93ea5507399f3c85109f3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a774d2a0de276a94af89173eb592803c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a774d2a0de276a94af89173eb592803c0">BG_4COLORS</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a774d2a0de276a94af89173eb592803c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4818d4e1c65ed78d65f1d3e6d9d1232a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a4818d4e1c65ed78d65f1d3e6d9d1232a">BG_16COLORS</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a4818d4e1c65ed78d65f1d3e6d9d1232a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab497f5051249668123af8a5363b8bf8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#aab497f5051249668123af8a5363b8bf8">BG_256COLORS</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:aab497f5051249668123af8a5363b8bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace880dbd9a642604316f940038786dc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ace880dbd9a642604316f940038786dc8">BG3_MODE1_PRORITY_HIGH</a>&#160;&#160;&#160;(1 &lt;&lt; 3)</td></tr>
+<tr class="separator:ace880dbd9a642604316f940038786dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a05d4fdd66feb5ae0d8bb0a8b291e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a52a05d4fdd66feb5ae0d8bb0a8b291e0">REG_BGMODE</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2105)</td></tr>
 <tr class="memdesc:a52a05d4fdd66feb5ae0d8bb0a8b291e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG Mode and BG Character Size (W) 7 BG4 Tile Size (0=8x8, 1=16x16) ;(BgMode0..4: variable 8x8 or 16x16) 6 BG3 Tile Size (0=8x8, 1=16x16) ; (BgMode5: 8x8 acts as 16x8) 5 BG2 Tile Size (0=8x8, 1=16x16) ; (BgMode6: fixed 16x8?) 4 BG1 Tile Size (0=8x8, 1=16x16) ;/(BgMode7: fixed 8x8) 3 BG3 Priority in Mode 1 (0=Normal, 1=High) 2-0 BG Screen Mode (0..7 = see below)  <a href="background_8h.html#a52a05d4fdd66feb5ae0d8bb0a8b291e0">More...</a><br /></td></tr>
 <tr class="separator:a52a05d4fdd66feb5ae0d8bb0a8b291e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5a7327dc4aeb9242a12065c0ee50303"><td class="memItemLeft" align="right" valign="top"><a id="aa5a7327dc4aeb9242a12065c0ee50303"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#aa5a7327dc4aeb9242a12065c0ee50303">REG_BGxHOFS</a>&#160;&#160;&#160;0x210D</td></tr>
-<tr class="memdesc:aa5a7327dc4aeb9242a12065c0ee50303"><td class="mdescLeft">&#160;</td><td class="mdescRight">BGx Horizontal Scroll (X) (W) and M7HOFS. <br /></td></tr>
-<tr class="separator:aa5a7327dc4aeb9242a12065c0ee50303"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe5f6cc3aa46f96d13eb56ee8a0b1778"><td class="memItemLeft" align="right" valign="top"><a id="afe5f6cc3aa46f96d13eb56ee8a0b1778"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#afe5f6cc3aa46f96d13eb56ee8a0b1778">REG_BGxVOFS</a>&#160;&#160;&#160;0x210E</td></tr>
-<tr class="memdesc:afe5f6cc3aa46f96d13eb56ee8a0b1778"><td class="mdescLeft">&#160;</td><td class="mdescRight">BGx Vertical Scroll (Y) (W) and M7VOFS. <br /></td></tr>
-<tr class="separator:afe5f6cc3aa46f96d13eb56ee8a0b1778"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af189b16c0e666f2b9a07a538944a5684"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#af189b16c0e666f2b9a07a538944a5684">REG_MOSAIC</a>&#160;&#160;&#160;(*(vuint8 *)0x2106)</td></tr>
+<tr class="memitem:af189b16c0e666f2b9a07a538944a5684"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#af189b16c0e666f2b9a07a538944a5684">REG_MOSAIC</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2106)</td></tr>
 <tr class="memdesc:af189b16c0e666f2b9a07a538944a5684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mosaic Size and Mosaic Enable (W) Allows to divide the BG layer into NxN pixel blocks, in each block, the hardware picks the upper-left pixel of each block, and fills the whole block by the color - thus effectively reducing the screen resolution.  <a href="background_8h.html#af189b16c0e666f2b9a07a538944a5684">More...</a><br /></td></tr>
 <tr class="separator:af189b16c0e666f2b9a07a538944a5684"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53012aa6801fe51e422cf4f17d5c8a35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a53012aa6801fe51e422cf4f17d5c8a35">REG_TMW</a>&#160;&#160;&#160;(*(vuint8 *)0x212E)</td></tr>
-<tr class="memdesc:a53012aa6801fe51e422cf4f17d5c8a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window Area Main Screen Disable (W) 212Eh - TMW - Window Area Main Screen Disable (W) 212Fh - TSW - Window Area Sub Screen Disable (W) 7-5 Not used 4 OBJ (0=Enable, 1=Disable) ;"Disable" forcefully disables the layer 3 BG4 (0=Enable, 1=Disable) ; within the window area (otherwise it is 2 BG3 (0=Enable, 1=Disable) ; enabled or disabled as selected in the 1 BG2 (0=Enable, 1=Disable) ; master enable bits in port 212Ch/212Dh) 0 BG1 (0=Enable, 1=Disable) ;/.  <a href="background_8h.html#a53012aa6801fe51e422cf4f17d5c8a35">More...</a><br /></td></tr>
-<tr class="separator:a53012aa6801fe51e422cf4f17d5c8a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e0a07f0768e62ec6e48802bdd442e30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a6e0a07f0768e62ec6e48802bdd442e30">REG_TS</a>&#160;&#160;&#160;(*(vuint8 *)0x212D)</td></tr>
-<tr class="memdesc:a6e0a07f0768e62ec6e48802bdd442e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">TM - Main Screen Designation (W) TS - Sub Screen Designation (W)  <a href="background_8h.html#a6e0a07f0768e62ec6e48802bdd442e30">More...</a><br /></td></tr>
-<tr class="separator:a6e0a07f0768e62ec6e48802bdd442e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab076a1d15554587d229fe3be8ae0332b"><td class="memItemLeft" align="right" valign="top"><a id="ab076a1d15554587d229fe3be8ae0332b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ab076a1d15554587d229fe3be8ae0332b">REG_W12SEL</a>&#160;&#160;&#160;(*(vuint8 *)0x2123)</td></tr>
-<tr class="memdesc:ab076a1d15554587d229fe3be8ae0332b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window BG1/BG2 Mask Settings (W) 2123h - W12SEL - Window BG1/BG2 Mask Settings (W) 2124h - W34SEL - Window BG3/BG4 Mask Settings (W) 2125h - WOBJSEL - Window OBJ/MATH Mask Settings (W) Bit 2123h 2124h 2125h 7-6 BG2 BG4 MATH Window-2 Area (0..1=Disable, 1=Inside, 2=Outside) 5-4 BG2 BG4 MATH Window-1 Area (0..1=Disable, 1=Inside, 2=Outside) 3-2 BG1 BG3 OBJ Window-2 Area (0..1=Disable, 1=Inside, 2=Outside) 1-0 BG1 BG3 OBJ Window-1 Area (0..1=Disable, 1=Inside, 2=Outside) <br /></td></tr>
+<tr class="memitem:af529ed27ea5eacfba93f4fe13d11c572"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#af529ed27ea5eacfba93f4fe13d11c572">BG1SC_ADDR</a>&#160;&#160;&#160;0x2107</td></tr>
+<tr class="separator:af529ed27ea5eacfba93f4fe13d11c572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92fb484df47302e1f52a162e17546636"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a92fb484df47302e1f52a162e17546636">REG_BG1SC</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2107)</td></tr>
+<tr class="separator:a92fb484df47302e1f52a162e17546636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd6639ae7dd9330bf1d0d5fd22acdc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a7fd6639ae7dd9330bf1d0d5fd22acdc5">REG_BG2SC</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2108)</td></tr>
+<tr class="separator:a7fd6639ae7dd9330bf1d0d5fd22acdc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec3d3a85970f4e4edcc17ea00b9141b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#aeec3d3a85970f4e4edcc17ea00b9141b">REG_BG3SC</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2109)</td></tr>
+<tr class="separator:aeec3d3a85970f4e4edcc17ea00b9141b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad371ac1543f4df0e65897f1c428881af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ad371ac1543f4df0e65897f1c428881af">REG_BG4SC</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x210A)</td></tr>
+<tr class="separator:ad371ac1543f4df0e65897f1c428881af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e47bf13266350ebb5120b7618d46d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a44e47bf13266350ebb5120b7618d46d5">REG_BG12NBA</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x210B)</td></tr>
+<tr class="memdesc:a44e47bf13266350ebb5120b7618d46d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG Character Data Area Designation (W) 15-12 BG4 Tile Base Address (in 4K-word steps) 11-8 BG3 Tile Base Address (in 4K-word steps) 7-4 BG2 Tile Base Address (in 4K-word steps) 3-0 BG1 Tile Base Address (in 4K-word steps)  <a href="background_8h.html#a44e47bf13266350ebb5120b7618d46d5">More...</a><br /></td></tr>
+<tr class="separator:a44e47bf13266350ebb5120b7618d46d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277200fda555b28c14bfeca8c000c0ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a277200fda555b28c14bfeca8c000c0ca">REG_BG34NBA</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x210C)</td></tr>
+<tr class="separator:a277200fda555b28c14bfeca8c000c0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5a7327dc4aeb9242a12065c0ee50303"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#aa5a7327dc4aeb9242a12065c0ee50303">REG_BGxHOFS</a>&#160;&#160;&#160;0x210D</td></tr>
+<tr class="memdesc:aa5a7327dc4aeb9242a12065c0ee50303"><td class="mdescLeft">&#160;</td><td class="mdescRight">BGx Horizontal Scroll (X) (W) and M7HOFS.  <a href="background_8h.html#aa5a7327dc4aeb9242a12065c0ee50303">More...</a><br /></td></tr>
+<tr class="separator:aa5a7327dc4aeb9242a12065c0ee50303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5f6cc3aa46f96d13eb56ee8a0b1778"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#afe5f6cc3aa46f96d13eb56ee8a0b1778">REG_BGxVOFS</a>&#160;&#160;&#160;0x210E</td></tr>
+<tr class="memdesc:afe5f6cc3aa46f96d13eb56ee8a0b1778"><td class="mdescLeft">&#160;</td><td class="mdescRight">BGx Vertical Scroll (Y) (W) and M7VOFS.  <a href="background_8h.html#afe5f6cc3aa46f96d13eb56ee8a0b1778">More...</a><br /></td></tr>
+<tr class="separator:afe5f6cc3aa46f96d13eb56ee8a0b1778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab769d805a40fdce758d964d274bb8195"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ab769d805a40fdce758d964d274bb8195">REG_BG1HOFS</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x210D)</td></tr>
+<tr class="memdesc:ab769d805a40fdce758d964d274bb8195"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG1 Horizontal Scroll (X) (W) and M7HOFS.  <a href="background_8h.html#ab769d805a40fdce758d964d274bb8195">More...</a><br /></td></tr>
+<tr class="separator:ab769d805a40fdce758d964d274bb8195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466a20c79b0739bae02668b1b764d8f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a466a20c79b0739bae02668b1b764d8f1">REG_BG1VOFS</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x210E)</td></tr>
+<tr class="memdesc:a466a20c79b0739bae02668b1b764d8f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG1 Vertical Scroll (Y) (W) and M7VOFS.  <a href="background_8h.html#a466a20c79b0739bae02668b1b764d8f1">More...</a><br /></td></tr>
+<tr class="separator:a466a20c79b0739bae02668b1b764d8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79723f49e7557337b091835634430844"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a79723f49e7557337b091835634430844">REG_BG2HOFS</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x210F)</td></tr>
+<tr class="memdesc:a79723f49e7557337b091835634430844"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG2 Horizontal Scroll (X) (W)  <a href="background_8h.html#a79723f49e7557337b091835634430844">More...</a><br /></td></tr>
+<tr class="separator:a79723f49e7557337b091835634430844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64c4fa64e07ea9a1c33873bc2dc269e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ae64c4fa64e07ea9a1c33873bc2dc269e">REG_BG2VOFS</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2110)</td></tr>
+<tr class="memdesc:ae64c4fa64e07ea9a1c33873bc2dc269e"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG2 Vertical Scroll (Y) (W)  <a href="background_8h.html#ae64c4fa64e07ea9a1c33873bc2dc269e">More...</a><br /></td></tr>
+<tr class="separator:ae64c4fa64e07ea9a1c33873bc2dc269e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac107692b4c51d08af380a28407632d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#aac107692b4c51d08af380a28407632d5">REG_BG3HOFS</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2111)</td></tr>
+<tr class="memdesc:aac107692b4c51d08af380a28407632d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG3 Horizontal Scroll (X) (W)  <a href="background_8h.html#aac107692b4c51d08af380a28407632d5">More...</a><br /></td></tr>
+<tr class="separator:aac107692b4c51d08af380a28407632d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a182c4c0a976be88919146755c53ab44a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a182c4c0a976be88919146755c53ab44a">REG_BG3VOFS</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2112)</td></tr>
+<tr class="memdesc:a182c4c0a976be88919146755c53ab44a"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG3 Vertical Scroll (Y) (W)  <a href="background_8h.html#a182c4c0a976be88919146755c53ab44a">More...</a><br /></td></tr>
+<tr class="separator:a182c4c0a976be88919146755c53ab44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0876479f76d0a58b10b4893dc6d2bbb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a0876479f76d0a58b10b4893dc6d2bbb3">REG_BG4HOFS</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2113)</td></tr>
+<tr class="memdesc:a0876479f76d0a58b10b4893dc6d2bbb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG4 Horizontal Scroll (X) (W)  <a href="background_8h.html#a0876479f76d0a58b10b4893dc6d2bbb3">More...</a><br /></td></tr>
+<tr class="separator:a0876479f76d0a58b10b4893dc6d2bbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a264e13fdbfcfeafc7c7cbc859f241220"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a264e13fdbfcfeafc7c7cbc859f241220">REG_BG4VOFS</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2114)</td></tr>
+<tr class="memdesc:a264e13fdbfcfeafc7c7cbc859f241220"><td class="mdescLeft">&#160;</td><td class="mdescRight">BG4 Vertical Scroll (Y) (W)  <a href="background_8h.html#a264e13fdbfcfeafc7c7cbc859f241220">More...</a><br /></td></tr>
+<tr class="separator:a264e13fdbfcfeafc7c7cbc859f241220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86db2ab0941ca4f332512d07474b4a49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a86db2ab0941ca4f332512d07474b4a49">COLWIN_OB13W1ENABLEIN</a>&#160;&#160;&#160;(1 &lt;&lt; 0)  /** \brief BG1   BG3   OBJ   Window-1 Area Inside */</td></tr>
+<tr class="separator:a86db2ab0941ca4f332512d07474b4a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e2d699d3d545034704c49ba61aeef22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a9e2d699d3d545034704c49ba61aeef22">COLWIN_OB13W1ENABLEOUT</a>&#160;&#160;&#160;(2 &lt;&lt; 0) /** \brief BG1   BG3   OBJ   Window-1 Area Outside */</td></tr>
+<tr class="separator:a9e2d699d3d545034704c49ba61aeef22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8788aace2f7d5508738fdd0aaf54c346"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a8788aace2f7d5508738fdd0aaf54c346">COLWIN_OB13W2ENABLEIN</a>&#160;&#160;&#160;(1 &lt;&lt; 2)  /** \brief BG1   BG3   OBJ   Window-2 Area Inside */</td></tr>
+<tr class="separator:a8788aace2f7d5508738fdd0aaf54c346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b244a78c2d213c4f73c72734039aea1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a9b244a78c2d213c4f73c72734039aea1">COLWIN_OB13W2ENABLEOUT</a>&#160;&#160;&#160;(2 &lt;&lt; 2) /** \brief BG1   BG3   OBJ   Window-2 Area Outside */</td></tr>
+<tr class="separator:a9b244a78c2d213c4f73c72734039aea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f85311a4643785618d9ebc9dd047a44"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a7f85311a4643785618d9ebc9dd047a44">COLWIN_MB24W1ENABLEIN</a>&#160;&#160;&#160;(1 &lt;&lt; 4)  /** \brief BG2   BG4   MATH  Window-1 Area Inside */</td></tr>
+<tr class="separator:a7f85311a4643785618d9ebc9dd047a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c5d3817485ae11899798a7e0a010ca7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a6c5d3817485ae11899798a7e0a010ca7">COLWIN_MB24W1ENABLEOUT</a>&#160;&#160;&#160;(2 &lt;&lt; 4) /** \brief BG2   BG4   MATH  Window-1 Area Outside */</td></tr>
+<tr class="separator:a6c5d3817485ae11899798a7e0a010ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8c84ebe0a9545ea9c96b8abf19c7a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a8f8c84ebe0a9545ea9c96b8abf19c7a4">COLWIN_MB24W2ENABLEIN</a>&#160;&#160;&#160;(1 &lt;&lt; 6)  /** \brief BG2   BG4   MATH  Window-2 Area Inside */</td></tr>
+<tr class="separator:a8f8c84ebe0a9545ea9c96b8abf19c7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6968bfe23f006bdf39824555c09584af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a6968bfe23f006bdf39824555c09584af">COLWIN_MB24W2ENABLEOUT</a>&#160;&#160;&#160;(2 &lt;&lt; 6) /** \brief BG2   BG4   MATH  Window-2 Area Outside */</td></tr>
+<tr class="separator:a6968bfe23f006bdf39824555c09584af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab076a1d15554587d229fe3be8ae0332b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ab076a1d15554587d229fe3be8ae0332b">REG_W12SEL</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2123)</td></tr>
+<tr class="memdesc:ab076a1d15554587d229fe3be8ae0332b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window BG1/BG2 Mask Settings (W) 2123h - W12SEL - Window BG1/BG2 Mask Settings (W) 2124h - W34SEL - Window BG3/BG4 Mask Settings (W) 2125h - WOBJSEL - Window OBJ/MATH Mask Settings (W) Bit 2123h 2124h 2125h 7-6 BG2 BG4 MATH Window-2 Area (0..1=Disable, 1=Inside, 2=Outside) 5-4 BG2 BG4 MATH Window-1 Area (0..1=Disable, 1=Inside, 2=Outside) 3-2 BG1 BG3 OBJ Window-2 Area (0..1=Disable, 1=Inside, 2=Outside) 1-0 BG1 BG3 OBJ Window-1 Area (0..1=Disable, 1=Inside, 2=Outside)  <a href="background_8h.html#ab076a1d15554587d229fe3be8ae0332b">More...</a><br /></td></tr>
 <tr class="separator:ab076a1d15554587d229fe3be8ae0332b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b33454f7968061e6820463ae5b5d07c"><td class="memItemLeft" align="right" valign="top"><a id="a6b33454f7968061e6820463ae5b5d07c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a6b33454f7968061e6820463ae5b5d07c">REG_WBGLOG</a>&#160;&#160;&#160;(*(vuint8 *)0x212A)</td></tr>
-<tr class="memdesc:a6b33454f7968061e6820463ae5b5d07c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1/2 Mask Logic (W) 212Ah/212Bh - WBGLOG/WOBJLOG - Window 1/2 Mask Logic (W) Bit 212Ah 212Bh 7-6 BG4 - Window 1/2 Mask Logic (0=OR, 1=AND, 2=XOR, 3=XNOR) 5-4 BG3 - Window 1/2 Mask Logic (0=OR, 1=AND, 2=XOR, 3=XNOR) 3-2 BG2 MATH Window 1/2 Mask Logic (0=OR, 1=AND, 2=XOR, 3=XNOR) 1-0 BG1 OBJ Window 1/2 Mask Logic (0=OR, 1=AND, 2=XOR, 3=XNOR) Allows to merge the Window 1 and 2 areas into a single "final" window area (which is then used by TMW, TSW, and CGWSEL). The OR/AND/XOR/XNOR logic is applied ONLY if BOTH window 1 and 2 are enabled (in WxxSEL registers). If only one window is enabled, then that window is used as is as "final" area. If both are disabled, then the "final" area will be empty. Note: "XNOR" means "1 XOR area1 XOR area2" (ie. the inverse of the normal XOR result). <br /></td></tr>
-<tr class="separator:a6b33454f7968061e6820463ae5b5d07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26261c1f9b345599d87efd852037081d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a26261c1f9b345599d87efd852037081d">REG_WH0</a>&#160;&#160;&#160;(*(vuint8 *)0x2126)</td></tr>
+<tr class="memitem:a07640bb0bfa4bc0f278920220cc0cadd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a07640bb0bfa4bc0f278920220cc0cadd">REG_W34SEL</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2124)</td></tr>
+<tr class="separator:a07640bb0bfa4bc0f278920220cc0cadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb8b85d25c2b954e2d78cc27b4c0f71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#abfb8b85d25c2b954e2d78cc27b4c0f71">REG_WOBJSEL</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2125)</td></tr>
+<tr class="separator:abfb8b85d25c2b954e2d78cc27b4c0f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26261c1f9b345599d87efd852037081d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a26261c1f9b345599d87efd852037081d">REG_WH0</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2126)</td></tr>
 <tr class="memdesc:a26261c1f9b345599d87efd852037081d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1 Left Position (X1) (W) 2126h - WH0 - Window 1 Left Position (X1) (W) 2127h - WH1 - Window 1 Right Position (X2) (W) 2128h - WH2 - Window 2 Left Position (X1) (W) 2129h - WH3 - Window 2 Right Position (X2) (W) 7-0 Window Position (00h..0FFh; 0=leftmost, 255=rightmost)  <a href="background_8h.html#a26261c1f9b345599d87efd852037081d">More...</a><br /></td></tr>
 <tr class="separator:a26261c1f9b345599d87efd852037081d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac18d207be95eb5d103907d106575e9ad"><td class="memItemLeft" align="right" valign="top"><a id="ac18d207be95eb5d103907d106575e9ad"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ac18d207be95eb5d103907d106575e9ad">SC_BASE_SHIFT</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:ac18d207be95eb5d103907d106575e9ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shift to apply to map base when storing it in a tile map location register. <br /></td></tr>
-<tr class="separator:ac18d207be95eb5d103907d106575e9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6cde02aaf57795f0dff8cd45db5ce1d"><td class="memItemLeft" align="right" valign="top"><a id="af6cde02aaf57795f0dff8cd45db5ce1d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#af6cde02aaf57795f0dff8cd45db5ce1d">SC_TILE_BASE</a>(base)&#160;&#160;&#160;((base) &lt;&lt; <a class="el" href="background_8h.html#ac18d207be95eb5d103907d106575e9ad">SC_BASE_SHIFT</a>)</td></tr>
-<tr class="memdesc:af6cde02aaf57795f0dff8cd45db5ce1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to set the tile map address in tile map location. <br /></td></tr>
-<tr class="separator:af6cde02aaf57795f0dff8cd45db5ce1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a261b7ab26b206f1adc8e98a0b6a4f099"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a261b7ab26b206f1adc8e98a0b6a4f099">REG_WH1</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2127)</td></tr>
+<tr class="separator:a261b7ab26b206f1adc8e98a0b6a4f099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a3df26afa53c8a9bcaadae8eb0c529"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ad1a3df26afa53c8a9bcaadae8eb0c529">REG_WH2</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2128)</td></tr>
+<tr class="separator:ad1a3df26afa53c8a9bcaadae8eb0c529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aa8f353fd99ab0fc06c5204172e4ef0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a8aa8f353fd99ab0fc06c5204172e4ef0">REG_WH3</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2129)</td></tr>
+<tr class="separator:a8aa8f353fd99ab0fc06c5204172e4ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b33454f7968061e6820463ae5b5d07c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a6b33454f7968061e6820463ae5b5d07c">REG_WBGLOG</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x212A)</td></tr>
+<tr class="memdesc:a6b33454f7968061e6820463ae5b5d07c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window 1/2 Mask Logic (W) 212Ah/212Bh - WBGLOG/WOBJLOG - Window 1/2 Mask Logic (W) Bit 212Ah 212Bh 7-6 BG4 - Window 1/2 Mask Logic (0=OR, 1=AND, 2=XOR, 3=XNOR) 5-4 BG3 - Window 1/2 Mask Logic (0=OR, 1=AND, 2=XOR, 3=XNOR) 3-2 BG2 MATH Window 1/2 Mask Logic (0=OR, 1=AND, 2=XOR, 3=XNOR) 1-0 BG1 OBJ Window 1/2 Mask Logic (0=OR, 1=AND, 2=XOR, 3=XNOR) Allows to merge the Window 1 and 2 areas into a single "final" window area (which is then used by TMW, TSW, and CGWSEL). The OR/AND/XOR/XNOR logic is applied ONLY if BOTH window 1 and 2 are enabled (in WxxSEL registers). If only one window is enabled, then that window is used as is as "final" area. If both are disabled, then the "final" area will be empty. Note: "XNOR" means "1 XOR area1 XOR area2" (ie. the inverse of the normal XOR result).  <a href="background_8h.html#a6b33454f7968061e6820463ae5b5d07c">More...</a><br /></td></tr>
+<tr class="separator:a6b33454f7968061e6820463ae5b5d07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af035bcd93033b2a2389394a9138bb94d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#af035bcd93033b2a2389394a9138bb94d">REG_WOBJLOG</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x212B)</td></tr>
+<tr class="separator:af035bcd93033b2a2389394a9138bb94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38434618e3dc4ee900ffcf1768ecf45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ad38434618e3dc4ee900ffcf1768ecf45">REG_TM</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x212C)</td></tr>
+<tr class="separator:ad38434618e3dc4ee900ffcf1768ecf45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e0a07f0768e62ec6e48802bdd442e30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a6e0a07f0768e62ec6e48802bdd442e30">REG_TS</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x212D)</td></tr>
+<tr class="memdesc:a6e0a07f0768e62ec6e48802bdd442e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">TM - Main Screen Designation (W) TS - Sub Screen Designation (W)  <a href="background_8h.html#a6e0a07f0768e62ec6e48802bdd442e30">More...</a><br /></td></tr>
+<tr class="separator:a6e0a07f0768e62ec6e48802bdd442e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53012aa6801fe51e422cf4f17d5c8a35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a53012aa6801fe51e422cf4f17d5c8a35">REG_TMW</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x212E)</td></tr>
+<tr class="memdesc:a53012aa6801fe51e422cf4f17d5c8a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window Area Main Screen Disable (W) 212Eh - TMW - Window Area Main Screen Disable (W) 212Fh - TSW - Window Area Sub Screen Disable (W) 7-5 Not used 4 OBJ (0=Enable, 1=Disable) ;"Disable" forcefully disables the layer 3 BG4 (0=Enable, 1=Disable) ; within the window area (otherwise it is 2 BG3 (0=Enable, 1=Disable) ; enabled or disabled as selected in the 1 BG2 (0=Enable, 1=Disable) ; master enable bits in port 212Ch/212Dh) 0 BG1 (0=Enable, 1=Disable) ;/.  <a href="background_8h.html#a53012aa6801fe51e422cf4f17d5c8a35">More...</a><br /></td></tr>
+<tr class="separator:a53012aa6801fe51e422cf4f17d5c8a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcc7237046120cbda0d0e02bbe8be265"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#afcc7237046120cbda0d0e02bbe8be265">REG_TSW</a>&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x212F)</td></tr>
+<tr class="separator:afcc7237046120cbda0d0e02bbe8be265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acc385296e159449a81d18f5e219c8032"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#acc385296e159449a81d18f5e219c8032">bgInitMapSet</a> (u8 bgNumber, u8 *mapSource, u16 mapSize, u8 sizeMode, u16 address)</td></tr>
-<tr class="memdesc:acc385296e159449a81d18f5e219c8032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a Map Set and loads it into SNES VRAM.  <a href="background_8h.html#acc385296e159449a81d18f5e219c8032">More...</a><br /></td></tr>
-<tr class="separator:acc385296e159449a81d18f5e219c8032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1fad909be4edf30a3cd08a0890361dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ae1fad909be4edf30a3cd08a0890361dc">bgInitMapTileSet7</a> (u8 *tileSource, u8 *mapSource, u8 *tilePalette, u16 tileSize, u16 address)</td></tr>
-<tr class="memdesc:ae1fad909be4edf30a3cd08a0890361dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a Tile &amp; Map Set and Loads the Tile &amp; Map GFX into VRAM for Mode 7.  <a href="background_8h.html#ae1fad909be4edf30a3cd08a0890361dc">More...</a><br /></td></tr>
-<tr class="separator:ae1fad909be4edf30a3cd08a0890361dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae09a7ac09be78eef0f28a6c7aabc82ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a> (u8 bgNumber, u8 *tileSource, u8 *tilePalette, u8 paletteEntry, u16 tileSize, u16 paletteSize, u16 colorMode, u16 address)</td></tr>
-<tr class="memdesc:ae09a7ac09be78eef0f28a6c7aabc82ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a Tile Set and Loads the Tile GFX into VRAM.  <a href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">More...</a><br /></td></tr>
-<tr class="separator:ae09a7ac09be78eef0f28a6c7aabc82ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ea396375d85e9f3d9af5072552819aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a4ea396375d85e9f3d9af5072552819aa">bgInitTileSetData</a> (u8 bgNumber, u8 *tileSource, u16 tileSize, u16 address)</td></tr>
-<tr class="memdesc:a4ea396375d85e9f3d9af5072552819aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add some Tile Set and Loads the Tile GFX into VRAM.  <a href="background_8h.html#a4ea396375d85e9f3d9af5072552819aa">More...</a><br /></td></tr>
-<tr class="separator:a4ea396375d85e9f3d9af5072552819aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b0af2955fba6d18445f6cd95bf6bef6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a4b0af2955fba6d18445f6cd95bf6bef6">bgInitTileSetLz</a> (u8 bgNumber, u8 *tileSource, u8 *tilePalette, u8 paletteEntry, u16 paletteSize, u16 colorMode, u16 address)</td></tr>
-<tr class="memdesc:a4b0af2955fba6d18445f6cd95bf6bef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a Tile Set and Loads the Tile GFX compressed with LZ algo into VRAM.  <a href="background_8h.html#a4b0af2955fba6d18445f6cd95bf6bef6">More...</a><br /></td></tr>
-<tr class="separator:a4b0af2955fba6d18445f6cd95bf6bef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dbfb1b8854ff9ca4a7d11a899281bbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a> (u8 bgNumber)</td></tr>
-<tr class="memdesc:a4dbfb1b8854ff9ca4a7d11a899281bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable a BG in the actual SNES mode.  <a href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">More...</a><br /></td></tr>
-<tr class="separator:a4dbfb1b8854ff9ca4a7d11a899281bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af28e4200f4e49073dcb8f950099bb9c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#af28e4200f4e49073dcb8f950099bb9c3">bgSetDisableSub</a> (u8 bgNumber)</td></tr>
-<tr class="memdesc:af28e4200f4e49073dcb8f950099bb9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable a BG from sub screen (translucent) in the actual SNES mode.  <a href="background_8h.html#af28e4200f4e49073dcb8f950099bb9c3">More...</a><br /></td></tr>
-<tr class="separator:af28e4200f4e49073dcb8f950099bb9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75891c2ac9e1087a9494e924b137eec4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a75891c2ac9e1087a9494e924b137eec4">bgSetEnable</a> (u8 bgNumber)</td></tr>
-<tr class="memdesc:a75891c2ac9e1087a9494e924b137eec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable a BG in the actual SNES mode.  <a href="background_8h.html#a75891c2ac9e1087a9494e924b137eec4">More...</a><br /></td></tr>
-<tr class="separator:a75891c2ac9e1087a9494e924b137eec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a439e34ab400075fa7f12e6e559407e9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a439e34ab400075fa7f12e6e559407e9b">bgSetEnableSub</a> (u8 bgNumber)</td></tr>
-<tr class="memdesc:a439e34ab400075fa7f12e6e559407e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable a BG from sub screen (translucent) in the actual SNES mode.  <a href="background_8h.html#a439e34ab400075fa7f12e6e559407e9b">More...</a><br /></td></tr>
-<tr class="separator:a439e34ab400075fa7f12e6e559407e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0206b5b9911749322bcf9da130527924"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a0206b5b9911749322bcf9da130527924">bgSetGfxPtr</a> (u8 bgNumber, u16 address)</td></tr>
+<tr class="memitem:a0206b5b9911749322bcf9da130527924"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a0206b5b9911749322bcf9da130527924">bgSetGfxPtr</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> bgNumber, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> address)</td></tr>
 <tr class="memdesc:a0206b5b9911749322bcf9da130527924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of each background address.  <a href="background_8h.html#a0206b5b9911749322bcf9da130527924">More...</a><br /></td></tr>
 <tr class="separator:a0206b5b9911749322bcf9da130527924"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fcbdb4b2378a64e8db62a184ee1851e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a> (u8 bgNumber, u16 address, u8 mapSize)</td></tr>
+<tr class="memitem:a4fcbdb4b2378a64e8db62a184ee1851e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> bgNumber, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> address, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> mapSize)</td></tr>
 <tr class="memdesc:a4fcbdb4b2378a64e8db62a184ee1851e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change Background Map address.  <a href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">More...</a><br /></td></tr>
 <tr class="separator:a4fcbdb4b2378a64e8db62a184ee1851e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5e0112ea2d4b514c2dddc6ed2c7c3c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#aa5e0112ea2d4b514c2dddc6ed2c7c3c7">bgSetScroll</a> (u8 bgNumber, u16 x, u16 y)</td></tr>
+<tr class="memitem:ae09a7ac09be78eef0f28a6c7aabc82ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> bgNumber, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *tileSource, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *tilePalette, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> paletteEntry, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> tileSize, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> paletteSize, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> colorMode, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> address)</td></tr>
+<tr class="memdesc:ae09a7ac09be78eef0f28a6c7aabc82ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a Tile Set and Loads the Tile GFX into VRAM.  <a href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">More...</a><br /></td></tr>
+<tr class="separator:ae09a7ac09be78eef0f28a6c7aabc82ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b0af2955fba6d18445f6cd95bf6bef6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a4b0af2955fba6d18445f6cd95bf6bef6">bgInitTileSetLz</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> bgNumber, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *tileSource, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *tilePalette, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> paletteEntry, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> paletteSize, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> colorMode, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> address)</td></tr>
+<tr class="memdesc:a4b0af2955fba6d18445f6cd95bf6bef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a Tile Set and Loads the Tile GFX compressed with LZ algo into VRAM.  <a href="background_8h.html#a4b0af2955fba6d18445f6cd95bf6bef6">More...</a><br /></td></tr>
+<tr class="separator:a4b0af2955fba6d18445f6cd95bf6bef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea396375d85e9f3d9af5072552819aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a4ea396375d85e9f3d9af5072552819aa">bgInitTileSetData</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> bgNumber, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *tileSource, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> tileSize, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> address)</td></tr>
+<tr class="memdesc:a4ea396375d85e9f3d9af5072552819aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add some Tile Set and Loads the Tile GFX into VRAM.  <a href="background_8h.html#a4ea396375d85e9f3d9af5072552819aa">More...</a><br /></td></tr>
+<tr class="separator:a4ea396375d85e9f3d9af5072552819aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1fad909be4edf30a3cd08a0890361dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ae1fad909be4edf30a3cd08a0890361dc">bgInitMapTileSet7</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *tileSource, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *mapSource, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *tilePalette, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> tileSize, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> address)</td></tr>
+<tr class="memdesc:ae1fad909be4edf30a3cd08a0890361dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a Tile &amp; Map Set and Loads the Tile &amp; Map GFX into VRAM for Mode 7.  <a href="background_8h.html#ae1fad909be4edf30a3cd08a0890361dc">More...</a><br /></td></tr>
+<tr class="separator:ae1fad909be4edf30a3cd08a0890361dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc385296e159449a81d18f5e219c8032"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#acc385296e159449a81d18f5e219c8032">bgInitMapSet</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> bgNumber, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *mapSource, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> mapSize, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> sizeMode, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> address)</td></tr>
+<tr class="memdesc:acc385296e159449a81d18f5e219c8032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a Map Set and loads it into SNES VRAM.  <a href="background_8h.html#acc385296e159449a81d18f5e219c8032">More...</a><br /></td></tr>
+<tr class="separator:acc385296e159449a81d18f5e219c8032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e0112ea2d4b514c2dddc6ed2c7c3c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#aa5e0112ea2d4b514c2dddc6ed2c7c3c7">bgSetScroll</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> bgNumber, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> x, <a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> y)</td></tr>
 <tr class="memdesc:aa5e0112ea2d4b514c2dddc6ed2c7c3c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the scroll hardware to the specified location.  <a href="background_8h.html#aa5e0112ea2d4b514c2dddc6ed2c7c3c7">More...</a><br /></td></tr>
 <tr class="separator:aa5e0112ea2d4b514c2dddc6ed2c7c3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00671918b35ab20db7b3f6b71015ccfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a00671918b35ab20db7b3f6b71015ccfb">bgSetWindowsRegions</a> (u8 bgNumber, u8 winNumber, u8 xLeft, u8 xRight)</td></tr>
+<tr class="memitem:a75891c2ac9e1087a9494e924b137eec4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a75891c2ac9e1087a9494e924b137eec4">bgSetEnable</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> bgNumber)</td></tr>
+<tr class="memdesc:a75891c2ac9e1087a9494e924b137eec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable a BG in the actual SNES mode.  <a href="background_8h.html#a75891c2ac9e1087a9494e924b137eec4">More...</a><br /></td></tr>
+<tr class="separator:a75891c2ac9e1087a9494e924b137eec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dbfb1b8854ff9ca4a7d11a899281bbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> bgNumber)</td></tr>
+<tr class="memdesc:a4dbfb1b8854ff9ca4a7d11a899281bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable a BG in the actual SNES mode.  <a href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">More...</a><br /></td></tr>
+<tr class="separator:a4dbfb1b8854ff9ca4a7d11a899281bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a439e34ab400075fa7f12e6e559407e9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a439e34ab400075fa7f12e6e559407e9b">bgSetEnableSub</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> bgNumber)</td></tr>
+<tr class="memdesc:a439e34ab400075fa7f12e6e559407e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable a BG from sub screen (translucent) in the actual SNES mode.  <a href="background_8h.html#a439e34ab400075fa7f12e6e559407e9b">More...</a><br /></td></tr>
+<tr class="separator:a439e34ab400075fa7f12e6e559407e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af28e4200f4e49073dcb8f950099bb9c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#af28e4200f4e49073dcb8f950099bb9c3">bgSetDisableSub</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> bgNumber)</td></tr>
+<tr class="memdesc:af28e4200f4e49073dcb8f950099bb9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable a BG from sub screen (translucent) in the actual SNES mode.  <a href="background_8h.html#af28e4200f4e49073dcb8f950099bb9c3">More...</a><br /></td></tr>
+<tr class="separator:af28e4200f4e49073dcb8f950099bb9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00671918b35ab20db7b3f6b71015ccfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a00671918b35ab20db7b3f6b71015ccfb">bgSetWindowsRegions</a> (<a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> bgNumber, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> winNumber, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> xLeft, <a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> xRight)</td></tr>
 <tr class="memdesc:a00671918b35ab20db7b3f6b71015ccfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a region on screen where map / sprite can be disable.  <a href="background_8h.html#a00671918b35ab20db7b3f6b71015ccfb">More...</a><br /></td></tr>
 <tr class="separator:a00671918b35ab20db7b3f6b71015ccfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad690bfa1333baa15818c1f4bb9a530fc"><td class="memItemLeft" align="right" valign="top"><a id="ad690bfa1333baa15818c1f4bb9a530fc"></a>
-u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ad690bfa1333baa15818c1f4bb9a530fc">bg1gfxaddr</a></td></tr>
-<tr class="memdesc:ad690bfa1333baa15818c1f4bb9a530fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of each background address. <br /></td></tr>
+<tr class="memitem:a00e209d4b67cb5b24f7a3fc9f1c8a329"><td class="memItemLeft" align="right" valign="top"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a00e209d4b67cb5b24f7a3fc9f1c8a329">bg0gfxaddr</a></td></tr>
+<tr class="separator:a00e209d4b67cb5b24f7a3fc9f1c8a329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad690bfa1333baa15818c1f4bb9a530fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#ad690bfa1333baa15818c1f4bb9a530fc">bg1gfxaddr</a></td></tr>
+<tr class="memdesc:ad690bfa1333baa15818c1f4bb9a530fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of each background address.  <a href="background_8h.html#ad690bfa1333baa15818c1f4bb9a530fc">More...</a><br /></td></tr>
 <tr class="separator:ad690bfa1333baa15818c1f4bb9a530fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a1dd9dbfeb3ada41ca93bff2b46b99b"><td class="memItemLeft" align="right" valign="top"><a id="a5a1dd9dbfeb3ada41ca93bff2b46b99b"></a>
-u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a5a1dd9dbfeb3ada41ca93bff2b46b99b">bg2gfxaddr</a></td></tr>
-<tr class="memdesc:a5a1dd9dbfeb3ada41ca93bff2b46b99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of each background address. <br /></td></tr>
+<tr class="memitem:a5a1dd9dbfeb3ada41ca93bff2b46b99b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a5a1dd9dbfeb3ada41ca93bff2b46b99b">bg2gfxaddr</a></td></tr>
+<tr class="memdesc:a5a1dd9dbfeb3ada41ca93bff2b46b99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of each background address.  <a href="background_8h.html#a5a1dd9dbfeb3ada41ca93bff2b46b99b">More...</a><br /></td></tr>
 <tr class="separator:a5a1dd9dbfeb3ada41ca93bff2b46b99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11dd1e9472913ffd176d125c33a93af0"><td class="memItemLeft" align="right" valign="top"><a id="a11dd1e9472913ffd176d125c33a93af0"></a>
-u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a11dd1e9472913ffd176d125c33a93af0">bg3gfxaddr</a></td></tr>
-<tr class="memdesc:a11dd1e9472913ffd176d125c33a93af0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of each background address. <br /></td></tr>
+<tr class="memitem:a11dd1e9472913ffd176d125c33a93af0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="background_8h.html#a11dd1e9472913ffd176d125c33a93af0">bg3gfxaddr</a></td></tr>
+<tr class="memdesc:a11dd1e9472913ffd176d125c33a93af0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of each background address.  <a href="background_8h.html#a11dd1e9472913ffd176d125c33a93af0">More...</a><br /></td></tr>
 <tr class="separator:a11dd1e9472913ffd176d125c33a93af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>snes background defines and functionality. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a8aa95cf512ab48a83b3855a33a29d543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aa95cf512ab48a83b3855a33a29d543">&#9670;&nbsp;</a></span>BG1_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG1_ENABLE&#160;&#160;&#160;(1 &lt;&lt; 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cba56c1c24771c57b3cf1363d995c3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cba56c1c24771c57b3cf1363d995c3d">&#9670;&nbsp;</a></span>BG1_TSIZE16x16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG1_TSIZE16x16&#160;&#160;&#160;(1 &lt;&lt; 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d48e6efbfe12060a4ab7a15cffb51cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d48e6efbfe12060a4ab7a15cffb51cc">&#9670;&nbsp;</a></span>BG1_TSIZE8x8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG1_TSIZE8x8&#160;&#160;&#160;(0 &lt;&lt; 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af529ed27ea5eacfba93f4fe13d11c572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af529ed27ea5eacfba93f4fe13d11c572">&#9670;&nbsp;</a></span>BG1SC_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG1SC_ADDR&#160;&#160;&#160;0x2107</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4cf5bed80ba87d9a97ce00e6484d5de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4cf5bed80ba87d9a97ce00e6484d5de">&#9670;&nbsp;</a></span>BG2_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG2_ENABLE&#160;&#160;&#160;(1 &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a309991e3719be6b10ec613bece94cc89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a309991e3719be6b10ec613bece94cc89">&#9670;&nbsp;</a></span>BG2_TSIZE16x16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG2_TSIZE16x16&#160;&#160;&#160;(1 &lt;&lt; 5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36fd91141d5ce654cc595936fa9d698d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36fd91141d5ce654cc595936fa9d698d">&#9670;&nbsp;</a></span>BG2_TSIZE8x8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG2_TSIZE8x8&#160;&#160;&#160;(0 &lt;&lt; 5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7348419a0e2162226a923271044a8204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7348419a0e2162226a923271044a8204">&#9670;&nbsp;</a></span>BG3_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG3_ENABLE&#160;&#160;&#160;(1 &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace880dbd9a642604316f940038786dc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace880dbd9a642604316f940038786dc8">&#9670;&nbsp;</a></span>BG3_MODE1_PRORITY_HIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG3_MODE1_PRORITY_HIGH&#160;&#160;&#160;(1 &lt;&lt; 3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode1_b_g3_high_priority_2_mode1_b_g3_high_priority_8c-example.html#a9">graphics/Backgrounds/Mode1BG3HighPriority/Mode1BG3HighPriority.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_continuos_scroll_2_mode1_continuos_scroll_8c-example.html#a19">graphics/Backgrounds/Mode1ContinuosScroll/Mode1ContinuosScroll.c</a>, and <a class="el" href="graphics_2_effects_2_transparency_2_transparency_8c-example.html#a8">graphics/Effects/Transparency/Transparency.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ad309d4c5f318d457a75e6af2c4b14632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad309d4c5f318d457a75e6af2c4b14632">&#9670;&nbsp;</a></span>BG3_TSIZE16x16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG3_TSIZE16x16&#160;&#160;&#160;(1 &lt;&lt; 6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39df9a2ee5cdddad7909f6ef23cc5ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39df9a2ee5cdddad7909f6ef23cc5ff8">&#9670;&nbsp;</a></span>BG3_TSIZE8x8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG3_TSIZE8x8&#160;&#160;&#160;(0 &lt;&lt; 6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5df96a2914a130bc3fbd5ea9d0c6a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5df96a2914a130bc3fbd5ea9d0c6a90">&#9670;&nbsp;</a></span>BG4_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG4_ENABLE&#160;&#160;&#160;(1 &lt;&lt; 3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae36d2eb055c4b37ebc901afec4e4dd2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae36d2eb055c4b37ebc901afec4e4dd2d">&#9670;&nbsp;</a></span>BG4_TSIZE16x16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG4_TSIZE16x16&#160;&#160;&#160;(1 &lt;&lt; 7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5f1da31c68752ffdf492be8616922ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f1da31c68752ffdf492be8616922ad">&#9670;&nbsp;</a></span>BG4_TSIZE8x8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG4_TSIZE8x8&#160;&#160;&#160;(0 &lt;&lt; 7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4818d4e1c65ed78d65f1d3e6d9d1232a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4818d4e1c65ed78d65f1d3e6d9d1232a">&#9670;&nbsp;</a></span>BG_16COLORS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG_16COLORS&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="games_2likemario_2_like_mario_8c-example.html#a53">games/likemario/LikeMario.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_2_mode1_8c-example.html#a2">graphics/Backgrounds/Mode1/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_b_g3_high_priority_2_mode1_b_g3_high_priority_8c-example.html#a4">graphics/Backgrounds/Mode1BG3HighPriority/Mode1BG3HighPriority.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_continuos_scroll_2_mode1_continuos_scroll_8c-example.html#a14">graphics/Backgrounds/Mode1ContinuosScroll/Mode1ContinuosScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_l_z77_2_mode1_l_z77_8c-example.html#a2">graphics/Backgrounds/Mode1LZ77/Mode1LZ77.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_mixed_scroll_2_mode1_mixed_scroll_8c-example.html#a2">graphics/Backgrounds/Mode1MixedScroll/Mode1MixedScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_png_2_mode1_8c-example.html#a2">graphics/Backgrounds/Mode1Png/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_scroll_2_mode1_scroll_8c-example.html#a6">graphics/Backgrounds/Mode1Scroll/Mode1Scroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a32">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>, <a class="el" href="graphics_2_effects_2_gradient_colors_2_gradient_colors_8c-example.html#a2">graphics/Effects/GradientColors/GradientColors.c</a>, <a class="el" href="graphics_2_effects_2_mosaic_shading_2_mosaic_shading_8c-example.html#a2">graphics/Effects/MosaicShading/MosaicShading.c</a>, <a class="el" href="graphics_2_effects_2_parallax_scrolling_2_parallax_scrolling_8c-example.html#a2">graphics/Effects/ParallaxScrolling/ParallaxScrolling.c</a>, <a class="el" href="graphics_2_effects_2_transparency_2_transparency_8c-example.html#a2">graphics/Effects/Transparency/Transparency.c</a>, <a class="el" href="graphics_2_effects_2_waves_2_waves_8c-example.html#a2">graphics/Effects/Waves/Waves.c</a>, <a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a2">graphics/Effects/Window/Window.c</a>, <a class="el" href="graphics_2_palette_2_get_colors_2_get_colors_8c-example.html#a3">graphics/Palette/GetColors/GetColors.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_engine_meta_sprite_2_dynamic_engine_meta_sprite_8c-example.html#a5">graphics/Sprites/DynamicEngineMetaSprite/DynamicEngineMetaSprite.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_engine_sprite_2_dynamic_engine_sprite_8c-example.html#a2">graphics/Sprites/DynamicEngineSprite/DynamicEngineSprite.c</a>, <a class="el" href="maps_2mapscroll_2mapscroll_8c-example.html#a2">maps/mapscroll/mapscroll.c</a>, <a class="el" href="maps_2tiled_2tiled_8c-example.html#a2">maps/tiled/tiled.c</a>, <a class="el" href="objects_2mapandobjects_2mapandobjects_8c-example.html#a2">objects/mapandobjects/mapandobjects.c</a>, and <a class="el" href="objects_2nogravityobject_2nogravityobjects_8c-example.html#a2">objects/nogravityobject/nogravityobjects.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="aab497f5051249668123af8a5363b8bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab497f5051249668123af8a5363b8bf8">&#9670;&nbsp;</a></span>BG_256COLORS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG_256COLORS&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode3_2_mode3_8c-example.html#a2">graphics/Backgrounds/Mode3/Mode3.c</a>, and <a class="el" href="graphics_2_effects_2_h_d_m_a_gradient_2_h_d_m_a_gradient_8c-example.html#a2">graphics/Effects/HDMAGradient/HDMAGradient.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a774d2a0de276a94af89173eb592803c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a774d2a0de276a94af89173eb592803c0">&#9670;&nbsp;</a></span>BG_4COLORS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG_4COLORS&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode1_continuos_scroll_2_mode1_continuos_scroll_8c-example.html#a15">graphics/Backgrounds/Mode1ContinuosScroll/Mode1ContinuosScroll.c</a>, and <a class="el" href="graphics_2_effects_2_transparency_2_transparency_8c-example.html#a3">graphics/Effects/Transparency/Transparency.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="af195eec5c93ea5507399f3c85109f3d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af195eec5c93ea5507399f3c85109f3d0">&#9670;&nbsp;</a></span>BG_4COLORS0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG_4COLORS0&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode0_2_mode0_8c-example.html#a2">graphics/Backgrounds/Mode0/Mode0.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a82bccfa80c8aa4ff5aa4e1416e0ade25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82bccfa80c8aa4ff5aa4e1416e0ade25">&#9670;&nbsp;</a></span>BG_MODE0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG_MODE0&#160;&#160;&#160;(0 &lt;&lt; 0) /** \brief 4-color     4-color     4-color     4-color   ;Normal */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode0_2_mode0_8c-example.html#a6">graphics/Backgrounds/Mode0/Mode0.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a05c862edb7f8f75036f10c04dcc3c2a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05c862edb7f8f75036f10c04dcc3c2a6">&#9670;&nbsp;</a></span>BG_MODE1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG_MODE1&#160;&#160;&#160;(1 &lt;&lt; 0) /** \brief 16-color    16-color    4-color     -         ;Normal */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audio_2effects_2effects_8c-example.html#a12">audio/effects/effects.c</a>, <a class="el" href="audio_2effectsandmusic_2effectsandmusic_8c-example.html#a12">audio/effectsandmusic/effectsandmusic.c</a>, <a class="el" href="audio_2music_2_music_8c-example.html#a12">audio/music/Music.c</a>, <a class="el" href="audio_2music_greater_than32k_2music_greater_than32k_8c-example.html#a12">audio/musicGreaterThan32k/musicGreaterThan32k.c</a>, <a class="el" href="audio_2tada_2_tada_8c-example.html#a12">audio/tada/Tada.c</a>, <a class="el" href="breakpoints_2src_2breakpoints_8c-example.html#a10">breakpoints/src/breakpoints.c</a>, <a class="el" href="debug_2debug_8c-example.html#a3">debug/debug.c</a>, <a class="el" href="games_2breakout_2breakout_8c-example.html#a15">games/breakout/breakout.c</a>, <a class="el" href="games_2likemario_2_like_mario_8c-example.html#a63">games/likemario/LikeMario.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_2_mode1_8c-example.html#a6">graphics/Backgrounds/Mode1/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_b_g3_high_priority_2_mode1_b_g3_high_priority_8c-example.html#a8">graphics/Backgrounds/Mode1BG3HighPriority/Mode1BG3HighPriority.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_continuos_scroll_2_mode1_continuos_scroll_8c-example.html#a18">graphics/Backgrounds/Mode1ContinuosScroll/Mode1ContinuosScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_l_z77_2_mode1_l_z77_8c-example.html#a6">graphics/Backgrounds/Mode1LZ77/Mode1LZ77.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_mixed_scroll_2_mode1_mixed_scroll_8c-example.html#a6">graphics/Backgrounds/Mode1MixedScroll/Mode1MixedScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_png_2_mode1_8c-example.html#a6">graphics/Backgrounds/Mode1Png/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_scroll_2_mode1_scroll_8c-example.html#a13">graphics/Backgrounds/Mode1Scroll/Mode1Scroll.c</a>, <a class="el" href="graphics_2_effects_2_gradient_colors_2_gradient_colors_8c-example.html#a6">graphics/Effects/GradientColors/GradientColors.c</a>, <a class="el" href="graphics_2_effects_2_mosaic_shading_2_mosaic_shading_8c-example.html#a6">graphics/Effects/MosaicShading/MosaicShading.c</a>, <a class="el" href="graphics_2_effects_2_parallax_scrolling_2_parallax_scrolling_8c-example.html#a6">graphics/Effects/ParallaxScrolling/ParallaxScrolling.c</a>, <a class="el" href="graphics_2_effects_2_transparency_2_transparency_8c-example.html#a7">graphics/Effects/Transparency/Transparency.c</a>, <a class="el" href="graphics_2_effects_2_waves_2_waves_8c-example.html#a6">graphics/Effects/Waves/Waves.c</a>, <a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a6">graphics/Effects/Window/Window.c</a>, <a class="el" href="graphics_2_palette_2_get_colors_2_get_colors_8c-example.html#a7">graphics/Palette/GetColors/GetColors.c</a>, <a class="el" href="graphics_2_sprites_2_animated_sprite_2_animated_sprite_8c-example.html#a9">graphics/Sprites/AnimatedSprite/AnimatedSprite.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_engine_meta_sprite_2_dynamic_engine_meta_sprite_8c-example.html#a10">graphics/Sprites/DynamicEngineMetaSprite/DynamicEngineMetaSprite.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_engine_sprite_2_dynamic_engine_sprite_8c-example.html#a7">graphics/Sprites/DynamicEngineSprite/DynamicEngineSprite.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_sprite_2_dynamic_sprite_8c-example.html#a14">graphics/Sprites/DynamicSprite/DynamicSprite.c</a>, <a class="el" href="graphics_2_sprites_2_object_size_2_object_size_8c-example.html#a25">graphics/Sprites/ObjectSize/ObjectSize.c</a>, <a class="el" href="graphics_2_sprites_2_simple_sprite_2_simple_sprite_8c-example.html#a8">graphics/Sprites/SimpleSprite/SimpleSprite.c</a>, <a class="el" href="hello_world_2src_2hello_world_8c-example.html#a9">hello_world/src/hello_world.c</a>, <a class="el" href="maps_2mapscroll_2mapscroll_8c-example.html#a6">maps/mapscroll/mapscroll.c</a>, <a class="el" href="maps_2tiled_2tiled_8c-example.html#a6">maps/tiled/tiled.c</a>, <a class="el" href="objects_2mapandobjects_2mapandobjects_8c-example.html#a6">objects/mapandobjects/mapandobjects.c</a>, <a class="el" href="objects_2moveobjects_2moveobjects_8c-example.html#a22">objects/moveobjects/moveobjects.c</a>, <a class="el" href="objects_2nogravityobject_2nogravityobjects_8c-example.html#a7">objects/nogravityobject/nogravityobjects.c</a>, <a class="el" href="pads_2input_2input_8c-example.html#a10">pads/input/input.c</a>, <a class="el" href="pads_2multiplay5_2multiplay5_8c-example.html#a12">pads/multiplay5/multiplay5.c</a>, <a class="el" href="random_2random_8c-example.html#a10">random/random.c</a>, <a class="el" href="scoring_2scoring_8c-example.html#a17">scoring/scoring.c</a>, <a class="el" href="sram_2sram_8c-example.html#a10">sram/sram.c</a>, <a class="el" href="testregion_2testregion_8c-example.html#a10">testregion/testregion.c</a>, <a class="el" href="timer_2timer_8c-example.html#a10">timer/timer.c</a>, and <a class="el" href="typeconsole_2src_2pal_ntsc_8c-example.html#a9">typeconsole/src/pal_ntsc.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a71df4d7e9e3bf54909cce56a5b0cf1d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71df4d7e9e3bf54909cce56a5b0cf1d1">&#9670;&nbsp;</a></span>BG_MODE2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG_MODE2&#160;&#160;&#160;(2 &lt;&lt; 0) /** \brief 16-color    16-color    (o.p.t)     -         ;Offset-per-tile */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab74253172bcb87b7947118b746ab2849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74253172bcb87b7947118b746ab2849">&#9670;&nbsp;</a></span>BG_MODE3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG_MODE3&#160;&#160;&#160;(3 &lt;&lt; 0) /** \brief 256-color   16-color    -           -         ;Normal */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode3_2_mode3_8c-example.html#a8">graphics/Backgrounds/Mode3/Mode3.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a0">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>, and <a class="el" href="graphics_2_effects_2_h_d_m_a_gradient_2_h_d_m_a_gradient_8c-example.html#a7">graphics/Effects/HDMAGradient/HDMAGradient.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a57023a6897e1ec8660b190a9488c08c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57023a6897e1ec8660b190a9488c08c6">&#9670;&nbsp;</a></span>BG_MODE4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG_MODE4&#160;&#160;&#160;(4 &lt;&lt; 0) /** \brief 256-color   4-color     (o.p.t)     -         ;Offset-per-tile */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa1d65e002c63b60a2b8df95970572908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1d65e002c63b60a2b8df95970572908">&#9670;&nbsp;</a></span>BG_MODE5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG_MODE5&#160;&#160;&#160;(5 &lt;&lt; 0) /** \brief 16-color    4-color     -           -         ;512-pix-hires */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a260fbcabdf73b2e049ae9fcd633b3ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a260fbcabdf73b2e049ae9fcd633b3ee2">&#9670;&nbsp;</a></span>BG_MODE6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG_MODE6&#160;&#160;&#160;(6 &lt;&lt; 0) /** \brief 16-color    -           (o.p.t)     -         ;512-pix plus Offs-p-t */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2995da5a6139bd6ca1091ae3358d4f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2995da5a6139bd6ca1091ae3358d4f3">&#9670;&nbsp;</a></span>BG_MODE7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BG_MODE7&#160;&#160;&#160;(7 &lt;&lt; 0) /** \brief 256-color   EXTBG       -           -         ;Rotation/Scaling */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a1">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a7f85311a4643785618d9ebc9dd047a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f85311a4643785618d9ebc9dd047a44">&#9670;&nbsp;</a></span>COLWIN_MB24W1ENABLEIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLWIN_MB24W1ENABLEIN&#160;&#160;&#160;(1 &lt;&lt; 4)  /** \brief BG2   BG4   MATH  Window-1 Area Inside */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c5d3817485ae11899798a7e0a010ca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c5d3817485ae11899798a7e0a010ca7">&#9670;&nbsp;</a></span>COLWIN_MB24W1ENABLEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLWIN_MB24W1ENABLEOUT&#160;&#160;&#160;(2 &lt;&lt; 4) /** \brief BG2   BG4   MATH  Window-1 Area Outside */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f8c84ebe0a9545ea9c96b8abf19c7a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f8c84ebe0a9545ea9c96b8abf19c7a4">&#9670;&nbsp;</a></span>COLWIN_MB24W2ENABLEIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLWIN_MB24W2ENABLEIN&#160;&#160;&#160;(1 &lt;&lt; 6)  /** \brief BG2   BG4   MATH  Window-2 Area Inside */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6968bfe23f006bdf39824555c09584af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6968bfe23f006bdf39824555c09584af">&#9670;&nbsp;</a></span>COLWIN_MB24W2ENABLEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLWIN_MB24W2ENABLEOUT&#160;&#160;&#160;(2 &lt;&lt; 6) /** \brief BG2   BG4   MATH  Window-2 Area Outside */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86db2ab0941ca4f332512d07474b4a49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86db2ab0941ca4f332512d07474b4a49">&#9670;&nbsp;</a></span>COLWIN_OB13W1ENABLEIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLWIN_OB13W1ENABLEIN&#160;&#160;&#160;(1 &lt;&lt; 0)  /** \brief BG1   BG3   OBJ   Window-1 Area Inside */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e2d699d3d545034704c49ba61aeef22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e2d699d3d545034704c49ba61aeef22">&#9670;&nbsp;</a></span>COLWIN_OB13W1ENABLEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLWIN_OB13W1ENABLEOUT&#160;&#160;&#160;(2 &lt;&lt; 0) /** \brief BG1   BG3   OBJ   Window-1 Area Outside */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8788aace2f7d5508738fdd0aaf54c346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8788aace2f7d5508738fdd0aaf54c346">&#9670;&nbsp;</a></span>COLWIN_OB13W2ENABLEIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLWIN_OB13W2ENABLEIN&#160;&#160;&#160;(1 &lt;&lt; 2)  /** \brief BG1   BG3   OBJ   Window-2 Area Inside */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b244a78c2d213c4f73c72734039aea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b244a78c2d213c4f73c72734039aea1">&#9670;&nbsp;</a></span>COLWIN_OB13W2ENABLEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLWIN_OB13W2ENABLEOUT&#160;&#160;&#160;(2 &lt;&lt; 2) /** \brief BG1   BG3   OBJ   Window-2 Area Outside */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae43fb79d1c3dbb2328e159350e20e35b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae43fb79d1c3dbb2328e159350e20e35b">&#9670;&nbsp;</a></span>OBJ_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OBJ_ENABLE&#160;&#160;&#160;(1 &lt;&lt; 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a44e47bf13266350ebb5120b7618d46d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44e47bf13266350ebb5120b7618d46d5">&#9670;&nbsp;</a></span>REG_BG12NBA</h2>
 
@@ -249,13 +858,213 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define REG_BG12NBA&#160;&#160;&#160;(*(vuint8 *)0x210B)</td>
+          <td class="memname">#define REG_BG12NBA&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x210B)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>BG Character Data Area Designation (W) 15-12 BG4 Tile Base Address (in 4K-word steps) 11-8 BG3 Tile Base Address (in 4K-word steps) 7-4 BG2 Tile Base Address (in 4K-word steps) 3-0 BG1 Tile Base Address (in 4K-word steps) </p>
 <p>Ignored in Mode 7 (Base is always zero) </p>
+
+</div>
+</div>
+<a id="ab769d805a40fdce758d964d274bb8195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab769d805a40fdce758d964d274bb8195">&#9670;&nbsp;</a></span>REG_BG1HOFS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BG1HOFS&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x210D)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BG1 Horizontal Scroll (X) (W) and M7HOFS. </p>
+
+</div>
+</div>
+<a id="a92fb484df47302e1f52a162e17546636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92fb484df47302e1f52a162e17546636">&#9670;&nbsp;</a></span>REG_BG1SC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BG1SC&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2107)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a466a20c79b0739bae02668b1b764d8f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a466a20c79b0739bae02668b1b764d8f1">&#9670;&nbsp;</a></span>REG_BG1VOFS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BG1VOFS&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x210E)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BG1 Vertical Scroll (Y) (W) and M7VOFS. </p>
+
+</div>
+</div>
+<a id="a79723f49e7557337b091835634430844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79723f49e7557337b091835634430844">&#9670;&nbsp;</a></span>REG_BG2HOFS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BG2HOFS&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x210F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BG2 Horizontal Scroll (X) (W) </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a5">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a7fd6639ae7dd9330bf1d0d5fd22acdc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd6639ae7dd9330bf1d0d5fd22acdc5">&#9670;&nbsp;</a></span>REG_BG2SC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BG2SC&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2108)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae64c4fa64e07ea9a1c33873bc2dc269e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64c4fa64e07ea9a1c33873bc2dc269e">&#9670;&nbsp;</a></span>REG_BG2VOFS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BG2VOFS&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2110)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BG2 Vertical Scroll (Y) (W) </p>
+
+</div>
+</div>
+<a id="a277200fda555b28c14bfeca8c000c0ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a277200fda555b28c14bfeca8c000c0ca">&#9670;&nbsp;</a></span>REG_BG34NBA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BG34NBA&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x210C)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac107692b4c51d08af380a28407632d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac107692b4c51d08af380a28407632d5">&#9670;&nbsp;</a></span>REG_BG3HOFS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BG3HOFS&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2111)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BG3 Horizontal Scroll (X) (W) </p>
+
+</div>
+</div>
+<a id="aeec3d3a85970f4e4edcc17ea00b9141b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeec3d3a85970f4e4edcc17ea00b9141b">&#9670;&nbsp;</a></span>REG_BG3SC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BG3SC&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2109)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a182c4c0a976be88919146755c53ab44a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a182c4c0a976be88919146755c53ab44a">&#9670;&nbsp;</a></span>REG_BG3VOFS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BG3VOFS&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2112)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BG3 Vertical Scroll (Y) (W) </p>
+
+</div>
+</div>
+<a id="a0876479f76d0a58b10b4893dc6d2bbb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0876479f76d0a58b10b4893dc6d2bbb3">&#9670;&nbsp;</a></span>REG_BG4HOFS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BG4HOFS&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2113)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BG4 Horizontal Scroll (X) (W) </p>
+
+</div>
+</div>
+<a id="ad371ac1543f4df0e65897f1c428881af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad371ac1543f4df0e65897f1c428881af">&#9670;&nbsp;</a></span>REG_BG4SC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BG4SC&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x210A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a264e13fdbfcfeafc7c7cbc859f241220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a264e13fdbfcfeafc7c7cbc859f241220">&#9670;&nbsp;</a></span>REG_BG4VOFS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BG4VOFS&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2114)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BG4 Vertical Scroll (Y) (W) </p>
 
 </div>
 </div>
@@ -266,7 +1075,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define REG_BGMODE&#160;&#160;&#160;(*(vuint8 *)0x2105)</td>
+          <td class="memname">#define REG_BGMODE&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2105)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -278,6 +1087,38 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
 
 </div>
 </div>
+<a id="aa5a7327dc4aeb9242a12065c0ee50303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5a7327dc4aeb9242a12065c0ee50303">&#9670;&nbsp;</a></span>REG_BGxHOFS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BGxHOFS&#160;&#160;&#160;0x210D</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BGx Horizontal Scroll (X) (W) and M7HOFS. </p>
+
+</div>
+</div>
+<a id="afe5f6cc3aa46f96d13eb56ee8a0b1778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe5f6cc3aa46f96d13eb56ee8a0b1778">&#9670;&nbsp;</a></span>REG_BGxVOFS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_BGxVOFS&#160;&#160;&#160;0x210E</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BGx Vertical Scroll (Y) (W) and M7VOFS. </p>
+
+</div>
+</div>
 <a id="af189b16c0e666f2b9a07a538944a5684"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af189b16c0e666f2b9a07a538944a5684">&#9670;&nbsp;</a></span>REG_MOSAIC</h2>
 
@@ -285,7 +1126,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define REG_MOSAIC&#160;&#160;&#160;(*(vuint8 *)0x2106)</td>
+          <td class="memname">#define REG_MOSAIC&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2106)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -296,6 +1137,20 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
 
 </div>
 </div>
+<a id="ad38434618e3dc4ee900ffcf1768ecf45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad38434618e3dc4ee900ffcf1768ecf45">&#9670;&nbsp;</a></span>REG_TM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_TM&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x212C)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a53012aa6801fe51e422cf4f17d5c8a35"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a53012aa6801fe51e422cf4f17d5c8a35">&#9670;&nbsp;</a></span>REG_TMW</h2>
 
@@ -303,7 +1158,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define REG_TMW&#160;&#160;&#160;(*(vuint8 *)0x212E)</td>
+          <td class="memname">#define REG_TMW&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x212E)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -322,7 +1177,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define REG_TS&#160;&#160;&#160;(*(vuint8 *)0x212D)</td>
+          <td class="memname">#define REG_TS&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x212D)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -336,6 +1191,66 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
 
 </div>
 </div>
+<a id="afcc7237046120cbda0d0e02bbe8be265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcc7237046120cbda0d0e02bbe8be265">&#9670;&nbsp;</a></span>REG_TSW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_TSW&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x212F)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab076a1d15554587d229fe3be8ae0332b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab076a1d15554587d229fe3be8ae0332b">&#9670;&nbsp;</a></span>REG_W12SEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_W12SEL&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2123)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window BG1/BG2 Mask Settings (W) 2123h - W12SEL - Window BG1/BG2 Mask Settings (W) 2124h - W34SEL - Window BG3/BG4 Mask Settings (W) 2125h - WOBJSEL - Window OBJ/MATH Mask Settings (W) Bit 2123h 2124h 2125h 7-6 BG2 BG4 MATH Window-2 Area (0..1=Disable, 1=Inside, 2=Outside) 5-4 BG2 BG4 MATH Window-1 Area (0..1=Disable, 1=Inside, 2=Outside) 3-2 BG1 BG3 OBJ Window-2 Area (0..1=Disable, 1=Inside, 2=Outside) 1-0 BG1 BG3 OBJ Window-1 Area (0..1=Disable, 1=Inside, 2=Outside) </p>
+
+</div>
+</div>
+<a id="a07640bb0bfa4bc0f278920220cc0cadd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07640bb0bfa4bc0f278920220cc0cadd">&#9670;&nbsp;</a></span>REG_W34SEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_W34SEL&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2124)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b33454f7968061e6820463ae5b5d07c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b33454f7968061e6820463ae5b5d07c">&#9670;&nbsp;</a></span>REG_WBGLOG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_WBGLOG&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x212A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Window 1/2 Mask Logic (W) 212Ah/212Bh - WBGLOG/WOBJLOG - Window 1/2 Mask Logic (W) Bit 212Ah 212Bh 7-6 BG4 - Window 1/2 Mask Logic (0=OR, 1=AND, 2=XOR, 3=XNOR) 5-4 BG3 - Window 1/2 Mask Logic (0=OR, 1=AND, 2=XOR, 3=XNOR) 3-2 BG2 MATH Window 1/2 Mask Logic (0=OR, 1=AND, 2=XOR, 3=XNOR) 1-0 BG1 OBJ Window 1/2 Mask Logic (0=OR, 1=AND, 2=XOR, 3=XNOR) Allows to merge the Window 1 and 2 areas into a single "final" window area (which is then used by TMW, TSW, and CGWSEL). The OR/AND/XOR/XNOR logic is applied ONLY if BOTH window 1 and 2 are enabled (in WxxSEL registers). If only one window is enabled, then that window is used as is as "final" area. If both are disabled, then the "final" area will be empty. Note: "XNOR" means "1 XOR area1 XOR area2" (ie. the inverse of the normal XOR result). </p>
+
+</div>
+</div>
 <a id="a26261c1f9b345599d87efd852037081d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a26261c1f9b345599d87efd852037081d">&#9670;&nbsp;</a></span>REG_WH0</h2>
 
@@ -343,13 +1258,181 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define REG_WH0&#160;&#160;&#160;(*(vuint8 *)0x2126)</td>
+          <td class="memname">#define REG_WH0&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2126)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Window 1 Left Position (X1) (W) 2126h - WH0 - Window 1 Left Position (X1) (W) 2127h - WH1 - Window 1 Right Position (X2) (W) 2128h - WH2 - Window 2 Left Position (X1) (W) 2129h - WH3 - Window 2 Right Position (X2) (W) 7-0 Window Position (00h..0FFh; 0=leftmost, 255=rightmost) </p>
 <p>Specifies the horizontal boundaries of the windows. Note that there are no vertical boundaries (these could be implemented by manipulating the window registers via IRQ and/or HDMA). The "inside-window" region extends from X1 to X2 (that, including the X1 and X2 coordinates), so the window width is X2-X1+1. If the width is zero (or negative), then the "inside-window" becomes empty, and the whole screen will be treated "outside-window". </p>
+
+</div>
+</div>
+<a id="a261b7ab26b206f1adc8e98a0b6a4f099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a261b7ab26b206f1adc8e98a0b6a4f099">&#9670;&nbsp;</a></span>REG_WH1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_WH1&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2127)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1a3df26afa53c8a9bcaadae8eb0c529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a3df26afa53c8a9bcaadae8eb0c529">&#9670;&nbsp;</a></span>REG_WH2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_WH2&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2128)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8aa8f353fd99ab0fc06c5204172e4ef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aa8f353fd99ab0fc06c5204172e4ef0">&#9670;&nbsp;</a></span>REG_WH3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_WH3&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2129)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af035bcd93033b2a2389394a9138bb94d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af035bcd93033b2a2389394a9138bb94d">&#9670;&nbsp;</a></span>REG_WOBJLOG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_WOBJLOG&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x212B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfb8b85d25c2b954e2d78cc27b4c0f71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb8b85d25c2b954e2d78cc27b4c0f71">&#9670;&nbsp;</a></span>REG_WOBJSEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_WOBJSEL&#160;&#160;&#160;(*(<a class="el" href="snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20">vuint8</a> *)0x2125)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11724b6748ce0954e9b43819263537fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11724b6748ce0954e9b43819263537fc">&#9670;&nbsp;</a></span>SC_32x32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_32x32&#160;&#160;&#160;(0 &lt;&lt; 0) /** \brief 32 x 32 tile size */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audio_2effects_2effects_8c-example.html#a10">audio/effects/effects.c</a>, <a class="el" href="audio_2effectsandmusic_2effectsandmusic_8c-example.html#a10">audio/effectsandmusic/effectsandmusic.c</a>, <a class="el" href="audio_2music_2_music_8c-example.html#a10">audio/music/Music.c</a>, <a class="el" href="audio_2music_greater_than32k_2music_greater_than32k_8c-example.html#a10">audio/musicGreaterThan32k/musicGreaterThan32k.c</a>, <a class="el" href="audio_2tada_2_tada_8c-example.html#a10">audio/tada/Tada.c</a>, <a class="el" href="breakpoints_2src_2breakpoints_8c-example.html#a8">breakpoints/src/breakpoints.c</a>, <a class="el" href="games_2breakout_2breakout_8c-example.html#a12">games/breakout/breakout.c</a>, <a class="el" href="games_2likemario_2_like_mario_8c-example.html#a51">games/likemario/LikeMario.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode0_2_mode0_8c-example.html#a4">graphics/Backgrounds/Mode0/Mode0.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_2_mode1_8c-example.html#a4">graphics/Backgrounds/Mode1/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_b_g3_high_priority_2_mode1_b_g3_high_priority_8c-example.html#a2">graphics/Backgrounds/Mode1BG3HighPriority/Mode1BG3HighPriority.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_continuos_scroll_2_mode1_continuos_scroll_8c-example.html#a12">graphics/Backgrounds/Mode1ContinuosScroll/Mode1ContinuosScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_l_z77_2_mode1_l_z77_8c-example.html#a4">graphics/Backgrounds/Mode1LZ77/Mode1LZ77.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_mixed_scroll_2_mode1_mixed_scroll_8c-example.html#a4">graphics/Backgrounds/Mode1MixedScroll/Mode1MixedScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_png_2_mode1_8c-example.html#a4">graphics/Backgrounds/Mode1Png/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_scroll_2_mode1_scroll_8c-example.html#a11">graphics/Backgrounds/Mode1Scroll/Mode1Scroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode3_2_mode3_8c-example.html#a6">graphics/Backgrounds/Mode3/Mode3.c</a>, <a class="el" href="graphics_2_effects_2_gradient_colors_2_gradient_colors_8c-example.html#a4">graphics/Effects/GradientColors/GradientColors.c</a>, <a class="el" href="graphics_2_effects_2_h_d_m_a_gradient_2_h_d_m_a_gradient_8c-example.html#a5">graphics/Effects/HDMAGradient/HDMAGradient.c</a>, <a class="el" href="graphics_2_effects_2_mosaic_shading_2_mosaic_shading_8c-example.html#a4">graphics/Effects/MosaicShading/MosaicShading.c</a>, <a class="el" href="graphics_2_effects_2_transparency_2_transparency_8c-example.html#a5">graphics/Effects/Transparency/Transparency.c</a>, <a class="el" href="graphics_2_effects_2_waves_2_waves_8c-example.html#a4">graphics/Effects/Waves/Waves.c</a>, <a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a4">graphics/Effects/Window/Window.c</a>, <a class="el" href="graphics_2_palette_2_get_colors_2_get_colors_8c-example.html#a5">graphics/Palette/GetColors/GetColors.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_engine_meta_sprite_2_dynamic_engine_meta_sprite_8c-example.html#a7">graphics/Sprites/DynamicEngineMetaSprite/DynamicEngineMetaSprite.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_engine_sprite_2_dynamic_engine_sprite_8c-example.html#a4">graphics/Sprites/DynamicEngineSprite/DynamicEngineSprite.c</a>, <a class="el" href="graphics_2_sprites_2_object_size_2_object_size_8c-example.html#a23">graphics/Sprites/ObjectSize/ObjectSize.c</a>, <a class="el" href="hello_world_2src_2hello_world_8c-example.html#a7">hello_world/src/hello_world.c</a>, <a class="el" href="pads_2input_2input_8c-example.html#a8">pads/input/input.c</a>, <a class="el" href="pads_2multiplay5_2multiplay5_8c-example.html#a7">pads/multiplay5/multiplay5.c</a>, <a class="el" href="random_2random_8c-example.html#a8">random/random.c</a>, <a class="el" href="scoring_2scoring_8c-example.html#a8">scoring/scoring.c</a>, <a class="el" href="sram_2sram_8c-example.html#a8">sram/sram.c</a>, <a class="el" href="testregion_2testregion_8c-example.html#a8">testregion/testregion.c</a>, <a class="el" href="timer_2timer_8c-example.html#a8">timer/timer.c</a>, and <a class="el" href="typeconsole_2src_2pal_ntsc_8c-example.html#a7">typeconsole/src/pal_ntsc.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="aeaa1585b5a34aea00df0224fdcc4a5ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaa1585b5a34aea00df0224fdcc4a5ab">&#9670;&nbsp;</a></span>SC_32x64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_32x64&#160;&#160;&#160;(2 &lt;&lt; 0) /** \brief 32 x 64 tile size */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6129b86a7c2913a31f1bca293fa7c1e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6129b86a7c2913a31f1bca293fa7c1e7">&#9670;&nbsp;</a></span>SC_64x32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_64x32&#160;&#160;&#160;(1 &lt;&lt; 0) /** \brief 64 x 32 tile size */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="games_2likemario_2_like_mario_8c-example.html#a54">games/likemario/LikeMario.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_continuos_scroll_2_mode1_continuos_scroll_8c-example.html#a11">graphics/Backgrounds/Mode1ContinuosScroll/Mode1ContinuosScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a30">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>, <a class="el" href="graphics_2_effects_2_parallax_scrolling_2_parallax_scrolling_8c-example.html#a4">graphics/Effects/ParallaxScrolling/ParallaxScrolling.c</a>, <a class="el" href="maps_2mapscroll_2mapscroll_8c-example.html#a4">maps/mapscroll/mapscroll.c</a>, <a class="el" href="maps_2tiled_2tiled_8c-example.html#a4">maps/tiled/tiled.c</a>, <a class="el" href="objects_2mapandobjects_2mapandobjects_8c-example.html#a4">objects/mapandobjects/mapandobjects.c</a>, and <a class="el" href="objects_2nogravityobject_2nogravityobjects_8c-example.html#a4">objects/nogravityobject/nogravityobjects.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ace76b0c992e2cba05f6da76f9825720a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace76b0c992e2cba05f6da76f9825720a">&#9670;&nbsp;</a></span>SC_64x64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_64x64&#160;&#160;&#160;(3 &lt;&lt; 0) /** \brief 64 x 64 tile size */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode1_scroll_2_mode1_scroll_8c-example.html#a8">graphics/Backgrounds/Mode1Scroll/Mode1Scroll.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ac18d207be95eb5d103907d106575e9ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac18d207be95eb5d103907d106575e9ad">&#9670;&nbsp;</a></span>SC_BASE_SHIFT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_BASE_SHIFT&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The shift to apply to map base when storing it in a tile map location register. </p>
+
+</div>
+</div>
+<a id="af6cde02aaf57795f0dff8cd45db5ce1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6cde02aaf57795f0dff8cd45db5ce1d">&#9670;&nbsp;</a></span>SC_TILE_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SC_TILE_BASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">base</td><td>)</td>
+          <td>&#160;&#160;&#160;((base) &lt;&lt; <a class="el" href="background_8h.html#ac18d207be95eb5d103907d106575e9ad">SC_BASE_SHIFT</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Macro to set the tile map address in tile map location. </p>
 
 </div>
 </div>
@@ -363,31 +1446,31 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
         <tr>
           <td class="memname">void bgInitMapSet </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>bgNumber</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>mapSource</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>mapSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>sizeMode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>address</em>&#160;</td>
         </tr>
         <tr>
@@ -409,7 +1492,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="games_2breakout_2breakout_8c-example.html#a11">games/breakout/breakout.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode0_2_mode0_8c-example.html#a2">graphics/Backgrounds/Mode0/Mode0.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_2_mode1_8c-example.html#a2">graphics/Backgrounds/Mode1/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_l_z77_2_mode1_l_z77_8c-example.html#a2">graphics/Backgrounds/Mode1LZ77/Mode1LZ77.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_mixed_scroll_2_mode1_mixed_scroll_8c-example.html#a2">graphics/Backgrounds/Mode1MixedScroll/Mode1MixedScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_png_2_mode1_8c-example.html#a2">graphics/Backgrounds/Mode1Png/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_scroll_2_mode1_scroll_8c-example.html#a6">graphics/Backgrounds/Mode1Scroll/Mode1Scroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode3_2_mode3_8c-example.html#a4">graphics/Backgrounds/Mode3/Mode3.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a8">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>, <a class="el" href="graphics_2_effects_2_gradient_colors_2_gradient_colors_8c-example.html#a2">graphics/Effects/GradientColors/GradientColors.c</a>, <a class="el" href="graphics_2_effects_2_h_d_m_a_gradient_2_h_d_m_a_gradient_8c-example.html#a3">graphics/Effects/HDMAGradient/HDMAGradient.c</a>, <a class="el" href="graphics_2_effects_2_mosaic_shading_2_mosaic_shading_8c-example.html#a2">graphics/Effects/MosaicShading/MosaicShading.c</a>, <a class="el" href="graphics_2_effects_2_parallax_scrolling_2_parallax_scrolling_8c-example.html#a2">graphics/Effects/ParallaxScrolling/ParallaxScrolling.c</a>, <a class="el" href="graphics_2_effects_2_transparency_2_transparency_8c-example.html#a2">graphics/Effects/Transparency/Transparency.c</a>, <a class="el" href="graphics_2_effects_2_waves_2_waves_8c-example.html#a2">graphics/Effects/Waves/Waves.c</a>, <a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a2">graphics/Effects/Window/Window.c</a>, <a class="el" href="graphics_2_palette_2_get_colors_2_get_colors_8c-example.html#a3">graphics/Palette/GetColors/GetColors.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_engine_meta_sprite_2_dynamic_engine_meta_sprite_8c-example.html#a5">graphics/Sprites/DynamicEngineMetaSprite/DynamicEngineMetaSprite.c</a>, and <a class="el" href="graphics_2_sprites_2_dynamic_engine_sprite_2_dynamic_engine_sprite_8c-example.html#a2">graphics/Sprites/DynamicEngineSprite/DynamicEngineSprite.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="games_2breakout_2breakout_8c-example.html#a11">games/breakout/breakout.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode0_2_mode0_8c-example.html#a3">graphics/Backgrounds/Mode0/Mode0.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_2_mode1_8c-example.html#a3">graphics/Backgrounds/Mode1/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_l_z77_2_mode1_l_z77_8c-example.html#a3">graphics/Backgrounds/Mode1LZ77/Mode1LZ77.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_mixed_scroll_2_mode1_mixed_scroll_8c-example.html#a3">graphics/Backgrounds/Mode1MixedScroll/Mode1MixedScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_png_2_mode1_8c-example.html#a3">graphics/Backgrounds/Mode1Png/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_scroll_2_mode1_scroll_8c-example.html#a7">graphics/Backgrounds/Mode1Scroll/Mode1Scroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode3_2_mode3_8c-example.html#a5">graphics/Backgrounds/Mode3/Mode3.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a29">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>, <a class="el" href="graphics_2_effects_2_gradient_colors_2_gradient_colors_8c-example.html#a3">graphics/Effects/GradientColors/GradientColors.c</a>, <a class="el" href="graphics_2_effects_2_h_d_m_a_gradient_2_h_d_m_a_gradient_8c-example.html#a4">graphics/Effects/HDMAGradient/HDMAGradient.c</a>, <a class="el" href="graphics_2_effects_2_mosaic_shading_2_mosaic_shading_8c-example.html#a3">graphics/Effects/MosaicShading/MosaicShading.c</a>, <a class="el" href="graphics_2_effects_2_parallax_scrolling_2_parallax_scrolling_8c-example.html#a3">graphics/Effects/ParallaxScrolling/ParallaxScrolling.c</a>, <a class="el" href="graphics_2_effects_2_transparency_2_transparency_8c-example.html#a4">graphics/Effects/Transparency/Transparency.c</a>, <a class="el" href="graphics_2_effects_2_waves_2_waves_8c-example.html#a3">graphics/Effects/Waves/Waves.c</a>, <a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a3">graphics/Effects/Window/Window.c</a>, <a class="el" href="graphics_2_palette_2_get_colors_2_get_colors_8c-example.html#a4">graphics/Palette/GetColors/GetColors.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_engine_meta_sprite_2_dynamic_engine_meta_sprite_8c-example.html#a6">graphics/Sprites/DynamicEngineMetaSprite/DynamicEngineMetaSprite.c</a>, and <a class="el" href="graphics_2_sprites_2_dynamic_engine_sprite_2_dynamic_engine_sprite_8c-example.html#a3">graphics/Sprites/DynamicEngineSprite/DynamicEngineSprite.c</a>.</dd>
 </dl>
 
 </div>
@@ -423,31 +1506,31 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
         <tr>
           <td class="memname">void bgInitMapTileSet7 </td>
           <td>(</td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>tileSource</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>mapSource</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>tilePalette</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>tileSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>address</em>&#160;</td>
         </tr>
         <tr>
@@ -469,7 +1552,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_2_mode7_8c-example.html#a1">graphics/Backgrounds/Mode7/Mode7.c</a>, and <a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a7">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode7_2_mode7_8c-example.html#a1">graphics/Backgrounds/Mode7/Mode7.c</a>, and <a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a28">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>.</dd>
 </dl>
 
 </div>
@@ -483,49 +1566,49 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
         <tr>
           <td class="memname">void bgInitTileSet </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>bgNumber</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>tileSource</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>tilePalette</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>paletteEntry</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>tileSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>paletteSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>colorMode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>address</em>&#160;</td>
         </tr>
         <tr>
@@ -550,7 +1633,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="games_2likemario_2_like_mario_8c-example.html#a50">games/likemario/LikeMario.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode0_2_mode0_8c-example.html#a1">graphics/Backgrounds/Mode0/Mode0.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_2_mode1_8c-example.html#a1">graphics/Backgrounds/Mode1/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_b_g3_high_priority_2_mode1_b_g3_high_priority_8c-example.html#a2">graphics/Backgrounds/Mode1BG3HighPriority/Mode1BG3HighPriority.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_continuos_scroll_2_mode1_continuos_scroll_8c-example.html#a11">graphics/Backgrounds/Mode1ContinuosScroll/Mode1ContinuosScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_mixed_scroll_2_mode1_mixed_scroll_8c-example.html#a1">graphics/Backgrounds/Mode1MixedScroll/Mode1MixedScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_png_2_mode1_8c-example.html#a1">graphics/Backgrounds/Mode1Png/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_scroll_2_mode1_scroll_8c-example.html#a5">graphics/Backgrounds/Mode1Scroll/Mode1Scroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode3_2_mode3_8c-example.html#a1">graphics/Backgrounds/Mode3/Mode3.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a9">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>, <a class="el" href="graphics_2_effects_2_gradient_colors_2_gradient_colors_8c-example.html#a1">graphics/Effects/GradientColors/GradientColors.c</a>, <a class="el" href="graphics_2_effects_2_h_d_m_a_gradient_2_h_d_m_a_gradient_8c-example.html#a1">graphics/Effects/HDMAGradient/HDMAGradient.c</a>, <a class="el" href="graphics_2_effects_2_mosaic_shading_2_mosaic_shading_8c-example.html#a1">graphics/Effects/MosaicShading/MosaicShading.c</a>, <a class="el" href="graphics_2_effects_2_parallax_scrolling_2_parallax_scrolling_8c-example.html#a1">graphics/Effects/ParallaxScrolling/ParallaxScrolling.c</a>, <a class="el" href="graphics_2_effects_2_transparency_2_transparency_8c-example.html#a1">graphics/Effects/Transparency/Transparency.c</a>, <a class="el" href="graphics_2_effects_2_waves_2_waves_8c-example.html#a1">graphics/Effects/Waves/Waves.c</a>, <a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a1">graphics/Effects/Window/Window.c</a>, <a class="el" href="graphics_2_palette_2_get_colors_2_get_colors_8c-example.html#a2">graphics/Palette/GetColors/GetColors.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_engine_meta_sprite_2_dynamic_engine_meta_sprite_8c-example.html#a4">graphics/Sprites/DynamicEngineMetaSprite/DynamicEngineMetaSprite.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_engine_sprite_2_dynamic_engine_sprite_8c-example.html#a1">graphics/Sprites/DynamicEngineSprite/DynamicEngineSprite.c</a>, <a class="el" href="maps_2mapscroll_2mapscroll_8c-example.html#a1">maps/mapscroll/mapscroll.c</a>, <a class="el" href="maps_2tiled_2tiled_8c-example.html#a1">maps/tiled/tiled.c</a>, <a class="el" href="objects_2mapandobjects_2mapandobjects_8c-example.html#a1">objects/mapandobjects/mapandobjects.c</a>, and <a class="el" href="objects_2nogravityobject_2nogravityobjects_8c-example.html#a1">objects/nogravityobject/nogravityobjects.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="games_2likemario_2_like_mario_8c-example.html#a52">games/likemario/LikeMario.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode0_2_mode0_8c-example.html#a1">graphics/Backgrounds/Mode0/Mode0.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_2_mode1_8c-example.html#a1">graphics/Backgrounds/Mode1/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_b_g3_high_priority_2_mode1_b_g3_high_priority_8c-example.html#a3">graphics/Backgrounds/Mode1BG3HighPriority/Mode1BG3HighPriority.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_continuos_scroll_2_mode1_continuos_scroll_8c-example.html#a13">graphics/Backgrounds/Mode1ContinuosScroll/Mode1ContinuosScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_mixed_scroll_2_mode1_mixed_scroll_8c-example.html#a1">graphics/Backgrounds/Mode1MixedScroll/Mode1MixedScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_png_2_mode1_8c-example.html#a1">graphics/Backgrounds/Mode1Png/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_scroll_2_mode1_scroll_8c-example.html#a5">graphics/Backgrounds/Mode1Scroll/Mode1Scroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode3_2_mode3_8c-example.html#a1">graphics/Backgrounds/Mode3/Mode3.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode7_perspective_2_mode7_perspective_8c-example.html#a31">graphics/Backgrounds/Mode7Perspective/Mode7Perspective.c</a>, <a class="el" href="graphics_2_effects_2_gradient_colors_2_gradient_colors_8c-example.html#a1">graphics/Effects/GradientColors/GradientColors.c</a>, <a class="el" href="graphics_2_effects_2_h_d_m_a_gradient_2_h_d_m_a_gradient_8c-example.html#a1">graphics/Effects/HDMAGradient/HDMAGradient.c</a>, <a class="el" href="graphics_2_effects_2_mosaic_shading_2_mosaic_shading_8c-example.html#a1">graphics/Effects/MosaicShading/MosaicShading.c</a>, <a class="el" href="graphics_2_effects_2_parallax_scrolling_2_parallax_scrolling_8c-example.html#a1">graphics/Effects/ParallaxScrolling/ParallaxScrolling.c</a>, <a class="el" href="graphics_2_effects_2_transparency_2_transparency_8c-example.html#a1">graphics/Effects/Transparency/Transparency.c</a>, <a class="el" href="graphics_2_effects_2_waves_2_waves_8c-example.html#a1">graphics/Effects/Waves/Waves.c</a>, <a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a1">graphics/Effects/Window/Window.c</a>, <a class="el" href="graphics_2_palette_2_get_colors_2_get_colors_8c-example.html#a2">graphics/Palette/GetColors/GetColors.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_engine_meta_sprite_2_dynamic_engine_meta_sprite_8c-example.html#a4">graphics/Sprites/DynamicEngineMetaSprite/DynamicEngineMetaSprite.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_engine_sprite_2_dynamic_engine_sprite_8c-example.html#a1">graphics/Sprites/DynamicEngineSprite/DynamicEngineSprite.c</a>, <a class="el" href="maps_2mapscroll_2mapscroll_8c-example.html#a1">maps/mapscroll/mapscroll.c</a>, <a class="el" href="maps_2tiled_2tiled_8c-example.html#a1">maps/tiled/tiled.c</a>, <a class="el" href="objects_2mapandobjects_2mapandobjects_8c-example.html#a1">objects/mapandobjects/mapandobjects.c</a>, and <a class="el" href="objects_2nogravityobject_2nogravityobjects_8c-example.html#a1">objects/nogravityobject/nogravityobjects.c</a>.</dd>
 </dl>
 
 </div>
@@ -564,25 +1647,25 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
         <tr>
           <td class="memname">void bgInitTileSetData </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>bgNumber</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>tileSource</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>tileSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>address</em>&#160;</td>
         </tr>
         <tr>
@@ -615,43 +1698,43 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
         <tr>
           <td class="memname">void bgInitTileSetLz </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>bgNumber</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>tileSource</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
           <td class="paramname"><em>tilePalette</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>paletteEntry</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>paletteSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>colorMode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>address</em>&#160;</td>
         </tr>
         <tr>
@@ -689,7 +1772,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
         <tr>
           <td class="memname">void bgSetDisable </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>bgNumber</em></td><td>)</td>
           <td></td>
         </tr>
@@ -703,7 +1786,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audio_2effects_2effects_8c-example.html#a11">audio/effects/effects.c</a>, <a class="el" href="audio_2effectsandmusic_2effectsandmusic_8c-example.html#a11">audio/effectsandmusic/effectsandmusic.c</a>, <a class="el" href="audio_2music_2_music_8c-example.html#a11">audio/music/Music.c</a>, <a class="el" href="audio_2music_greater_than32k_2music_greater_than32k_8c-example.html#a11">audio/musicGreaterThan32k/musicGreaterThan32k.c</a>, <a class="el" href="audio_2tada_2_tada_8c-example.html#a11">audio/tada/Tada.c</a>, <a class="el" href="breakpoints_2src_2breakpoints_8c-example.html#a9">breakpoints/src/breakpoints.c</a>, <a class="el" href="debug_2debug_8c-example.html#a3">debug/debug.c</a>, <a class="el" href="games_2breakout_2breakout_8c-example.html#a14">games/breakout/breakout.c</a>, <a class="el" href="games_2likemario_2_like_mario_8c-example.html#a57">games/likemario/LikeMario.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_2_mode1_8c-example.html#a4">graphics/Backgrounds/Mode1/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_b_g3_high_priority_2_mode1_b_g3_high_priority_8c-example.html#a6">graphics/Backgrounds/Mode1BG3HighPriority/Mode1BG3HighPriority.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_continuos_scroll_2_mode1_continuos_scroll_8c-example.html#a14">graphics/Backgrounds/Mode1ContinuosScroll/Mode1ContinuosScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_l_z77_2_mode1_l_z77_8c-example.html#a4">graphics/Backgrounds/Mode1LZ77/Mode1LZ77.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_mixed_scroll_2_mode1_mixed_scroll_8c-example.html#a4">graphics/Backgrounds/Mode1MixedScroll/Mode1MixedScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_png_2_mode1_8c-example.html#a4">graphics/Backgrounds/Mode1Png/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_scroll_2_mode1_scroll_8c-example.html#a10">graphics/Backgrounds/Mode1Scroll/Mode1Scroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode3_2_mode3_8c-example.html#a6">graphics/Backgrounds/Mode3/Mode3.c</a>, <a class="el" href="graphics_2_effects_2_gradient_colors_2_gradient_colors_8c-example.html#a4">graphics/Effects/GradientColors/GradientColors.c</a>, <a class="el" href="graphics_2_effects_2_h_d_m_a_gradient_2_h_d_m_a_gradient_8c-example.html#a5">graphics/Effects/HDMAGradient/HDMAGradient.c</a>, <a class="el" href="graphics_2_effects_2_mosaic_shading_2_mosaic_shading_8c-example.html#a4">graphics/Effects/MosaicShading/MosaicShading.c</a>, <a class="el" href="graphics_2_effects_2_parallax_scrolling_2_parallax_scrolling_8c-example.html#a4">graphics/Effects/ParallaxScrolling/ParallaxScrolling.c</a>, <a class="el" href="graphics_2_effects_2_transparency_2_transparency_8c-example.html#a4">graphics/Effects/Transparency/Transparency.c</a>, <a class="el" href="graphics_2_effects_2_waves_2_waves_8c-example.html#a4">graphics/Effects/Waves/Waves.c</a>, <a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a5">graphics/Effects/Window/Window.c</a>, <a class="el" href="graphics_2_palette_2_get_colors_2_get_colors_8c-example.html#a5">graphics/Palette/GetColors/GetColors.c</a>, <a class="el" href="graphics_2_sprites_2_animated_sprite_2_animated_sprite_8c-example.html#a7">graphics/Sprites/AnimatedSprite/AnimatedSprite.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_engine_meta_sprite_2_dynamic_engine_meta_sprite_8c-example.html#a8">graphics/Sprites/DynamicEngineMetaSprite/DynamicEngineMetaSprite.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_engine_sprite_2_dynamic_engine_sprite_8c-example.html#a5">graphics/Sprites/DynamicEngineSprite/DynamicEngineSprite.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_sprite_2_dynamic_sprite_8c-example.html#a12">graphics/Sprites/DynamicSprite/DynamicSprite.c</a>, <a class="el" href="graphics_2_sprites_2_object_size_2_object_size_8c-example.html#a21">graphics/Sprites/ObjectSize/ObjectSize.c</a>, <a class="el" href="graphics_2_sprites_2_simple_sprite_2_simple_sprite_8c-example.html#a6">graphics/Sprites/SimpleSprite/SimpleSprite.c</a>, <a class="el" href="hello_world_2src_2hello_world_8c-example.html#a8">hello_world/src/hello_world.c</a>, <a class="el" href="maps_2mapscroll_2mapscroll_8c-example.html#a4">maps/mapscroll/mapscroll.c</a>, <a class="el" href="maps_2tiled_2tiled_8c-example.html#a4">maps/tiled/tiled.c</a>, <a class="el" href="objects_2mapandobjects_2mapandobjects_8c-example.html#a4">objects/mapandobjects/mapandobjects.c</a>, <a class="el" href="objects_2moveobjects_2moveobjects_8c-example.html#a20">objects/moveobjects/moveobjects.c</a>, <a class="el" href="objects_2nogravityobject_2nogravityobjects_8c-example.html#a5">objects/nogravityobject/nogravityobjects.c</a>, <a class="el" href="pads_2input_2input_8c-example.html#a9">pads/input/input.c</a>, <a class="el" href="pads_2multiplay5_2multiplay5_8c-example.html#a11">pads/multiplay5/multiplay5.c</a>, <a class="el" href="random_2random_8c-example.html#a9">random/random.c</a>, <a class="el" href="scoring_2scoring_8c-example.html#a12">scoring/scoring.c</a>, <a class="el" href="sram_2sram_8c-example.html#a9">sram/sram.c</a>, <a class="el" href="testregion_2testregion_8c-example.html#a9">testregion/testregion.c</a>, <a class="el" href="timer_2timer_8c-example.html#a9">timer/timer.c</a>, and <a class="el" href="typeconsole_2src_2pal_ntsc_8c-example.html#a8">typeconsole/src/pal_ntsc.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audio_2effects_2effects_8c-example.html#a13">audio/effects/effects.c</a>, <a class="el" href="audio_2effectsandmusic_2effectsandmusic_8c-example.html#a13">audio/effectsandmusic/effectsandmusic.c</a>, <a class="el" href="audio_2music_2_music_8c-example.html#a13">audio/music/Music.c</a>, <a class="el" href="audio_2music_greater_than32k_2music_greater_than32k_8c-example.html#a13">audio/musicGreaterThan32k/musicGreaterThan32k.c</a>, <a class="el" href="audio_2tada_2_tada_8c-example.html#a13">audio/tada/Tada.c</a>, <a class="el" href="breakpoints_2src_2breakpoints_8c-example.html#a11">breakpoints/src/breakpoints.c</a>, <a class="el" href="debug_2debug_8c-example.html#a4">debug/debug.c</a>, <a class="el" href="games_2breakout_2breakout_8c-example.html#a16">games/breakout/breakout.c</a>, <a class="el" href="games_2likemario_2_like_mario_8c-example.html#a64">games/likemario/LikeMario.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_2_mode1_8c-example.html#a7">graphics/Backgrounds/Mode1/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_b_g3_high_priority_2_mode1_b_g3_high_priority_8c-example.html#a10">graphics/Backgrounds/Mode1BG3HighPriority/Mode1BG3HighPriority.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_continuos_scroll_2_mode1_continuos_scroll_8c-example.html#a20">graphics/Backgrounds/Mode1ContinuosScroll/Mode1ContinuosScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_l_z77_2_mode1_l_z77_8c-example.html#a7">graphics/Backgrounds/Mode1LZ77/Mode1LZ77.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_mixed_scroll_2_mode1_mixed_scroll_8c-example.html#a7">graphics/Backgrounds/Mode1MixedScroll/Mode1MixedScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_png_2_mode1_8c-example.html#a7">graphics/Backgrounds/Mode1Png/Mode1.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_scroll_2_mode1_scroll_8c-example.html#a14">graphics/Backgrounds/Mode1Scroll/Mode1Scroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode3_2_mode3_8c-example.html#a9">graphics/Backgrounds/Mode3/Mode3.c</a>, <a class="el" href="graphics_2_effects_2_gradient_colors_2_gradient_colors_8c-example.html#a7">graphics/Effects/GradientColors/GradientColors.c</a>, <a class="el" href="graphics_2_effects_2_h_d_m_a_gradient_2_h_d_m_a_gradient_8c-example.html#a8">graphics/Effects/HDMAGradient/HDMAGradient.c</a>, <a class="el" href="graphics_2_effects_2_mosaic_shading_2_mosaic_shading_8c-example.html#a7">graphics/Effects/MosaicShading/MosaicShading.c</a>, <a class="el" href="graphics_2_effects_2_parallax_scrolling_2_parallax_scrolling_8c-example.html#a7">graphics/Effects/ParallaxScrolling/ParallaxScrolling.c</a>, <a class="el" href="graphics_2_effects_2_transparency_2_transparency_8c-example.html#a9">graphics/Effects/Transparency/Transparency.c</a>, <a class="el" href="graphics_2_effects_2_waves_2_waves_8c-example.html#a7">graphics/Effects/Waves/Waves.c</a>, <a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a8">graphics/Effects/Window/Window.c</a>, <a class="el" href="graphics_2_palette_2_get_colors_2_get_colors_8c-example.html#a8">graphics/Palette/GetColors/GetColors.c</a>, <a class="el" href="graphics_2_sprites_2_animated_sprite_2_animated_sprite_8c-example.html#a10">graphics/Sprites/AnimatedSprite/AnimatedSprite.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_engine_meta_sprite_2_dynamic_engine_meta_sprite_8c-example.html#a11">graphics/Sprites/DynamicEngineMetaSprite/DynamicEngineMetaSprite.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_engine_sprite_2_dynamic_engine_sprite_8c-example.html#a8">graphics/Sprites/DynamicEngineSprite/DynamicEngineSprite.c</a>, <a class="el" href="graphics_2_sprites_2_dynamic_sprite_2_dynamic_sprite_8c-example.html#a15">graphics/Sprites/DynamicSprite/DynamicSprite.c</a>, <a class="el" href="graphics_2_sprites_2_object_size_2_object_size_8c-example.html#a26">graphics/Sprites/ObjectSize/ObjectSize.c</a>, <a class="el" href="graphics_2_sprites_2_simple_sprite_2_simple_sprite_8c-example.html#a9">graphics/Sprites/SimpleSprite/SimpleSprite.c</a>, <a class="el" href="hello_world_2src_2hello_world_8c-example.html#a10">hello_world/src/hello_world.c</a>, <a class="el" href="maps_2mapscroll_2mapscroll_8c-example.html#a7">maps/mapscroll/mapscroll.c</a>, <a class="el" href="maps_2tiled_2tiled_8c-example.html#a7">maps/tiled/tiled.c</a>, <a class="el" href="objects_2mapandobjects_2mapandobjects_8c-example.html#a7">objects/mapandobjects/mapandobjects.c</a>, <a class="el" href="objects_2moveobjects_2moveobjects_8c-example.html#a23">objects/moveobjects/moveobjects.c</a>, <a class="el" href="objects_2nogravityobject_2nogravityobjects_8c-example.html#a8">objects/nogravityobject/nogravityobjects.c</a>, <a class="el" href="pads_2input_2input_8c-example.html#a11">pads/input/input.c</a>, <a class="el" href="pads_2multiplay5_2multiplay5_8c-example.html#a13">pads/multiplay5/multiplay5.c</a>, <a class="el" href="random_2random_8c-example.html#a11">random/random.c</a>, <a class="el" href="scoring_2scoring_8c-example.html#a18">scoring/scoring.c</a>, <a class="el" href="sram_2sram_8c-example.html#a11">sram/sram.c</a>, <a class="el" href="testregion_2testregion_8c-example.html#a11">testregion/testregion.c</a>, <a class="el" href="timer_2timer_8c-example.html#a11">timer/timer.c</a>, and <a class="el" href="typeconsole_2src_2pal_ntsc_8c-example.html#a10">typeconsole/src/pal_ntsc.c</a>.</dd>
 </dl>
 
 </div>
@@ -717,7 +1800,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
         <tr>
           <td class="memname">void bgSetDisableSub </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>bgNumber</em></td><td>)</td>
           <td></td>
         </tr>
@@ -743,7 +1826,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
         <tr>
           <td class="memname">void bgSetEnable </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>bgNumber</em></td><td>)</td>
           <td></td>
         </tr>
@@ -757,7 +1840,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a4">graphics/Effects/Window/Window.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_window_2_window_8c-example.html#a7">graphics/Effects/Window/Window.c</a>.</dd>
 </dl>
 
 </div>
@@ -771,7 +1854,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
         <tr>
           <td class="memname">void bgSetEnableSub </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>bgNumber</em></td><td>)</td>
           <td></td>
         </tr>
@@ -785,7 +1868,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_transparency_2_transparency_8c-example.html#a6">graphics/Effects/Transparency/Transparency.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_effects_2_transparency_2_transparency_8c-example.html#a11">graphics/Effects/Transparency/Transparency.c</a>.</dd>
 </dl>
 
 </div>
@@ -799,13 +1882,13 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
         <tr>
           <td class="memname">void bgSetGfxPtr </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>bgNumber</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>address</em>&#160;</td>
         </tr>
         <tr>
@@ -824,7 +1907,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audio_2effects_2effects_8c-example.html#a8">audio/effects/effects.c</a>, <a class="el" href="audio_2effectsandmusic_2effectsandmusic_8c-example.html#a8">audio/effectsandmusic/effectsandmusic.c</a>, <a class="el" href="audio_2music_2_music_8c-example.html#a8">audio/music/Music.c</a>, <a class="el" href="audio_2music_greater_than32k_2music_greater_than32k_8c-example.html#a8">audio/musicGreaterThan32k/musicGreaterThan32k.c</a>, <a class="el" href="audio_2tada_2_tada_8c-example.html#a8">audio/tada/Tada.c</a>, <a class="el" href="breakpoints_2src_2breakpoints_8c-example.html#a6">breakpoints/src/breakpoints.c</a>, <a class="el" href="games_2breakout_2breakout_8c-example.html#a12">games/breakout/breakout.c</a>, <a class="el" href="games_2likemario_2_like_mario_8c-example.html#a48">games/likemario/LikeMario.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_scroll_2_mode1_scroll_8c-example.html#a7">graphics/Backgrounds/Mode1Scroll/Mode1Scroll.c</a>, <a class="el" href="graphics_2_sprites_2_object_size_2_object_size_8c-example.html#a18">graphics/Sprites/ObjectSize/ObjectSize.c</a>, <a class="el" href="hello_world_2src_2hello_world_8c-example.html#a5">hello_world/src/hello_world.c</a>, <a class="el" href="pads_2input_2input_8c-example.html#a6">pads/input/input.c</a>, <a class="el" href="pads_2multiplay5_2multiplay5_8c-example.html#a5">pads/multiplay5/multiplay5.c</a>, <a class="el" href="random_2random_8c-example.html#a6">random/random.c</a>, <a class="el" href="scoring_2scoring_8c-example.html#a5">scoring/scoring.c</a>, <a class="el" href="sram_2sram_8c-example.html#a6">sram/sram.c</a>, <a class="el" href="testregion_2testregion_8c-example.html#a6">testregion/testregion.c</a>, <a class="el" href="timer_2timer_8c-example.html#a6">timer/timer.c</a>, and <a class="el" href="typeconsole_2src_2pal_ntsc_8c-example.html#a5">typeconsole/src/pal_ntsc.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audio_2effects_2effects_8c-example.html#a8">audio/effects/effects.c</a>, <a class="el" href="audio_2effectsandmusic_2effectsandmusic_8c-example.html#a8">audio/effectsandmusic/effectsandmusic.c</a>, <a class="el" href="audio_2music_2_music_8c-example.html#a8">audio/music/Music.c</a>, <a class="el" href="audio_2music_greater_than32k_2music_greater_than32k_8c-example.html#a8">audio/musicGreaterThan32k/musicGreaterThan32k.c</a>, <a class="el" href="audio_2tada_2_tada_8c-example.html#a8">audio/tada/Tada.c</a>, <a class="el" href="breakpoints_2src_2breakpoints_8c-example.html#a6">breakpoints/src/breakpoints.c</a>, <a class="el" href="games_2breakout_2breakout_8c-example.html#a13">games/breakout/breakout.c</a>, <a class="el" href="games_2likemario_2_like_mario_8c-example.html#a49">games/likemario/LikeMario.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_scroll_2_mode1_scroll_8c-example.html#a9">graphics/Backgrounds/Mode1Scroll/Mode1Scroll.c</a>, <a class="el" href="graphics_2_sprites_2_object_size_2_object_size_8c-example.html#a21">graphics/Sprites/ObjectSize/ObjectSize.c</a>, <a class="el" href="hello_world_2src_2hello_world_8c-example.html#a5">hello_world/src/hello_world.c</a>, <a class="el" href="pads_2input_2input_8c-example.html#a6">pads/input/input.c</a>, <a class="el" href="pads_2multiplay5_2multiplay5_8c-example.html#a5">pads/multiplay5/multiplay5.c</a>, <a class="el" href="random_2random_8c-example.html#a6">random/random.c</a>, <a class="el" href="scoring_2scoring_8c-example.html#a6">scoring/scoring.c</a>, <a class="el" href="sram_2sram_8c-example.html#a6">sram/sram.c</a>, <a class="el" href="testregion_2testregion_8c-example.html#a6">testregion/testregion.c</a>, <a class="el" href="timer_2timer_8c-example.html#a6">timer/timer.c</a>, and <a class="el" href="typeconsole_2src_2pal_ntsc_8c-example.html#a5">typeconsole/src/pal_ntsc.c</a>.</dd>
 </dl>
 
 </div>
@@ -838,19 +1921,19 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
         <tr>
           <td class="memname">void bgSetMapPtr </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>bgNumber</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>address</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>mapSize</em>&#160;</td>
         </tr>
         <tr>
@@ -870,7 +1953,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audio_2effects_2effects_8c-example.html#a9">audio/effects/effects.c</a>, <a class="el" href="audio_2effectsandmusic_2effectsandmusic_8c-example.html#a9">audio/effectsandmusic/effectsandmusic.c</a>, <a class="el" href="audio_2music_2_music_8c-example.html#a9">audio/music/Music.c</a>, <a class="el" href="audio_2music_greater_than32k_2music_greater_than32k_8c-example.html#a9">audio/musicGreaterThan32k/musicGreaterThan32k.c</a>, <a class="el" href="audio_2tada_2_tada_8c-example.html#a9">audio/tada/Tada.c</a>, <a class="el" href="breakpoints_2src_2breakpoints_8c-example.html#a7">breakpoints/src/breakpoints.c</a>, <a class="el" href="games_2likemario_2_like_mario_8c-example.html#a49">games/likemario/LikeMario.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_b_g3_high_priority_2_mode1_b_g3_high_priority_8c-example.html#a1">graphics/Backgrounds/Mode1BG3HighPriority/Mode1BG3HighPriority.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_continuos_scroll_2_mode1_continuos_scroll_8c-example.html#a10">graphics/Backgrounds/Mode1ContinuosScroll/Mode1ContinuosScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_scroll_2_mode1_scroll_8c-example.html#a8">graphics/Backgrounds/Mode1Scroll/Mode1Scroll.c</a>, <a class="el" href="graphics_2_sprites_2_object_size_2_object_size_8c-example.html#a19">graphics/Sprites/ObjectSize/ObjectSize.c</a>, <a class="el" href="hello_world_2src_2hello_world_8c-example.html#a6">hello_world/src/hello_world.c</a>, <a class="el" href="maps_2mapscroll_2mapscroll_8c-example.html#a2">maps/mapscroll/mapscroll.c</a>, <a class="el" href="maps_2tiled_2tiled_8c-example.html#a2">maps/tiled/tiled.c</a>, <a class="el" href="objects_2mapandobjects_2mapandobjects_8c-example.html#a2">objects/mapandobjects/mapandobjects.c</a>, <a class="el" href="objects_2nogravityobject_2nogravityobjects_8c-example.html#a2">objects/nogravityobject/nogravityobjects.c</a>, <a class="el" href="pads_2input_2input_8c-example.html#a7">pads/input/input.c</a>, <a class="el" href="pads_2multiplay5_2multiplay5_8c-example.html#a6">pads/multiplay5/multiplay5.c</a>, <a class="el" href="random_2random_8c-example.html#a7">random/random.c</a>, <a class="el" href="scoring_2scoring_8c-example.html#a6">scoring/scoring.c</a>, <a class="el" href="sram_2sram_8c-example.html#a7">sram/sram.c</a>, <a class="el" href="testregion_2testregion_8c-example.html#a7">testregion/testregion.c</a>, <a class="el" href="timer_2timer_8c-example.html#a7">timer/timer.c</a>, and <a class="el" href="typeconsole_2src_2pal_ntsc_8c-example.html#a6">typeconsole/src/pal_ntsc.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="audio_2effects_2effects_8c-example.html#a9">audio/effects/effects.c</a>, <a class="el" href="audio_2effectsandmusic_2effectsandmusic_8c-example.html#a9">audio/effectsandmusic/effectsandmusic.c</a>, <a class="el" href="audio_2music_2_music_8c-example.html#a9">audio/music/Music.c</a>, <a class="el" href="audio_2music_greater_than32k_2music_greater_than32k_8c-example.html#a9">audio/musicGreaterThan32k/musicGreaterThan32k.c</a>, <a class="el" href="audio_2tada_2_tada_8c-example.html#a9">audio/tada/Tada.c</a>, <a class="el" href="breakpoints_2src_2breakpoints_8c-example.html#a7">breakpoints/src/breakpoints.c</a>, <a class="el" href="games_2likemario_2_like_mario_8c-example.html#a50">games/likemario/LikeMario.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_b_g3_high_priority_2_mode1_b_g3_high_priority_8c-example.html#a1">graphics/Backgrounds/Mode1BG3HighPriority/Mode1BG3HighPriority.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_continuos_scroll_2_mode1_continuos_scroll_8c-example.html#a10">graphics/Backgrounds/Mode1ContinuosScroll/Mode1ContinuosScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_scroll_2_mode1_scroll_8c-example.html#a10">graphics/Backgrounds/Mode1Scroll/Mode1Scroll.c</a>, <a class="el" href="graphics_2_sprites_2_object_size_2_object_size_8c-example.html#a22">graphics/Sprites/ObjectSize/ObjectSize.c</a>, <a class="el" href="hello_world_2src_2hello_world_8c-example.html#a6">hello_world/src/hello_world.c</a>, <a class="el" href="maps_2mapscroll_2mapscroll_8c-example.html#a3">maps/mapscroll/mapscroll.c</a>, <a class="el" href="maps_2tiled_2tiled_8c-example.html#a3">maps/tiled/tiled.c</a>, <a class="el" href="objects_2mapandobjects_2mapandobjects_8c-example.html#a3">objects/mapandobjects/mapandobjects.c</a>, <a class="el" href="objects_2nogravityobject_2nogravityobjects_8c-example.html#a3">objects/nogravityobject/nogravityobjects.c</a>, <a class="el" href="pads_2input_2input_8c-example.html#a7">pads/input/input.c</a>, <a class="el" href="pads_2multiplay5_2multiplay5_8c-example.html#a6">pads/multiplay5/multiplay5.c</a>, <a class="el" href="random_2random_8c-example.html#a7">random/random.c</a>, <a class="el" href="scoring_2scoring_8c-example.html#a7">scoring/scoring.c</a>, <a class="el" href="sram_2sram_8c-example.html#a7">sram/sram.c</a>, <a class="el" href="testregion_2testregion_8c-example.html#a7">testregion/testregion.c</a>, <a class="el" href="timer_2timer_8c-example.html#a7">timer/timer.c</a>, and <a class="el" href="typeconsole_2src_2pal_ntsc_8c-example.html#a6">typeconsole/src/pal_ntsc.c</a>.</dd>
 </dl>
 
 </div>
@@ -884,19 +1967,19 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
         <tr>
           <td class="memname">void bgSetScroll </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>bgNumber</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -916,7 +1999,7 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode0_2_mode0_8c-example.html#a5">graphics/Backgrounds/Mode0/Mode0.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_continuos_scroll_2_mode1_continuos_scroll_8c-example.html#a5">graphics/Backgrounds/Mode1ContinuosScroll/Mode1ContinuosScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_mixed_scroll_2_mode1_mixed_scroll_8c-example.html#a6">graphics/Backgrounds/Mode1MixedScroll/Mode1MixedScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_scroll_2_mode1_scroll_8c-example.html#a18">graphics/Backgrounds/Mode1Scroll/Mode1Scroll.c</a>, and <a class="el" href="graphics_2_effects_2_transparency_2_transparency_8c-example.html#a8">graphics/Effects/Transparency/Transparency.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="graphics_2_backgrounds_2_mode0_2_mode0_8c-example.html#a8">graphics/Backgrounds/Mode0/Mode0.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_continuos_scroll_2_mode1_continuos_scroll_8c-example.html#a5">graphics/Backgrounds/Mode1ContinuosScroll/Mode1ContinuosScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_mixed_scroll_2_mode1_mixed_scroll_8c-example.html#a9">graphics/Backgrounds/Mode1MixedScroll/Mode1MixedScroll.c</a>, <a class="el" href="graphics_2_backgrounds_2_mode1_scroll_2_mode1_scroll_8c-example.html#a22">graphics/Backgrounds/Mode1Scroll/Mode1Scroll.c</a>, and <a class="el" href="graphics_2_effects_2_transparency_2_transparency_8c-example.html#a16">graphics/Effects/Transparency/Transparency.c</a>.</dd>
 </dl>
 
 </div>
@@ -930,25 +2013,25 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
         <tr>
           <td class="memname">void bgSetWindowsRegions </td>
           <td>(</td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>bgNumber</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>winNumber</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>xLeft</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u8&#160;</td>
+          <td class="paramtype"><a class="el" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>xRight</em>&#160;</td>
         </tr>
         <tr>
@@ -972,13 +2055,108 @@ u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backg
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a00e209d4b67cb5b24f7a3fc9f1c8a329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00e209d4b67cb5b24f7a3fc9f1c8a329">&#9670;&nbsp;</a></span>bg0gfxaddr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> bg0gfxaddr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad690bfa1333baa15818c1f4bb9a530fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad690bfa1333baa15818c1f4bb9a530fc">&#9670;&nbsp;</a></span>bg1gfxaddr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> bg1gfxaddr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition of each background address. </p>
+
+</div>
+</div>
+<a id="a5a1dd9dbfeb3ada41ca93bff2b46b99b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a1dd9dbfeb3ada41ca93bff2b46b99b">&#9670;&nbsp;</a></span>bg2gfxaddr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> bg2gfxaddr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition of each background address. </p>
+
+</div>
+</div>
+<a id="a11dd1e9472913ffd176d125c33a93af0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11dd1e9472913ffd176d125c33a93af0">&#9670;&nbsp;</a></span>bg3gfxaddr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> bg3gfxaddr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition of each background address. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_1fce5620edc95505dc9b3bb80528afca.html">snes</a></li><li class="navelem"><a class="el" href="background_8h.html">background.h</a></li>
-    <li class="footer">Generated on Thu May 25 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 26 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </div>
 </body>
 </html>

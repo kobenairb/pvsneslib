@@ -1,5 +1,30 @@
 var searchData=
 [
-  ['cgram_5fpalette_651',['CGRAM_PALETTE',['../video_8h.html#afe3cc8b2ea5f41a791be1b3a3cf04cb2',1,'video.h']]],
-  ['cm_5fdircolor_652',['CM_DIRCOLOR',['../video_8h.html#afbe2b768602914630a49573d20359eb1',1,'video.h']]]
+  ['bg1_5fenable_873',['BG1_ENABLE',['../background_8h.html#a8aa95cf512ab48a83b3855a33a29d543',1,'background.h']]],
+  ['bg1_5ftsize16x16_874',['BG1_TSIZE16x16',['../background_8h.html#a3cba56c1c24771c57b3cf1363d995c3d',1,'background.h']]],
+  ['bg1_5ftsize8x8_875',['BG1_TSIZE8x8',['../background_8h.html#a1d48e6efbfe12060a4ab7a15cffb51cc',1,'background.h']]],
+  ['bg1sc_5faddr_876',['BG1SC_ADDR',['../background_8h.html#af529ed27ea5eacfba93f4fe13d11c572',1,'background.h']]],
+  ['bg2_5fenable_877',['BG2_ENABLE',['../background_8h.html#ad4cf5bed80ba87d9a97ce00e6484d5de',1,'background.h']]],
+  ['bg2_5ftsize16x16_878',['BG2_TSIZE16x16',['../background_8h.html#a309991e3719be6b10ec613bece94cc89',1,'background.h']]],
+  ['bg2_5ftsize8x8_879',['BG2_TSIZE8x8',['../background_8h.html#a36fd91141d5ce654cc595936fa9d698d',1,'background.h']]],
+  ['bg3_5fenable_880',['BG3_ENABLE',['../background_8h.html#a7348419a0e2162226a923271044a8204',1,'background.h']]],
+  ['bg3_5fmode1_5fprority_5fhigh_881',['BG3_MODE1_PRORITY_HIGH',['../background_8h.html#ace880dbd9a642604316f940038786dc8',1,'background.h']]],
+  ['bg3_5ftsize16x16_882',['BG3_TSIZE16x16',['../background_8h.html#ad309d4c5f318d457a75e6af2c4b14632',1,'background.h']]],
+  ['bg3_5ftsize8x8_883',['BG3_TSIZE8x8',['../background_8h.html#a39df9a2ee5cdddad7909f6ef23cc5ff8',1,'background.h']]],
+  ['bg4_5fenable_884',['BG4_ENABLE',['../background_8h.html#af5df96a2914a130bc3fbd5ea9d0c6a90',1,'background.h']]],
+  ['bg4_5ftsize16x16_885',['BG4_TSIZE16x16',['../background_8h.html#ae36d2eb055c4b37ebc901afec4e4dd2d',1,'background.h']]],
+  ['bg4_5ftsize8x8_886',['BG4_TSIZE8x8',['../background_8h.html#af5f1da31c68752ffdf492be8616922ad',1,'background.h']]],
+  ['bg_5f16colors_887',['BG_16COLORS',['../background_8h.html#a4818d4e1c65ed78d65f1d3e6d9d1232a',1,'background.h']]],
+  ['bg_5f256colors_888',['BG_256COLORS',['../background_8h.html#aab497f5051249668123af8a5363b8bf8',1,'background.h']]],
+  ['bg_5f4colors_889',['BG_4COLORS',['../background_8h.html#a774d2a0de276a94af89173eb592803c0',1,'background.h']]],
+  ['bg_5f4colors0_890',['BG_4COLORS0',['../background_8h.html#af195eec5c93ea5507399f3c85109f3d0',1,'background.h']]],
+  ['bg_5fmode0_891',['BG_MODE0',['../background_8h.html#a82bccfa80c8aa4ff5aa4e1416e0ade25',1,'background.h']]],
+  ['bg_5fmode1_892',['BG_MODE1',['../background_8h.html#a05c862edb7f8f75036f10c04dcc3c2a6',1,'background.h']]],
+  ['bg_5fmode2_893',['BG_MODE2',['../background_8h.html#a71df4d7e9e3bf54909cce56a5b0cf1d1',1,'background.h']]],
+  ['bg_5fmode3_894',['BG_MODE3',['../background_8h.html#ab74253172bcb87b7947118b746ab2849',1,'background.h']]],
+  ['bg_5fmode4_895',['BG_MODE4',['../background_8h.html#a57023a6897e1ec8660b190a9488c08c6',1,'background.h']]],
+  ['bg_5fmode5_896',['BG_MODE5',['../background_8h.html#aa1d65e002c63b60a2b8df95970572908',1,'background.h']]],
+  ['bg_5fmode6_897',['BG_MODE6',['../background_8h.html#a260fbcabdf73b2e049ae9fcd633b3ee2',1,'background.h']]],
+  ['bg_5fmode7_898',['BG_MODE7',['../background_8h.html#ac2995da5a6139bd6ca1091ae3358d4f3',1,'background.h']]],
+  ['bit_899',['BIT',['../snestypes_8h.html#a3a8ea58898cb58fc96013383d39f482c',1,'snestypes.h']]]
 ];

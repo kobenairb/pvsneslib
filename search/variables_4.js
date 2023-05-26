@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['hdmatable16_550',['HDMATable16',['../dma_8h.html#ad072502d98153debc89f839d45fc1c80',1,'dma.h']]],
-  ['height_551',['height',['../structt__objs.html#a3bf3757f174f93270ff558d1351a7872',1,'t_objs']]],
-  ['hitpoints_552',['hitpoints',['../structt__objs.html#a66724708a48c464c7c9e1a00a6b81b6d',1,'t_objs']]]
+  ['dir_743',['dir',['../structt__objs.html#ae2bb79aa63d37e6f2a0a98762a12c60f',1,'t_objs']]],
+  ['dummy1_744',['dummy1',['../structt__sprites.html#af0a876e2163316875c74a8867aa412cb',1,'t_sprites::dummy1()'],['../structt__metasprites.html#a2f132d6d85b658cc0742bcd576b56597',1,'t_metasprites::dummy1()']]],
+  ['dummy2_745',['dummy2',['../structt__sprites.html#a4b18c6d2b062f4663ba6cb0fbcf61cf3',1,'t_sprites']]]
 ];

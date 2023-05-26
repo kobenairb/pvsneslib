@@ -4,7 +4,7 @@ var dir_1fce5620edc95505dc9b3bb80528afca =
     [ "console.h", "console_8h.html", "console_8h" ],
     [ "dma.h", "dma_8h.html", "dma_8h" ],
     [ "interrupt.h", "interrupt_8h.html", "interrupt_8h" ],
-    [ "libversion.h", "libversion_8h_source.html", null ],
+    [ "libversion.h", "libversion_8h.html", "libversion_8h" ],
     [ "lzss.h", "lzss_8h.html", "lzss_8h" ],
     [ "map.h", "map_8h.html", "map_8h" ],
     [ "network.h", "network_8h.html", "network_8h" ],

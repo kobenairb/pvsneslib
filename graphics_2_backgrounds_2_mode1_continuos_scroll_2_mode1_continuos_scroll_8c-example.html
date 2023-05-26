@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode1_continu
 <div class="line"> </div>
 <div class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line">{</div>
-<div class="line">    u8 oamAddress;</div>
+<div class="line">    <a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> oamAddress;</div>
 <div class="line">    <span class="keywordtype">int</span> _x;</div>
 <div class="line">    <span class="keywordtype">int</span> _y;</div>
 <div class="line">} character;</div>
@@ -130,23 +130,23 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode1_continu
 <div class="line"><span class="comment">// struct to handle scroll (scrolling through pages)</span></div>
 <div class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line">{</div>
-<div class="line">    u8 id;</div>
-<div class="line">    u16 vram;</div>
-<div class="line">    u16 scrX;</div>
-<div class="line">    u16 scrY;</div>
-<div class="line">    u8 *bgMap;</div>
-<div class="line">    u8 mapPage;</div>
+<div class="line">    <a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> id;</div>
+<div class="line">    <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> vram;</div>
+<div class="line">    <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> scrX;</div>
+<div class="line">    <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> scrY;</div>
+<div class="line">    <a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *bgMap;</div>
+<div class="line">    <a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> mapPage;</div>
 <div class="line">    <span class="keywordtype">bool</span> vRamFirstPage;</div>
-<div class="line">    u16 scrollX;</div>
-<div class="line">    u16 maxScrollX;</div>
+<div class="line">    <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> scrollX;</div>
+<div class="line">    <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> maxScrollX;</div>
 <div class="line">} scroll;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// struct to control the background pages</span></div>
 <div class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line">{</div>
-<div class="line">    u8 *gfxoffset;</div>
-<div class="line">    u16 adrgfxvram;</div>
-<div class="line">    u16 size;</div>
+<div class="line">    <a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *gfxoffset;</div>
+<div class="line">    <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> adrgfxvram;</div>
+<div class="line">    <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> size;</div>
 <div class="line"> </div>
 <div class="line">} bgpage;</div>
 <div class="line"> </div>
@@ -155,8 +155,8 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode1_continu
 <div class="line">{</div>
 <div class="line">    bgpage bg1;</div>
 <div class="line">    bgpage bg2;</div>
-<div class="line">    u8 refreshBG1;</div>
-<div class="line">    u8 refreshBG2;</div>
+<div class="line">    <a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> refreshBG1;</div>
+<div class="line">    <a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> refreshBG2;</div>
 <div class="line">} background;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// scroll control for main and sub background</span></div>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode1_continu
 <div class="line">background bgInfo;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// set background 1 to be updated</span></div>
-<div class="line"><span class="keywordtype">void</span> updateBG1(u8 *pgfx, u16 adrspr, <span class="keywordtype">int</span> size)</div>
+<div class="line"><span class="keywordtype">void</span> updateBG1(<a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *pgfx, <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> adrspr, <span class="keywordtype">int</span> size)</div>
 <div class="line">{</div>
 <div class="line">    bg_mutex = 1; <span class="comment">// to avoid vbl during queue management</span></div>
 <div class="line">    bgInfo.bg1.adrgfxvram = adrspr;</div>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode1_continu
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// set background 2 to be updated</span></div>
-<div class="line"><span class="keywordtype">void</span> updateBG2(u8 *pgfx, u16 adrspr, <span class="keywordtype">int</span> size)</div>
+<div class="line"><span class="keywordtype">void</span> updateBG2(<a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *pgfx, <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> adrspr, <span class="keywordtype">int</span> size)</div>
 <div class="line">{</div>
 <div class="line">    bg_mutex = 1; <span class="comment">// to avoid vbl during queue management</span></div>
 <div class="line">    bgInfo.bg2.adrgfxvram = adrspr;</div>
@@ -235,7 +235,7 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode1_continu
 <div class="line">        {</div>
 <div class="line">            s-&gt;mapPage += 1;</div>
 <div class="line">            s-&gt;vRamFirstPage = !s-&gt;vRamFirstPage;</div>
-<div class="line">            u16 vram = s-&gt;vram;</div>
+<div class="line">            <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> vram = s-&gt;vram;</div>
 <div class="line">            <span class="keywordflow">if</span> (s-&gt;vRamFirstPage == <span class="keyword">false</span>)</div>
 <div class="line">            {</div>
 <div class="line">                vram += 1024;</div>
@@ -263,7 +263,7 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode1_continu
 <div class="line">        {</div>
 <div class="line">            s-&gt;mapPage += 1;</div>
 <div class="line">            s-&gt;vRamFirstPage = !s-&gt;vRamFirstPage;</div>
-<div class="line">            u16 vram = s-&gt;vram;</div>
+<div class="line">            <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> vram = s-&gt;vram;</div>
 <div class="line">            <span class="keywordflow">if</span> (s-&gt;vRamFirstPage == <span class="keyword">false</span>)</div>
 <div class="line">            {</div>
 <div class="line">                vram += 1024;</div>
@@ -308,18 +308,18 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode1_continu
 <div class="line">    <span class="comment">// initializing background map tiles</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// BG0 point to vram address 0x0000 and with two pages of 32 tiles (64x32)</span></div>
-<div class="line">    <a name="a10"></a><a class="code" href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a>(0, 0x0000, SC_64x32);</div>
+<div class="line">    <a name="a10"></a><a class="code" href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a>(0, 0x0000, <a name="a11"></a><a class="code" href="background_8h.html#a6129b86a7c2913a31f1bca293fa7c1e7">SC_64x32</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// BG1 point to vram address 0x0000 + 2048 and with two pages of 32 tiles (64x32)</span></div>
-<div class="line">    <a class="code" href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a>(1, 0x0000 + 2048, SC_64x32);</div>
+<div class="line">    <a class="code" href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a>(1, 0x0000 + 2048, <a class="code" href="background_8h.html#a6129b86a7c2913a31f1bca293fa7c1e7">SC_64x32</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// BG2 point to vram address 0x0000 and with one pages of 32 tiles (32x32)</span></div>
-<div class="line">    <a class="code" href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a>(2, 0x1000, SC_32x32);</div>
+<div class="line">    <a class="code" href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a>(2, 0x1000, <a name="a12"></a><a class="code" href="background_8h.html#a11724b6748ce0954e9b43819263537fc">SC_32x32</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// copy BG0 tiles to vram 0x2000 and palette</span></div>
-<div class="line">    <a name="a11"></a><a class="code" href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a>(0, &amp;BG1_tiles, &amp;BG1_pal, 2, (&amp;BG1_tiles_end - &amp;BG1_tiles), 16 * 4, BG_16COLORS, 0x2000);</div>
-<div class="line">    <a class="code" href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a>(1, &amp;BG2_tiles, &amp;BG2_pal, 4, (&amp;BG2_tiles_end - &amp;BG2_tiles), 16 * 4, BG_16COLORS, 0x3000);</div>
-<div class="line">    <a class="code" href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a>(2, &amp;BG3_tiles, &amp;BG3_pal, 0, (&amp;BG3_tiles_end - &amp;BG3_tiles), 16 * 4, BG_4COLORS, 0x4000);</div>
+<div class="line">    <a name="a13"></a><a class="code" href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a>(0, &amp;BG1_tiles, &amp;BG1_pal, 2, (&amp;BG1_tiles_end - &amp;BG1_tiles), 16 * 4, <a name="a14"></a><a class="code" href="background_8h.html#a4818d4e1c65ed78d65f1d3e6d9d1232a">BG_16COLORS</a>, 0x2000);</div>
+<div class="line">    <a class="code" href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a>(1, &amp;BG2_tiles, &amp;BG2_pal, 4, (&amp;BG2_tiles_end - &amp;BG2_tiles), 16 * 4, <a class="code" href="background_8h.html#a4818d4e1c65ed78d65f1d3e6d9d1232a">BG_16COLORS</a>, 0x3000);</div>
+<div class="line">    <a class="code" href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a>(2, &amp;BG3_tiles, &amp;BG3_pal, 0, (&amp;BG3_tiles_end - &amp;BG3_tiles), 16 * 4, <a name="a15"></a><a class="code" href="background_8h.html#a774d2a0de276a94af89173eb592803c0">BG_4COLORS</a>, 0x4000);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// queue BG1 and BG2 to be updated in the vblank interruption</span></div>
 <div class="line">    bg_mutex = 0;</div>
@@ -327,25 +327,25 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode1_continu
 <div class="line">    updateBG2(&amp;BG2_map, 0x0000 + 2048, 2048);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// copy background 3 (not scrollable)</span></div>
-<div class="line">    <a name="a12"></a><a class="code" href="interrupt_8h.html#abd33830487e4764e5ec22ec98b749f4b">WaitForVBlank</a>();</div>
+<div class="line">    <a name="a16"></a><a class="code" href="interrupt_8h.html#abd33830487e4764e5ec22ec98b749f4b">WaitForVBlank</a>();</div>
 <div class="line">    <a class="code" href="dma_8h.html#adddf1dea4bd52a083b3ee4b39f1e20f2">dmaCopyVram</a>(&amp;BG3_map, 0x1000, 2048);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// IMPORTANT - use mode1 with BG3_MODE1_PRORITY_HIGH otherwise your HUD will not have the highest priority</span></div>
-<div class="line">    <a name="a13"></a><a class="code" href="video_8h.html#afd9e46ae627d055dd8c98a4b0ebb73b1">setMode</a>(BG_MODE1, BG3_MODE1_PRORITY_HIGH);</div>
-<div class="line">    <a name="a14"></a><a class="code" href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a>(3);</div>
+<div class="line">    <a name="a17"></a><a class="code" href="video_8h.html#afd9e46ae627d055dd8c98a4b0ebb73b1">setMode</a>(<a name="a18"></a><a class="code" href="background_8h.html#a05c862edb7f8f75036f10c04dcc3c2a6">BG_MODE1</a>, <a name="a19"></a><a class="code" href="background_8h.html#ace880dbd9a642604316f940038786dc8">BG3_MODE1_PRORITY_HIGH</a>);</div>
+<div class="line">    <a name="a20"></a><a class="code" href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a>(3);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// initialize sprite</span></div>
 <div class="line"> </div>
 <div class="line">    player1._x = 20;</div>
 <div class="line">    player1._y = 100;</div>
 <div class="line">    player1.oamAddress = 0;</div>
-<div class="line">    <a name="a15"></a><a class="code" href="sprite_8h.html#a35a0da9852240ef41b5030ed21b6eeb2">oamSetVisible</a>(player1.oamAddress, OBJ_SHOW);</div>
+<div class="line">    <a name="a21"></a><a class="code" href="sprite_8h.html#a35a0da9852240ef41b5030ed21b6eeb2">oamSetVisible</a>(player1.oamAddress, <a name="a22"></a><a class="code" href="sprite_8h.html#a0b9b0362f3cdfc1625ff5cfea7efcd0c">OBJ_SHOW</a>);</div>
 <div class="line">    <span class="comment">// Init Sprites gfx and palette with default size of 32x32</span></div>
-<div class="line">    <a name="a16"></a><a class="code" href="sprite_8h.html#a46e0be47f8fc865a7f43c1b0b126e59a">oamInitGfxSet</a>(&amp;character_tiles, (&amp;character_tiles_end - &amp;character_tiles), &amp;character_pal, (&amp;character_pal_end - &amp;character_pal), 0, 0x6000, <a name="a17"></a><a class="code" href="sprite_8h.html#a1893eab6ffef9928ff2de22d49bd18c0">OBJ_SIZE16_L32</a>);</div>
-<div class="line">    <a name="a18"></a><a class="code" href="sprite_8h.html#abb854a7fa3bbfe4c2e331bfce9e374a7">oamSet</a>(player1.oamAddress, player1._x, player1._y, 2, 0, 0, 0, 0); <span class="comment">// Put sprite in 100,100, with maximum priority 3 from tile entry 0, palette 0</span></div>
-<div class="line">    <a name="a19"></a><a class="code" href="sprite_8h.html#a4120a8ff32c39973babeca3615a0a2fd">oamSetEx</a>(player1.oamAddress, OBJ_SMALL, OBJ_SHOW);</div>
+<div class="line">    <a name="a23"></a><a class="code" href="sprite_8h.html#a46e0be47f8fc865a7f43c1b0b126e59a">oamInitGfxSet</a>(&amp;character_tiles, (&amp;character_tiles_end - &amp;character_tiles), &amp;character_pal, (&amp;character_pal_end - &amp;character_pal), 0, 0x6000, <a name="a24"></a><a class="code" href="sprite_8h.html#a1893eab6ffef9928ff2de22d49bd18c0">OBJ_SIZE16_L32</a>);</div>
+<div class="line">    <a name="a25"></a><a class="code" href="sprite_8h.html#abb854a7fa3bbfe4c2e331bfce9e374a7">oamSet</a>(player1.oamAddress, player1._x, player1._y, 2, 0, 0, 0, 0); <span class="comment">// Put sprite in 100,100, with maximum priority 3 from tile entry 0, palette 0</span></div>
+<div class="line">    <a name="a26"></a><a class="code" href="sprite_8h.html#a4120a8ff32c39973babeca3615a0a2fd">oamSetEx</a>(player1.oamAddress, <a name="a27"></a><a class="code" href="sprite_8h.html#a908b094470fa9632302b14321338ae7a">OBJ_SMALL</a>, <a class="code" href="sprite_8h.html#a0b9b0362f3cdfc1625ff5cfea7efcd0c">OBJ_SHOW</a>);</div>
 <div class="line"> </div>
-<div class="line">    <a name="a20"></a><a class="code" href="video_8h.html#abc7d4ef8ebc22f5b710927909bb3f144">setScreenOn</a>();</div>
+<div class="line">    <a name="a28"></a><a class="code" href="video_8h.html#abc7d4ef8ebc22f5b710927909bb3f144">setScreenOn</a>();</div>
 <div class="line"> </div>
 <div class="line">    bgMain.id = 0;</div>
 <div class="line">    bgMain.scrX = 255;</div>
@@ -369,13 +369,13 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode1_continu
 <div class="line">    <a class="code" href="background_8h.html#aa5e0112ea2d4b514c2dddc6ed2c7c3c7">bgSetScroll</a>(1, 0, 32);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// configure function to be called in the vblank interruption</span></div>
-<div class="line">    <a name="a21"></a><a class="code" href="interrupt_8h.html#ae003bf371437a7a0cc8dbef4f7854271">nmiSet</a>(myconsoleVblank);</div>
+<div class="line">    <a name="a29"></a><a class="code" href="interrupt_8h.html#ae003bf371437a7a0cc8dbef4f7854271">nmiSet</a>(myconsoleVblank);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Wait for nothing :P</span></div>
 <div class="line">    <span class="keywordflow">while</span> (1)</div>
 <div class="line">    {</div>
-<div class="line">        <a name="a22"></a><a class="code" href="network_8h.html#a42632e79292dc47a567aab4dc3e4407d">scanPads</a>();</div>
-<div class="line">        pad0 = <a name="a23"></a><a class="code" href="network_8h.html#a6063e0eec9a36e437fc32951acafa44c">padsCurrent</a>(0);</div>
+<div class="line">        <a name="a30"></a><a class="code" href="network_8h.html#a42632e79292dc47a567aab4dc3e4407d">scanPads</a>();</div>
+<div class="line">        pad0 = <a name="a31"></a><a class="code" href="network_8h.html#a6063e0eec9a36e437fc32951acafa44c">padsCurrent</a>(0);</div>
 <div class="line">        <span class="comment">// update character pos</span></div>
 <div class="line">        updatePos(&amp;player1, pad0);</div>
 <div class="line"> </div>
@@ -390,9 +390,15 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode1_continu
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
+<div class="ttc" id="abackground_8h_html_a05c862edb7f8f75036f10c04dcc3c2a6"><div class="ttname"><a href="background_8h.html#a05c862edb7f8f75036f10c04dcc3c2a6">BG_MODE1</a></div><div class="ttdeci">#define BG_MODE1</div><div class="ttdef"><b>Definition:</b> background.h:55</div></div>
+<div class="ttc" id="abackground_8h_html_a11724b6748ce0954e9b43819263537fc"><div class="ttname"><a href="background_8h.html#a11724b6748ce0954e9b43819263537fc">SC_32x32</a></div><div class="ttdeci">#define SC_32x32</div><div class="ttdef"><b>Definition:</b> background.h:49</div></div>
+<div class="ttc" id="abackground_8h_html_a4818d4e1c65ed78d65f1d3e6d9d1232a"><div class="ttname"><a href="background_8h.html#a4818d4e1c65ed78d65f1d3e6d9d1232a">BG_16COLORS</a></div><div class="ttdeci">#define BG_16COLORS</div><div class="ttdef"><b>Definition:</b> background.h:81</div></div>
 <div class="ttc" id="abackground_8h_html_a4dbfb1b8854ff9ca4a7d11a899281bbb"><div class="ttname"><a href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a></div><div class="ttdeci">void bgSetDisable(u8 bgNumber)</div><div class="ttdoc">Disable a BG in the actual SNES mode.</div></div>
 <div class="ttc" id="abackground_8h_html_a4fcbdb4b2378a64e8db62a184ee1851e"><div class="ttname"><a href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a></div><div class="ttdeci">void bgSetMapPtr(u8 bgNumber, u16 address, u8 mapSize)</div><div class="ttdoc">Change Background Map address.</div></div>
+<div class="ttc" id="abackground_8h_html_a6129b86a7c2913a31f1bca293fa7c1e7"><div class="ttname"><a href="background_8h.html#a6129b86a7c2913a31f1bca293fa7c1e7">SC_64x32</a></div><div class="ttdeci">#define SC_64x32</div><div class="ttdef"><b>Definition:</b> background.h:50</div></div>
+<div class="ttc" id="abackground_8h_html_a774d2a0de276a94af89173eb592803c0"><div class="ttname"><a href="background_8h.html#a774d2a0de276a94af89173eb592803c0">BG_4COLORS</a></div><div class="ttdeci">#define BG_4COLORS</div><div class="ttdef"><b>Definition:</b> background.h:80</div></div>
 <div class="ttc" id="abackground_8h_html_aa5e0112ea2d4b514c2dddc6ed2c7c3c7"><div class="ttname"><a href="background_8h.html#aa5e0112ea2d4b514c2dddc6ed2c7c3c7">bgSetScroll</a></div><div class="ttdeci">void bgSetScroll(u8 bgNumber, u16 x, u16 y)</div><div class="ttdoc">Sets the scroll hardware to the specified location.</div></div>
+<div class="ttc" id="abackground_8h_html_ace880dbd9a642604316f940038786dc8"><div class="ttname"><a href="background_8h.html#ace880dbd9a642604316f940038786dc8">BG3_MODE1_PRORITY_HIGH</a></div><div class="ttdeci">#define BG3_MODE1_PRORITY_HIGH</div><div class="ttdef"><b>Definition:</b> background.h:83</div></div>
 <div class="ttc" id="abackground_8h_html_ae09a7ac09be78eef0f28a6c7aabc82ad"><div class="ttname"><a href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a></div><div class="ttdeci">void bgInitTileSet(u8 bgNumber, u8 *tileSource, u8 *tilePalette, u8 paletteEntry, u16 tileSize, u16 paletteSize, u16 colorMode, u16 address)</div><div class="ttdoc">Initializes a Tile Set and Loads the Tile GFX into VRAM.</div></div>
 <div class="ttc" id="aconsole_8h_html_a6047713bb5a73afd3cd1d77e336bcdad"><div class="ttname"><a href="console_8h.html#a6047713bb5a73afd3cd1d77e336bcdad">consoleInit</a></div><div class="ttdeci">void consoleInit(void)</div><div class="ttdoc">Initialize console.</div></div>
 <div class="ttc" id="adma_8h_html_a72ec813d4b395cafa59852cbd1ffa8b2"><div class="ttname"><a href="dma_8h.html#a72ec813d4b395cafa59852cbd1ffa8b2">dmaCopyOAram</a></div><div class="ttdeci">void dmaCopyOAram(u8 *source, u16 address, u16 size)</div><div class="ttdoc">copies Sprites from source to destination using channel 0 of DMA available channels in half words</div></div>
@@ -406,12 +412,16 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode1_continu
 <div class="ttc" id="anetwork_8h_html_aa27cad8fa018a58930b6622783a83072a6504370d9c6391e1a9da6a1a529b089d"><div class="ttname"><a href="network_8h.html#aa27cad8fa018a58930b6622783a83072a6504370d9c6391e1a9da6a1a529b089d">KEY_RIGHT</a></div><div class="ttdeci">@ KEY_RIGHT</div><div class="ttdoc">pad RIGHT button.</div><div class="ttdef"><b>Definition:</b> network.h:52</div></div>
 <div class="ttc" id="anetwork_8h_html_aa27cad8fa018a58930b6622783a83072aa9cdac7967bf7d88fdb761138a2a3416"><div class="ttname"><a href="network_8h.html#aa27cad8fa018a58930b6622783a83072aa9cdac7967bf7d88fdb761138a2a3416">KEY_DOWN</a></div><div class="ttdeci">@ KEY_DOWN</div><div class="ttdoc">pad DOWN button.</div><div class="ttdef"><b>Definition:</b> network.h:54</div></div>
 <div class="ttc" id="asnes_8h_html"><div class="ttname"><a href="snes_8h.html">snes.h</a></div><div class="ttdoc">the master include file for snes applications.</div></div>
+<div class="ttc" id="asnestypes_8h_html_a9e6c91d77e24643b888dbd1a1a590054"><div class="ttname"><a href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a></div><div class="ttdeci">unsigned short u16</div><div class="ttdef"><b>Definition:</b> snestypes.h:40</div></div>
+<div class="ttc" id="asnestypes_8h_html_aed742c436da53c1080638ce6ef7d13de"><div class="ttname"><a href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition:</b> snestypes.h:38</div></div>
+<div class="ttc" id="asprite_8h_html_a0b9b0362f3cdfc1625ff5cfea7efcd0c"><div class="ttname"><a href="sprite_8h.html#a0b9b0362f3cdfc1625ff5cfea7efcd0c">OBJ_SHOW</a></div><div class="ttdeci">#define OBJ_SHOW</div><div class="ttdef"><b>Definition:</b> sprite.h:48</div></div>
 <div class="ttc" id="asprite_8h_html_a1893eab6ffef9928ff2de22d49bd18c0"><div class="ttname"><a href="sprite_8h.html#a1893eab6ffef9928ff2de22d49bd18c0">OBJ_SIZE16_L32</a></div><div class="ttdeci">#define OBJ_SIZE16_L32</div><div class="ttdoc">default OAM size 16x16 (SM) and 32x32 (LG) pix for OBJSEL register</div><div class="ttdef"><b>Definition:</b> sprite.h:42</div></div>
 <div class="ttc" id="asprite_8h_html_a35a0da9852240ef41b5030ed21b6eeb2"><div class="ttname"><a href="sprite_8h.html#a35a0da9852240ef41b5030ed21b6eeb2">oamSetVisible</a></div><div class="ttdeci">void oamSetVisible(u16 id, u8 hide)</div><div class="ttdoc">Hide or show a sprite.</div></div>
 <div class="ttc" id="asprite_8h_html_a4120a8ff32c39973babeca3615a0a2fd"><div class="ttname"><a href="sprite_8h.html#a4120a8ff32c39973babeca3615a0a2fd">oamSetEx</a></div><div class="ttdeci">void oamSetEx(u16 id, u8 size, u8 hide)</div><div class="ttdoc">Put the correct size and hide or show a sprite.</div></div>
 <div class="ttc" id="asprite_8h_html_a46e0be47f8fc865a7f43c1b0b126e59a"><div class="ttname"><a href="sprite_8h.html#a46e0be47f8fc865a7f43c1b0b126e59a">oamInitGfxSet</a></div><div class="ttdeci">void oamInitGfxSet(u8 *tileSource, u16 tileSize, u8 *tilePalette, u16 paletteSize, u8 tilePaletteNumber, u16 address, u8 oamsize)</div><div class="ttdoc">Initializes a sprites Gfx and Loads the GFX into VRAM.</div></div>
 <div class="ttc" id="asprite_8h_html_a4b8ea6388961b74cc228104a97eaecbd"><div class="ttname"><a href="sprite_8h.html#a4b8ea6388961b74cc228104a97eaecbd">oamSetXY</a></div><div class="ttdeci">void oamSetXY(u16 id, u16 xspr, u16 yspr)</div><div class="ttdoc">sets an oam coordinate to the supplied values</div></div>
 <div class="ttc" id="asprite_8h_html_a832f0c151a6b4de3bd1f5c23aff47848"><div class="ttname"><a href="sprite_8h.html#a832f0c151a6b4de3bd1f5c23aff47848">oamMemory</a></div><div class="ttdeci">u8 oamMemory[128 *4+8 *4]</div><div class="ttdoc">to address oam table low and high</div></div>
+<div class="ttc" id="asprite_8h_html_a908b094470fa9632302b14321338ae7a"><div class="ttname"><a href="sprite_8h.html#a908b094470fa9632302b14321338ae7a">OBJ_SMALL</a></div><div class="ttdeci">#define OBJ_SMALL</div><div class="ttdef"><b>Definition:</b> sprite.h:46</div></div>
 <div class="ttc" id="asprite_8h_html_abb854a7fa3bbfe4c2e331bfce9e374a7"><div class="ttname"><a href="sprite_8h.html#abb854a7fa3bbfe4c2e331bfce9e374a7">oamSet</a></div><div class="ttdeci">void oamSet(u16 id, u16 xspr, u16 yspr, u8 priority, u8 hflip, u8 vflip, u16 gfxoffset, u8 paletteoffset)</div><div class="ttdoc">sets an oam entry to the supplied values</div></div>
 <div class="ttc" id="avideo_8h_html_abc7d4ef8ebc22f5b710927909bb3f144"><div class="ttname"><a href="video_8h.html#abc7d4ef8ebc22f5b710927909bb3f144">setScreenOn</a></div><div class="ttdeci">void setScreenOn(void)</div><div class="ttdoc">Put screen On.</div></div>
 <div class="ttc" id="avideo_8h_html_afd9e46ae627d055dd8c98a4b0ebb73b1"><div class="ttname"><a href="video_8h.html#afd9e46ae627d055dd8c98a4b0ebb73b1">setMode</a></div><div class="ttdeci">void setMode(u8 mode, u8 size)</div><div class="ttdoc">Set the SNES hardware to operate in new display mode.</div></div>
@@ -420,7 +430,7 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode1_continu
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-    <li class="footer">Generated on Thu May 25 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 26 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </div>
 </body>
 </html>

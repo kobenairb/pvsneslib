@@ -1,5 +1,6 @@
 var pad_8h =
 [
+    [ "padsCurrent", "pad_8h.html#a5961ff7e99e299ab454e4e65d079b35a", null ],
     [ "REG_JOYxLH", "pad_8h.html#a3cae01317d787d65697fdf0543714272", null ],
     [ "KEYPAD_BITS", "pad_8h.html#a8c22a2afdbaf11439d90ba163fc8180f", null ],
     [ "KEYPAD_BITS", "pad_8h.html#aa27cad8fa018a58930b6622783a83072", [
@@ -28,5 +29,14 @@ var pad_8h =
       [ "KEY_X", "pad_8h.html#aa27cad8fa018a58930b6622783a83072a480a807305121d41673b8c208898f497", null ],
       [ "KEY_Y", "pad_8h.html#aa27cad8fa018a58930b6622783a83072a5d44524b2a6090fa97aa9353d69f67a3", null ]
     ] ],
+    [ "detectMPlay5", "pad_8h.html#a7d1c217beae2c4d3765db78284adf244", null ],
+    [ "padsClear", "pad_8h.html#ab52729db4b5fceef50431edaf506d64c", null ],
+    [ "padsDown", "pad_8h.html#a15b3017ba4f09fdd80f9446adb5d31cb", null ],
+    [ "padsUp", "pad_8h.html#a6d4b9bf393e927b514fa77fb509f4cdd", null ],
+    [ "scanMPlay5", "pad_8h.html#a7b881b38d7750f338335cd30c2e38f32", null ],
+    [ "scanPads", "pad_8h.html#a4a6674dce70032b45e5b3ba10e515012", null ],
+    [ "pad_keys", "pad_8h.html#a26859f70eb2bb0e5fc89c01491ef1e2a", null ],
+    [ "pad_keysold", "pad_8h.html#af9af4590caec810cba3ecb4f31b7f66a", null ],
+    [ "pad_keysrepeat", "pad_8h.html#a0c537268fa935f85a3db60bb3bf54350", null ],
     [ "snes_mplay5", "pad_8h.html#a0776b45d03084ed05cfad12d759249f0", null ]
 ];

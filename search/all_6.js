@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['int_5fhvirq_5fh_72',['INT_HVIRQ_H',['../interrupt_8h.html#ac352c6a25f2e170d7b2bf2236bd31427',1,'interrupt.h']]],
-  ['int_5fhvirq_5fhv_73',['INT_HVIRQ_HV',['../interrupt_8h.html#a062bd6ffa662638df005a03cd2c0a3fb',1,'interrupt.h']]],
-  ['int_5fhvirq_5fv_74',['INT_HVIRQ_V',['../interrupt_8h.html#a54b588e60e5abfeaf59ba4c8fd826cfa',1,'interrupt.h']]],
-  ['int_5fjoypad_5fenable_75',['INT_JOYPAD_ENABLE',['../interrupt_8h.html#ab4a66ed24f182a8d056f7db1cab6eb82',1,'interrupt.h']]],
-  ['int_5fvblenable_76',['INT_VBLENABLE',['../interrupt_8h.html#a435380b6460ebd669f2b344ea79316d6',1,'interrupt.h']]],
-  ['interrupt_2eh_77',['interrupt.h',['../interrupt_8h.html',1,'']]]
+  ['getpalette_134',['getPalette',['../video_8h.html#a4edcd61c70a2e22ed69a93ced9da9126',1,'video.h']]],
+  ['getpalettecolor_135',['getPaletteColor',['../video_8h.html#acbf8deabd274fb30b9448036296efb8d',1,'video.h']]]
 ];

@@ -1,5 +1,19 @@
 var searchData=
 [
-  ['getpalette_65',['getPalette',['../video_8h.html#a4edcd61c70a2e22ed69a93ced9da9126',1,'video.h']]],
-  ['getpalettecolor_66',['getPaletteColor',['../video_8h.html#acbf8deabd274fb30b9448036296efb8d',1,'video.h']]]
+  ['detectmplay5_114',['detectMPlay5',['../pad_8h.html#a7d1c217beae2c4d3765db78284adf244',1,'detectMPlay5(void):&#160;pad.h'],['../network_8h.html#abd31fc41ec07d41a5ea5349d5483e0ba',1,'detectMPlay5(void):&#160;network.h']]],
+  ['dir_115',['dir',['../structt__objs.html#ae2bb79aa63d37e6f2a0a98762a12c60f',1,'t_objs']]],
+  ['dma_2eh_116',['dma.h',['../dma_8h.html',1,'']]],
+  ['dma_5fenable_117',['DMA_ENABLE',['../dma_8h.html#af57b905f605a7fe58fc009025fb3d30b',1,'dma.h']]],
+  ['dmaclearvram_118',['dmaClearVram',['../dma_8h.html#a72b64de8d06ad5bae1995fb1baf1a458',1,'dma.h']]],
+  ['dmacopycgram_119',['dmaCopyCGram',['../dma_8h.html#aff1f11e7dc93b535c3c84cb8007bb16a',1,'dma.h']]],
+  ['dmacopyoaram_120',['dmaCopyOAram',['../dma_8h.html#a72ec813d4b395cafa59852cbd1ffa8b2',1,'dma.h']]],
+  ['dmacopyspr16vram_121',['dmaCopySpr16Vram',['../dma_8h.html#a6104d97fae7422dbba10f062c1044462',1,'dma.h']]],
+  ['dmacopyspr32vram_122',['dmaCopySpr32Vram',['../dma_8h.html#abbf81dbfd5a87cb2cd2181b12fcd56c5',1,'dma.h']]],
+  ['dmacopyvram_123',['dmaCopyVram',['../dma_8h.html#adddf1dea4bd52a083b3ee4b39f1e20f2',1,'dma.h']]],
+  ['dmacopyvram7_124',['dmaCopyVram7',['../dma_8h.html#ac0ba95e6b8e91380c0a67ee3b0707582',1,'dma.h']]],
+  ['dmafillvram_125',['dmaFillVram',['../dma_8h.html#a235e242d89d3c81b9e697e99a96198f7',1,'dma.h']]],
+  ['dmamemory_126',['dmaMemory',['../structdma_memory.html',1,'dmaMemory'],['../dma_8h.html#a072734f4a0ca76e5bddfa44940763aad',1,'dmaMemory():&#160;dma.h']]],
+  ['dsp_5fforcevbl_127',['DSP_FORCEVBL',['../video_8h.html#a5623bfd6fefb79d4f21d260b7e333523acef8d68eaf1d65e1bcf2ac9ee730c7d2',1,'video.h']]],
+  ['dummy1_128',['dummy1',['../structt__metasprites.html#a2f132d6d85b658cc0742bcd576b56597',1,'t_metasprites::dummy1()'],['../structt__sprites.html#af0a876e2163316875c74a8867aa412cb',1,'t_sprites::dummy1()']]],
+  ['dummy2_129',['dummy2',['../structt__sprites.html#a4b18c6d2b062f4663ba6cb0fbcf61cf3',1,'t_sprites']]]
 ];

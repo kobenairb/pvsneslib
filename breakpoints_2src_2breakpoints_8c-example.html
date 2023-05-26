@@ -123,33 +123,35 @@ $(document).ready(function(){initNavTree('breakpoints_2src_2breakpoints_8c-examp
 <div class="line">    <span class="comment">// Init background</span></div>
 <div class="line">    <a class="code" href="console_8h.html#a8620fbe47bc2afe99a59c67fae3b7b23">consoleMesenBreakpoint</a>();</div>
 <div class="line">    <a name="a6"></a><a class="code" href="background_8h.html#a0206b5b9911749322bcf9da130527924">bgSetGfxPtr</a>(0, 0x2000);</div>
-<div class="line">    <a name="a7"></a><a class="code" href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a>(0, 0x6800, SC_32x32);</div>
+<div class="line">    <a name="a7"></a><a class="code" href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a>(0, 0x6800, <a name="a8"></a><a class="code" href="background_8h.html#a11724b6748ce0954e9b43819263537fc">SC_32x32</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Now Put in 16 color mode and disable Bgs except current</span></div>
 <div class="line">    <a class="code" href="console_8h.html#a8620fbe47bc2afe99a59c67fae3b7b23">consoleMesenBreakpoint</a>();</div>
-<div class="line">    <a name="a8"></a><a class="code" href="video_8h.html#afd9e46ae627d055dd8c98a4b0ebb73b1">setMode</a>(BG_MODE1, 0);</div>
-<div class="line">    <a name="a9"></a><a class="code" href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a>(1);</div>
+<div class="line">    <a name="a9"></a><a class="code" href="video_8h.html#afd9e46ae627d055dd8c98a4b0ebb73b1">setMode</a>(<a name="a10"></a><a class="code" href="background_8h.html#a05c862edb7f8f75036f10c04dcc3c2a6">BG_MODE1</a>, 0);</div>
+<div class="line">    <a name="a11"></a><a class="code" href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a>(1);</div>
 <div class="line">    <a class="code" href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a>(2);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Draw a wonderful text :P</span></div>
 <div class="line">    <a class="code" href="console_8h.html#a8620fbe47bc2afe99a59c67fae3b7b23">consoleMesenBreakpoint</a>();</div>
-<div class="line">    <a name="a10"></a><a class="code" href="console_8h.html#a7e52d15b5a1befa42f5758de19dfb70c">consoleDrawText</a>(10, 10, <span class="stringliteral">&quot;Breakpoints!&quot;</span>);</div>
+<div class="line">    <a name="a12"></a><a class="code" href="console_8h.html#a7e52d15b5a1befa42f5758de19dfb70c">consoleDrawText</a>(10, 10, <span class="stringliteral">&quot;Breakpoints!&quot;</span>);</div>
 <div class="line">    <a class="code" href="console_8h.html#a7e52d15b5a1befa42f5758de19dfb70c">consoleDrawText</a>(6, 14, <span class="stringliteral">&quot;Press Ctrl+D to open&quot;</span>);</div>
 <div class="line">    <a class="code" href="console_8h.html#a7e52d15b5a1befa42f5758de19dfb70c">consoleDrawText</a>(7, 15, <span class="stringliteral">&quot;the Mesen debugger.&quot;</span>);</div>
 <div class="line">    <a class="code" href="console_8h.html#a7e52d15b5a1befa42f5758de19dfb70c">consoleDrawText</a>(5, 18, <span class="stringliteral">&quot;Make sure \&#39;Break on...\&#39;&quot;</span>);</div>
 <div class="line">    <a class="code" href="console_8h.html#a7e52d15b5a1befa42f5758de19dfb70c">consoleDrawText</a>(8, 19, <span class="stringliteral">&quot;WDM is checked&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Wait for nothing :P</span></div>
-<div class="line">    <a name="a11"></a><a class="code" href="video_8h.html#abc7d4ef8ebc22f5b710927909bb3f144">setScreenOn</a>();</div>
+<div class="line">    <a name="a13"></a><a class="code" href="video_8h.html#abc7d4ef8ebc22f5b710927909bb3f144">setScreenOn</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">while</span> (1)</div>
 <div class="line">    {</div>
 <div class="line">    <a class="code" href="console_8h.html#a8620fbe47bc2afe99a59c67fae3b7b23">consoleMesenBreakpoint</a>();</div>
-<div class="line">        <a name="a12"></a><a class="code" href="interrupt_8h.html#abd33830487e4764e5ec22ec98b749f4b">WaitForVBlank</a>();</div>
+<div class="line">        <a name="a14"></a><a class="code" href="interrupt_8h.html#abd33830487e4764e5ec22ec98b749f4b">WaitForVBlank</a>();</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="abackground_8h_html_a0206b5b9911749322bcf9da130527924"><div class="ttname"><a href="background_8h.html#a0206b5b9911749322bcf9da130527924">bgSetGfxPtr</a></div><div class="ttdeci">void bgSetGfxPtr(u8 bgNumber, u16 address)</div><div class="ttdoc">Definition of each background address.</div></div>
+<div class="ttc" id="abackground_8h_html_a05c862edb7f8f75036f10c04dcc3c2a6"><div class="ttname"><a href="background_8h.html#a05c862edb7f8f75036f10c04dcc3c2a6">BG_MODE1</a></div><div class="ttdeci">#define BG_MODE1</div><div class="ttdef"><b>Definition:</b> background.h:55</div></div>
+<div class="ttc" id="abackground_8h_html_a11724b6748ce0954e9b43819263537fc"><div class="ttname"><a href="background_8h.html#a11724b6748ce0954e9b43819263537fc">SC_32x32</a></div><div class="ttdeci">#define SC_32x32</div><div class="ttdef"><b>Definition:</b> background.h:49</div></div>
 <div class="ttc" id="abackground_8h_html_a4dbfb1b8854ff9ca4a7d11a899281bbb"><div class="ttname"><a href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a></div><div class="ttdeci">void bgSetDisable(u8 bgNumber)</div><div class="ttdoc">Disable a BG in the actual SNES mode.</div></div>
 <div class="ttc" id="abackground_8h_html_a4fcbdb4b2378a64e8db62a184ee1851e"><div class="ttname"><a href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a></div><div class="ttdeci">void bgSetMapPtr(u8 bgNumber, u16 address, u8 mapSize)</div><div class="ttdoc">Change Background Map address.</div></div>
 <div class="ttc" id="aconsole_8h_html_a344184ac8dda28ea0170c153c854aa16"><div class="ttname"><a href="console_8h.html#a344184ac8dda28ea0170c153c854aa16">consoleSetTextVramAdr</a></div><div class="ttdeci">void consoleSetTextVramAdr(u16 vramfont)</div><div class="ttdoc">Change text graphics address (4K aligned)</div></div>
@@ -168,7 +170,7 @@ $(document).ready(function(){initNavTree('breakpoints_2src_2breakpoints_8c-examp
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-    <li class="footer">Generated on Thu May 25 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 26 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </div>
 </body>
 </html>

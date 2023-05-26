@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['length1_91',['length1',['../structbrrsamples.html#a88adcde351bda684d978194a6a2993d5',1,'brrsamples']]],
-  ['length2_92',['length2',['../structbrrsamples.html#a31a76cfd2811dac5df70684e6ab0beb3',1,'brrsamples']]],
-  ['lzss_2eh_93',['lzss.h',['../lzss_8h.html',1,'']]],
-  ['lzssdecodevram_94',['LzssDecodeVram',['../lzss_8h.html#af9cf33e898424f4a39e29eb31f45ff83',1,'lzss.h']]]
+  ['int_5fhvirq_5fh_149',['INT_HVIRQ_H',['../interrupt_8h.html#ac352c6a25f2e170d7b2bf2236bd31427',1,'interrupt.h']]],
+  ['int_5fhvirq_5fhv_150',['INT_HVIRQ_HV',['../interrupt_8h.html#a062bd6ffa662638df005a03cd2c0a3fb',1,'interrupt.h']]],
+  ['int_5fhvirq_5fv_151',['INT_HVIRQ_V',['../interrupt_8h.html#a54b588e60e5abfeaf59ba4c8fd826cfa',1,'interrupt.h']]],
+  ['int_5fjoypad_5fenable_152',['INT_JOYPAD_ENABLE',['../interrupt_8h.html#ab4a66ed24f182a8d056f7db1cab6eb82',1,'interrupt.h']]],
+  ['int_5fvblenable_153',['INT_VBLENABLE',['../interrupt_8h.html#a435380b6460ebd669f2b344ea79316d6',1,'interrupt.h']]],
+  ['interrupt_2eh_154',['interrupt.h',['../interrupt_8h.html',1,'']]]
 ];

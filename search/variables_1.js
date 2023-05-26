@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['bank_542',['bank',['../structbrrsamples.html#ad37960d64ecbb142a50cd2e139b44d21',1,'brrsamples']]],
-  ['bg1gfxaddr_543',['bg1gfxaddr',['../background_8h.html#ad690bfa1333baa15818c1f4bb9a530fc',1,'background.h']]],
-  ['bg2gfxaddr_544',['bg2gfxaddr',['../background_8h.html#a5a1dd9dbfeb3ada41ca93bff2b46b99b',1,'background.h']]],
-  ['bg3gfxaddr_545',['bg3gfxaddr',['../background_8h.html#a11dd1e9472913ffd176d125c33a93af0',1,'background.h']]],
-  ['bg_5fl1_546',['bg_L1',['../map_8h.html#a467103f88f118d5ff5a7aeed5cb8a1d5',1,'map.h']]]
+  ['action_731',['action',['../structt__objs.html#af4bfdc0bbd947feb9ea45fd95f735a9d',1,'t_objs']]],
+  ['addr_732',['addr',['../structdma_memory.html#a213611cc702d8c9444d6aee76a2d2e5b',1,'dmaMemory']]],
+  ['addr1_733',['addr1',['../structbrrsamples.html#a59ba4c3685f1ff631858af06a51c6672',1,'brrsamples']]],
+  ['addr2_734',['addr2',['../structbrrsamples.html#a46ec973f7c37bb07422e909d087e174a',1,'brrsamples']]]
 ];

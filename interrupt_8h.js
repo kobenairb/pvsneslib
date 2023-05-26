@@ -15,5 +15,6 @@ var interrupt_8h =
     [ "VBL_READY", "interrupt_8h.html#a1982e080d74da9e146881ca580ffec0d", null ],
     [ "WaitVBLFlag", "interrupt_8h.html#a6eed974163eb704dbc5a25d6f95b8ccd", null ],
     [ "WaitForVBlank", "interrupt_8h.html#abd33830487e4764e5ec22ec98b749f4b", null ],
-    [ "WaitNVBlank", "interrupt_8h.html#ac0150594ed1a86784c4cd96b1ff11a0e", null ]
+    [ "WaitNVBlank", "interrupt_8h.html#ac0150594ed1a86784c4cd96b1ff11a0e", null ],
+    [ "nmi_handler", "interrupt_8h.html#a6bd4e9951923d72a51cc570b57796446", null ]
 ];

@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['hbl_5fready_67',['HBL_READY',['../interrupt_8h.html#a88d83a889f8e1d016cedfbd0476db989',1,'interrupt.h']]],
-  ['hdma_5fchannel0_68',['HDMA_CHANNEL0',['../dma_8h.html#a449e65ce5faecb46a0e57fb1ed874fec',1,'dma.h']]],
-  ['hdmatable16_69',['HDMATable16',['../dma_8h.html#ad072502d98153debc89f839d45fc1c80',1,'dma.h']]],
-  ['height_70',['height',['../structt__objs.html#a3bf3757f174f93270ff558d1351a7872',1,'t_objs']]],
-  ['hitpoints_71',['hitpoints',['../structt__objs.html#a66724708a48c464c7c9e1a00a6b81b6d',1,'t_objs']]]
+  ['fade_5fin_130',['FADE_IN',['../video_8h.html#a135b69f14519fe3a0a9e3f0d7ea60c25',1,'video.h']]],
+  ['fade_5fout_131',['FADE_OUT',['../video_8h.html#ae77da5ad4cbc80c45959a539d739cfd3',1,'video.h']]],
+  ['false_132',['FALSE',['../snestypes_8h.html#aa93f0eb578d23995850d61f7d61c55c1',1,'snestypes.h']]],
+  ['false_133',['false',['../snestypes_8h.html#a65e9886d74aaee76545e83dd09011727',1,'snestypes.h']]]
 ];

@@ -1,7 +1,25 @@
 var searchData=
 [
-  ['y_5fpos_384',['y_pos',['../map_8h.html#a79f8bb14ed9f0ee9d7031db7f02733be',1,'map.h']]],
-  ['yofs_385',['yofs',['../structt__objs.html#a63dd6f946d11f7e39d35ce9050c1e168',1,'t_objs']]],
-  ['ypos_386',['ypos',['../structt__objs.html#af033b263019aea8c1fb4fd095dde7997',1,'t_objs']]],
-  ['yvel_387',['yvel',['../structt__objs.html#a7aa31dcb802be971b0f425a01e6b843e',1,'t_objs']]]
+  ['vbl_5fready_535',['VBL_READY',['../interrupt_8h.html#a1982e080d74da9e146881ca580ffec0d',1,'interrupt.h']]],
+  ['video_2eh_536',['video.h',['../video_8h.html',1,'']]],
+  ['videocontrol_537',['VideoControl',['../video_8h.html#a5623bfd6fefb79d4f21d260b7e333523',1,'video.h']]],
+  ['videomode_538',['videoMode',['../video_8h.html#a156a14f040a0569d1c1b59c94669aa6f',1,'video.h']]],
+  ['videomodesub_539',['videoModeSub',['../video_8h.html#a4da52999afa3808bd6e797c9fbf584aa',1,'video.h']]],
+  ['vint16_540',['vint16',['../snestypes_8h.html#acb2f7be7f363d4b75886d644183fec3f',1,'snestypes.h']]],
+  ['vint32_541',['vint32',['../snestypes_8h.html#a7aefdfda2bb78de84f0f5bdcdf4c8236',1,'snestypes.h']]],
+  ['vint8_542',['vint8',['../snestypes_8h.html#a3f9e63ef48c2cf2d1f8aaa1793d514b8',1,'snestypes.h']]],
+  ['voidfn_543',['VoidFn',['../snestypes_8h.html#a5fe554ddab29fbcd75e14e38ee89724f',1,'snestypes.h']]],
+  ['volume_544',['volume',['../structbrrsamples.html#a2cb1142e9dfc5abce53ef89387bbea32',1,'brrsamples']]],
+  ['vram_5fadrstinc_5f1_545',['VRAM_ADRSTINC_1',['../video_8h.html#a5623bfd6fefb79d4f21d260b7e333523acfee058cf30c9aacc05573725e3775d8',1,'video.h']]],
+  ['vram_5fadrstinc_5f128_546',['VRAM_ADRSTINC_128',['../video_8h.html#a5623bfd6fefb79d4f21d260b7e333523a18d7f075e98fabe05beadc1e996cb460',1,'video.h']]],
+  ['vram_5fadrstinc_5f32_547',['VRAM_ADRSTINC_32',['../video_8h.html#a5623bfd6fefb79d4f21d260b7e333523a5adddf918b1602129ea6fe279f9d0a70',1,'video.h']]],
+  ['vram_5fadrtr_5f0b_548',['VRAM_ADRTR_0B',['../video_8h.html#a5623bfd6fefb79d4f21d260b7e333523acbbc69e337e06fc13a5f572284c5ddfe',1,'video.h']]],
+  ['vram_5fadrtr_5f10b_549',['VRAM_ADRTR_10B',['../video_8h.html#a5623bfd6fefb79d4f21d260b7e333523abe5c38b32a13a2867e46de5995aed60d',1,'video.h']]],
+  ['vram_5fadrtr_5f8b_550',['VRAM_ADRTR_8B',['../video_8h.html#a5623bfd6fefb79d4f21d260b7e333523a4f0d59c3d210f1962ae7080189338a04',1,'video.h']]],
+  ['vram_5fadrtr_5f9b_551',['VRAM_ADRTR_9B',['../video_8h.html#a5623bfd6fefb79d4f21d260b7e333523a186a04aac97f57626841934e087e19e5',1,'video.h']]],
+  ['vram_5finchigh_552',['VRAM_INCHIGH',['../video_8h.html#a5623bfd6fefb79d4f21d260b7e333523a98299d4713f71e9650839ddd33248feb',1,'video.h']]],
+  ['vram_5finclow_553',['VRAM_INCLOW',['../video_8h.html#a5623bfd6fefb79d4f21d260b7e333523a241f6a2b06bbaa6eec82a145c866e313',1,'video.h']]],
+  ['vuint16_554',['vuint16',['../snestypes_8h.html#ad7f560c21a88ddd3494daaad14f06ee2',1,'snestypes.h']]],
+  ['vuint32_555',['vuint32',['../snestypes_8h.html#acbc32cbd83c85d2c39a4753b492bb637',1,'snestypes.h']]],
+  ['vuint8_556',['vuint8',['../snestypes_8h.html#ab2208c2cec6d83509a16c4b4e177bc20',1,'snestypes.h']]]
 ];

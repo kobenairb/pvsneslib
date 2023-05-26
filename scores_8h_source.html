@@ -122,19 +122,19 @@ $(document).ready(function(){initNavTree('scores_8h_source.html',''); initResiza
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="snestypes_8h.html">snes/snestypes.h</a>&gt;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structsco_memory.html">   36</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    u16 scolo;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    u16 scohi;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} scoMemory;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structsco_memory.html#a3e9e7946246093ee38c4ad7d3a72ee3a">   38</a></span>&#160;    <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> <a class="code" href="structsco_memory.html#a3e9e7946246093ee38c4ad7d3a72ee3a">scolo</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structsco_memory.html#a8929bbe8062e646e4d930d79bf1ac48c">   39</a></span>&#160;    <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> <a class="code" href="structsco_memory.html#a8929bbe8062e646e4d930d79bf1ac48c">scohi</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <a class="code" href="structsco_memory.html">scoMemory</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="scores_8h.html#a610bffa01efc5915459764c57f0a7d32">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="scores_8h.html#a610bffa01efc5915459764c57f0a7d32">scoreClear</a>(scoMemory *source);</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="scores_8h.html#a610bffa01efc5915459764c57f0a7d32">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="scores_8h.html#a610bffa01efc5915459764c57f0a7d32">scoreClear</a>(<a class="code" href="structsco_memory.html">scoMemory</a> *source);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="scores_8h.html#a95d4103529817bc4d7efbaa7098ae2e5">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="scores_8h.html#a95d4103529817bc4d7efbaa7098ae2e5">scoreAdd</a>(scoMemory *source, u16 value);</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="scores_8h.html#a95d4103529817bc4d7efbaa7098ae2e5">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="scores_8h.html#a95d4103529817bc4d7efbaa7098ae2e5">scoreAdd</a>(<a class="code" href="structsco_memory.html">scoMemory</a> *source, <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> value);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="scores_8h.html#afc036e454a935daea483dc85ee1d95a8">   57</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="scores_8h.html#afc036e454a935daea483dc85ee1d95a8">scoreCpy</a>(scoMemory *source, scoMemory *dest);</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="scores_8h.html#afc036e454a935daea483dc85ee1d95a8">   57</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="scores_8h.html#afc036e454a935daea483dc85ee1d95a8">scoreCpy</a>(<a class="code" href="structsco_memory.html">scoMemory</a> *source, <a class="code" href="structsco_memory.html">scoMemory</a> *dest);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="scores_8h.html#ab961bc25a6ecc6ee901a90827460df62">   64</a></span>&#160;u8 <a class="code" href="scores_8h.html#ab961bc25a6ecc6ee901a90827460df62">scoreCmp</a>(scoMemory *source, scoMemory *dest);</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="scores_8h.html#ab961bc25a6ecc6ee901a90827460df62">   64</a></span>&#160;<a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="code" href="scores_8h.html#ab961bc25a6ecc6ee901a90827460df62">scoreCmp</a>(<a class="code" href="structsco_memory.html">scoMemory</a> *source, <a class="code" href="structsco_memory.html">scoMemory</a> *dest);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SNES_SCORE_INCLUDE</span></div>
 <div class="ttc" id="ascores_8h_html_a610bffa01efc5915459764c57f0a7d32"><div class="ttname"><a href="scores_8h.html#a610bffa01efc5915459764c57f0a7d32">scoreClear</a></div><div class="ttdeci">void scoreClear(scoMemory *source)</div><div class="ttdoc">clear a score memory</div></div>
@@ -142,13 +142,18 @@ $(document).ready(function(){initNavTree('scores_8h_source.html',''); initResiza
 <div class="ttc" id="ascores_8h_html_ab961bc25a6ecc6ee901a90827460df62"><div class="ttname"><a href="scores_8h.html#ab961bc25a6ecc6ee901a90827460df62">scoreCmp</a></div><div class="ttdeci">u8 scoreCmp(scoMemory *source, scoMemory *dest)</div><div class="ttdoc">compare a score memory to another score memory</div></div>
 <div class="ttc" id="ascores_8h_html_afc036e454a935daea483dc85ee1d95a8"><div class="ttname"><a href="scores_8h.html#afc036e454a935daea483dc85ee1d95a8">scoreCpy</a></div><div class="ttdeci">void scoreCpy(scoMemory *source, scoMemory *dest)</div><div class="ttdoc">copy a score memory to another score memory</div></div>
 <div class="ttc" id="asnestypes_8h_html"><div class="ttname"><a href="snestypes_8h.html">snestypes.h</a></div><div class="ttdoc">Custom types used by libsnes.</div></div>
+<div class="ttc" id="asnestypes_8h_html_a9e6c91d77e24643b888dbd1a1a590054"><div class="ttname"><a href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a></div><div class="ttdeci">unsigned short u16</div><div class="ttdef"><b>Definition:</b> snestypes.h:40</div></div>
+<div class="ttc" id="asnestypes_8h_html_aed742c436da53c1080638ce6ef7d13de"><div class="ttname"><a href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition:</b> snestypes.h:38</div></div>
+<div class="ttc" id="astructsco_memory_html"><div class="ttname"><a href="structsco_memory.html">scoMemory</a></div><div class="ttdef"><b>Definition:</b> scores.h:37</div></div>
+<div class="ttc" id="astructsco_memory_html_a3e9e7946246093ee38c4ad7d3a72ee3a"><div class="ttname"><a href="structsco_memory.html#a3e9e7946246093ee38c4ad7d3a72ee3a">scoMemory::scolo</a></div><div class="ttdeci">u16 scolo</div><div class="ttdef"><b>Definition:</b> scores.h:38</div></div>
+<div class="ttc" id="astructsco_memory_html_a8929bbe8062e646e4d930d79bf1ac48c"><div class="ttname"><a href="structsco_memory.html#a8929bbe8062e646e4d930d79bf1ac48c">scoMemory::scohi</a></div><div class="ttdeci">u16 scohi</div><div class="ttdef"><b>Definition:</b> scores.h:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_1fce5620edc95505dc9b3bb80528afca.html">snes</a></li><li class="navelem"><a class="el" href="scores_8h.html">scores.h</a></li>
-    <li class="footer">Generated on Thu May 25 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 26 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </div>
 </body>
 </html>

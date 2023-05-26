@@ -138,20 +138,20 @@ $(document).ready(function(){initNavTree('games_2likemario_2_like_mario_8c-examp
 <div class="line"><span class="comment">//---------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="_a0"></a><a class="code" href="structbrrsamples.html">brrsamples</a> Jump; <span class="comment">// The sound for jumping</span></div>
 <div class="line"> </div>
-<div class="line">u16 pad0; <span class="comment">// pad variable</span></div>
+<div class="line"><a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> pad0; <span class="comment">// pad variable</span></div>
 <div class="line"> </div>
 <div class="line"><a name="_a1"></a><a class="code" href="structt__objs.html">t_objs</a> *marioobj;             <span class="comment">// pointer to mario object</span></div>
-<div class="line">s16 *marioox, *mariooy;       <span class="comment">// basics x/y coordinates pointers with fixed point</span></div>
-<div class="line">s16 *marioxv, *marioyv;       <span class="comment">// basics x/y velocity pointers with fixed point</span></div>
-<div class="line">u16 mariox, marioy;           <span class="comment">// x &amp; y coordinates of mario with map depth (not only screen)</span></div>
-<div class="line">u8 mariofidx, marioflp, flip; <span class="comment">// to manage sprite display</span></div>
+<div class="line"><a class="code" href="snestypes_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> *marioox, *mariooy;       <span class="comment">// basics x/y coordinates pointers with fixed point</span></div>
+<div class="line"><a class="code" href="snestypes_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> *marioxv, *marioyv;       <span class="comment">// basics x/y velocity pointers with fixed point</span></div>
+<div class="line"><a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> mariox, marioy;           <span class="comment">// x &amp; y coordinates of mario with map depth (not only screen)</span></div>
+<div class="line"><a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> mariofidx, marioflp, flip; <span class="comment">// to manage sprite display</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//---------------------------------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Init function for mario object</span></div>
-<div class="line"><span class="keywordtype">void</span> marioinit(u16 xp, u16 yp, u16 type, u16 minx, u16 maxx)</div>
+<div class="line"><span class="keywordtype">void</span> marioinit(<a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> xp, <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> yp, <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> type, <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> minx, <a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> maxx)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// to have a little message regarding init (DO NOT USE FOR REAL SNES GAME, JUST DEBUGGING PURPOSE)</span></div>
-<div class="line">    <a name="a2"></a><a class="code" href="console_8h.html#a3a226cebe7d59aac755e03e1061ff727">consoleNocashMessage</a>(<span class="stringliteral">&quot;marioinit %d %d\n&quot;</span>, (u16)xp, (u16)yp);</div>
+<div class="line">    <a name="a2"></a><a class="code" href="console_8h.html#a3a226cebe7d59aac755e03e1061ff727">consoleNocashMessage</a>(<span class="stringliteral">&quot;marioinit %d %d\n&quot;</span>, (<a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>)xp, (<a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>)yp);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// prepare new object</span></div>
 <div class="line">    <span class="keywordflow">if</span> (<a name="a3"></a><a class="code" href="object_8h.html#a79ff81c8642b2398a03519c279c2f132">objNew</a>(type, xp, yp) == 0)</div>
@@ -165,8 +165,8 @@ $(document).ready(function(){initNavTree('games_2likemario_2_like_mario_8c-examp
 <div class="line">    marioobj-&gt;<a name="a9"></a><a class="code" href="structt__objs.html#a3bf3757f174f93270ff558d1351a7872">height</a> = 16;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// grab the coordinates &amp; velocity pointers</span></div>
-<div class="line">    marioox = (u16 *)&amp;(marioobj-&gt;<a name="a10"></a><a class="code" href="structt__objs.html#a7d8d754f7264eebc304486e94750c5ce">xpos</a> + 1);</div>
-<div class="line">    mariooy = (u16 *)&amp;(marioobj-&gt;<a name="a11"></a><a class="code" href="structt__objs.html#af033b263019aea8c1fb4fd095dde7997">ypos</a> + 1);</div>
+<div class="line">    marioox = (<a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> *)&amp;(marioobj-&gt;<a name="a10"></a><a class="code" href="structt__objs.html#a7d8d754f7264eebc304486e94750c5ce">xpos</a> + 1);</div>
+<div class="line">    mariooy = (<a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> *)&amp;(marioobj-&gt;<a name="a11"></a><a class="code" href="structt__objs.html#af033b263019aea8c1fb4fd095dde7997">ypos</a> + 1);</div>
 <div class="line">    marioxv = (<span class="keywordtype">short</span> *)&amp;(marioobj-&gt;<a name="a12"></a><a class="code" href="structt__objs.html#ae7d9e737a340022fb479b10115082c64">xvel</a>);</div>
 <div class="line">    marioyv = (<span class="keywordtype">short</span> *)&amp;(marioobj-&gt;<a name="a13"></a><a class="code" href="structt__objs.html#a7aa31dcb802be971b0f425a01e6b843e">yvel</a>);</div>
 <div class="line"> </div>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('games_2likemario_2_like_mario_8c-examp
 <div class="line"> </div>
 <div class="line"><span class="comment">//---------------------------------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// mario walk management</span></div>
-<div class="line"><span class="keywordtype">void</span> mariowalk(u8 idx)</div>
+<div class="line"><span class="keywordtype">void</span> mariowalk(<a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> idx)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// update animation</span></div>
 <div class="line">    flip++;</div>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('games_2likemario_2_like_mario_8c-examp
 <div class="line"> </div>
 <div class="line"><span class="comment">//---------------------------------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// mario fall management</span></div>
-<div class="line"><span class="keywordtype">void</span> mariofall(u8 idx)</div>
+<div class="line"><span class="keywordtype">void</span> mariofall(<a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> idx)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// if no more falling, just stand</span></div>
 <div class="line">    <span class="keywordflow">if</span> (*marioyv == 0)</div>
@@ -221,7 +221,7 @@ $(document).ready(function(){initNavTree('games_2likemario_2_like_mario_8c-examp
 <div class="line"> </div>
 <div class="line"><span class="comment">//---------------------------------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// mario jump management</span></div>
-<div class="line"><span class="keywordtype">void</span> mariojump(u8 idx)</div>
+<div class="line"><span class="keywordtype">void</span> mariojump(<a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> idx)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// change sprite</span></div>
 <div class="line">    <span class="keywordflow">if</span> (<a class="code" href="sprite_8h.html#a26ae9bbf7a98025a5d9b529bbe403a7f">oambuffer</a>[0].oamframeid != 1)</div>
@@ -237,7 +237,7 @@ $(document).ready(function(){initNavTree('games_2likemario_2_like_mario_8c-examp
 <div class="line"> </div>
 <div class="line"><span class="comment">//---------------------------------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Update function for mario object</span></div>
-<div class="line"><span class="keywordtype">void</span> marioupdate(u8 idx)</div>
+<div class="line"><span class="keywordtype">void</span> marioupdate(<a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> idx)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Get pad value, no move for the moment</span></div>
 <div class="line">    pad0 = <a name="a23"></a><a class="code" href="network_8h.html#a6063e0eec9a36e437fc32951acafa44c">padsCurrent</a>(0);</div>
@@ -317,100 +317,104 @@ $(document).ready(function(){initNavTree('games_2likemario_2_like_mario_8c-examp
 <div class="line">    <span class="comment">// change sprite coordinates regarding map location</span></div>
 <div class="line">    mariox = (*marioox);</div>
 <div class="line">    marioy = (*mariooy);</div>
-<div class="line">    <a class="code" href="sprite_8h.html#a26ae9bbf7a98025a5d9b529bbe403a7f">oambuffer</a>[0].<a name="a34"></a><a class="code" href="structt__sprites.html#a562c9dae7fe86f4faa5a9b2651567004">oamx</a> = mariox - x_pos;</div>
-<div class="line">    <a class="code" href="sprite_8h.html#a26ae9bbf7a98025a5d9b529bbe403a7f">oambuffer</a>[0].<a name="a35"></a><a class="code" href="structt__sprites.html#a6c499b96e640bbad488eb8874bf36281">oamy</a> = marioy - <a name="a36"></a><a class="code" href="map_8h.html#a79f8bb14ed9f0ee9d7031db7f02733be">y_pos</a>;</div>
-<div class="line">    <a name="a37"></a><a class="code" href="sprite_8h.html#aebd07ed4460088c9f3b1aca4ddbbcda8">oamDynamic16Draw</a>(0);</div>
+<div class="line">    <a class="code" href="sprite_8h.html#a26ae9bbf7a98025a5d9b529bbe403a7f">oambuffer</a>[0].<a name="a34"></a><a class="code" href="structt__sprites.html#a562c9dae7fe86f4faa5a9b2651567004">oamx</a> = mariox - <a name="a35"></a><a class="code" href="map_8h.html#a52d9f95007fdae0115aa0d5b21317257">x_pos</a>;</div>
+<div class="line">    <a class="code" href="sprite_8h.html#a26ae9bbf7a98025a5d9b529bbe403a7f">oambuffer</a>[0].<a name="a36"></a><a class="code" href="structt__sprites.html#a6c499b96e640bbad488eb8874bf36281">oamy</a> = marioy - <a name="a37"></a><a class="code" href="map_8h.html#a79f8bb14ed9f0ee9d7031db7f02733be">y_pos</a>;</div>
+<div class="line">    <a name="a38"></a><a class="code" href="sprite_8h.html#aebd07ed4460088c9f3b1aca4ddbbcda8">oamDynamic16Draw</a>(0);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// update camera regarding mario object</span></div>
-<div class="line">    <a name="a38"></a><a class="code" href="map_8h.html#ab8720c97e886ceabda97c6beff2e5864">mapUpdateCamera</a>(mariox, marioy);</div>
+<div class="line">    <a name="a39"></a><a class="code" href="map_8h.html#ab8720c97e886ceabda97c6beff2e5864">mapUpdateCamera</a>(mariox, marioy);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//---------------------------------------------------------------------------------</span></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Initialize sound engine (take some time)</span></div>
-<div class="line">    <a name="a39"></a><a class="code" href="sound_8h.html#ad8753cb6edb38834257bbf0020700689">spcBoot</a>();</div>
+<div class="line">    <a name="a40"></a><a class="code" href="sound_8h.html#ad8753cb6edb38834257bbf0020700689">spcBoot</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Initialize SNES</span></div>
-<div class="line">    <a name="a40"></a><a class="code" href="console_8h.html#a6047713bb5a73afd3cd1d77e336bcdad">consoleInit</a>();</div>
+<div class="line">    <a name="a41"></a><a class="code" href="console_8h.html#a6047713bb5a73afd3cd1d77e336bcdad">consoleInit</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Initialize text console with our font</span></div>
-<div class="line">    <a name="a41"></a><a class="code" href="console_8h.html#ab2c949172b9690e58ffb9b3294a36b38">consoleSetTextVramBGAdr</a>(0x6000);</div>
-<div class="line">    <a name="a42"></a><a class="code" href="console_8h.html#a344184ac8dda28ea0170c153c854aa16">consoleSetTextVramAdr</a>(0x3000);</div>
-<div class="line">    <a name="a43"></a><a class="code" href="console_8h.html#a5413265662e30a0ded3fee6d3c4781f9">consoleInitText</a>(1, 16 * 2, &amp;snesfont, &amp;snespal);</div>
+<div class="line">    <a name="a42"></a><a class="code" href="console_8h.html#ab2c949172b9690e58ffb9b3294a36b38">consoleSetTextVramBGAdr</a>(0x6000);</div>
+<div class="line">    <a name="a43"></a><a class="code" href="console_8h.html#a344184ac8dda28ea0170c153c854aa16">consoleSetTextVramAdr</a>(0x3000);</div>
+<div class="line">    <a name="a44"></a><a class="code" href="console_8h.html#a5413265662e30a0ded3fee6d3c4781f9">consoleInitText</a>(1, 16 * 2, &amp;snesfont, &amp;snespal);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Set give soundbank</span></div>
-<div class="line">    <a name="a44"></a><a class="code" href="sound_8h.html#ab68840ba8aab786b8ea206ea077acaac">spcSetBank</a>(&amp;SOUNDBANK__);</div>
+<div class="line">    <a name="a45"></a><a class="code" href="sound_8h.html#ab68840ba8aab786b8ea206ea077acaac">spcSetBank</a>(&amp;SOUNDBANK__);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// allocate around 10K of sound ram (39 256-byte blocks)</span></div>
-<div class="line">    <a name="a45"></a><a class="code" href="sound_8h.html#a2113060be24b307d1e03f167eb241b90">spcAllocateSoundRegion</a>(39);</div>
+<div class="line">    <a name="a46"></a><a class="code" href="sound_8h.html#a2113060be24b307d1e03f167eb241b90">spcAllocateSoundRegion</a>(39);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Load music</span></div>
-<div class="line">    <a name="a46"></a><a class="code" href="sound_8h.html#a313e30fb1962df9fb469f2fedd4d91e4">spcLoad</a>(MOD_OVERWORLD);</div>
+<div class="line">    <a name="a47"></a><a class="code" href="sound_8h.html#a313e30fb1962df9fb469f2fedd4d91e4">spcLoad</a>(MOD_OVERWORLD);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Load sample</span></div>
-<div class="line">    <a name="a47"></a><a class="code" href="sound_8h.html#a4ef9d5d4b7618a2e091194b6c17f75a5">spcSetSoundEntry</a>(15, 8, 6, &amp;jumpsndend - &amp;jumpsnd, &amp;jumpsnd, &amp;Jump);</div>
+<div class="line">    <a name="a48"></a><a class="code" href="sound_8h.html#a4ef9d5d4b7618a2e091194b6c17f75a5">spcSetSoundEntry</a>(15, 8, 6, &amp;jumpsndend - &amp;jumpsnd, &amp;jumpsnd, &amp;Jump);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Init layer with tiles and init also map length 0x6800 is mandatory for map engine</span></div>
-<div class="line">    <a name="a48"></a><a class="code" href="background_8h.html#a0206b5b9911749322bcf9da130527924">bgSetGfxPtr</a>(1, 0x3000);</div>
-<div class="line">    <a name="a49"></a><a class="code" href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a>(1, 0x6000, SC_32x32);</div>
-<div class="line">    <a name="a50"></a><a class="code" href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a>(0, &amp;tileset, &amp;tilepal, 0, (&amp;tilesetend - &amp;tileset), 16 * 2, BG_16COLORS, 0x2000);</div>
-<div class="line">    <a class="code" href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a>(0, 0x6800, SC_64x32);</div>
+<div class="line">    <a name="a49"></a><a class="code" href="background_8h.html#a0206b5b9911749322bcf9da130527924">bgSetGfxPtr</a>(1, 0x3000);</div>
+<div class="line">    <a name="a50"></a><a class="code" href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a>(1, 0x6000, <a name="a51"></a><a class="code" href="background_8h.html#a11724b6748ce0954e9b43819263537fc">SC_32x32</a>);</div>
+<div class="line">    <a name="a52"></a><a class="code" href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a>(0, &amp;tileset, &amp;tilepal, 0, (&amp;tilesetend - &amp;tileset), 16 * 2, <a name="a53"></a><a class="code" href="background_8h.html#a4818d4e1c65ed78d65f1d3e6d9d1232a">BG_16COLORS</a>, 0x2000);</div>
+<div class="line">    <a class="code" href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a>(0, 0x6800, <a name="a54"></a><a class="code" href="background_8h.html#a6129b86a7c2913a31f1bca293fa7c1e7">SC_64x32</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Init sprite engine (0x0000 for large, 0x1000 for small)</span></div>
-<div class="line">    <a name="a51"></a><a class="code" href="sprite_8h.html#adc3b431ee9b6bc613e5e4e6734dbfc08">oamInitDynamicSprite</a>(0x0000, 0x1000, 0, 0, <a name="a52"></a><a class="code" href="sprite_8h.html#aa91348e1375ed07236694a7d81fa9ecf">OBJ_SIZE8_L16</a>);</div>
+<div class="line">    <a name="a55"></a><a class="code" href="sprite_8h.html#adc3b431ee9b6bc613e5e4e6734dbfc08">oamInitDynamicSprite</a>(0x0000, 0x1000, 0, 0, <a name="a56"></a><a class="code" href="sprite_8h.html#aa91348e1375ed07236694a7d81fa9ecf">OBJ_SIZE8_L16</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Object engine activate</span></div>
-<div class="line">    <a name="a53"></a><a class="code" href="object_8h.html#ad010f8c119dbd982acd9ddd859f2acec">objInitEngine</a>();</div>
+<div class="line">    <a name="a57"></a><a class="code" href="object_8h.html#ad010f8c119dbd982acd9ddd859f2acec">objInitEngine</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Init function for state machine</span></div>
-<div class="line">    objInitFunctions(0, &amp;marioinit, &amp;marioupdate, NULL);</div>
+<div class="line">    <a name="a58"></a><a class="code" href="object_8h.html#ae8ccb58640772fcab4c280315373eff3">objInitFunctions</a>(0, &amp;marioinit, &amp;marioupdate, <a name="a59"></a><a class="code" href="snestypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Load all objects into memory</span></div>
-<div class="line">    <a name="a54"></a><a class="code" href="object_8h.html#aeda7828a0cb93ff1985ac0237ac5871b">objLoadObjects</a>((<span class="keywordtype">char</span> *)&amp;objmario);</div>
+<div class="line">    <a name="a60"></a><a class="code" href="object_8h.html#aeda7828a0cb93ff1985ac0237ac5871b">objLoadObjects</a>((<span class="keywordtype">char</span> *)&amp;objmario);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Load map in memory and update it regarding current location of the sprite</span></div>
-<div class="line">    <a name="a55"></a><a class="code" href="map_8h.html#aa113f9698adeb4ddea559d2cdaf82d96">mapLoad</a>((u8 *)&amp;mapmario, (u8 *)&amp;tilesetdef, (u8 *)&amp;tilesetatt);</div>
+<div class="line">    <a name="a61"></a><a class="code" href="map_8h.html#aa113f9698adeb4ddea559d2cdaf82d96">mapLoad</a>((<a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *)&amp;mapmario, (<a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *)&amp;tilesetdef, (<a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *)&amp;tilesetatt);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Now Put in 16 color mode and disable BG3</span></div>
-<div class="line">    <a name="a56"></a><a class="code" href="video_8h.html#afd9e46ae627d055dd8c98a4b0ebb73b1">setMode</a>(BG_MODE1, 0);</div>
-<div class="line">    <a name="a57"></a><a class="code" href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a>(2);</div>
+<div class="line">    <a name="a62"></a><a class="code" href="video_8h.html#afd9e46ae627d055dd8c98a4b0ebb73b1">setMode</a>(<a name="a63"></a><a class="code" href="background_8h.html#a05c862edb7f8f75036f10c04dcc3c2a6">BG_MODE1</a>, 0);</div>
+<div class="line">    <a name="a64"></a><a class="code" href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a>(2);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Put some text</span></div>
-<div class="line">    <a name="a58"></a><a class="code" href="console_8h.html#a7e52d15b5a1befa42f5758de19dfb70c">consoleDrawText</a>(6, 16, <span class="stringliteral">&quot;MARIOx00  WORLD TIME&quot;</span>);</div>
+<div class="line">    <a name="a65"></a><a class="code" href="console_8h.html#a7e52d15b5a1befa42f5758de19dfb70c">consoleDrawText</a>(6, 16, <span class="stringliteral">&quot;MARIOx00  WORLD TIME&quot;</span>);</div>
 <div class="line">    <a class="code" href="console_8h.html#a7e52d15b5a1befa42f5758de19dfb70c">consoleDrawText</a>(6, 17, <span class="stringliteral">&quot; 00000 ox00 1-1  000&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Put screen on</span></div>
-<div class="line">    <a name="a59"></a><a class="code" href="video_8h.html#abc7d4ef8ebc22f5b710927909bb3f144">setScreenOn</a>();</div>
+<div class="line">    <a name="a66"></a><a class="code" href="video_8h.html#abc7d4ef8ebc22f5b710927909bb3f144">setScreenOn</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Play file from the beginning</span></div>
-<div class="line">    <a name="a60"></a><a class="code" href="sound_8h.html#aebf91de1df5e4fa83454a84bb0e60918">spcPlay</a>(0);</div>
-<div class="line">    <a name="a61"></a><a class="code" href="sound_8h.html#ae2c8dfab62ceecf5c302c95f5453a752">spcSetModuleVolume</a>(100);</div>
+<div class="line">    <a name="a67"></a><a class="code" href="sound_8h.html#aebf91de1df5e4fa83454a84bb0e60918">spcPlay</a>(0);</div>
+<div class="line">    <a name="a68"></a><a class="code" href="sound_8h.html#ae2c8dfab62ceecf5c302c95f5453a752">spcSetModuleVolume</a>(100);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Wait VBL &#39;and update sprites too ;-) )</span></div>
-<div class="line">    <a name="a62"></a><a class="code" href="interrupt_8h.html#abd33830487e4764e5ec22ec98b749f4b">WaitForVBlank</a>();</div>
+<div class="line">    <a name="a69"></a><a class="code" href="interrupt_8h.html#abd33830487e4764e5ec22ec98b749f4b">WaitForVBlank</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Wait for nothing :P</span></div>
 <div class="line">    <span class="keywordflow">while</span> (1)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="comment">// Update the map regarding the camera</span></div>
-<div class="line">        <a name="a63"></a><a class="code" href="map_8h.html#a332bfe570835ef05934b712fd9701c88">mapUpdate</a>();</div>
+<div class="line">        <a name="a70"></a><a class="code" href="map_8h.html#a332bfe570835ef05934b712fd9701c88">mapUpdate</a>();</div>
 <div class="line"> </div>
 <div class="line">        <span class="comment">// Update all the available objects</span></div>
-<div class="line">        <a name="a64"></a><a class="code" href="object_8h.html#aa3240dfaeaa1b670114283de49dc6526">objUpdateAll</a>();</div>
+<div class="line">        <a name="a71"></a><a class="code" href="object_8h.html#aa3240dfaeaa1b670114283de49dc6526">objUpdateAll</a>();</div>
 <div class="line"> </div>
 <div class="line">        <span class="comment">// prepare next frame and wait vblank</span></div>
-<div class="line">        <a name="a65"></a><a class="code" href="sprite_8h.html#ac9eb3b2751e5b744470cd16453ff3261">oamInitDynamicSpriteEndFrame</a>();</div>
-<div class="line">        <a name="a66"></a><a class="code" href="sound_8h.html#acab7d87110bac6baa9d74ab314772c98">spcProcess</a>();</div>
+<div class="line">        <a name="a72"></a><a class="code" href="sprite_8h.html#ac9eb3b2751e5b744470cd16453ff3261">oamInitDynamicSpriteEndFrame</a>();</div>
+<div class="line">        <a name="a73"></a><a class="code" href="sound_8h.html#acab7d87110bac6baa9d74ab314772c98">spcProcess</a>();</div>
 <div class="line">        <a class="code" href="interrupt_8h.html#abd33830487e4764e5ec22ec98b749f4b">WaitForVBlank</a>();</div>
-<div class="line">        <a name="a67"></a><a class="code" href="map_8h.html#a15e3d01a91c5650e4de9a6e6be131d34">mapVblank</a>();</div>
-<div class="line">        <a name="a68"></a><a class="code" href="sprite_8h.html#a4f830004646995018000dae0f898d221">oamVramQueueUpdate</a>();</div>
+<div class="line">        <a name="a74"></a><a class="code" href="map_8h.html#a15e3d01a91c5650e4de9a6e6be131d34">mapVblank</a>();</div>
+<div class="line">        <a name="a75"></a><a class="code" href="sprite_8h.html#a4f830004646995018000dae0f898d221">oamVramQueueUpdate</a>();</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="abackground_8h_html_a0206b5b9911749322bcf9da130527924"><div class="ttname"><a href="background_8h.html#a0206b5b9911749322bcf9da130527924">bgSetGfxPtr</a></div><div class="ttdeci">void bgSetGfxPtr(u8 bgNumber, u16 address)</div><div class="ttdoc">Definition of each background address.</div></div>
+<div class="ttc" id="abackground_8h_html_a05c862edb7f8f75036f10c04dcc3c2a6"><div class="ttname"><a href="background_8h.html#a05c862edb7f8f75036f10c04dcc3c2a6">BG_MODE1</a></div><div class="ttdeci">#define BG_MODE1</div><div class="ttdef"><b>Definition:</b> background.h:55</div></div>
+<div class="ttc" id="abackground_8h_html_a11724b6748ce0954e9b43819263537fc"><div class="ttname"><a href="background_8h.html#a11724b6748ce0954e9b43819263537fc">SC_32x32</a></div><div class="ttdeci">#define SC_32x32</div><div class="ttdef"><b>Definition:</b> background.h:49</div></div>
+<div class="ttc" id="abackground_8h_html_a4818d4e1c65ed78d65f1d3e6d9d1232a"><div class="ttname"><a href="background_8h.html#a4818d4e1c65ed78d65f1d3e6d9d1232a">BG_16COLORS</a></div><div class="ttdeci">#define BG_16COLORS</div><div class="ttdef"><b>Definition:</b> background.h:81</div></div>
 <div class="ttc" id="abackground_8h_html_a4dbfb1b8854ff9ca4a7d11a899281bbb"><div class="ttname"><a href="background_8h.html#a4dbfb1b8854ff9ca4a7d11a899281bbb">bgSetDisable</a></div><div class="ttdeci">void bgSetDisable(u8 bgNumber)</div><div class="ttdoc">Disable a BG in the actual SNES mode.</div></div>
 <div class="ttc" id="abackground_8h_html_a4fcbdb4b2378a64e8db62a184ee1851e"><div class="ttname"><a href="background_8h.html#a4fcbdb4b2378a64e8db62a184ee1851e">bgSetMapPtr</a></div><div class="ttdeci">void bgSetMapPtr(u8 bgNumber, u16 address, u8 mapSize)</div><div class="ttdoc">Change Background Map address.</div></div>
+<div class="ttc" id="abackground_8h_html_a6129b86a7c2913a31f1bca293fa7c1e7"><div class="ttname"><a href="background_8h.html#a6129b86a7c2913a31f1bca293fa7c1e7">SC_64x32</a></div><div class="ttdeci">#define SC_64x32</div><div class="ttdef"><b>Definition:</b> background.h:50</div></div>
 <div class="ttc" id="abackground_8h_html_ae09a7ac09be78eef0f28a6c7aabc82ad"><div class="ttname"><a href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a></div><div class="ttdeci">void bgInitTileSet(u8 bgNumber, u8 *tileSource, u8 *tilePalette, u8 paletteEntry, u16 tileSize, u16 paletteSize, u16 colorMode, u16 address)</div><div class="ttdoc">Initializes a Tile Set and Loads the Tile GFX into VRAM.</div></div>
 <div class="ttc" id="aconsole_8h_html_a344184ac8dda28ea0170c153c854aa16"><div class="ttname"><a href="console_8h.html#a344184ac8dda28ea0170c153c854aa16">consoleSetTextVramAdr</a></div><div class="ttdeci">void consoleSetTextVramAdr(u16 vramfont)</div><div class="ttdoc">Change text graphics address (4K aligned)</div></div>
 <div class="ttc" id="aconsole_8h_html_a3a226cebe7d59aac755e03e1061ff727"><div class="ttname"><a href="console_8h.html#a3a226cebe7d59aac755e03e1061ff727">consoleNocashMessage</a></div><div class="ttdeci">void consoleNocashMessage(char *fmt,...)</div><div class="ttdoc">Send a message to the no$sns debug window.</div></div>
@@ -423,6 +427,7 @@ $(document).ready(function(){initNavTree('games_2likemario_2_like_mario_8c-examp
 <div class="ttc" id="amap_8h_html_a227eedee0994ff2eac6ed2b691d9bcb3"><div class="ttname"><a href="map_8h.html#a227eedee0994ff2eac6ed2b691d9bcb3">ACT_STAND</a></div><div class="ttdeci">#define ACT_STAND</div><div class="ttdoc">Action type STAND for object.</div><div class="ttdef"><b>Definition:</b> map.h:45</div></div>
 <div class="ttc" id="amap_8h_html_a332bfe570835ef05934b712fd9701c88"><div class="ttname"><a href="map_8h.html#a332bfe570835ef05934b712fd9701c88">mapUpdate</a></div><div class="ttdeci">void mapUpdate(void)</div><div class="ttdoc">Update map regarding current camera position (must be done once per frame)</div></div>
 <div class="ttc" id="amap_8h_html_a4617d14626ea66580d7996705d0a5bce"><div class="ttname"><a href="map_8h.html#a4617d14626ea66580d7996705d0a5bce">ACT_JUMP</a></div><div class="ttdeci">#define ACT_JUMP</div><div class="ttdoc">Action type JUMP for object.</div><div class="ttdef"><b>Definition:</b> map.h:47</div></div>
+<div class="ttc" id="amap_8h_html_a52d9f95007fdae0115aa0d5b21317257"><div class="ttname"><a href="map_8h.html#a52d9f95007fdae0115aa0d5b21317257">x_pos</a></div><div class="ttdeci">u16 x_pos</div></div>
 <div class="ttc" id="amap_8h_html_a79f8bb14ed9f0ee9d7031db7f02733be"><div class="ttname"><a href="map_8h.html#a79f8bb14ed9f0ee9d7031db7f02733be">y_pos</a></div><div class="ttdeci">u16 y_pos</div><div class="ttdoc">Current value of camera in x &amp; y coordinates.</div><div class="ttdef"><b>Definition:</b> map.h:57</div></div>
 <div class="ttc" id="amap_8h_html_a8c450076e1da6d4f8aa6e1f7e6737444"><div class="ttname"><a href="map_8h.html#a8c450076e1da6d4f8aa6e1f7e6737444">ACT_FALL</a></div><div class="ttdeci">#define ACT_FALL</div><div class="ttdoc">Action type FALL for object.</div><div class="ttdef"><b>Definition:</b> map.h:48</div></div>
 <div class="ttc" id="amap_8h_html_a912cfae6ccf6375f3c2831d65646c76b"><div class="ttname"><a href="map_8h.html#a912cfae6ccf6375f3c2831d65646c76b">ACT_WALK</a></div><div class="ttdeci">#define ACT_WALK</div><div class="ttdoc">Action type WALK for object.</div><div class="ttdef"><b>Definition:</b> map.h:46</div></div>
@@ -442,8 +447,13 @@ $(document).ready(function(){initNavTree('games_2likemario_2_like_mario_8c-examp
 <div class="ttc" id="aobject_8h_html_aba30a57977f35e1632eb81b5ae39321f"><div class="ttname"><a href="object_8h.html#aba30a57977f35e1632eb81b5ae39321f">objGetPointer</a></div><div class="ttdeci">void objGetPointer(u16 objhandle)</div><div class="ttdoc">get the pointer to an object from its handle (need to do -1 to have offset after),...</div></div>
 <div class="ttc" id="aobject_8h_html_ad010f8c119dbd982acd9ddd859f2acec"><div class="ttname"><a href="object_8h.html#ad010f8c119dbd982acd9ddd859f2acec">objInitEngine</a></div><div class="ttdeci">void objInitEngine(void)</div><div class="ttdoc">Initialize object engine, need to be called once.</div></div>
 <div class="ttc" id="aobject_8h_html_ad4b2cf3a008d2011baf65b7ed74eaf65"><div class="ttname"><a href="object_8h.html#ad4b2cf3a008d2011baf65b7ed74eaf65">objgetid</a></div><div class="ttdeci">u16 objgetid</div><div class="ttdoc">id of current object (useful when creating it)</div></div>
+<div class="ttc" id="aobject_8h_html_ae8ccb58640772fcab4c280315373eff3"><div class="ttname"><a href="object_8h.html#ae8ccb58640772fcab4c280315373eff3">objInitFunctions</a></div><div class="ttdeci">void objInitFunctions(u8 objtype, void *initfct, void *updfct, void *reffct)</div></div>
 <div class="ttc" id="aobject_8h_html_aeda7828a0cb93ff1985ac0237ac5871b"><div class="ttname"><a href="object_8h.html#aeda7828a0cb93ff1985ac0237ac5871b">objLoadObjects</a></div><div class="ttdeci">void objLoadObjects(u8 *sourceO)</div><div class="ttdoc">Load all objects for a specific table in memory.</div></div>
 <div class="ttc" id="asnes_8h_html"><div class="ttname"><a href="snes_8h.html">snes.h</a></div><div class="ttdoc">the master include file for snes applications.</div></div>
+<div class="ttc" id="asnestypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="snestypes_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> snestypes.h:63</div></div>
+<div class="ttc" id="asnestypes_8h_html_a5ffa4f640862b25ba6d4f635b78bdbe1"><div class="ttname"><a href="snestypes_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a></div><div class="ttdeci">signed short s16</div><div class="ttdef"><b>Definition:</b> snestypes.h:39</div></div>
+<div class="ttc" id="asnestypes_8h_html_a9e6c91d77e24643b888dbd1a1a590054"><div class="ttname"><a href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a></div><div class="ttdeci">unsigned short u16</div><div class="ttdef"><b>Definition:</b> snestypes.h:40</div></div>
+<div class="ttc" id="asnestypes_8h_html_aed742c436da53c1080638ce6ef7d13de"><div class="ttname"><a href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition:</b> snestypes.h:38</div></div>
 <div class="ttc" id="asound_8h_html_a2113060be24b307d1e03f167eb241b90"><div class="ttname"><a href="sound_8h.html#a2113060be24b307d1e03f167eb241b90">spcAllocateSoundRegion</a></div><div class="ttdeci">void spcAllocateSoundRegion(u8 size)</div><div class="ttdoc">set the size of the sound region (this must be big enough to hold your longest/largest sound) this fu...</div></div>
 <div class="ttc" id="asound_8h_html_a313e30fb1962df9fb469f2fedd4d91e4"><div class="ttname"><a href="sound_8h.html#a313e30fb1962df9fb469f2fedd4d91e4">spcLoad</a></div><div class="ttdeci">void spcLoad(u16 musIndex)</div><div class="ttdoc">load module into sm-spc. this function may take some time to execute</div></div>
 <div class="ttc" id="asound_8h_html_a4ef9d5d4b7618a2e091194b6c17f75a5"><div class="ttname"><a href="sound_8h.html#a4ef9d5d4b7618a2e091194b6c17f75a5">spcSetSoundEntry</a></div><div class="ttdeci">void spcSetSoundEntry(u8 vol, u8 panning, u8 pitch, u16 length, u8 *sampleaddr, brrsamples *ptr)</div><div class="ttdoc">set the values and address of the SOUND TABLE for a sound entry</div></div>
@@ -483,7 +493,7 @@ $(document).ready(function(){initNavTree('games_2likemario_2_like_mario_8c-examp
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-    <li class="footer">Generated on Thu May 25 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 26 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </div>
 </body>
 </html>

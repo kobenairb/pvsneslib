@@ -35,5 +35,8 @@ var network_8h =
     [ "padsUp", "network_8h.html#a51de6b359e19a3a0279d42afc7fe6165", null ],
     [ "scanMPlay5", "network_8h.html#a6c6e694e00ac17bc50940125a917ab6b", null ],
     [ "scanPads", "network_8h.html#a42632e79292dc47a567aab4dc3e4407d", null ],
+    [ "pad_keys", "network_8h.html#a26859f70eb2bb0e5fc89c01491ef1e2a", null ],
+    [ "pad_keysold", "network_8h.html#af9af4590caec810cba3ecb4f31b7f66a", null ],
+    [ "pad_keysrepeat", "network_8h.html#a0c537268fa935f85a3db60bb3bf54350", null ],
     [ "snes_mplay5", "network_8h.html#a0776b45d03084ed05cfad12d759249f0", null ]
 ];

@@ -159,22 +159,22 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode7_perspec
 <div class="line"> </div>
 <div class="line"><span class="comment">//---------------------------------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Mode Array: This will change mode while rendering using HDMA. Format: Scanline,Mode</span></div>
-<div class="line"><span class="keyword">const</span> u8 ModeTable[5] =</div>
+<div class="line"><span class="keyword">const</span> <a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> ModeTable[5] =</div>
 <div class="line">    {</div>
-<div class="line">        SKYLINEY, BG_MODE3, <span class="comment">// for 80 scanlines do: Mode = 3</span></div>
-<div class="line">        1, BG_MODE7,        <span class="comment">// for 1 scanline do: Mode = 7</span></div>
+<div class="line">        SKYLINEY, <a name="a0"></a><a class="code" href="background_8h.html#ab74253172bcb87b7947118b746ab2849">BG_MODE3</a>, <span class="comment">// for 80 scanlines do: Mode = 3</span></div>
+<div class="line">        1, <a name="a1"></a><a class="code" href="background_8h.html#ac2995da5a6139bd6ca1091ae3358d4f3">BG_MODE7</a>,        <span class="comment">// for 1 scanline do: Mode = 7</span></div>
 <div class="line">        0x00                <span class="comment">// End transfer</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// BG Array: This will ensure there is no garbage on screen. Format: Scanline,BG</span></div>
-<div class="line"><span class="keyword">const</span> u8 BGTable[5] =</div>
+<div class="line"><span class="keyword">const</span> <a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> BGTable[5] =</div>
 <div class="line">    {</div>
 <div class="line">        SKYLINEY, 0x12, <span class="comment">// for 80 scanlines do: 00010010 (Objects + BG 1)</span></div>
 <div class="line">        1, 0x11,        <span class="comment">// for 1 scanline do: 00010001 (Objects + BG 0)</span></div>
 <div class="line">        0x00            <span class="comment">// End transfer</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">const</span> u8 PerspectiveX[264] =</div>
+<div class="line"><span class="keyword">const</span> <a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> PerspectiveX[264] =</div>
 <div class="line">    {                                  <span class="comment">//</span></div>
 <div class="line">        SKYLINEY, 256 &amp; 255, 256 &gt;&gt; 8, <span class="comment">// for 80 scanlines do: Scale = 1</span></div>
 <div class="line">        0xFF,                          <span class="comment">// for 127 scanlines do: (continue bit activated)</span></div>
@@ -308,7 +308,7 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode7_perspec
 <div class="line">        123, 0};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Format: Scanline,ScaleY,ScaleY</span></div>
-<div class="line"><span class="keyword">const</span> u8 PerspectiveY[264] =</div>
+<div class="line"><span class="keyword">const</span> <a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> PerspectiveY[264] =</div>
 <div class="line">    {                                  <span class="comment">//</span></div>
 <div class="line">        SKYLINEY, 256 &amp; 255, 256 &gt;&gt; 8, <span class="comment">// for 80 scanlines do: Scale = 1</span></div>
 <div class="line">        0xFF,                          <span class="comment">// for 127 scanlines do: (continue bit activated)</span></div>
@@ -442,58 +442,58 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode7_perspec
 <div class="line">        49, 2};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line">u16 pad0;                        <span class="comment">// current pad</span></div>
-<div class="line">u16 sz;                          <span class="comment">// zoom</span></div>
-<div class="line">u16 sx, sy;                      <span class="comment">// current coordinates</span></div>
-<div class="line">dmaMemory data_to_transfertMode; <span class="comment">// for table HDMA access</span></div>
-<div class="line">dmaMemory data_to_transfertBG;</div>
-<div class="line">dmaMemory data_to_transfertX;</div>
-<div class="line">dmaMemory data_to_transfertY;</div>
+<div class="line"><a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> pad0;                        <span class="comment">// current pad</span></div>
+<div class="line"><a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> sz;                          <span class="comment">// zoom</span></div>
+<div class="line"><a class="code" href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> sx, sy;                      <span class="comment">// current coordinates</span></div>
+<div class="line"><a name="_a2"></a><a class="code" href="structdma_memory.html">dmaMemory</a> data_to_transfertMode; <span class="comment">// for table HDMA access</span></div>
+<div class="line"><a class="code" href="structdma_memory.html">dmaMemory</a> data_to_transfertBG;</div>
+<div class="line"><a class="code" href="structdma_memory.html">dmaMemory</a> data_to_transfertX;</div>
+<div class="line"><a class="code" href="structdma_memory.html">dmaMemory</a> data_to_transfertY;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//---------------------------------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// A function to change registers every scanline using HDMA, and scroll the mode 7 layer.</span></div>
 <div class="line"><span class="keywordtype">void</span> setMode7_HdmaPerspective(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Scroll BG1 (in mode7 mode)</span></div>
-<div class="line">    <a name="a0"></a><a class="code" href="video_8h.html#a149770d8a7300cb577f99ff1198978bc">REG_M7HOFS</a> = (sx &amp; 255);</div>
+<div class="line">    <a name="a3"></a><a class="code" href="video_8h.html#a149770d8a7300cb577f99ff1198978bc">REG_M7HOFS</a> = (sx &amp; 255);</div>
 <div class="line">    <a class="code" href="video_8h.html#a149770d8a7300cb577f99ff1198978bc">REG_M7HOFS</a> = sx &gt;&gt; 8;</div>
-<div class="line">    <a name="a1"></a><a class="code" href="video_8h.html#a485cdf5dd265cf6d9a808550365da845">REG_M7VOFS</a> = (sy &amp; 255);</div>
+<div class="line">    <a name="a4"></a><a class="code" href="video_8h.html#a485cdf5dd265cf6d9a808550365da845">REG_M7VOFS</a> = (sy &amp; 255);</div>
 <div class="line">    <a class="code" href="video_8h.html#a485cdf5dd265cf6d9a808550365da845">REG_M7VOFS</a> = sy &gt;&gt; 8;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Scroll BG2 (only the x )</span></div>
-<div class="line">    <a name="a2"></a><a class="code" href="background_8h.html#a79723f49e7557337b091835634430844">REG_BG2HOFS</a> = (sx &amp; 255);</div>
+<div class="line">    <a name="a5"></a><a class="code" href="background_8h.html#a79723f49e7557337b091835634430844">REG_BG2HOFS</a> = (sx &amp; 255);</div>
 <div class="line">    <a class="code" href="background_8h.html#a79723f49e7557337b091835634430844">REG_BG2HOFS</a> = sx &gt;&gt; 8;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Transformation origin</span></div>
-<div class="line">    <a name="a3"></a><a class="code" href="video_8h.html#a4545542b6058c4dfa9b60e85d398fbc0">REG_M7X</a> = (sx + 128) &amp; 255;</div>
+<div class="line">    <a name="a6"></a><a class="code" href="video_8h.html#a4545542b6058c4dfa9b60e85d398fbc0">REG_M7X</a> = (sx + 128) &amp; 255;</div>
 <div class="line">    <a class="code" href="video_8h.html#a4545542b6058c4dfa9b60e85d398fbc0">REG_M7X</a> = (sx + 128) &gt;&gt; 8;</div>
-<div class="line">    <a name="a4"></a><a class="code" href="video_8h.html#a78d50292f8ff3b205a5cf8c81f72060d">REG_M7Y</a> = (sy + 112) &amp; 255;</div>
+<div class="line">    <a name="a7"></a><a class="code" href="video_8h.html#a78d50292f8ff3b205a5cf8c81f72060d">REG_M7Y</a> = (sy + 112) &amp; 255;</div>
 <div class="line">    <a class="code" href="video_8h.html#a78d50292f8ff3b205a5cf8c81f72060d">REG_M7Y</a> = (sy + 112) &gt;&gt; 8;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Disable HDMA for all channels</span></div>
-<div class="line">    <a name="a5"></a><a class="code" href="dma_8h.html#a468ac9497087f0cbab21a3e0453f438b">REG_HDMAEN</a> = 0;</div>
+<div class="line">    <a name="a8"></a><a class="code" href="dma_8h.html#a468ac9497087f0cbab21a3e0453f438b">REG_HDMAEN</a> = 0;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Change mode while drawing to simulate the sky</span></div>
-<div class="line">    REG_DMAP1 = 0x00;                              <span class="comment">// Write 1 bytes to 1 register (write once)</span></div>
-<div class="line">    REG_BBAD1 = 0x05;                              <span class="comment">// Register to write = 2105 (Mode)</span></div>
-<div class="line">    REG_A1T1LH = data_to_transfertMode.mem.c.addr; <span class="comment">// DMA channel 1 source address</span></div>
-<div class="line">    REG_A1B1 = data_to_transfertMode.mem.c.bank;   <span class="comment">// DMA channel 1 source address bank</span></div>
+<div class="line">    <a name="a9"></a><a class="code" href="dma_8h.html#a4d40190abb0ef77de4f8bea9afee7f2d">REG_DMAP1</a> = 0x00;                              <span class="comment">// Write 1 bytes to 1 register (write once)</span></div>
+<div class="line">    <a name="a10"></a><a class="code" href="dma_8h.html#a752e455ecb1c671899ac4384441e933e">REG_BBAD1</a> = 0x05;                              <span class="comment">// Register to write = 2105 (Mode)</span></div>
+<div class="line">    <a name="a11"></a><a class="code" href="dma_8h.html#a14bcd86cae4d4f64a8e2d3c5aed3c35b">REG_A1T1LH</a> = data_to_transfertMode.<a name="a12"></a><a class="code" href="structdma_memory.html#a37268cc1a97cc33cc37e57a624b1074c">mem</a>.<a name="a13"></a><a class="code" href="structdma_memory.html#a7e5e26e53fb2e5c0d7c0de9ebf658aa8">c</a>.addr; <span class="comment">// DMA channel 1 source address</span></div>
+<div class="line">    <a name="a14"></a><a class="code" href="dma_8h.html#af7399bc7cd4000717e297d91bee5ef74">REG_A1B1</a> = data_to_transfertMode.<a class="code" href="structdma_memory.html#a37268cc1a97cc33cc37e57a624b1074c">mem</a>.<a class="code" href="structdma_memory.html#a7e5e26e53fb2e5c0d7c0de9ebf658aa8">c</a>.bank;   <span class="comment">// DMA channel 1 source address bank</span></div>
 <div class="line"> </div>
-<div class="line">    REG_DMAP2 = 0x00;                            <span class="comment">// Write 1 bytes to 1 register (write once)</span></div>
-<div class="line">    REG_BBAD2 = 0x2C;                            <span class="comment">// Register to write = 212C (BG)</span></div>
-<div class="line">    REG_A1T2LH = data_to_transfertBG.mem.c.addr; <span class="comment">// DMA channel 2 source address</span></div>
-<div class="line">    REG_A1B2 = data_to_transfertBG.mem.c.bank;   <span class="comment">// DMA channel 2 source address bank</span></div>
+<div class="line">    <a name="a15"></a><a class="code" href="dma_8h.html#a2156da5d235e2c7eeb1a01b812b52564">REG_DMAP2</a> = 0x00;                            <span class="comment">// Write 1 bytes to 1 register (write once)</span></div>
+<div class="line">    <a name="a16"></a><a class="code" href="dma_8h.html#afec1dd6e2d10450136d2d562a9982f21">REG_BBAD2</a> = 0x2C;                            <span class="comment">// Register to write = 212C (BG)</span></div>
+<div class="line">    <a name="a17"></a><a class="code" href="dma_8h.html#aedf3246ceb7f47b718cf7e40e2ed9ec8">REG_A1T2LH</a> = data_to_transfertBG.<a class="code" href="structdma_memory.html#a37268cc1a97cc33cc37e57a624b1074c">mem</a>.<a class="code" href="structdma_memory.html#a7e5e26e53fb2e5c0d7c0de9ebf658aa8">c</a>.addr; <span class="comment">// DMA channel 2 source address</span></div>
+<div class="line">    <a name="a18"></a><a class="code" href="dma_8h.html#a9ba4de961377cbc47cba708cfeef480d">REG_A1B2</a> = data_to_transfertBG.<a class="code" href="structdma_memory.html#a37268cc1a97cc33cc37e57a624b1074c">mem</a>.<a class="code" href="structdma_memory.html#a7e5e26e53fb2e5c0d7c0de9ebf658aa8">c</a>.bank;   <span class="comment">// DMA channel 2 source address bank</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Fake perspective by scaling the mode7 background every scanline</span></div>
-<div class="line">    REG_DMAP3 = 0x02;                           <span class="comment">// Write 2 bytes to 1 register (write twice)</span></div>
-<div class="line">    REG_BBAD3 = 0x1B;                           <span class="comment">// Register to write = 211B (Scale X)</span></div>
-<div class="line">    REG_A1T3LH = data_to_transfertX.mem.c.addr; <span class="comment">// DMA channel 3 source address</span></div>
-<div class="line">    REG_A1B3 = data_to_transfertX.mem.c.bank;   <span class="comment">// DMA channel 3 source address bank</span></div>
+<div class="line">    <a name="a19"></a><a class="code" href="dma_8h.html#aa639060593326a84ddb77295723d6ef7">REG_DMAP3</a> = 0x02;                           <span class="comment">// Write 2 bytes to 1 register (write twice)</span></div>
+<div class="line">    <a name="a20"></a><a class="code" href="dma_8h.html#acc5fdbecc7a683437a8d4ac31d446660">REG_BBAD3</a> = 0x1B;                           <span class="comment">// Register to write = 211B (Scale X)</span></div>
+<div class="line">    <a name="a21"></a><a class="code" href="dma_8h.html#a1ef450500636a2e6a8b64cb5f1d1c5f3">REG_A1T3LH</a> = data_to_transfertX.<a class="code" href="structdma_memory.html#a37268cc1a97cc33cc37e57a624b1074c">mem</a>.<a class="code" href="structdma_memory.html#a7e5e26e53fb2e5c0d7c0de9ebf658aa8">c</a>.addr; <span class="comment">// DMA channel 3 source address</span></div>
+<div class="line">    <a name="a22"></a><a class="code" href="dma_8h.html#a586a26f5fb524d9d82c7e7d59331a5e0">REG_A1B3</a> = data_to_transfertX.<a class="code" href="structdma_memory.html#a37268cc1a97cc33cc37e57a624b1074c">mem</a>.<a class="code" href="structdma_memory.html#a7e5e26e53fb2e5c0d7c0de9ebf658aa8">c</a>.bank;   <span class="comment">// DMA channel 3 source address bank</span></div>
 <div class="line"> </div>
-<div class="line">    REG_DMAP4 = 0x02;                           <span class="comment">// Write 2 bytes to 1 register (write twice)</span></div>
-<div class="line">    REG_BBAD4 = 0x1E;                           <span class="comment">// Register to write = 211E (Scale Y)</span></div>
-<div class="line">    REG_A1T4LH = data_to_transfertY.mem.c.addr; <span class="comment">// DMA channel 4 source address</span></div>
-<div class="line">    REG_A1B4 = data_to_transfertY.mem.c.bank;   <span class="comment">// DMA channel 4 source address bank</span></div>
+<div class="line">    <a name="a23"></a><a class="code" href="dma_8h.html#a75c906d8d1f7dac4cf688c96d902e8aa">REG_DMAP4</a> = 0x02;                           <span class="comment">// Write 2 bytes to 1 register (write twice)</span></div>
+<div class="line">    <a name="a24"></a><a class="code" href="dma_8h.html#acf3ce5e85e0669e7cf2c4f6b9e1580c2">REG_BBAD4</a> = 0x1E;                           <span class="comment">// Register to write = 211E (Scale Y)</span></div>
+<div class="line">    <a name="a25"></a><a class="code" href="dma_8h.html#a3e5480a2de2511377ba8f24c225af63d">REG_A1T4LH</a> = data_to_transfertY.<a class="code" href="structdma_memory.html#a37268cc1a97cc33cc37e57a624b1074c">mem</a>.<a class="code" href="structdma_memory.html#a7e5e26e53fb2e5c0d7c0de9ebf658aa8">c</a>.addr; <span class="comment">// DMA channel 4 source address</span></div>
+<div class="line">    <a name="a26"></a><a class="code" href="dma_8h.html#a7dac9795098da77fbf0e0ed00a517b6a">REG_A1B4</a> = data_to_transfertY.<a class="code" href="structdma_memory.html#a37268cc1a97cc33cc37e57a624b1074c">mem</a>.<a class="code" href="structdma_memory.html#a7e5e26e53fb2e5c0d7c0de9ebf658aa8">c</a>.bank;   <span class="comment">// DMA channel 4 source address bank</span></div>
 <div class="line"> </div>
 <div class="line">    <a class="code" href="dma_8h.html#a468ac9497087f0cbab21a3e0453f438b">REG_HDMAEN</a> = 0x1E; <span class="comment">// 00011110; Enable DMA channels 1, 2, 3 and 4</span></div>
 <div class="line">}</div>
@@ -502,20 +502,20 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode7_perspec
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Initialize SNES</span></div>
-<div class="line">    <a name="a6"></a><a class="code" href="console_8h.html#a6047713bb5a73afd3cd1d77e336bcdad">consoleInit</a>();</div>
+<div class="line">    <a name="a27"></a><a class="code" href="console_8h.html#a6047713bb5a73afd3cd1d77e336bcdad">consoleInit</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// copy a mode 7 map and tiles (1024x1024 - VRAM 0000), to fake a ground</span></div>
-<div class="line">    <a name="a7"></a><a class="code" href="background_8h.html#ae1fad909be4edf30a3cd08a0890361dc">bgInitMapTileSet7</a>(&amp;patterns, &amp;map, &amp;palette, (&amp;patterns_end - &amp;patterns), 0x0000);</div>
+<div class="line">    <a name="a28"></a><a class="code" href="background_8h.html#ae1fad909be4edf30a3cd08a0890361dc">bgInitMapTileSet7</a>(&amp;patterns, &amp;map, &amp;palette, (&amp;patterns_end - &amp;patterns), 0x0000);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// copy a mode 3 map and tiles (256x256), to fake a sky</span></div>
-<div class="line">    <a name="a8"></a><a class="code" href="background_8h.html#acc385296e159449a81d18f5e219c8032">bgInitMapSet</a>(1, &amp;map2, (&amp;map2_end - &amp;map2), SC_64x32, 0x4000);</div>
-<div class="line">    <a name="a9"></a><a class="code" href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a>(1, &amp;patterns2, &amp;palette, 0, (&amp;patterns2_end - &amp;patterns2), (&amp;palette2_end - &amp;palette2), BG_16COLORS, 0x5000);</div>
+<div class="line">    <a name="a29"></a><a class="code" href="background_8h.html#acc385296e159449a81d18f5e219c8032">bgInitMapSet</a>(1, &amp;map2, (&amp;map2_end - &amp;map2), <a name="a30"></a><a class="code" href="background_8h.html#a6129b86a7c2913a31f1bca293fa7c1e7">SC_64x32</a>, 0x4000);</div>
+<div class="line">    <a name="a31"></a><a class="code" href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a>(1, &amp;patterns2, &amp;palette, 0, (&amp;patterns2_end - &amp;patterns2), (&amp;palette2_end - &amp;palette2), <a name="a32"></a><a class="code" href="background_8h.html#a4818d4e1c65ed78d65f1d3e6d9d1232a">BG_16COLORS</a>, 0x5000);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Now Put mode7 without anything else hdma will change BG mode &amp; display</span></div>
-<div class="line">    <a name="a10"></a><a class="code" href="video_8h.html#af7e722fd2eba5682bc0eafa9d5a9c51a">setMode7</a>(0);</div>
+<div class="line">    <a name="a33"></a><a class="code" href="video_8h.html#af7e722fd2eba5682bc0eafa9d5a9c51a">setMode7</a>(0);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Display screen</span></div>
-<div class="line">    <a name="a11"></a><a class="code" href="video_8h.html#abc7d4ef8ebc22f5b710927909bb3f144">setScreenOn</a>();</div>
+<div class="line">    <a name="a34"></a><a class="code" href="video_8h.html#abc7d4ef8ebc22f5b710927909bb3f144">setScreenOn</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Init variables</span></div>
 <div class="line">    sz = 0;</div>
@@ -523,44 +523,64 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode7_perspec
 <div class="line">    sy = 0;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Get tables</span></div>
-<div class="line">    data_to_transfertMode.mem.p = (u8 *)&amp;ModeTable;</div>
-<div class="line">    data_to_transfertBG.mem.p = (u8 *)&amp;BGTable;</div>
-<div class="line">    data_to_transfertX.mem.p = (u8 *)&amp;PerspectiveX;</div>
-<div class="line">    data_to_transfertY.mem.p = (u8 *)PerspectiveY;</div>
+<div class="line">    data_to_transfertMode.<a class="code" href="structdma_memory.html#a37268cc1a97cc33cc37e57a624b1074c">mem</a>.<a name="a35"></a><a class="code" href="structdma_memory.html#a36bc8ef896be62efccd2afba0ce6e066">p</a> = (<a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *)&amp;ModeTable;</div>
+<div class="line">    data_to_transfertBG.<a class="code" href="structdma_memory.html#a37268cc1a97cc33cc37e57a624b1074c">mem</a>.<a class="code" href="structdma_memory.html#a36bc8ef896be62efccd2afba0ce6e066">p</a> = (<a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *)&amp;BGTable;</div>
+<div class="line">    data_to_transfertX.<a class="code" href="structdma_memory.html#a37268cc1a97cc33cc37e57a624b1074c">mem</a>.<a class="code" href="structdma_memory.html#a36bc8ef896be62efccd2afba0ce6e066">p</a> = (<a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *)&amp;PerspectiveX;</div>
+<div class="line">    data_to_transfertY.<a class="code" href="structdma_memory.html#a37268cc1a97cc33cc37e57a624b1074c">mem</a>.<a class="code" href="structdma_memory.html#a36bc8ef896be62efccd2afba0ce6e066">p</a> = (<a class="code" href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *)PerspectiveY;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Wait for nothing :P</span></div>
 <div class="line">    <span class="keywordflow">while</span> (1)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="comment">// Get current #0 pad</span></div>
-<div class="line">        pad0 = <a name="a12"></a><a class="code" href="network_8h.html#a6063e0eec9a36e437fc32951acafa44c">padsCurrent</a>(0);</div>
+<div class="line">        pad0 = <a name="a36"></a><a class="code" href="network_8h.html#a6063e0eec9a36e437fc32951acafa44c">padsCurrent</a>(0);</div>
 <div class="line"> </div>
 <div class="line">        <span class="comment">// Read pad</span></div>
-<div class="line">        <span class="keywordflow">if</span> (pad0 &amp; <a name="a13"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072a612120b69c7dfd46086db7aaebdbcf65">KEY_LEFT</a>)</div>
+<div class="line">        <span class="keywordflow">if</span> (pad0 &amp; <a name="a37"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072a612120b69c7dfd46086db7aaebdbcf65">KEY_LEFT</a>)</div>
 <div class="line">            sx--;</div>
-<div class="line">        <span class="keywordflow">if</span> (pad0 &amp; <a name="a14"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072a6504370d9c6391e1a9da6a1a529b089d">KEY_RIGHT</a>)</div>
+<div class="line">        <span class="keywordflow">if</span> (pad0 &amp; <a name="a38"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072a6504370d9c6391e1a9da6a1a529b089d">KEY_RIGHT</a>)</div>
 <div class="line">            sx++;</div>
-<div class="line">        <span class="keywordflow">if</span> (pad0 &amp; <a name="a15"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072a0848a442d907968b211b97bc2bd88acd">KEY_UP</a>)</div>
+<div class="line">        <span class="keywordflow">if</span> (pad0 &amp; <a name="a39"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072a0848a442d907968b211b97bc2bd88acd">KEY_UP</a>)</div>
 <div class="line">            sy--;</div>
-<div class="line">        <span class="keywordflow">if</span> (pad0 &amp; <a name="a16"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072aa9cdac7967bf7d88fdb761138a2a3416">KEY_DOWN</a>)</div>
+<div class="line">        <span class="keywordflow">if</span> (pad0 &amp; <a name="a40"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072aa9cdac7967bf7d88fdb761138a2a3416">KEY_DOWN</a>)</div>
 <div class="line">            sy++;</div>
-<div class="line">        <span class="keywordflow">if</span> (pad0 &amp; <a name="a17"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072aa3ec8a2ffd5b0e200db5ebe7b65515ff">KEY_R</a>)</div>
+<div class="line">        <span class="keywordflow">if</span> (pad0 &amp; <a name="a41"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072aa3ec8a2ffd5b0e200db5ebe7b65515ff">KEY_R</a>)</div>
 <div class="line">            sz++;</div>
-<div class="line">        <span class="keywordflow">if</span> (pad0 &amp; <a name="a18"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072aece16de35a5ea11f9b228c9376bebc62">KEY_L</a>)</div>
+<div class="line">        <span class="keywordflow">if</span> (pad0 &amp; <a name="a42"></a><a class="code" href="network_8h.html#aa27cad8fa018a58930b6622783a83072aece16de35a5ea11f9b228c9376bebc62">KEY_L</a>)</div>
 <div class="line">            sz--;</div>
 <div class="line"> </div>
 <div class="line">        <span class="comment">// HDMA change mode and perspective</span></div>
 <div class="line">        setMode7_HdmaPerspective();</div>
 <div class="line"> </div>
-<div class="line">        <a name="a19"></a><a class="code" href="interrupt_8h.html#abd33830487e4764e5ec22ec98b749f4b">WaitForVBlank</a>();</div>
+<div class="line">        <a name="a43"></a><a class="code" href="interrupt_8h.html#abd33830487e4764e5ec22ec98b749f4b">WaitForVBlank</a>();</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
+<div class="ttc" id="abackground_8h_html_a4818d4e1c65ed78d65f1d3e6d9d1232a"><div class="ttname"><a href="background_8h.html#a4818d4e1c65ed78d65f1d3e6d9d1232a">BG_16COLORS</a></div><div class="ttdeci">#define BG_16COLORS</div><div class="ttdef"><b>Definition:</b> background.h:81</div></div>
+<div class="ttc" id="abackground_8h_html_a6129b86a7c2913a31f1bca293fa7c1e7"><div class="ttname"><a href="background_8h.html#a6129b86a7c2913a31f1bca293fa7c1e7">SC_64x32</a></div><div class="ttdeci">#define SC_64x32</div><div class="ttdef"><b>Definition:</b> background.h:50</div></div>
 <div class="ttc" id="abackground_8h_html_a79723f49e7557337b091835634430844"><div class="ttname"><a href="background_8h.html#a79723f49e7557337b091835634430844">REG_BG2HOFS</a></div><div class="ttdeci">#define REG_BG2HOFS</div><div class="ttdoc">BG2 Horizontal Scroll (X) (W)</div><div class="ttdef"><b>Definition:</b> background.h:178</div></div>
+<div class="ttc" id="abackground_8h_html_ab74253172bcb87b7947118b746ab2849"><div class="ttname"><a href="background_8h.html#ab74253172bcb87b7947118b746ab2849">BG_MODE3</a></div><div class="ttdeci">#define BG_MODE3</div><div class="ttdef"><b>Definition:</b> background.h:57</div></div>
+<div class="ttc" id="abackground_8h_html_ac2995da5a6139bd6ca1091ae3358d4f3"><div class="ttname"><a href="background_8h.html#ac2995da5a6139bd6ca1091ae3358d4f3">BG_MODE7</a></div><div class="ttdeci">#define BG_MODE7</div><div class="ttdef"><b>Definition:</b> background.h:61</div></div>
 <div class="ttc" id="abackground_8h_html_acc385296e159449a81d18f5e219c8032"><div class="ttname"><a href="background_8h.html#acc385296e159449a81d18f5e219c8032">bgInitMapSet</a></div><div class="ttdeci">void bgInitMapSet(u8 bgNumber, u8 *mapSource, u16 mapSize, u8 sizeMode, u16 address)</div><div class="ttdoc">Initializes a Map Set and loads it into SNES VRAM.</div></div>
 <div class="ttc" id="abackground_8h_html_ae09a7ac09be78eef0f28a6c7aabc82ad"><div class="ttname"><a href="background_8h.html#ae09a7ac09be78eef0f28a6c7aabc82ad">bgInitTileSet</a></div><div class="ttdeci">void bgInitTileSet(u8 bgNumber, u8 *tileSource, u8 *tilePalette, u8 paletteEntry, u16 tileSize, u16 paletteSize, u16 colorMode, u16 address)</div><div class="ttdoc">Initializes a Tile Set and Loads the Tile GFX into VRAM.</div></div>
 <div class="ttc" id="abackground_8h_html_ae1fad909be4edf30a3cd08a0890361dc"><div class="ttname"><a href="background_8h.html#ae1fad909be4edf30a3cd08a0890361dc">bgInitMapTileSet7</a></div><div class="ttdeci">void bgInitMapTileSet7(u8 *tileSource, u8 *mapSource, u8 *tilePalette, u16 tileSize, u16 address)</div><div class="ttdoc">Initializes a Tile &amp; Map Set and Loads the Tile &amp; Map GFX into VRAM for Mode 7.</div></div>
 <div class="ttc" id="aconsole_8h_html_a6047713bb5a73afd3cd1d77e336bcdad"><div class="ttname"><a href="console_8h.html#a6047713bb5a73afd3cd1d77e336bcdad">consoleInit</a></div><div class="ttdeci">void consoleInit(void)</div><div class="ttdoc">Initialize console.</div></div>
+<div class="ttc" id="adma_8h_html_a14bcd86cae4d4f64a8e2d3c5aed3c35b"><div class="ttname"><a href="dma_8h.html#a14bcd86cae4d4f64a8e2d3c5aed3c35b">REG_A1T1LH</a></div><div class="ttdeci">#define REG_A1T1LH</div><div class="ttdef"><b>Definition:</b> dma.h:200</div></div>
+<div class="ttc" id="adma_8h_html_a1ef450500636a2e6a8b64cb5f1d1c5f3"><div class="ttname"><a href="dma_8h.html#a1ef450500636a2e6a8b64cb5f1d1c5f3">REG_A1T3LH</a></div><div class="ttdeci">#define REG_A1T3LH</div><div class="ttdef"><b>Definition:</b> dma.h:202</div></div>
+<div class="ttc" id="adma_8h_html_a2156da5d235e2c7eeb1a01b812b52564"><div class="ttname"><a href="dma_8h.html#a2156da5d235e2c7eeb1a01b812b52564">REG_DMAP2</a></div><div class="ttdeci">#define REG_DMAP2</div><div class="ttdef"><b>Definition:</b> dma.h:142</div></div>
+<div class="ttc" id="adma_8h_html_a3e5480a2de2511377ba8f24c225af63d"><div class="ttname"><a href="dma_8h.html#a3e5480a2de2511377ba8f24c225af63d">REG_A1T4LH</a></div><div class="ttdeci">#define REG_A1T4LH</div><div class="ttdef"><b>Definition:</b> dma.h:203</div></div>
 <div class="ttc" id="adma_8h_html_a468ac9497087f0cbab21a3e0453f438b"><div class="ttname"><a href="dma_8h.html#a468ac9497087f0cbab21a3e0453f438b">REG_HDMAEN</a></div><div class="ttdeci">#define REG_HDMAEN</div><div class="ttdoc">Select H-Blank DMA (H-DMA) Channel(s) (W) 7-0 H-DMA Channel 7-0 Enable (0=Disable,...</div><div class="ttdef"><b>Definition:</b> dma.h:112</div></div>
+<div class="ttc" id="adma_8h_html_a4d40190abb0ef77de4f8bea9afee7f2d"><div class="ttname"><a href="dma_8h.html#a4d40190abb0ef77de4f8bea9afee7f2d">REG_DMAP1</a></div><div class="ttdeci">#define REG_DMAP1</div><div class="ttdef"><b>Definition:</b> dma.h:141</div></div>
+<div class="ttc" id="adma_8h_html_a586a26f5fb524d9d82c7e7d59331a5e0"><div class="ttname"><a href="dma_8h.html#a586a26f5fb524d9d82c7e7d59331a5e0">REG_A1B3</a></div><div class="ttdeci">#define REG_A1B3</div><div class="ttdef"><b>Definition:</b> dma.h:211</div></div>
+<div class="ttc" id="adma_8h_html_a752e455ecb1c671899ac4384441e933e"><div class="ttname"><a href="dma_8h.html#a752e455ecb1c671899ac4384441e933e">REG_BBAD1</a></div><div class="ttdeci">#define REG_BBAD1</div><div class="ttdef"><b>Definition:</b> dma.h:162</div></div>
+<div class="ttc" id="adma_8h_html_a75c906d8d1f7dac4cf688c96d902e8aa"><div class="ttname"><a href="dma_8h.html#a75c906d8d1f7dac4cf688c96d902e8aa">REG_DMAP4</a></div><div class="ttdeci">#define REG_DMAP4</div><div class="ttdef"><b>Definition:</b> dma.h:144</div></div>
+<div class="ttc" id="adma_8h_html_a7dac9795098da77fbf0e0ed00a517b6a"><div class="ttname"><a href="dma_8h.html#a7dac9795098da77fbf0e0ed00a517b6a">REG_A1B4</a></div><div class="ttdeci">#define REG_A1B4</div><div class="ttdef"><b>Definition:</b> dma.h:212</div></div>
+<div class="ttc" id="adma_8h_html_a9ba4de961377cbc47cba708cfeef480d"><div class="ttname"><a href="dma_8h.html#a9ba4de961377cbc47cba708cfeef480d">REG_A1B2</a></div><div class="ttdeci">#define REG_A1B2</div><div class="ttdef"><b>Definition:</b> dma.h:210</div></div>
+<div class="ttc" id="adma_8h_html_aa639060593326a84ddb77295723d6ef7"><div class="ttname"><a href="dma_8h.html#aa639060593326a84ddb77295723d6ef7">REG_DMAP3</a></div><div class="ttdeci">#define REG_DMAP3</div><div class="ttdef"><b>Definition:</b> dma.h:143</div></div>
+<div class="ttc" id="adma_8h_html_acc5fdbecc7a683437a8d4ac31d446660"><div class="ttname"><a href="dma_8h.html#acc5fdbecc7a683437a8d4ac31d446660">REG_BBAD3</a></div><div class="ttdeci">#define REG_BBAD3</div><div class="ttdef"><b>Definition:</b> dma.h:164</div></div>
+<div class="ttc" id="adma_8h_html_acf3ce5e85e0669e7cf2c4f6b9e1580c2"><div class="ttname"><a href="dma_8h.html#acf3ce5e85e0669e7cf2c4f6b9e1580c2">REG_BBAD4</a></div><div class="ttdeci">#define REG_BBAD4</div><div class="ttdef"><b>Definition:</b> dma.h:165</div></div>
+<div class="ttc" id="adma_8h_html_aedf3246ceb7f47b718cf7e40e2ed9ec8"><div class="ttname"><a href="dma_8h.html#aedf3246ceb7f47b718cf7e40e2ed9ec8">REG_A1T2LH</a></div><div class="ttdeci">#define REG_A1T2LH</div><div class="ttdef"><b>Definition:</b> dma.h:201</div></div>
+<div class="ttc" id="adma_8h_html_af7399bc7cd4000717e297d91bee5ef74"><div class="ttname"><a href="dma_8h.html#af7399bc7cd4000717e297d91bee5ef74">REG_A1B1</a></div><div class="ttdeci">#define REG_A1B1</div><div class="ttdef"><b>Definition:</b> dma.h:209</div></div>
+<div class="ttc" id="adma_8h_html_afec1dd6e2d10450136d2d562a9982f21"><div class="ttname"><a href="dma_8h.html#afec1dd6e2d10450136d2d562a9982f21">REG_BBAD2</a></div><div class="ttdeci">#define REG_BBAD2</div><div class="ttdef"><b>Definition:</b> dma.h:163</div></div>
 <div class="ttc" id="ainterrupt_8h_html_abd33830487e4764e5ec22ec98b749f4b"><div class="ttname"><a href="interrupt_8h.html#abd33830487e4764e5ec22ec98b749f4b">WaitForVBlank</a></div><div class="ttdeci">void WaitForVBlank(void)</div><div class="ttdoc">Wait for vblank interrupt</div></div>
 <div class="ttc" id="anetwork_8h_html_a6063e0eec9a36e437fc32951acafa44c"><div class="ttname"><a href="network_8h.html#a6063e0eec9a36e437fc32951acafa44c">padsCurrent</a></div><div class="ttdeci">#define padsCurrent(value)</div><div class="ttdoc">Return current value of selected pad.</div><div class="ttdef"><b>Definition:</b> network.h:122</div></div>
 <div class="ttc" id="anetwork_8h_html_aa27cad8fa018a58930b6622783a83072a0848a442d907968b211b97bc2bd88acd"><div class="ttname"><a href="network_8h.html#aa27cad8fa018a58930b6622783a83072a0848a442d907968b211b97bc2bd88acd">KEY_UP</a></div><div class="ttdeci">@ KEY_UP</div><div class="ttdoc">pad UP button.</div><div class="ttdef"><b>Definition:</b> network.h:55</div></div>
@@ -570,6 +590,12 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode7_perspec
 <div class="ttc" id="anetwork_8h_html_aa27cad8fa018a58930b6622783a83072aa9cdac7967bf7d88fdb761138a2a3416"><div class="ttname"><a href="network_8h.html#aa27cad8fa018a58930b6622783a83072aa9cdac7967bf7d88fdb761138a2a3416">KEY_DOWN</a></div><div class="ttdeci">@ KEY_DOWN</div><div class="ttdoc">pad DOWN button.</div><div class="ttdef"><b>Definition:</b> network.h:54</div></div>
 <div class="ttc" id="anetwork_8h_html_aa27cad8fa018a58930b6622783a83072aece16de35a5ea11f9b228c9376bebc62"><div class="ttname"><a href="network_8h.html#aa27cad8fa018a58930b6622783a83072aece16de35a5ea11f9b228c9376bebc62">KEY_L</a></div><div class="ttdeci">@ KEY_L</div><div class="ttdoc">Left shoulder button.</div><div class="ttdef"><b>Definition:</b> network.h:57</div></div>
 <div class="ttc" id="asnes_8h_html"><div class="ttname"><a href="snes_8h.html">snes.h</a></div><div class="ttdoc">the master include file for snes applications.</div></div>
+<div class="ttc" id="asnestypes_8h_html_a9e6c91d77e24643b888dbd1a1a590054"><div class="ttname"><a href="snestypes_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a></div><div class="ttdeci">unsigned short u16</div><div class="ttdef"><b>Definition:</b> snestypes.h:40</div></div>
+<div class="ttc" id="asnestypes_8h_html_aed742c436da53c1080638ce6ef7d13de"><div class="ttname"><a href="snestypes_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition:</b> snestypes.h:38</div></div>
+<div class="ttc" id="astructdma_memory_html"><div class="ttname"><a href="structdma_memory.html">dmaMemory</a></div><div class="ttdef"><b>Definition:</b> dma.h:78</div></div>
+<div class="ttc" id="astructdma_memory_html_a36bc8ef896be62efccd2afba0ce6e066"><div class="ttname"><a href="structdma_memory.html#a36bc8ef896be62efccd2afba0ce6e066">dmaMemory::p</a></div><div class="ttdeci">void * p</div><div class="ttdef"><b>Definition:</b> dma.h:87</div></div>
+<div class="ttc" id="astructdma_memory_html_a37268cc1a97cc33cc37e57a624b1074c"><div class="ttname"><a href="structdma_memory.html#a37268cc1a97cc33cc37e57a624b1074c">dmaMemory::mem</a></div><div class="ttdeci">union dmaMemory::@0 mem</div></div>
+<div class="ttc" id="astructdma_memory_html_a7e5e26e53fb2e5c0d7c0de9ebf658aa8"><div class="ttname"><a href="structdma_memory.html#a7e5e26e53fb2e5c0d7c0de9ebf658aa8">dmaMemory::c</a></div><div class="ttdeci">struct dmaMemory::@0::@1 c</div></div>
 <div class="ttc" id="avideo_8h_html_a149770d8a7300cb577f99ff1198978bc"><div class="ttname"><a href="video_8h.html#a149770d8a7300cb577f99ff1198978bc">REG_M7HOFS</a></div><div class="ttdeci">#define REG_M7HOFS</div><div class="ttdoc">BG1 Horizontal Scroll (X) (W)</div><div class="ttdef"><b>Definition:</b> video.h:265</div></div>
 <div class="ttc" id="avideo_8h_html_a4545542b6058c4dfa9b60e85d398fbc0"><div class="ttname"><a href="video_8h.html#a4545542b6058c4dfa9b60e85d398fbc0">REG_M7X</a></div><div class="ttdeci">#define REG_M7X</div><div class="ttdoc">Rotation/Scaling Center Coordinate X (W)</div><div class="ttdef"><b>Definition:</b> video.h:267</div></div>
 <div class="ttc" id="avideo_8h_html_a485cdf5dd265cf6d9a808550365da845"><div class="ttname"><a href="video_8h.html#a485cdf5dd265cf6d9a808550365da845">REG_M7VOFS</a></div><div class="ttdeci">#define REG_M7VOFS</div><div class="ttdoc">BG1 Vertical Scroll (Y) (W)</div><div class="ttdef"><b>Definition:</b> video.h:266</div></div>
@@ -581,7 +607,7 @@ $(document).ready(function(){initNavTree('graphics_2_backgrounds_2_mode7_perspec
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-    <li class="footer">Generated on Thu May 25 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
+    <li class="footer">Generated on Fri May 26 2023       Generated by <a href="https://www.doxygen.org/index.html">doxygen</a> 1.9.1 </li>
 </div>
 </body>
 </html>

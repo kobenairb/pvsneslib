@@ -2,6 +2,11 @@ var sound_8h =
 [
     [ "brrsamples", "structbrrsamples.html", "structbrrsamples" ],
     [ "REG_APU00", "sound_8h.html#a11d724391e894d7a876635ffb45e1fd9", null ],
+    [ "REG_APU0001", "sound_8h.html#abaaddb7b24983ff5c32c734bc0ddf77f", null ],
+    [ "REG_APU01", "sound_8h.html#aadc9f92170b3e6a9cca02958617e5233", null ],
+    [ "REG_APU02", "sound_8h.html#a8b2a49a75205fbf6bd742139549239bd", null ],
+    [ "REG_APU0203", "sound_8h.html#ad0a858522cbef0e74927698ba8010b5e", null ],
+    [ "REG_APU03", "sound_8h.html#adebf57d417c9c3df7d6272d6ec6676c3", null ],
     [ "spcAllocateSoundRegion", "sound_8h.html#a2113060be24b307d1e03f167eb241b90", null ],
     [ "spcBoot", "sound_8h.html#ad8753cb6edb38834257bbf0020700689", null ],
     [ "spcEffect", "sound_8h.html#a99af3b788490e155674f57f455c6be38", null ],
@@ -18,5 +23,6 @@ var sound_8h =
     [ "spcSetSoundDataEntry", "sound_8h.html#a6febc2b960755ba902950ee9c93ab637", null ],
     [ "spcSetSoundEntry", "sound_8h.html#a4ef9d5d4b7618a2e091194b6c17f75a5", null ],
     [ "spcSetSoundTable", "sound_8h.html#ad1eb603fd2445102225319797d226fea", null ],
+    [ "spcSetSoundTableEntry", "sound_8h.html#a36309ccafb34008343a75e2708944301", null ],
     [ "spcStop", "sound_8h.html#af7366527acd378585446999f84d1c6d0", null ]
 ];

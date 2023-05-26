@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['sc_5fbase_5fshift_761',['SC_BASE_SHIFT',['../background_8h.html#ac18d207be95eb5d103907d106575e9ad',1,'background.h']]],
-  ['sc_5ftile_5fbase_762',['SC_TILE_BASE',['../background_8h.html#af6cde02aaf57795f0dff8cd45db5ce1d',1,'background.h']]],
-  ['setpalette_763',['setPalette',['../video_8h.html#ae29ed0390bca0390d3fdf55362a3663b',1,'video.h']]],
-  ['setpalettecolor_764',['setPaletteColor',['../video_8h.html#a549263481ac687a7e1d6f6cd5bd85d29',1,'video.h']]]
+  ['pad_5fbusy_1001',['PAD_BUSY',['../interrupt_8h.html#a2094086b43aa835d241e35153f8ed1bc',1,'interrupt.h']]],
+  ['padscurrent_1002',['padsCurrent',['../network_8h.html#a6063e0eec9a36e437fc32951acafa44c',1,'padsCurrent():&#160;network.h'],['../pad_8h.html#a5961ff7e99e299ab454e4e65d079b35a',1,'padsCurrent():&#160;pad.h']]],
+  ['ppu_5f50hz_1003',['PPU_50HZ',['../video_8h.html#a142364f4707bee3366835d7d22494911',1,'video.h']]]
 ];
