@@ -1,128 +1,134 @@
-# folder containing sources :
-SRC := src
-
-LIBDIRSOBJS := $(PVSNESLIB_HOME)/pvsneslib/lib
-
-# to avoid some bugs if the PVSNESLIB_HOME is not well defined, we let a small check here
+# To avoid certain bugs, we perform a check to ensure PVSNESLIB_HOME is defined correctly.
 ifeq ($(findstring \,$(PVSNESLIB_HOME)),\)
-$(error "PVSNESLIB_HOME environment variable is not defined correctly: the path must be in Unix style (on Windows operating system too!). For example, use /c/snesdev instead of c:\snesdev")
+$(error The PVSNESLIB_HOME environment variable is not defined correctly. \
+        The path must follows the Unix-style format, even on Windows. \
+        For example, use "/c/snesdev" instead of "C:\snesdev")
 endif
+
+#---------------------------------------------------------------------------------
+# The compiler and tools executables
+#---------------------------------------------------------------------------------
+DEVKITSNES := $(PVSNESLIB_HOME)/devkitsnes
+
+export CC	    := $(DEVKITSNES)/bin/816-tcc
+export AS	    := $(DEVKITSNES)/bin/wla-65816
+export LD	    := $(DEVKITSNES)/bin/wlalink
+
+export GFXCONV	:= $(DEVKITSNES)/tools/gfx2snes
+export SMCONV	:= $(DEVKITSNES)/tools/smconv
+export BRCONV	:= $(DEVKITSNES)/tools/snesbrr
+export SNTOOLS	:= $(DEVKITSNES)/tools/snestools
+export TMXCONV	:= $(DEVKITSNES)/tools/tmx2snes
+export OPT		:= $(DEVKITSNES)/tools/816-opt
+export CTF		:= $(DEVKITSNES)/tools/constify
+
+#---------------------------------------------------------------------------------
+# Retrieve pvnseslib library .obj files.
+#---------------------------------------------------------------------------------
+LIBDIRSOBJS := $(PVSNESLIB_HOME)/pvsneslib/lib
+# Format path to relative path.
+# On windows, linkfile can only manage windows path format.
+# Hopefully, it works both on linux and windows by using relative path.
+# Note: realpath command is available by default on MSYS2.
+LIBDIRSOBJSR := $(shell find $(LIBDIRSOBJS) -name "*.obj" -exec realpath --relative-to=. {} \;)
+
+#---------------------------------------------------------------------------------
+# Retrieve the list of the .c and .asm files.
+#---------------------------------------------------------------------------------
+
+# Folder containing sources, can be overloaded if defined before.
+SRC ?= src
+
+# Search all .asm and .c files up to a specified depth in the tree.
+DEPTH ?= 3
+
+# Search .c and .asm files at the root level.
+CFILES := $(wildcard *.c)
+SFILES := $(wildcard *.asm)
+
+# Search .c and .asm files in $(SRC) (if exists), up to the DEPTH level.
+# If your project uses a deeper level, feel free to override DEPTH in your Makefile.
+ifneq ($(wildcard $(SRC)),)
+	CFILES += $(shell find $(SRC) -maxdepth $(DEPTH) -type f -name "*.c")
+	SFILES += $(shell find $(SRC) -maxdepth $(DEPTH) -type f -name "*.asm")
+endif
+
+# If we found any .it file, we will need to build soundbank.asm first with smconv
+# (The strip function removes leading and trailing whitespaces to avoid issues...).
+ifneq ($(strip $(AUDIOFILES)),)
+	SFILES += $(SOUNDBANK).asm
+endif
+
+#---------------------------------------------------------------------------------
+# Smconv recipe.
+#---------------------------------------------------------------------------------
+SMCONVFLAGS	?= -s -o $(SOUNDBANK) -V -b 5
+$(SOUNDBANK).asm : $(AUDIOFILES)
+	@echo Compiling Soundbank ... $(notdir $<)
+	$(SMCONV) $(SMCONVFLAGS) $^
+
+#---------------------------------------------------------------------------------
+# Retrieve all .obj files.
+#---------------------------------------------------------------------------------
+OFILES := $(CFILES:.c=.obj) $(SFILES:.asm=.obj)
+
+#---------------------------------------------------------------------------------
+# Toolchain recipes.
+#---------------------------------------------------------------------------------
+
+# Compile .c to .asm files with 816-tcc.
+CFLAGS += -I$(PVSNESLIB_HOME)/pvsneslib/include -I$(PVSNESLIB_HOME)/devkitsnes/include -I$(CURDIR)
+%.ps: %.c
+	@echo Compiling ... $(notdir $<)
+	$(CC) $(CFLAGS) -Wall -c $< -o $@
 
 ifeq ($(PVSNESLIB_DEBUG),1)
-DEBUG = 1
-$(info The debug mode is enabled)
-else
-DEBUG = 0
-$(info The debug mode is NOT enabled, you can do it by executing "export PVSNESLIB_DEBUG=1")
-endif
-
-#---------------------------------------------------------------------------------
-# on windows, linkfile can only manage path like E:\pvsneslib\lib\crt0_snes.obj
-# this one doesn't work /e/pvsneslib/lib/crt0_snes.obj
-#---------------------------------------------------------------------------------
-ifeq ($(OS),Windows_NT)
-DRIDIROBJW   := $(wordlist 1,1,$(subst /, ,${LIBDIRSOBJS}))
-REPDIROBJSW  := $(subst /,\\,${LIBDIRSOBJS})
-REPDIROBJSW1 := $$(echo "$(REPDIROBJSW)" | sed 's/^.\{3\}//')
-LIBDIRSOBJSW := ${DRIDIROBJW}:\\${REPDIROBJSW1}
-else
-LIBDIRSOBJSW := ${LIBDIRSOBJS}
-endif
-
-#---------------------------------------------------------------------------------
-# the compiler executables
-#---------------------------------------------------------------------------------
-
-export CC	:=	$(PVSNESLIB_HOME)/devkitsnes/bin/816-tcc
-export AS	:=	$(PVSNESLIB_HOME)/devkitsnes/bin/wla-65816
-export LD	:=	$(PVSNESLIB_HOME)/devkitsnes/bin/wlalink
-
-export GFXCONV	:=	$(PVSNESLIB_HOME)/devkitsnes/tools/gfx2snes
-export SMCONV	:=	$(PVSNESLIB_HOME)/devkitsnes/tools/smconv
-export BRCONV	:=	$(PVSNESLIB_HOME)/devkitsnes/tools/snesbrr
-export TXCONV	:=	$(PVSNESLIB_HOME)/devkitsnes/tools/bin2txt
-export SNTOOLS	:=	$(PVSNESLIB_HOME)/devkitsnes/tools/snestools
-export TMXCONV	:=	$(PVSNESLIB_HOME)/devkitsnes/tools/tmx2snes
-export OPT		:=	$(PVSNESLIB_HOME)/devkitsnes/tools/816-opt
-export CTF		:=	$(PVSNESLIB_HOME)/devkitsnes/tools/constify
-
-#---------------------------------------------------------------------------------
-# Add default flag for compiling
-#---------------------------------------------------------------------------------
-CFLAGS += -I$(PVSNESLIB_HOME)/pvsneslib/include -I$(PVSNESLIB_HOME)/devkitsnes/include -I$(CURDIR)
-
-
-SFILES=
-# if we found any .it file, we will need to build soundbank.asm first (generated by smconv tool)
-# (strip function remove leading and trailing whitespaces to avoid issues...)
-ifneq ($(strip $(AUDIOFILES)),)
-	SFILES := $(SOUNDBANK).asm
-endif
-
-#---------------------------------------------------------------------------------
-# Search all .asm and .c files until 3rd level in the tree
-#---------------------------------------------------------------------------------
-CFILES = $(wildcard *.c)
-CFILES+= $(wildcard $(SRC)/*.c)
-CFILES+= $(wildcard $(SRC)/*/*.c)
-CFILES+= $(wildcard $(SRC)/*/*/*.c)
-
-SFILES := $(SFILES) $(wildcard *.asm)
-SFILES := $(SFILES) $(wildcard $(SRC)/*.asm)
-SFILES := $(SFILES) $(wildcard $(SRC)/*/*.asm)
-SFILES := $(SFILES) $(wildcard $(SRC)/*/*/*.asm)
-
-export OFILES	:=	$(BINFILES:.bin=.obj) $(CFILES:.c=.obj) $(SFILES:.asm=.obj)
-
-# The first rule available in makefile become the default one
-# We want "all" as default rule, but we will declare it later !
-.DEFAULT_GOAL := all
-
-#---------------------------------------------------------------------------------
-%.ps: %.c
-	@echo Compiling to .ps ... $(notdir $<)
-	$(CC) $(CFLAGS) -Wall -c $< -o $@
-ifeq ($(DEBUG),1)
+	@echo The debug mode is enabled. Creating debug file ... $(notdir $<)
 	cp $@ $@.01.dbg
 endif
-
-#---------------------------------------------------------------------------------
-%.asm: %.ps
-	@echo Assembling ... $(notdir $<)
-	$(OPT) $< >$*.asp
-ifeq ($(DEBUG),1)
-	cp $*.asp $*.opt.02.dbg
+# Fix for libc_c.ps. Avoid recipe duplication in pvsneslib/source/Makefile.
+ifeq ($(LIBC_C_FIX),1)
+	sed -i 's/.include "hdr.asm"//' $@
 endif
+
+# Optimize .ps file with 816-opt.
+%.asp: %.ps
+	@echo Optimizing ... $(notdir $<)
+	$(OPT) $< >$@
+
+ifeq ($(PVSNESLIB_DEBUG),1)
+	@echo The debug mode is enabled. Creating debug file ... $(notdir $<)
+	cp $@ $@.02.dbg
+endif
+
+# Move constants from RAM to ROM with constify.
+%.asm: %.asp
 	@echo Moving constants ... $(notdir $<)
 	$(CTF) $*.c $*.asp $@
-ifeq ($(DEBUG),1)
-	cp $*.asp $*.ctf.03.dbg
-endif
-	@rm $*.asp
 
-%.obj: %.asm
-	@echo Doing obj files ... $(fname)
-	@echo "Building with -x flag: $(AS) -s -x -o $@ $<"
+ifeq ($(PVSNESLIB_DEBUG),1)
+	@echo The debug mode is enabled. Creating debug file ... $(notdir $<)
+	cp $@ $@.03.dbg
+endif
+
+# Build .asm to .obj files with wla-65816.
 # -d switch disable WLA's ability to calculate A-B where A and B are labels.
-# if you remove it, you will have some updates to do at least in crt0_snes.asm
+# If you remove it, you will have some updates to do at least in crt0_snes.asm.
+%.obj: %.asm
+	@echo Building obj files ... $(notdir $<)
 	$(AS) -d -s -x -o $@ $<
 
-#---------------------------------------------------------------------------------
-%.sfc: $(OFILES)
-	@echo Creating linkfile ...
+# Generate the link file and link them with wla-link.
+linkfile: $(OFILES)
+	@echo Creating linkfile ... $(notdir $<)
 	@echo [objects] > linkfile
-	@for i in $(OFILES); do \
+	@for i in $(OFILES) $(LIBDIRSOBJSR); do \
 		echo $$i >> linkfile; \
 	done
 
-	@for i in $(shell ls $(LIBDIRSOBJSW)); do \
-		echo $(LIBDIRSOBJSW)/$$i >> linkfile; \
-	done
-
-	@echo Linking ... $(notdir $@)
-	@rm -f $(ROMNAME).sym
-# -c should be removed ASAP ! It allow duplicate labels and definitions
-	$(LD) -d -s -v -A -c -L ${LIBDIRSOBJS} linkfile $@
+%.sfc: linkfile
+	@echo Linking obj files ... $(notdir $@)
+	$(LD) -d -s -v -A -c -L linkfile $@
 
 	@sed -i 's/://' $(ROMNAME).sym
 
@@ -131,39 +137,47 @@ endif
 	@echo
 
 #---------------------------------------------------------------------------------
+# Gfx2snes default recipe.
+#---------------------------------------------------------------------------------
 %.pic: %.bmp
-	@echo convert bitmap ... $(notdir $<)
+	@echo Converting bitmap ... $(notdir $<)
 	$(GFXCONV) -pr -pc16 -n -gs8 -pe0 -fbmp -m $<
 
 #---------------------------------------------------------------------------------
+# Snesbrr default recipe.
+#---------------------------------------------------------------------------------
 %.brr: %.wav
-	@echo convert wav file ... $(notdir $<)
+	@echo Converting wav file ... $(notdir $<)
 	$(BRCONV) -e $< $@
 
-$(SOUNDBANK).asm : $(AUDIOFILES)
-	@echo Compiling Soundbank ...
-	$(SMCONV) $(SMCONVFLAGS) $^
-
-.PHONY: cleanBuildRes cleanRom cleanGfx cleanAudio
-
-cleanBuildRes: cleanDebug
-	@echo clean build resources
-	@rm -f $(OFILES) linkfile
+#---------------------------------------------------------------------------------
+# Clean default recipes.
+#---------------------------------------------------------------------------------
+cleanBuildRes:
+	@echo Cleaning build resources ...
+	@rm -f $(OFILES) $(ROMNAME).sym linkfile
 
 cleanRom:
-	@echo clean rom
-	@rm -f $(ROMNAME).sfc $(ROMNAME).sym
+	@echo Cleaning rom ...
+	@rm -f $(ROMNAME).sfc
 
 cleanGfx:
-	@echo clean graphics data
+	@echo Cleaning graphics data ...
 	@rm -f *.pic *.map *.pal *.pc7 *.mp7 *.til *.m16 *.b16 *.o16 *.t16
 
 cleanAudio:
-	@echo clean audio data
+	@echo Cleaning audio data ...
 	@rm -f $(SOUNDBANK).asm $(SOUNDBANK).h $(SOUNDBANK).bnk
 
 cleanDebug:
-ifeq ($(DEBUG),1)
-	@echo clean debug files
+ifeq ($(PVSNESLIB_DEBUG),1)
+	@echo Cleaning debug files ...
 	@find . -type f -name "*.dbg" -delete
 endif
+
+# A clean recipe to rule them all.
+clean: cleanBuildRes cleanRom cleanGfx cleanAudio cleanDebug
+
+# The first rule available in makefile become the default one
+# We want "all" as default rule, but we will declare it later!
+.DEFAULT_GOAL := all
