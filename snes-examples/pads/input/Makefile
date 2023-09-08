@@ -12,7 +12,7 @@ export ROMNAME := input
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 #---------------------------------------------------------------------------------
 pvsneslibfont.pic: pvsneslibfont.bmp

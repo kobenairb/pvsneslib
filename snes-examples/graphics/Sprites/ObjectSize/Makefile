@@ -12,7 +12,7 @@ export ROMNAME := ObjectSize
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 #---------------------------------------------------------------------------------
 sprite8.pic: sprite8.bmp

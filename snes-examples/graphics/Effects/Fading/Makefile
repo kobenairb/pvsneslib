@@ -12,7 +12,7 @@ export ROMNAME := Fading
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 bitmaps : pvsneslib.pic
 

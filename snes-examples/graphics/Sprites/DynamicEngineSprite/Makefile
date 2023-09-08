@@ -12,7 +12,7 @@ export ROMNAME := DynamicEngineSprite
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 sprite32.pic: sprite32.png
 	@echo convert map sprites as 32px  ... $(notdir $@)

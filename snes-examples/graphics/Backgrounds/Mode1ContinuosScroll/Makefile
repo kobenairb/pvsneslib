@@ -12,7 +12,7 @@ export ROMNAME := Mode1ContinuousScroll
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 #---------------------------------------------------------------------------------
 BG1.pic: BG1.bmp

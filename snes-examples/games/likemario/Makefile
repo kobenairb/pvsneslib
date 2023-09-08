@@ -22,7 +22,7 @@ musics: $(SOUNDBANK).obj
 
 all: musics mariojump.brr bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx cleanAudio
+clean:
 	@rm -f *.clm mariojump.brr
 		
 #---------------------------------------------------------------------------------

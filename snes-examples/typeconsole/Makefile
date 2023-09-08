@@ -16,7 +16,7 @@ all: bitmaps $(ROMNAME).sfc
 	$(SNTOOLS) -hi! -hS! $(GTITLE) -hc03 $(ROMNAME).sfc
 	mv $(ROMNAME).sfc $(ROMNAME)_pal.sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 	@rm -f $(ROMNAME)_*.sfc
 
 #---------------------------------------------------------------------------------

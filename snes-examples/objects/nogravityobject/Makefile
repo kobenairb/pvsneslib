@@ -12,7 +12,7 @@ export ROMNAME := nogravityobjects
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 	rm -f *.m16 *.b16 *.o16
 
 #---------------------------------------------------------------------------------

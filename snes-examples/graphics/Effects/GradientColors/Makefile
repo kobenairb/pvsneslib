@@ -12,7 +12,7 @@ export ROMNAME := GradientColors
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 pvsneslib.pic: pvsneslib.png
 	@echo convert bitmap ... $(notdir $@)

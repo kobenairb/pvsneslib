@@ -22,7 +22,7 @@ musics: $(SOUNDBANK).obj
 
 all: musics bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx cleanAudio
+clean:
 
 #---------------------------------------------------------------------------------
 pvsneslibfont.pic: pvsneslibfont.bmp

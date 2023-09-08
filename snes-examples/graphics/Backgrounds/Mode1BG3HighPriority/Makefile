@@ -12,7 +12,7 @@ export ROMNAME := Mode1BG3HighPriority
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 #---------------------------------------------------------------------------------
 BG1.pic: BG1.bmp

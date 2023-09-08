@@ -12,4 +12,4 @@ export ROMNAME := debug
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom
+clean:

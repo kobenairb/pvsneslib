@@ -12,7 +12,7 @@ export ROMNAME := Mode7Perspective
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 #---------------------------------------------------------------------------------
 ground.pc7	: ground.png

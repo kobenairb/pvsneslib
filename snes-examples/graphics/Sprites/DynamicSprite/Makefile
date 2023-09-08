@@ -12,7 +12,7 @@ export ROMNAME := DynamicSprite
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 #---------------------------------------------------------------------------------
 sprites.pic: sprites.bmp

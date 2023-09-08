@@ -12,7 +12,7 @@ export ROMNAME := ParallaxScrolling
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 #---------------------------------------------------------------------------------
 back.pic: back.png

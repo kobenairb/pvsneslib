@@ -22,6 +22,6 @@ musics: $(SOUNDBANK).obj
 
 all: $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx cleanAudio
+clean:
 		
 #---------------------------------------------------------------------------------

@@ -12,7 +12,7 @@ export ROMNAME := GetColors
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 #---------------------------------------------------------------------------------
 ortf.pic: ortf.png

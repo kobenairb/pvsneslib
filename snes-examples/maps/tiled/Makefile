@@ -12,7 +12,7 @@ export ROMNAME := tiled
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 #---------------------------------------------------------------------------------
 tileslevel1.pic: tileslevel1.png

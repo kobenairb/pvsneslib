@@ -12,7 +12,7 @@ export ROMNAME := Mode0
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 #---------------------------------------------------------------------------------
 bg0.pic: bg0.bmp

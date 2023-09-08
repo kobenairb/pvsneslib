@@ -12,7 +12,7 @@ export ROMNAME := Window
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 pvsneslibbg1.pic: pvsneslibbg1.png
 	@echo convert bitmap ... $(notdir $@)

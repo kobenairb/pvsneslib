@@ -12,7 +12,7 @@ export ROMNAME := Mode3
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 #---------------------------------------------------------------------------------
 pvsneslib.pic: pvsneslib.bmp

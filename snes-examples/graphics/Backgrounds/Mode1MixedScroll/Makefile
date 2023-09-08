@@ -12,7 +12,7 @@ export ROMNAME := Mode1MixedScroll
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 #---------------------------------------------------------------------------------
 shader.pic: shader.bmp

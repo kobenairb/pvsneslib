@@ -12,7 +12,7 @@ export ROMNAME := Transparency
 
 all: bitmaps $(ROMNAME).sfc
 
-clean: cleanBuildRes cleanRom cleanGfx
+clean:
 
 #---------------------------------------------------------------------------------
 backgrounds.pic: backgrounds.bmp
