@@ -36,8 +36,10 @@ LIBDIRSOBJSR := $(shell find $(LIBDIRSOBJS) -name "*.obj" -exec realpath --relat
 # Retrieve the list of the .c and .asm files.
 #---------------------------------------------------------------------------------
 
-# Folder containing sources, can be overloaded if defined before.
-SRC ?= src
+# folder containing sources is src if it's not already defined:
+ifeq ($(origin SRC), undefined)
+    SRC := src
+endif
 
 # Search all .asm and .c files up to a specified depth in the tree.
 DEPTH ?= 3
