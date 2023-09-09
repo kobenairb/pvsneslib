@@ -1,8 +1,6 @@
 # To avoid certain bugs, we perform a check to ensure PVSNESLIB_HOME is defined correctly.
 ifeq ($(findstring \,$(PVSNESLIB_HOME)),\)
-$(error The PVSNESLIB_HOME environment variable is not defined correctly. \
-        The path must follows the Unix-style format, even on Windows. \
-        For example, use "/c/snesdev" instead of "C:\snesdev")
+$(error "Please correctly define an environment variable PVSNESLIB_HOME by following this guide: https://github.com/alekmaul/pvsneslib/wiki/Installation"
 endif
 
 #---------------------------------------------------------------------------------

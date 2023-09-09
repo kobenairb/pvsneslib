@@ -2,31 +2,12 @@
 COMPILER_PATH       := compiler
 TOOLS_PATH          := tools
 SNES_EXAMPLES_PATH  := snes-examples
+DEVKITSNES_PATH     := devkitsnes
 PVSNESLIB_PATH      := pvsneslib
 RELEASE_PATH        := release/pvsneslib
-DOXYGEN_INSTALLED   := $(shell command -v doxygen 2> /dev/null)
-ARCH := 64b
-# Define variables for System
-UNAME := $(shell uname -s)
 
-# Set default operating system
-ifeq ($(OS),Windows_NT)
-	OPERATING_SYSTEM := windows
-else ifneq ($(findstring MINGW64_NT,$(UNAME)),)
-	OPERATING_SYSTEM := mingw
-else ifeq ($(UNAME), Darwin)
-	OPERATING_SYSTEM := darwin
-else ifeq ($(UNAME), Linux)
-	OPERATING_SYSTEM := linux
-else ifeq ($(UNAME), FreeBSD)
-	OPERATING_SYSTEM := freebsd
-else
-	$(error Unsupported operating system)
-endif
-
-# default target
-all: clean
-
+# Build the whole project, without documentation.
+all:
 # build compiler
 	$(MAKE) -C $(COMPILER_PATH)
 	$(MAKE) -C $(COMPILER_PATH) install
@@ -36,7 +17,9 @@ all: clean
 	$(MAKE) -C $(TOOLS_PATH) install
 
 # build pvsneslib
+
 	$(MAKE) -C $(PVSNESLIB_PATH)
+	$(MAKE) -C $(PVSNESLIB_PATH) install
 
 # build snes-examples and install them
 	$(MAKE) -C $(SNES_EXAMPLES_PATH)
@@ -46,32 +29,28 @@ all: clean
 	@echo "* Build finished successfully !"
 	@echo
 
-# clean everything
-clean:
-	$(MAKE) -C $(COMPILER_PATH) clean
-	$(MAKE) -C $(TOOLS_PATH) clean
-	$(MAKE) -C $(PVSNESLIB_PATH) clean
-	$(MAKE) -C $(SNES_EXAMPLES_PATH) clean
-	@rm -rf release
+# Here we generate doc for a release, so we also install it.
+# pvsneslib release directories are created here.
+# DOCS_PDF_ON is set to 1 to enable the pdf creation.
+docs:
+	DOCS_PDF_ON=1 $(MAKE) -C $(PVSNESLIB_PATH) docs
+	@mkdir -p $(RELEASE_PATH)/$(PVSNESLIB_PATH)/docs
+	@cp -r $(PVSNESLIB_PATH)/docs/html $(RELEASE_PATH)/$(PVSNESLIB_PATH)/docs
+	@cp $(PVSNESLIB_PATH)/docs/latex/refman.pdf $(RELEASE_PATH)/$(PVSNESLIB_PATH)/docs/pvsneslib_manual.pdf
 
-# create a release version
-release: all
-ifndef DOXYGEN_INSTALLED
-	$(error "doxygen is not installed but is mandatory to create the release version.")
-endif
-	@mkdir -p $(RELEASE_PATH)/$(PVSNESLIB_PATH)
-	@cp -r devkitsnes $(RELEASE_PATH)
+# Create the release, call all and docs first.
+release: clean all docs
+	@cp -r $(DEVKITSNES_PATH) $(RELEASE_PATH)
 	@cp -r $(PVSNESLIB_PATH)/include $(RELEASE_PATH)/$(PVSNESLIB_PATH)
 	@cp -r $(PVSNESLIB_PATH)/lib $(RELEASE_PATH)/$(PVSNESLIB_PATH)
-	@cp -r $(PVSNESLIB_PATH)/docs/html $(RELEASE_PATH)/$(PVSNESLIB_PATH)
-	@cp $(PVSNESLIB_PATH)/PVSnesLib_Logo.png $(RELEASE_PATH)/$(PVSNESLIB_PATH)/PVSnesLib_Logo.png
-	@cp $(PVSNESLIB_PATH)/pvsneslib_license.txt $(RELEASE_PATH)/$(PVSNESLIB_PATH)/pvsneslib_license.txt
-	@cp $(PVSNESLIB_PATH)/pvsneslib_snesmod.txt $(RELEASE_PATH)/$(PVSNESLIB_PATH)/pvsneslib_snesmod.txt
-	@cp $(PVSNESLIB_PATH)/pvsneslib_version.txt $(RELEASE_PATH)/$(PVSNESLIB_PATH)/pvsneslib_version.txt
-	@cp -r $(SNES_EXAMPLES_PATH) $(RELEASE_PATH)/snes-examples
-	@cd release && zip -q -y -r -m pvsneslib_$(ARCH)_$(OPERATING_SYSTEM).zip pvsneslib
+	@cp -r $(SNES_EXAMPLES_PATH) $(RELEASE_PATH)/$(SNES_EXAMPLES_PATH)
+	@cp $(PVSNESLIB_PATH)/PVSnesLib_Logo.png $(RELEASE_PATH)/$(PVSNESLIB_PATH)
+	@cp $(PVSNESLIB_PATH)/pvsneslib_license.txt $(RELEASE_PATH)/$(PVSNESLIB_PATH)
+	@cp $(PVSNESLIB_PATH)/pvsneslib_snesmod.txt $(RELEASE_PATH)/$(PVSNESLIB_PATH)
+	@cp $(PVSNESLIB_PATH)/pvsneslib_version.txt $(RELEASE_PATH)/$(PVSNESLIB_PATH)
 
-	@echo "* Release pvsneslib_$(ARCH)_$(OPERATING_SYSTEM) created successfully !"
+	@echo
+	@echo "* Release created successfully !"
 	@echo
 
 # Print the version of the development tools used on the system
@@ -85,8 +64,13 @@ version:
 	@echo "Version of make:"
 	@$(MAKE) --version | head -n 1
 
-# define phony targets
-.PHONY: version all
+# clean everything
+clean:
+	$(MAKE) -C $(COMPILER_PATH) clean
+	$(MAKE) -C $(TOOLS_PATH) clean
+	$(MAKE) -C $(PVSNESLIB_PATH) clean
+	$(MAKE) -C $(SNES_EXAMPLES_PATH) clean
+	@rm -rf release
 
-# Set the default target
-.DEFAULT_GOAL := all
+# Define phony targets
+.PHONY: version

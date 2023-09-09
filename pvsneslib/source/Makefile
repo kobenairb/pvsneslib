@@ -1,44 +1,33 @@
-.SECONDARY:
-#---------------------------------------------------------------------------------
-.SUFFIXES:
-#---------------------------------------------------------------------------------
 ifeq ($(strip $(PVSNESLIB_HOME)),)
-$(error "Please create an environment variable PVSNESLIB_HOME by following this guide: https://github.com/alekmaul/pvsneslib/wiki/Installation")
+$(error "Please create an environment variable PVSNESLIB_HOME with path to its folder and restart application. (you can do it on windows with <setx PVSNESLIB_HOME "/c/snesdev">)")
 endif
 
-include ${PVSNESLIB_HOME}/devkitsnes/snes_rules
+# Fix for libc_c.ps.
+export LIBC_C_FIX := 1
 
-#---------------------------------------------------------------------------------
-# options for code generation
-#---------------------------------------------------------------------------------
-C_SRC	:=
+include $(PVSNESLIB_HOME)/devkitsnes/snes_rules
 
-CFLAGS	+=	-I${PVSNESLIB_HOME}/devkitsnes/include \
-		-I${PVSNESLIB_HOME}/pvsneslib/include \
-		-I${PVSNESLIB_HOME}/pvsneslib/source
+LIB_DIR  := ../lib
+SNESOBJS := crt0_snes.obj libm.obj libtcc.obj libc.obj
 
-export SNESOBJS = crt0_snes.obj libm.obj libtcc.obj libc.obj
-
-
-#---------------------------------------------------------------------------------
-%.ps: %.c
-	@echo $(notdir $<)
-	$(CC) $(CFLAGS) -Wall -c $< -o $@
-	sed -i 's/.include "hdr.asm"//' $@
-
-all: $(SNESOBJS)
-	@mv *.obj ../lib
-	@rm -f *.ps
-
-#---------------------------------------------------------------------------------
+# Define recipe dependencies.
 libc.obj: libc.asm libc_c.asm
-libc_c.asm: libc_c.c $(C_SRC) sm_spc.asm
-libc_c.c: $(C_SRC)
+libc_c.asm: libc_c.c sm_spc.asm
+libc_c.c:
 libm.obj: libm.asm
 
-#---------------------------------------------------------------------------------
-clean:
-	@echo clean ...
-	@rm -f libc_c.ps libc_c.asm libm_c.asm
-	@rm -f *.obj *.ps *.lst
-	@rm -f ../lib/*
+# Compile SNESOBJS .obj files with snes_rules.
+all: $(SNESOBJS)
+
+# Install .obj files in lib.
+install:
+	@echo Moving $(SNESOBJS) to $(LIB_DIR) ...
+	@mv $(SNESOBJS) $(LIB_DIR)
+
+# Clean build artifacts.
+cleandist:
+	@echo Cleaning build artifacts ...
+	@rm -f $(LIB_DIR)/*.obj libc_c.asm
+
+# Trigger clean recipe from snes_rules.
+clean: cleandist
