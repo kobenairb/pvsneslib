@@ -1,20 +1,7 @@
-<<<<<<< HEAD
 # Define version number which will be used everywhere.
 export PVSNESLIB_MAJOR   := 4
-export PVSNESLIB_MINOR   := 0
-export PVSNESLIB_PATCH   := 3
-=======
-ifeq ($(strip $(PVSNESLIB_HOME)),)
-$(error "Please create an environment variable PVSNESLIB_HOME by following this guide: https://github.com/alekmaul/pvsneslib/wiki/Installation")
-endif
-
-export TOPDIR := $(CURDIR)
-
-# create version number which will be used everywhere
-export PVSNESLIB_MAJOR := 4
-export PVSNESLIB_MINOR := 1
-export PVSNESLIB_PATCH := 1
->>>>>>> develop
+export PVSNESLIB_MINOR   := 1
+export PVSNESLIB_PATCH   := 1
 export PVSNESLIB_VERSION := $(PVSNESLIB_MAJOR).$(PVSNESLIB_MINOR).$(PVSNESLIB_PATCH)
 # Directory with docs config and output (via doxygen).
 export PVSDOCSDIR := docs
@@ -41,7 +28,6 @@ doxygenInstalled  := $(shell command -v doxygen -q 2>/dev/null)
 pdflatexInstalled := $(shell command -v pdflatex -q 2>/dev/null)
 docs:
 ifndef doxygenInstalled
-<<<<<<< HEAD
 	@echo Doxygen is not installed, documentation will not be generated.
 else
 	@echo Building doxygen documentation ...
@@ -54,26 +40,6 @@ else
 	$(MAKE) -C $(PVSDOCSDIR)/latex >/dev/null 2>&1
 endif
 endif
-=======
-# If Doxygen is not installed, print an error message
-	@echo "Doxygen is not installed, documentation will not be generated."
-else
-# Remove the existing HTML documentation
-	@rm -rf $(PVSDOCSDIR)/html
-# Set the PVSDOCSDIR variable and run Doxygen
-	@PVSDOCSDIR=$(PVSDOCSDIR) doxygen "$(PVSDOCSDIR)/pvsneslib.dox"
-
-# If PDF output is enabled, build the LaTeX documentation and copy the resulting PDF
-	@if [ "$(DOCS_PDF_ON)" = "YES" ]; then \
-		$(MAKE) -C $(PVSDOCSDIR)/latex && cp $(PVSDOCSDIR)/latex/refman.pdf $(PVSDOCSDIR)/pvsneslib_manual.pdf;\
-	fi
-# If there are warnings, print them to the console
-	@if [ -f 'warn.log' ]; then \
-		cat warn.log; \
-	fi
-# Remove the LaTeX documentation
-	@rm -rf $(PVSDOCSDIR)/latex
->>>>>>> develop
 endif
 
 # This rule generates a header file that contains the version information of the library.

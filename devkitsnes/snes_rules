@@ -1,15 +1,4 @@
-<<<<<<< HEAD
 # To avoid certain bugs, we perform a check to ensure PVSNESLIB_HOME is defined correctly.
-=======
-# folder containing sources is src if it's not already defined:
-ifeq ($(origin SRC), undefined)
-    SRC := src
-endif
-
-LIBDIRSOBJS := $(PVSNESLIB_HOME)/pvsneslib/lib
-
-# to avoid some bugs if the PVSNESLIB_HOME is not well defined, we let a small check here
->>>>>>> develop
 ifeq ($(findstring \,$(PVSNESLIB_HOME)),\)
 $(error The PVSNESLIB_HOME environment variable is not defined correctly. \
         The path must follows the Unix-style format, even on Windows. \
@@ -47,10 +36,8 @@ LIBDIRSOBJSR := $(shell find $(LIBDIRSOBJS) -name "*.obj" -exec realpath --relat
 # Retrieve the list of the .c and .asm files.
 #---------------------------------------------------------------------------------
 
-# folder containing sources is src if it's not already defined:
-ifeq ($(origin SRC), undefined)
-    SRC := src
-endif
+# Folder containing sources, can be overloaded if defined before.
+SRC ?= src
 
 # Search all .asm and .c files up to a specified depth in the tree.
 DEPTH ?= 3
@@ -141,7 +128,8 @@ linkfile: $(OFILES)
 
 %.sfc: linkfile
 	@echo Linking obj files ... $(notdir $@)
-	$(LD) -d -s -v -A -c -L linkfile $@
+# -c should be removed ASAP ! It allow duplicate labels and definitions
+	$(LD) -d -s -v -A -c linkfile $@
 
 	@sed -i 's/://' $(ROMNAME).sym
 
