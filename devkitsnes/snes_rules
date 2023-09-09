@@ -1,4 +1,15 @@
+<<<<<<< HEAD
 # To avoid certain bugs, we perform a check to ensure PVSNESLIB_HOME is defined correctly.
+=======
+# folder containing sources is src if it's not already defined:
+ifeq ($(origin SRC), undefined)
+    SRC := src
+endif
+
+LIBDIRSOBJS := $(PVSNESLIB_HOME)/pvsneslib/lib
+
+# to avoid some bugs if the PVSNESLIB_HOME is not well defined, we let a small check here
+>>>>>>> develop
 ifeq ($(findstring \,$(PVSNESLIB_HOME)),\)
 $(error The PVSNESLIB_HOME environment variable is not defined correctly. \
         The path must follows the Unix-style format, even on Windows. \
