@@ -39,7 +39,8 @@ jobs:
               cmake \
               make \
               git \
-              doxygen 
+              doxygen \
+              texlive-latex-extra
           sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 90
       - name: Install dependencies for Windows
         if: matrix.name == 'windows'
@@ -51,7 +52,11 @@ jobs:
             mingw-w64-ucrt-x86_64-toolchain
             mingw-w64-ucrt-x86_64-cmake
             mingw-w64-ucrt-x86_64-doxygen
-            mingw-w64-ucrt-x86_64-pcre2
+            mingw-w64-ucrt-x86_64-texlive-bin
+            mingw-w64-ucrt-x86_64-texlive-fonts-recommended
+            mingw-w64-ucrt-x86_64-texlive-latex-extra
+            mingw-w64-ucrt-x86_64-texlive-pictures
+            mingw-w64-ucrt-x86_64-texlive-plain-generic
             base-devel
             git
             zip
@@ -61,6 +66,7 @@ jobs:
           brew update
           brew install doxygen
           brew install gnu-sed
+          brew install texlive
           sudo ln -s /usr/local/bin/gcc-12 /usr/local/bin/gcc
           sudo ln -s /usr/local/bin/g++-12 /usr/local/bin/g++
 
@@ -72,28 +78,27 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           submodules: recursive
-          persist-credentials: false
 
       # ------------------------------------ #
       # Compiling sources and create release #
       # ------------------------------------ #
       - name: Build & Release PVSNESLIB for Linux
-        if: (matrix.name == 'linux')
+        if: matrix.name == 'linux'
         run: |
           export PVSNESLIB_HOME=$(pwd)
-          make release | tee pvsneslib_release_${{ matrix.name }}.log
+          make release | tee release_${{ matrix.name }}.log
       - name: Build & Release PVSNESLIB for Windows
-        if: (matrix.name == 'windows')
+        if: matrix.name == 'windows'
         shell: msys2 {0}
         run: |
           export PVSNESLIB_HOME=$(pwd)
-          make release | tee pvsneslib_release_${{ matrix.name }}.log
+          make release | tee release_${{ matrix.name }}.log
       - name: Build & Release PVSNESLIB for MacOS
-        if: (matrix.name == 'darwin')
+        if: matrix.name == 'darwin'
         run: |
           export PVSNESLIB_HOME=$(pwd)
           export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-          make release | tee pvsneslib_release_${{ matrix.name }}.log
+          make release | tee release_${{ matrix.name }}.log
 
       # ------------------------------------ #
       # Checking libraries linking           #
@@ -101,11 +106,11 @@ jobs:
       - name: Checking libraries linking PVSNESLIB toolchain
         if: matrix.name == 'darwin'
         run: |
-          otool -L devkitsnes/bin/* devkitsnes/tools/* | tee pvsneslib_toolchain_linking_${{ matrix.name }}.log || true
+          otool -L devkitsnes/bin/* devkitsnes/tools/* | tee toolchain_linking_${{ matrix.name }}.log || true
       - name: Checking libraries linking PVSNESLIB toolchain
         if: matrix.name == 'windows' || matrix.name == 'linux'
         run: |
-          ldd devkitsnes/bin/* devkitsnes/tools/* | tee pvsneslib_toolchain_linking_${{ matrix.name }}.log || true
+          ldd devkitsnes/bin/* devkitsnes/tools/* | tee toolchain_linking_${{ matrix.name }}.log || true
 
       # ------------------------------------ #
       # Upload releases                      #
@@ -113,7 +118,7 @@ jobs:
       - name: Upload PVSNESLIB release
         uses: actions/upload-artifact@v3
         with:
-          name: PVSNESLIB Release for ${{ matrix.name }}
+          name: pvsneslib-${{ matrix.name }}
           path: release/pvsneslib
 
       # ------------------------------------ #
@@ -122,5 +127,5 @@ jobs:
       - name: Upload PVSNESLIB logs
         uses: actions/upload-artifact@v3
         with:
-          name: PVSNESLIB Release Logs for ${{ matrix.name }}
+          name: pvsneslib-release-log-${{ matrix.name }}
           path: "*.log"
