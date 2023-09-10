@@ -1,12 +1,14 @@
 # To avoid certain bugs, we perform a check to ensure PVSNESLIB_HOME is defined correctly.
+ifeq ($(strip $(PVSNESLIB_HOME)),)
 ifeq ($(findstring \,$(PVSNESLIB_HOME)),\)
-$(error "Please correctly define an environment variable PVSNESLIB_HOME by following this guide: https://github.com/alekmaul/pvsneslib/wiki/Installation"
+$(error "Please correctly define an environment variable PVSNESLIB_HOME by following this guide: https://github.com/alekmaul/pvsneslib/wiki/Installation")
+endif
 endif
 
 #---------------------------------------------------------------------------------
 # The compiler and tools executables
 #---------------------------------------------------------------------------------
-DEVKITSNES := $(PVSNESLIB_HOME)/devkitsnes
+DEVKITSNES      := $(PVSNESLIB_HOME)/devkitsnes
 
 export CC	    := $(DEVKITSNES)/bin/816-tcc
 export AS	    := $(DEVKITSNES)/bin/wla-65816
@@ -33,9 +35,10 @@ LIBDIRSOBJSR := $(shell find $(LIBDIRSOBJS) -name "*.obj" -exec realpath --relat
 #---------------------------------------------------------------------------------
 # Retrieve the list of the .c and .asm files.
 #---------------------------------------------------------------------------------
-
-# Folder containing sources, can be overloaded if defined before.
-SRC ?= src
+# folder containing sources is src if it's not already defined:
+ifeq ($(origin SRC), undefined)
+    SRC := src
+endif
 
 # Search all .asm and .c files up to a specified depth in the tree.
 DEPTH ?= 3

@@ -1,7 +1,3 @@
-ifeq ($(strip $(PVSNESLIB_HOME)),)
-$(error "Please create an environment variable PVSNESLIB_HOME with path to its folder and restart application. (you can do it on windows with <setx PVSNESLIB_HOME "/c/snesdev">)")
-endif
-
 # Fix for libc_c.ps.
 export LIBC_C_FIX := 1
 

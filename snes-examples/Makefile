@@ -1,15 +1,18 @@
-SUBDIRS    := $(shell ls | egrep -v '^(CVS)$$')
-DATESTRING := $(shell date +%Y%m%d)
+# Assigns to SUBDIRS all directories starting from the second level (subdirectories) 
+# that contain a file named 'Makefile'
+SUBDIRS := $(shell find . -mindepth 2 -type f -name Makefile -exec dirname {} \;)
 
 all:
-	@for i in $(SUBDIRS); do if test -e $$i/Makefile ; then $(MAKE) -C $$i || { exit 1;} fi; done;
+	@for i in $(SUBDIRS); do $(MAKE) -C $$i; done
 
-install:
+pre-install:
 	@rm -fr bin
 	@mkdir -p bin
-	find . -name "*.sfc" -exec cp -fv {} bin \;
 
-clean:
+install: pre-install
+	@find . -name "*.sfc" -exec cp -fv {} bin \;
+
+clean: $(SUBDIRS)
 	@rm -fr bin
-	@for i in $(SUBDIRS); do if test -e $$i/Makefile ; then $(MAKE) -C $$i clean || { exit 1;} fi; done;
+	@for i in $(SUBDIRS); do $(MAKE) clean -C $$i; done
 
