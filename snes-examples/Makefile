@@ -12,7 +12,7 @@ pre-install:
 install: pre-install
 	@find . -name "*.sfc" -exec cp -fv {} bin \;
 
-clean: $(SUBDIRS)
+clean:
 	@rm -fr bin
 	@for i in $(SUBDIRS); do $(MAKE) clean -C $$i; done
 
