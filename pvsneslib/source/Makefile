@@ -3,7 +3,7 @@ export LIBC_C_FIX := 1
 
 include $(PVSNESLIB_HOME)/devkitsnes/snes_rules
 
-LIB_DIR  := ../lib
+LIB_DIR  := $(PVSNESLIB_HOME)/pvsneslib/lib
 SNESOBJS := crt0_snes.obj libm.obj libtcc.obj libc.obj
 
 # Define recipe dependencies.
