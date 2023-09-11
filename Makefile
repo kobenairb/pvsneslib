@@ -57,10 +57,10 @@ release: clean all docs
 version:
 	@echo "Version of gcc:"
 	@$(CC) --version | head -n 1
-	@echo ""
+	@echo
 	@echo "Version of cmake:"
 	@$(CMAKE) --version | head -n 1
-	@echo ""
+	@echo
 	@echo "Version of make:"
 	@$(MAKE) --version | head -n 1
 
