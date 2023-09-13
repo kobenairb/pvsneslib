@@ -42,7 +42,7 @@ endif
 endif
 endif
 
-# This rule generates a header file that contains the version information of the library.
+# This target generates a header file that contains the version information of the library.
 # It defines three variables, _PVSNESLIB_MAJOR_, _PVSNESLIB_MINOR_, and _PVSNESLIB_PATCH_ that
 # correspond to the major, minor, and patch versions respectively.
 # It also defines a variable _PVSNESLIB_STRING_ that contains a string representation of the
