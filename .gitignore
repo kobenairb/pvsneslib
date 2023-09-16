@@ -1,5 +1,6 @@
 # automatically generated with PVSNESLIB:
 pvsneslib/docs/html
+pvsneslib/docs/latex
 pvsneslib/lib
 pvsneslib/source/libc_c.asm
 pvsneslib/source/libm_c.asm
