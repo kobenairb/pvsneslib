@@ -65,6 +65,7 @@ jobs:
         if: matrix.name == 'darwin'
         run: |
           brew update
+          brew install coreutils
           brew install doxygen
           brew install gnu-sed
           brew install texlive
@@ -97,6 +98,7 @@ jobs:
           make release | tee pvsneslib_release_${{ matrix.name }}.log
       - name: Build & Release PVSNESLIB for MacOS
         if: (matrix.name == 'darwin')
+        shell: bash
         run: |
           export PVSNESLIB_HOME=$(pwd)
           export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
