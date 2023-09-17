@@ -23,7 +23,7 @@ This readme explains how and why to use docker containers.
 ## Features
 
 - Compile **pvnseslib** tools from different linux distribution versions.
-- Create ready-to-use releases in zip form
+- Create ready-to-use releases in zip form.
 - Check that pvsneslib compiles correctly on different linux distributions, and thus test different versions of tools and libraries used to compile it.
 
 > There is no relationship between the version of Linux you are using and the type of container used.
@@ -41,10 +41,10 @@ All these distributions are in latest stable version.
 
 As a prerequisite, you must install docker-ce on your distribution.
 
-* [centos](https://docs.docker.com/engine/install/centos/)
-* [fedora](https://docs.docker.com/engine/install/fedora/)
-* [debian](https://docs.docker.com/engine/install/debian/)
-* [ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+- [centos](https://docs.docker.com/engine/install/centos/)
+- [fedora](https://docs.docker.com/engine/install/fedora/)
+- [debian](https://docs.docker.com/engine/install/debian/)
+- [ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 
 These distributions have been integrated because they represent the most used ones (not exhaustive). [See Top Linux Subcategories by market share](https://truelist.co/blog/linux-statistics/).
 
