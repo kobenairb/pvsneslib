@@ -33,7 +33,6 @@ jobs:
       - name: Install dependencies for Linux
         if: matrix.name == 'linux'
         run: |
-          sudo apt update -y
           sudo apt-get install -y build-essential \
               gcc-12 \
               cmake \
@@ -46,7 +45,7 @@ jobs:
         if: matrix.name == 'windows'
         uses: msys2/setup-msys2@v2
         with:
-          update: true
+          update: false
           msystem: UCRT64
           install: >-
             mingw-w64-ucrt-x86_64-toolchain
@@ -64,7 +63,6 @@ jobs:
       - name: Install dependencies for MacOS
         if: matrix.name == 'darwin'
         run: |
-          brew update
           brew install coreutils
           brew install doxygen
           brew install gnu-sed

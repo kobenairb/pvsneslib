@@ -6,9 +6,9 @@ To follow this guide, you will need :
 
 and these required dependencies
 
-- msys2 _if you are on Windows environment_
-- a text editor to write your code
-- an emulator to test the roms
+- msys2 _if you are on Windows environment_.
+- a text editor to write your code.
+- an emulator to test the roms (no$sns is very handy to debug. Mesen2 is a good choice to test your roms. But everyone has their own preferences).
 
 All other required dependencies to use it are provided in the archive to download.
 If you want to go further and build the latest version from sources, you can follow [this page](https://github.com/alekmaul/pvsneslib/wiki/Compiling-from-sources) which explain how to do it.
