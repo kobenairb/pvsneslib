@@ -23,11 +23,9 @@ _It means that this tuturial is **only** needed if you wish to participate to th
     - [Build the whole project](#build-the-whole-project)
     - [Build the whole project and create your own release](#build-the-whole-project-and-create-your-own-release)
 
-
 ## Installing the development tools
 
-
-### Installing the development tools on Windows.
+### Installing the development tools on Windows
 
 First at all, you have to install MSYS2 as provided in the installation documentation [here](https://www.msys2.org/#installation). Just follow the instructions from step `1` to `5`.
 
@@ -44,23 +42,27 @@ In the **MSYS2** terminal, install the following packages:
 ```bash
 pacman -Sy mingw-w64-ucrt-x86_64-toolchain
 pacman -Sy mingw-w64-ucrt-x86_64-cmake
+pacman -Sy mingw-w64-ucrt-x86_64-pcre2
 pacman -Sy mingw-w64-ucrt-x86_64-doxygen
-pacman -Sy mingw-w64-ucrt-x86_64-pcre2 
+pacman -Sy mingw-w64-ucrt-x86_64-texlive-bin
+pacman -Sy mingw-w64-ucrt-x86_64-texlive-fonts-recommended
+pacman -Sy mingw-w64-ucrt-x86_64-texlive-latex-extra
+pacman -Sy mingw-w64-ucrt-x86_64-texlive-pictures
+pacman -Sy mingw-w64-ucrt-x86_64-texlive-plain-generic
 pacman -Sy base-devel
 pacman -Sy git
 pacman -Sy zip
 ```
 
-Congratulations, you're done to start to compile **PVSNESLIB** on *Windows* !
+Congratulations, you're done to start to compile **PVSNESLIB** on _Windows_ !
 
 Now, to use the MSYS2 UCRT64 toolchain, just open the MSYS2 UCRT64 terminal. See [here](https://github.com/alekmaul/pvsneslib/blob/b2682bc7610c6cab1158746ac482e334655a0b7a/wiki/PVSneslib-and-Visual-Studio-Code.md) to integrate it under Visual Studio Code.
 
+### Installing the development tools on Linux
 
-### Installing the development tools on Linux.
+#### Installing the development tools on Ubuntu
 
-#### Installing the development tools on Ubuntu.
-
-> This procedure explains how to install the development tools on *Ubuntu* latest *(22)*.
+> This procedure explains how to install the development tools on _Ubuntu_ latest _(22)_.
 
 First at all, you have to ensure that your distribution is up to date.
 
@@ -69,21 +71,19 @@ In a terminal:
 ```bash
 sudo apt update -y
 ```
+
 Once it's done, in case of change, you should **reboot** your system.
 
 Then, you can install the development tools:
 
 ```bash
 sudo apt-get install -y build-essential \
-    gcc-12 \
-    cmake \
-    make \
-    git \
-    doxygen \
-    texi2html \
-    texlive-latex-base \
-    texlive-latex-recommended \
-    texlive-latex-extra
+          gcc-12 \
+          cmake \
+          make \
+          git \
+          doxygen \
+          texlive-latex-extra
 ```
 
 Finally, set `gcc-12` as your default compiler:
@@ -91,13 +91,14 @@ Finally, set `gcc-12` as your default compiler:
 ```bash
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 90
 ```
+
 > This step will set `gcc-12` as your the default compiler. the `90` is the priority, here higher priority. We need to do it because the default compiler on Ubuntu 22 is `clang`.
 
-Congratulations, you're done to start to compile **PVSNESLIB** on *Ubuntu*!
+Congratulations, you're done to start to compile **PVSNESLIB** on _Ubuntu_!
 
-#### Installing the development tools on Debian.
+#### Installing the development tools on Debian
 
-> This procedure explains how to install the development tools on *debian* latest *(11)*.
+> This procedure explains how to install the development tools on _debian_ latest _(11)_.
 
 First at all, we need to add the `testing` component from the **Debian** repository, which contains `gcc-12`.
 
@@ -112,21 +113,19 @@ In a terminal:
 ```bash
 sudo apt update -y
 ```
+
 Once it's done, in case of change, you should **reboot** your system.
 
 Then, you can install the development tools:
 
 ```bash
 sudo apt-get install -y build-essential \
-    gcc-12 \
-    cmake \
-    make \
-    git \
-    doxygen \
-    texi2html \
-    texlive-latex-base \
-    texlive-latex-recommended \
-    texlive-latex-extra
+        gcc-12 \
+        cmake \
+        make \
+        git \
+        doxygen \
+        texlive-latex-extra
 ```
 
 Finally, set `gcc-12` as your default compiler:
@@ -134,13 +133,14 @@ Finally, set `gcc-12` as your default compiler:
 ```bash
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 90
 ```
+
 > This step will set `gcc-12` as your the default compiler. the `90` is the priority, here higher priority. We need to do it because the default compiler on Debian 11 is `gcc-11`.
 
-Congratulations, you're done to start to compile **PVSNESLIB** on *Debian*!
+Congratulations, you're done to start to compile **PVSNESLIB** on _Debian_!
 
-#### Installing the development tools on Fedora.
+#### Installing the development tools on Fedora
 
-> This procedure explains how to install the development tools on *Fedora* latest *(37)*.
+> This procedure explains how to install the development tools on _Fedora_ latest _(37)_.
 
 First at all, you have to ensure that your distribution is up to date.
 
@@ -149,6 +149,7 @@ In a terminal:
 ```bash
 sudo dnf update -y
 ```
+
 Once it's done, in case of change, you should **reboot** your system.
 
 Then, you can install the development tools:
@@ -161,14 +162,14 @@ sudo dnf -y install cmake \
     libstdc++-static \
     git \
     doxygen \
-    texi2html \
     texlive-scheme-basic
 ```
-Congratulations, you're done to start to compile **PVSNESLIB** on *Fedora*!
 
-#### Installing the development tools on Centos.
+Congratulations, you're done to start to compile **PVSNESLIB** on _Fedora_!
 
-> This procedure explains how to install the development tools on *Centos* latest *(7)*.
+#### Installing the development tools on Centos
+
+> This procedure explains how to install the development tools on _Centos_ latest _(7)_.
 
 First at all, you have to ensure that your distribution is up to date and that the `powertools` repository is enable on your system.
 
@@ -179,6 +180,7 @@ sudo dnf -y install dnf-plugins-core
 sudo dnf -y config-manager --set-enabled powertools
 sudo dnf update -y
 ```
+
 Once it's done, in case of change, you should **reboot** your system.
 
 Then, you can install the development tools:
@@ -191,14 +193,14 @@ sudo dnf -y install cmake \
         libstdc++-static \
         git \
         doxygen \
-        texi2html \
         texlive-scheme-basic
 ```
-Congratulations, you're done to start to compile **PVSNESLIB** on *Centos*!
 
-### Installing the development tools on MacOS.
+Congratulations, you're done to start to compile **PVSNESLIB** on _Centos_!
 
-> This procedure explains how to install the development tools on *MacOS*.
+### Installing the development tools on MacOS
+
+> This procedure explains how to install the development tools on _MacOS_.
 
 First at all, you have to ensure that your distribution is up to date.
 
@@ -210,13 +212,13 @@ sudo softwareupdate -i -a
 
 > Note: You can also use the graphical interface to perform the same action. It's really up to you.
 
-Then, install [*Xcode*](https://developer.apple.com/xcode/).
+Then, install [_Xcode_](https://developer.apple.com/xcode/).
 
 ```bash
 Xcode-select —install
 ```
 
-Then, install [*brew*](https://brew.sh/):
+Then, install [_brew_](https://brew.sh/):
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -225,9 +227,10 @@ Then, install [*brew*](https://brew.sh/):
 Finally, install brew packages:
 
 ```bash
+brew update
+brew install coreutils
 brew install doxygen
 brew install gnu-sed
-brew install texi2html
 brew install texlive
 ```
 
@@ -237,30 +240,31 @@ For the same reason that Ubuntu (clang being installed as the default compiler) 
 sudo ln -s /usr/local/bin/gcc-12 /usr/local/bin/gcc
 sudo ln -s /usr/local/bin/g++-12 /usr/local/bin/g++
 ```
+
 Ditto for `gnu-sed`, we need to set it as your default sed command. Let's do it by updating the `PATH` environment.
 
 A quick way to do this is by adding PATH at the end of your `~/.zshrc`
 
-Edit this file and add this the end, or update the existing environment variable `PATH` if it already exists by using your favorite file editor *(`nano`, `vim`, ...)*.
+Edit this file and add this the end, or update the existing environment variable `PATH` if it already exists by using your favorite file editor _(`nano`, `vim`, ...)_.
 
 ```bash
 PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH
 ```
+
 Save the file and reload it:
 
-```
+```bash
 source ~/.zshrc
 ```
 
 Now `gnu-sed` will be used by default because it precedes all other sed commands installed on your system.
 
-Congratulations, you're done to start to compile **PVSNESLIB** on *MacOS*!
+Congratulations, you're done to start to compile **PVSNESLIB** on _MacOS_!
 
 ## Compiling the project
 
-> This procedure is supposed to work whatever the system used: *Windows under MSYS2*, *Linux* or *MacOS*.
-
+> This procedure is supposed to work whatever the system used: _Windows under MSYS2_, _Linux_ or _MacOS_.
 
 ### Clone the repository
 
@@ -292,7 +296,6 @@ Please remember that:
 
 Don't worry, if you forget, you will be notified of an error message by running the `make` command.
 
-
 ### Build the whole project
 
 Building the whole project can be performed by simply running the `make` command at the root of the project.
@@ -309,4 +312,4 @@ This procedure is pretty the same as building the whole project, just add the `r
 make release
 ```
 
-Once the compilation is done, you can find your compressed release *(zip)* in the `release` directory.
+Once the compilation is done, you can find your compressed release _(zip)_ in the `release` directory.
