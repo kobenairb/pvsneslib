@@ -1,8 +1,8 @@
-**update in progress **
+## SNES Background Specs
+
+**update in progress**
 
 Background is a term in 2D graphics programming which refers to the image displayed on background of screen, in opposite of sprites. The Snes has dedicated hardware for dealing with multiple types of backgrounds.
-
-## SNES Background Specs
 
 SNES backgrounds are composed of tiled background. A tiled background consists of a collection of tiles and a map. Each tile has a number , so the map is the collection of numbers that are represented with the tiles.
 
@@ -22,7 +22,7 @@ Set background tileset
 Background modes
 The SNES has 8 background modes.
 
-```
+```text
 Mode    # Colors for BG
          1   2   3   4
 ======---=---=---=---=
@@ -36,13 +36,19 @@ Mode    # Colors for BG
 7      256   -   -   -
 7EXTBG 256 128   -   -
 ```
+
 In all modes and for all BGs, color 0 in any palette is considered transparent.
 
 ## Background sizes
+
 ## Background in VRAM
+
 ## Backgrounds with PVSnesLib
+
 ## Converting with gfx2snes
+
 ## Init the background
+
 ## Displaying the background
 
 Backgrounds begin at x = 0 and y = 1. It is not a bug and it is linked to a technical constraint :

@@ -1,14 +1,15 @@
+# Tips to help you with coding
+
 If you have installed successfully PVSneslib, you also have snes-examples installed.
 
 Go to snes-examples/hello_world to have the famous Hello World example.
-
-# Tips to help you with coding
 
 In this example, all the souce code are in the **src** directory. It consists of only one file **hello_world.c**.
 
 You can change this behavior by adding a SRC variable in the makefile.
 
 It works if you set the SRC variable before the include of snes_rules :
+
 ```bash
 SRC=./source
 
@@ -102,7 +103,7 @@ After that, we must declare where the SNES need to put the background in VRAM an
 ```
 
 That's all, just after, we put the text and wait for an inifite loop!
-    
+
 ```bash
     // Draw a wonderful text :P
     consoleDrawText(10, 10, "Hello World !");
@@ -144,6 +145,7 @@ palfont:
 
 .ends
 ```
+
 > You must remember that each section must be lower than 32 Kilobytes. If you want more space, just add other sections with another name than .rodata1 (like .fontdata for example)
 
 # How to compile
@@ -159,6 +161,7 @@ and then
 ```bash
 make 
 ```
+
 It will produce a large amount of lines to explain what's going on (it's also here where you can see errors).
 
 ![image](https://github.com/alekmaul/pvsneslib/assets/2528347/78dadffa-bc9f-4391-b99c-066325c5c8ce)

@@ -1,11 +1,12 @@
-# Installation #
+# Installation
 
   1. **[Installation](https://github.com/alekmaul/pvsneslib/wiki/Installation)**
   1. **[PVSneslib and Visual Studio Code](https://github.com/alekmaul/pvsneslib/wiki/PVSneslib-and-Visual-Studio-Code)**
   1. **[First steps with No$sns emulator](https://github.com/alekmaul/pvsneslib/wiki/First-steps-with-No$sns-emulator)**
   1. **[Compiling from sources](https://github.com/alekmaul/pvsneslib/wiki/Compiling-from-sources)**
 
-# Programming #
+# Programming
+
   1. **[Introduction](https://github.com/alekmaul/pvsneslib/wiki/Introduction)**
   1. **[Hello World example](https://github.com/alekmaul/pvsneslib/wiki/Compiling-helloworld-example)**
   1. **[Input and Output](https://github.com/alekmaul/pvsneslib/wiki/Input-and-Output)**
@@ -16,7 +17,8 @@
   1. **[Map Engine 2: Update maps in Tiled](https://github.com/alekmaul/pvsneslib/wiki/Update-Maps-in-Tiled)**
   1. **[Map Engine 3: Display map on SNES (I)]( https://github.com/alekmaul/pvsneslib/wiki/Display-map-on-SNES-(1))**
 
-# Misc #
+# Misc
+
   1. **[Contribute](https://github.com/alekmaul/pvsneslib/wiki/Contribute)**
   1. **[Community FAQ](https://github.com/alekmaul/pvsneslib/wiki/Community-FAQ)**
   1. **[Community code](https://github.com/alekmaul/pvsneslib/wiki/Community-code)**

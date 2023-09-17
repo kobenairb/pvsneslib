@@ -1,6 +1,6 @@
 Here are some tips when you want to contribute to PVSnesLib and commit code to be reviewed
 
-# Master branch is forbidden !
+# Master branch is forbidden
 
 Do not push your pull request on master branch, always use the develop one
 
@@ -35,9 +35,9 @@ More Examples:
 
 References:
 
-- https://www.conventionalcommits.org/
-- https://seesparkbox.com/foundry/semantic_commit_messages
-- http://karma-runner.github.io/1.0/dev/git-commit-msg.html
+- <https://www.conventionalcommits.org/>
+- <https://seesparkbox.com/foundry/semantic_commit_messages>
+- <http://karma-runner.github.io/1.0/dev/git-commit-msg.html>
 
 # Wiki
 

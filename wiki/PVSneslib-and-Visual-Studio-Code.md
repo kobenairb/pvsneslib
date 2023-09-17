@@ -1,9 +1,7 @@
-
-
 As described on [wikipedia](https://en.wikipedia.org/wiki/Visual_Studio_Code), _Visual Studio Code is a source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git._
 
 ![Visual Studio Code](https://upload.wikimedia.org/wikipedia/commons/e/e9/VS_Code_%28Insiders%29.png)
- 
+
 It is the tool we recommend to develop with PVSneslib on any operating system and we will show you how to configure it.
 
 ### Download
@@ -23,7 +21,6 @@ Open c_cpp_properties.json with your favorite text editor and update the **pvsne
 
 For example, if you installed it in `C:/pvsneslib`, you should have
 `"pvsneslibPath": ["c:/pvsneslib/pvsneslib/include/**","c:/pvsneslib/devkitsnes/include"],`
-
 
 ### Use it
 

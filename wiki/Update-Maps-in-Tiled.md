@@ -1,6 +1,6 @@
-You must now have a tmx file with a tileset properly configured for Tiled. 
+You must now have a tmx file with a tileset properly configured for Tiled.
 We need now to update tile properties for map engine.
-If not, read 1st part of the tutorial to create it (https://github.com/alekmaul/pvsneslib/wiki/Import-maps-for-Tiled)
+If not, read 1st part of the tutorial to create it (<https://github.com/alekmaul/pvsneslib/wiki/Import-maps-for-Tiled>)
 
 ## Update tile properties
 
@@ -23,6 +23,7 @@ Do the same with pillars (again, red rectangles to show the tiles) to change pri
 If you have a tileset with multiple palettes, you can do the same with the "palette" property of each tile.
 
 The property "attribute" is special, some values are managed by the map/object engines.
+
 * **FF00** is for solid tiles, objects can't pass through them
 * **0002** will change action property of object to ACT_BURN value (see <a href="https://github.com/alekmaul/pvsneslib/blob/master/pvsneslib/include/snes/object.h">object.h</a> file of PVSneslib)
 * **0004**  will change action property of object to ACT_DIE value (see <a href="https://github.com/alekmaul/pvsneslib/blob/master/pvsneslib/include/snes/object.h">object.h</a> file of PVSneslib)

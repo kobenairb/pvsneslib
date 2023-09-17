@@ -1,6 +1,6 @@
-The remaining entries here on the unofficial FAQ are maintained by the community.
-
 # Frequently asked questions (FAQ)
+
+The remaining entries here on the unofficial FAQ are maintained by the community.
 
 **[Miscellaneous](#miscellaneous)**
 
@@ -65,6 +65,7 @@ The remaining entries here on the unofficial FAQ are maintained by the community
 
 - [How to create maps with 16x16 tiles ?](#how-to-create-maps-with-16x16-tiles-)
 - [Backgrounds begin at x = 0 and y = 1](#backgrounds-begin-at-x--0-and-y--1)
+
 ---
 
 ## Miscellaneous
@@ -115,7 +116,8 @@ Only background in mode7 can be rotate.
 ### What is the function to clear text ?
 
 There is no function to clear text directly. However, you can use spaces to replace text like this:
-```
+
+```c
 consoleDrawText(1,2,"some text on the screen");
 // will be cleared with :
 consoleDrawText(1,2,"                       ");
@@ -216,7 +218,7 @@ Declare the variable within your .c source file:
 
 **commonFile.c**
 
-```
+```c
 #include "commonFile.h"
 
 bool myCommonVariable = false;
@@ -228,7 +230,7 @@ then use extern in other places (either .c files, or an .h file that .c files in
 
 **main.c**
 
-```
+```c
 #include "commonFile.h"
 
 extern bool myCommonVariable;
@@ -240,7 +242,7 @@ and do not forget to protect your header files from multiple inclusion:
 
 **commonFile.h**
 
-```
+```c
 #ifndef COMMON_FILE_H
 #define COMMON_FILE_H
 
@@ -332,13 +334,11 @@ You will notice this when your project gives a strange error during compilation.
 
 The output system is only available for **BG_MODE1**. If you need it in other modes, you need to develop it.
 
-
 ### How to build tcc 816 provided with PVSnesLib sources ?
 
 Go to the tcc-65816 directory, then execute **./configure** command to create the config.mak file.
 If you are on windows and get an error like "'.' is not recognized as an internal or external command", you probably need to execute the **sh** command before.
 After this command, you can build tcc by doing : **make 816-tcc.exe**
-
 
 ### I get the error "echo: command not found"
 
@@ -351,10 +351,9 @@ When building some tools on Linux like **snestools**, if you get the error _/usr
 
 ### Using malloc with PVSneslib
 
-I want to use malloc in my program, so I am trying something like this: u16 *myHudBuffer = (u16*)malloc(160*sizeof(u16)); but it is not working. malloc requires stdlib.h which I think does not work with PVSnesLib.
+I want to use malloc in my program, so I am trying something like this: u16 _myHudBuffer = (u16_)malloc(160*sizeof(u16)); but it is not working. malloc requires stdlib.h which I think does not work with PVSnesLib.
 
 Instead, you need to declare an array with a fixed size, u16 myHudBuffer[160] in this case.
-
 
 ## Maps
 
@@ -362,7 +361,6 @@ Instead, you need to declare an array with a fixed size, u16 myHudBuffer[160] in
 
 It is not possible to load maps with 16x16 tiles with the existing version of gfx2snes. You need to use 8x8 tiles or update the tool !
 The "-gs" parameter (for "graphic size") in gfx2snes is only applied to sprites.
-
 
 ### Backgrounds begin at x = 0 and y = 1
 

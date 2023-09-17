@@ -1,23 +1,23 @@
 Feel free to help us by implementing any of this functionalities !
 
-# High priority:
+# High priority
 
 - upgrade to the latest version of tcc
 - Review of constify tools :- [High priority:](#high-priority)
 - [Medium priority:](#medium-priority)
 - [Low priority:](#low-priority)
 
-	- '\_\_tcc_' should become 'tcc_'
-	- manage const declared like : const myArray[5*6] = ...;
-	- add a function to remove comments in C source file (// ou /* */)
-	- add a function to detect include in C files then parse them
-	- manage implicit declaration of const array (const char a[] = {3,3}) on one or multiple lines
+  - '\_\_tcc_' should become 'tcc_'
+  - manage const declared like : const myArray[5*6] = ...;
+  - add a function to remove comments in C source file (// ou /**/)
+  - add a function to detect include in C files then parse them
+  - manage implicit declaration of const array (const char a[] = {3,3}) on one or multiple lines
 - solve the segmentation fault which appears in tcc when using it without the -m32 flag (requirement to have 64b version). Try to apply these 2 updates manually to see if it works :
-	- [cleanup: stop abuse of sym->c for #define tokenstreams](https://github.com/adorad/tcc/commit/bed17847bdfa872e219a12237e06df83e464bdba)
-	- [cleanup: stop abuse of sym->r for inline functions](https://github.com/adorad/tcc/commit/d0b432ab38b09cd167d8a8065ffe1e14878d6e2d?diff=split)
+  - [cleanup: stop abuse of sym->c for #define tokenstreams](https://github.com/adorad/tcc/commit/bed17847bdfa872e219a12237e06df83e464bdba)
+  - [cleanup: stop abuse of sym->r for inline functions](https://github.com/adorad/tcc/commit/d0b432ab38b09cd167d8a8065ffe1e14878d6e2d?diff=split)
 - manage LZ compression for graphics
 
-# Medium priority:
+# Medium priority
 
 - have only one credit list in readme.md, automatically injected in snes.h. Remove credit from wiki page
 - replace .obj files by .lib with wla dx
@@ -32,7 +32,7 @@ Feel free to help us by implementing any of this functionalities !
 - test to build the library with Cygwin and update it if necessary
 - add fixed point support
 
-# Low priority:
+# Low priority
 
 - Fix cygwin and gitbash incompatibility
 - Improve mode 7 camera rotation

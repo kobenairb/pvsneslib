@@ -18,7 +18,6 @@ As you have probably a package management tool installed, it is more easy to do 
 
 **Feel free to adapt it for your version !**
 
-
 ### Required dependencies
 
 #### MSYS2 (step required for Windows only)
@@ -37,7 +36,6 @@ In the `MSYS2 UCRT64` terminal, update it:
 Please remember that:
 
 - Always use **MSYS2 UCRT64** terminal windows to compile your code.
-
 
 #### Text editor
 
@@ -72,12 +70,12 @@ You can set **PVSNESLIB_HOME** to `/c/snesdev` by using this command line: `setx
 
 **Be careful**: the path must be in Unix style (`/c/` instead of `c:\`) on Windows too ! Do not forget that if you change your environment variable, you will probably need to launch a new command prompt to take it into account.
 
-
 #### On Linux
 
 Depending your distribution, you have different ways to create this variable.
 
 If you want to declare the variable only for the current terminal session, you can execute :
+
 ```bash
 export PVSNESLIB_HOME=/path/to/pvsneslib
 ```
@@ -111,10 +109,8 @@ Please remember that:
 
 Don't worry, if you forget, you will be notified of an error message by running the `make` command.
 
-### It is ready !
-
+### It is ready
 
 Now everything is installed correctly, you can validate that it works correctly by compiling the hello world sample. Just go under your installation path, snes-examples > hello_world and run the `make` command.
-
 
 If you encounter an issue, join us on [Discord](https://discord.gg/DzEFnhB) to get help!
