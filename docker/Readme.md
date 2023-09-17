@@ -68,7 +68,7 @@ Above all, this script must be executed at the root of the project, which is the
 
 No need to set this environment variable, the script takes care of it for you.
 
-```
+```bash
   ./dockerrun -h
 usage: ./dockerrun.sh options:<d|h|r|b>
 -h: help, print this message
