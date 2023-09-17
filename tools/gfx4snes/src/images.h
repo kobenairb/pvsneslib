@@ -18,21 +18,19 @@ typedef struct RGB_color_typ
 
 typedef struct header_typ
 {
-    int width, height;                                              // width & height of image
+    unsigned int width, height;                                     // width & height of image
 } t_header;
 
 typedef struct pngbmp_image_typ
 {
     t_header header;                                                // filetype specific header
     t_RGB_color palette[256];                                       // palette (max 256 colors)
-    int snespalette[256];					                        // palette in snes format (5bits RGB)
     unsigned char *buffer;                                          // The buffer to hold the image
 } t_image;
 
 extern t_image snesimage;											// current image converted
 
 //-------------------------------------------------------------------------------------------------
-extern void image_load(const char *filename, const char *filetype, bool isquiet);
-extern void image_free(void);
+extern void image_load(const char *filename, const char *filetype, t_image *img, bool isquiet);
 
 #endif
