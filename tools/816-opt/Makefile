@@ -51,6 +51,3 @@ install: $(EXE)$(EXT)
 clean:
 	rm -rf ${OBJS}
 	rm -f $(EXE)$(EXT)
-
-# Declare the phony targets
-.PHONY: all clean install

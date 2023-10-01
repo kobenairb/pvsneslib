@@ -45,6 +45,3 @@ install: all
 # Define the clean target
 clean:
 	@rm -f $(OBJS) $(EXE)$(EXT)
-
-# Declare the phony targets
-.PHONY: all clean install

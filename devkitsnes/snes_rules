@@ -28,7 +28,7 @@ LIBDIRSOBJS := $(PVSNESLIB_HOME)/pvsneslib/lib
 # On windows, linkfile can only manage windows path format.
 # Hopefully, it works both on linux and windows by using relative path.
 # Note: realpath command is available by default on MSYS2.
-LIBDIRSOBJSR := $(shell find $(LIBDIRSOBJS) -name "*.obj" -exec realpath --relative-to=. {} \;)
+LIBDIRSOBJSR := $(shell find $(LIBDIRSOBJS) -name "*.obj" -exec realpath --relative-to=. {} \; 2>/dev/null)
 
 #---------------------------------------------------------------------------------
 # Retrieve the list of the .c and .asm files.
@@ -39,7 +39,9 @@ ifeq ($(origin SRC), undefined)
 endif
 
 # Search all .asm and .c files up to a specified depth in the tree.
-DEPTH ?= 3
+ifeq ($(origin DEPTH), undefined)
+    DEPTH := 3
+endif
 
 # Search .c and .asm files at the root level.
 CFILES := $(wildcard *.c)
